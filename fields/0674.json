@@ -1,0 +1,59 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "child",
+        "focus": 0.06
+      },
+      {
+        "id": 2,
+        "key": "crack",
+        "focus": 0.41
+      },
+      {
+        "id": 3,
+        "key": "signal",
+        "focus": 0.4
+      },
+      {
+        "id": 4,
+        "key": "promise",
+        "focus": 0.11
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 1,
+        "target": 2,
+        "relation_key": "heals",
+        "relation_focus": 0.47,
+        "action_key": "crystallizes",
+        "action_focus": 0.14
+      },
+      {
+        "id": 2,
+        "source": 3,
+        "target": 2,
+        "relation_key": "protects",
+        "relation_focus": 0.78,
+        "action_key": "dissolves",
+        "action_focus": 0.38
+      },
+      {
+        "id": 3,
+        "source": 4,
+        "target": 1,
+        "relation_key": "binds",
+        "relation_focus": 0.77,
+        "action_key": "dissolves",
+        "action_focus": 0.92
+      }
+    ]
+  },
+  "mutations": [],
+  "id": 674
+}

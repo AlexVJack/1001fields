@@ -1,0 +1,31 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "labyrinth",
+        "focus": 0.55
+      },
+      {
+        "id": 2,
+        "key": "name",
+        "focus": 0.67
+      },
+      {
+        "id": 3,
+        "key": "child",
+        "focus": 0.88
+      },
+      {
+        "id": 4,
+        "key": "signal",
+        "focus": 0.26
+      }
+    ],
+    "links": []
+  },
+  "mutations": [],
+  "id": 408
+}

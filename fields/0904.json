@@ -1,0 +1,95 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "desire",
+        "focus": 0.96
+      },
+      {
+        "id": 2,
+        "key": "name",
+        "focus": 0.15
+      },
+      {
+        "id": 3,
+        "key": "shelter",
+        "focus": 0.97
+      },
+      {
+        "id": 4,
+        "key": "void",
+        "focus": 0.49
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 3,
+        "target": 4,
+        "relation_key": "reveals",
+        "relation_focus": 0.04,
+        "action_key": "dissolves",
+        "action_focus": 0.01
+      },
+      {
+        "id": 2,
+        "source": 4,
+        "target": 3,
+        "relation_key": "embodies",
+        "relation_focus": 0.14,
+        "action_key": "collapses",
+        "action_focus": 0.29
+      },
+      {
+        "id": 3,
+        "source": 2,
+        "target": 1,
+        "relation_key": "transforms",
+        "relation_focus": 0.63,
+        "action_key": "becomes_visible",
+        "action_focus": 0.01
+      },
+      {
+        "id": 4,
+        "source": 1,
+        "target": 3,
+        "relation_key": "touches",
+        "relation_focus": 0.42,
+        "action_key": "weakens",
+        "action_focus": 0.28
+      },
+      {
+        "id": 5,
+        "source": 4,
+        "target": 1,
+        "relation_key": "protects",
+        "relation_focus": 0.01,
+        "action_key": "accelerates",
+        "action_focus": 0.24
+      },
+      {
+        "id": 6,
+        "source": 3,
+        "target": 2,
+        "relation_key": "blocks",
+        "relation_focus": 0.02,
+        "action_key": "weakens",
+        "action_focus": 0.46
+      },
+      {
+        "id": 7,
+        "source": 2,
+        "target": 4,
+        "relation_key": "endures",
+        "relation_focus": 0.48,
+        "action_key": "approaches",
+        "action_focus": 0.31
+      }
+    ]
+  },
+  "mutations": [],
+  "id": 904
+}

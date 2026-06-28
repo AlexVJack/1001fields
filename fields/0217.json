@@ -1,0 +1,31 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "hunger",
+        "focus": 0.69
+      },
+      {
+        "id": 2,
+        "key": "boundary",
+        "focus": 0.39
+      },
+      {
+        "id": 3,
+        "key": "network",
+        "focus": 0.44
+      },
+      {
+        "id": 4,
+        "key": "tower",
+        "focus": 0.08
+      }
+    ],
+    "links": []
+  },
+  "mutations": [],
+  "id": 217
+}

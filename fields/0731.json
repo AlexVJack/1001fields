@@ -1,0 +1,108 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "water",
+        "focus": 0.73
+      },
+      {
+        "id": 2,
+        "key": "debt",
+        "focus": 0.89
+      },
+      {
+        "id": 3,
+        "key": "ruin",
+        "focus": 0.85
+      },
+      {
+        "id": 4,
+        "key": "ash",
+        "focus": 0.56
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 1,
+        "target": 2,
+        "relation_key": "repels",
+        "relation_focus": 0.81,
+        "action_key": "dissolves",
+        "action_focus": 0.36
+      },
+      {
+        "id": 2,
+        "source": 2,
+        "target": 3,
+        "relation_key": "witnesses",
+        "relation_focus": 0.7,
+        "action_key": "merges",
+        "action_focus": 0.93
+      },
+      {
+        "id": 3,
+        "source": 2,
+        "target": 1,
+        "relation_key": "repels",
+        "relation_focus": 0.63,
+        "action_key": "collapses",
+        "action_focus": 0.35
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "link_removed",
+      "link": {
+        "id": 2,
+        "source": 2,
+        "target": 3,
+        "relation_key": "witnesses",
+        "relation_focus": 0.7,
+        "action_key": "merges",
+        "action_focus": 0.93
+      }
+    },
+    {
+      "step": 2,
+      "type": "link_added",
+      "link": {
+        "id": 4,
+        "source": 4,
+        "target": 1,
+        "relation_key": "blocks",
+        "relation_focus": 0.31,
+        "action_key": "accelerates",
+        "action_focus": 0.86
+      }
+    },
+    {
+      "step": 3,
+      "type": "relation_changed",
+      "link_before": {
+        "id": 4,
+        "source": 4,
+        "target": 1,
+        "relation_key": "blocks",
+        "relation_focus": 0.31,
+        "action_key": "accelerates",
+        "action_focus": 0.86
+      },
+      "link_after": {
+        "id": 4,
+        "source": 4,
+        "target": 1,
+        "relation_key": "clarifies",
+        "relation_focus": 0.93,
+        "action_key": "accelerates",
+        "action_focus": 0.86
+      }
+    }
+  ],
+  "id": 731
+}

@@ -1,0 +1,153 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "void",
+        "focus": 1.0
+      },
+      {
+        "id": 2,
+        "key": "map",
+        "focus": 0.98
+      },
+      {
+        "id": 3,
+        "key": "name",
+        "focus": 0.15
+      },
+      {
+        "id": 4,
+        "key": "exile",
+        "focus": 0.03
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 2,
+        "target": 4,
+        "relation_key": "reveals",
+        "relation_focus": 0.3,
+        "action_key": "crosses_a_threshold",
+        "action_focus": 0.52
+      },
+      {
+        "id": 2,
+        "source": 1,
+        "target": 4,
+        "relation_key": "mirrors",
+        "relation_focus": 0.48,
+        "action_key": "intensifies",
+        "action_focus": 0.91
+      },
+      {
+        "id": 3,
+        "source": 1,
+        "target": 3,
+        "relation_key": "protects",
+        "relation_focus": 0.92,
+        "action_key": "inverts",
+        "action_focus": 0.42
+      },
+      {
+        "id": 4,
+        "source": 2,
+        "target": 3,
+        "relation_key": "feeds",
+        "relation_focus": 0.26,
+        "action_key": "accelerates",
+        "action_focus": 0.93
+      },
+      {
+        "id": 5,
+        "source": 3,
+        "target": 4,
+        "relation_key": "consumes",
+        "relation_focus": 0.89,
+        "action_key": "collapses",
+        "action_focus": 0.51
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "symbol_changed",
+      "symbol_id": 3,
+      "old_key": "name",
+      "new_key": "voice",
+      "old_focus": 0.15,
+      "new_focus": 0.79
+    },
+    {
+      "step": 2,
+      "type": "relation_changed",
+      "link_before": {
+        "id": 1,
+        "source": 2,
+        "target": 4,
+        "relation_key": "reveals",
+        "relation_focus": 0.3,
+        "action_key": "crosses_a_threshold",
+        "action_focus": 0.52
+      },
+      "link_after": {
+        "id": 1,
+        "source": 2,
+        "target": 4,
+        "relation_key": "binds",
+        "relation_focus": 0.74,
+        "action_key": "crosses_a_threshold",
+        "action_focus": 0.52
+      }
+    },
+    {
+      "step": 3,
+      "type": "relation_changed",
+      "link_before": {
+        "id": 3,
+        "source": 1,
+        "target": 3,
+        "relation_key": "protects",
+        "relation_focus": 0.92,
+        "action_key": "inverts",
+        "action_focus": 0.42
+      },
+      "link_after": {
+        "id": 3,
+        "source": 1,
+        "target": 3,
+        "relation_key": "contains",
+        "relation_focus": 0.78,
+        "action_key": "inverts",
+        "action_focus": 0.42
+      }
+    },
+    {
+      "step": 4,
+      "type": "relation_changed",
+      "link_before": {
+        "id": 2,
+        "source": 1,
+        "target": 4,
+        "relation_key": "mirrors",
+        "relation_focus": 0.48,
+        "action_key": "intensifies",
+        "action_focus": 0.91
+      },
+      "link_after": {
+        "id": 2,
+        "source": 1,
+        "target": 4,
+        "relation_key": "consumes",
+        "relation_focus": 0.09,
+        "action_key": "intensifies",
+        "action_focus": 0.91
+      }
+    }
+  ],
+  "id": 467
+}

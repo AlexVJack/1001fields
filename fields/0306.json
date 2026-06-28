@@ -1,0 +1,45 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "guardian",
+        "focus": 0.39
+      },
+      {
+        "id": 2,
+        "key": "body",
+        "focus": 0.62
+      },
+      {
+        "id": 3,
+        "key": "stone",
+        "focus": 0.13
+      },
+      {
+        "id": 4,
+        "key": "crack",
+        "focus": 0.55
+      }
+    ],
+    "links": []
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "link_added",
+      "link": {
+        "id": 1,
+        "source": 1,
+        "target": 2,
+        "relation_key": "witnesses",
+        "relation_focus": 0.97,
+        "action_key": "closes",
+        "action_focus": 0.33
+      }
+    }
+  ],
+  "id": 306
+}

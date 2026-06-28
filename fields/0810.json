@@ -1,0 +1,54 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "water",
+        "focus": 0.05
+      },
+      {
+        "id": 2,
+        "key": "hand",
+        "focus": 0.07
+      },
+      {
+        "id": 3,
+        "key": "harbor",
+        "focus": 0.28
+      },
+      {
+        "id": 4,
+        "key": "thread",
+        "focus": 0.83
+      }
+    ],
+    "links": []
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "symbol_changed",
+      "symbol_id": 3,
+      "old_key": "harbor",
+      "new_key": "air",
+      "old_focus": 0.28,
+      "new_focus": 0.21
+    },
+    {
+      "step": 2,
+      "type": "link_added",
+      "link": {
+        "id": 1,
+        "source": 2,
+        "target": 3,
+        "relation_key": "names",
+        "relation_focus": 0.18,
+        "action_key": "accelerates",
+        "action_focus": 0.61
+      }
+    }
+  ],
+  "id": 810
+}

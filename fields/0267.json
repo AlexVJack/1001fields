@@ -1,0 +1,118 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "pause",
+        "focus": 0.79
+      },
+      {
+        "id": 2,
+        "key": "burden",
+        "focus": 0.34
+      },
+      {
+        "id": 3,
+        "key": "map",
+        "focus": 0.56
+      },
+      {
+        "id": 4,
+        "key": "exile",
+        "focus": 0.5
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 1,
+        "target": 2,
+        "relation_key": "names",
+        "relation_focus": 0.45,
+        "action_key": "stabilizes",
+        "action_focus": 0.08
+      },
+      {
+        "id": 2,
+        "source": 3,
+        "target": 2,
+        "relation_key": "blocks",
+        "relation_focus": 0.45,
+        "action_key": "returns",
+        "action_focus": 0.32
+      },
+      {
+        "id": 3,
+        "source": 4,
+        "target": 2,
+        "relation_key": "transforms",
+        "relation_focus": 0.33,
+        "action_key": "mutates",
+        "action_focus": 0.37
+      },
+      {
+        "id": 4,
+        "source": 2,
+        "target": 3,
+        "relation_key": "binds",
+        "relation_focus": 0.15,
+        "action_key": "crystallizes",
+        "action_focus": 0.51
+      },
+      {
+        "id": 5,
+        "source": 1,
+        "target": 4,
+        "relation_key": "attracts",
+        "relation_focus": 0.54,
+        "action_key": "becomes_embodied",
+        "action_focus": 0.09
+      },
+      {
+        "id": 6,
+        "source": 3,
+        "target": 4,
+        "relation_key": "listens_to",
+        "relation_focus": 0.81,
+        "action_key": "crosses_a_threshold",
+        "action_focus": 0.92
+      },
+      {
+        "id": 7,
+        "source": 2,
+        "target": 4,
+        "relation_key": "witnesses",
+        "relation_focus": 0.8,
+        "action_key": "accelerates",
+        "action_focus": 0.29
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "link_inverted",
+      "link_before": {
+        "id": 5,
+        "source": 1,
+        "target": 4,
+        "relation_key": "attracts",
+        "relation_focus": 0.54,
+        "action_key": "becomes_embodied",
+        "action_focus": 0.09
+      },
+      "link_after": {
+        "id": 5,
+        "source": 4,
+        "target": 1,
+        "relation_key": "attracts",
+        "relation_focus": 0.54,
+        "action_key": "becomes_embodied",
+        "action_focus": 0.09
+      }
+    }
+  ],
+  "id": 267
+}

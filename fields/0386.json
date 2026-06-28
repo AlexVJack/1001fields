@@ -1,0 +1,113 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "thread",
+        "focus": 0.24
+      },
+      {
+        "id": 2,
+        "key": "void",
+        "focus": 0.52
+      },
+      {
+        "id": 3,
+        "key": "labyrinth",
+        "focus": 0.54
+      },
+      {
+        "id": 4,
+        "key": "tower",
+        "focus": 0.53
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 2,
+        "target": 3,
+        "relation_key": "hides",
+        "relation_focus": 0.1,
+        "action_key": "intensifies",
+        "action_focus": 0.57
+      },
+      {
+        "id": 2,
+        "source": 1,
+        "target": 4,
+        "relation_key": "heals",
+        "relation_focus": 0.01,
+        "action_key": "becomes_clear",
+        "action_focus": 0.36
+      },
+      {
+        "id": 3,
+        "source": 2,
+        "target": 4,
+        "relation_key": "generates",
+        "relation_focus": 0.38,
+        "action_key": "inverts",
+        "action_focus": 0.03
+      },
+      {
+        "id": 4,
+        "source": 3,
+        "target": 4,
+        "relation_key": "misnames",
+        "relation_focus": 0.03,
+        "action_key": "splits",
+        "action_focus": 0.77
+      },
+      {
+        "id": 5,
+        "source": 2,
+        "target": 1,
+        "relation_key": "contains",
+        "relation_focus": 0.48,
+        "action_key": "opens",
+        "action_focus": 0.55
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "relation_changed",
+      "link_before": {
+        "id": 3,
+        "source": 2,
+        "target": 4,
+        "relation_key": "generates",
+        "relation_focus": 0.38,
+        "action_key": "inverts",
+        "action_focus": 0.03
+      },
+      "link_after": {
+        "id": 3,
+        "source": 2,
+        "target": 4,
+        "relation_key": "infects",
+        "relation_focus": 0.96,
+        "action_key": "inverts",
+        "action_focus": 0.03
+      }
+    },
+    {
+      "step": 2,
+      "type": "link_removed",
+      "link": {
+        "id": 4,
+        "source": 3,
+        "target": 4,
+        "relation_key": "misnames",
+        "relation_focus": 0.03,
+        "action_key": "splits",
+        "action_focus": 0.77
+      }
+    }
+  ],
+  "id": 386
+}

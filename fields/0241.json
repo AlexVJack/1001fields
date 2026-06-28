@@ -1,0 +1,113 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "labyrinth",
+        "focus": 0.3
+      },
+      {
+        "id": 2,
+        "key": "network",
+        "focus": 0.62
+      },
+      {
+        "id": 3,
+        "key": "mirror",
+        "focus": 0.33
+      },
+      {
+        "id": 4,
+        "key": "mask",
+        "focus": 0.03
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 2,
+        "target": 3,
+        "relation_key": "mirrors",
+        "relation_focus": 0.65,
+        "action_key": "lets_go",
+        "action_focus": 0.59
+      },
+      {
+        "id": 2,
+        "source": 1,
+        "target": 3,
+        "relation_key": "consumes",
+        "relation_focus": 0.19,
+        "action_key": "repeats",
+        "action_focus": 0.6
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "action_changed",
+      "link_before": {
+        "id": 1,
+        "source": 2,
+        "target": 3,
+        "relation_key": "mirrors",
+        "relation_focus": 0.65,
+        "action_key": "lets_go",
+        "action_focus": 0.59
+      },
+      "link_after": {
+        "id": 1,
+        "source": 2,
+        "target": 3,
+        "relation_key": "mirrors",
+        "relation_focus": 0.65,
+        "action_key": "mutates",
+        "action_focus": 0.02
+      }
+    },
+    {
+      "step": 2,
+      "type": "symbol_changed",
+      "symbol_id": 4,
+      "old_key": "mask",
+      "new_key": "memory",
+      "old_focus": 0.03,
+      "new_focus": 1.0
+    },
+    {
+      "step": 3,
+      "type": "symbol_changed",
+      "symbol_id": 2,
+      "old_key": "network",
+      "new_key": "garden",
+      "old_focus": 0.62,
+      "new_focus": 0.15
+    },
+    {
+      "step": 4,
+      "type": "link_inverted",
+      "link_before": {
+        "id": 2,
+        "source": 1,
+        "target": 3,
+        "relation_key": "consumes",
+        "relation_focus": 0.19,
+        "action_key": "repeats",
+        "action_focus": 0.6
+      },
+      "link_after": {
+        "id": 2,
+        "source": 3,
+        "target": 1,
+        "relation_key": "consumes",
+        "relation_focus": 0.19,
+        "action_key": "repeats",
+        "action_focus": 0.6
+      }
+    }
+  ],
+  "id": 241
+}

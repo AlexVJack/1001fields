@@ -1,0 +1,59 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "oracle",
+        "focus": 0.3
+      },
+      {
+        "id": 2,
+        "key": "sage",
+        "focus": 0.01
+      },
+      {
+        "id": 3,
+        "key": "hand",
+        "focus": 1.0
+      },
+      {
+        "id": 4,
+        "key": "boundary",
+        "focus": 0.87
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 3,
+        "target": 4,
+        "relation_key": "endures",
+        "relation_focus": 0.86,
+        "action_key": "inverts",
+        "action_focus": 0.27
+      },
+      {
+        "id": 2,
+        "source": 1,
+        "target": 3,
+        "relation_key": "remembers",
+        "relation_focus": 0.32,
+        "action_key": "settles",
+        "action_focus": 0.01
+      },
+      {
+        "id": 3,
+        "source": 3,
+        "target": 2,
+        "relation_key": "clarifies",
+        "relation_focus": 0.04,
+        "action_key": "becomes_hidden",
+        "action_focus": 0.96
+      }
+    ]
+  },
+  "mutations": [],
+  "id": 20
+}

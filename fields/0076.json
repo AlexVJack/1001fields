@@ -1,0 +1,87 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "shadow",
+        "focus": 0.06
+      },
+      {
+        "id": 2,
+        "key": "hunger",
+        "focus": 0.81
+      },
+      {
+        "id": 3,
+        "key": "fear",
+        "focus": 0.8
+      },
+      {
+        "id": 4,
+        "key": "gate",
+        "focus": 0.56
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 1,
+        "target": 3,
+        "relation_key": "depends_on",
+        "relation_focus": 0.6,
+        "action_key": "weakens",
+        "action_focus": 0.28
+      },
+      {
+        "id": 2,
+        "source": 1,
+        "target": 2,
+        "relation_key": "transforms",
+        "relation_focus": 0.5,
+        "action_key": "becomes_visible",
+        "action_focus": 0.94
+      },
+      {
+        "id": 3,
+        "source": 3,
+        "target": 1,
+        "relation_key": "contains",
+        "relation_focus": 0.18,
+        "action_key": "dissolves",
+        "action_focus": 0.87
+      },
+      {
+        "id": 4,
+        "source": 1,
+        "target": 4,
+        "relation_key": "infects",
+        "relation_focus": 0.42,
+        "action_key": "crystallizes",
+        "action_focus": 0.03
+      },
+      {
+        "id": 5,
+        "source": 2,
+        "target": 1,
+        "relation_key": "infects",
+        "relation_focus": 0.95,
+        "action_key": "collapses",
+        "action_focus": 0.75
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "symbol_changed",
+      "symbol_id": 2,
+      "old_key": "hunger",
+      "new_key": "storm",
+      "old_focus": 0.81,
+      "new_focus": 0.75
+    }
+  ],
+  "id": 76
+}

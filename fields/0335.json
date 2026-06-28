@@ -1,0 +1,98 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "herald",
+        "focus": 0.58
+      },
+      {
+        "id": 2,
+        "key": "attention",
+        "focus": 0.74
+      },
+      {
+        "id": 3,
+        "key": "sage",
+        "focus": 0.56
+      },
+      {
+        "id": 4,
+        "key": "hand",
+        "focus": 0.55
+      }
+    ],
+    "links": []
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "link_added",
+      "link": {
+        "id": 1,
+        "source": 4,
+        "target": 2,
+        "relation_key": "binds",
+        "relation_focus": 0.56,
+        "action_key": "dissolves",
+        "action_focus": 0.92
+      }
+    },
+    {
+      "step": 2,
+      "type": "action_changed",
+      "link_before": {
+        "id": 1,
+        "source": 4,
+        "target": 2,
+        "relation_key": "binds",
+        "relation_focus": 0.56,
+        "action_key": "dissolves",
+        "action_focus": 0.92
+      },
+      "link_after": {
+        "id": 1,
+        "source": 4,
+        "target": 2,
+        "relation_key": "binds",
+        "relation_focus": 0.56,
+        "action_key": "approaches",
+        "action_focus": 0.09
+      }
+    },
+    {
+      "step": 3,
+      "type": "symbol_changed",
+      "symbol_id": 2,
+      "old_key": "attention",
+      "new_key": "archive",
+      "old_focus": 0.74,
+      "new_focus": 0.12
+    },
+    {
+      "step": 4,
+      "type": "link_removed",
+      "link": {
+        "id": 1,
+        "source": 4,
+        "target": 2,
+        "relation_key": "binds",
+        "relation_focus": 0.56,
+        "action_key": "approaches",
+        "action_focus": 0.09
+      }
+    },
+    {
+      "step": 5,
+      "type": "symbol_changed",
+      "symbol_id": 1,
+      "old_key": "herald",
+      "new_key": "debt",
+      "old_focus": 0.58,
+      "new_focus": 0.99
+    }
+  ],
+  "id": 335
+}

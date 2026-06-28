@@ -1,0 +1,100 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "oracle",
+        "focus": 0.36
+      },
+      {
+        "id": 2,
+        "key": "shelter",
+        "focus": 0.39
+      },
+      {
+        "id": 3,
+        "key": "spark",
+        "focus": 0.87
+      },
+      {
+        "id": 4,
+        "key": "garden",
+        "focus": 0.67
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 2,
+        "target": 3,
+        "relation_key": "listens_to",
+        "relation_focus": 0.97,
+        "action_key": "stabilizes",
+        "action_focus": 0.74
+      },
+      {
+        "id": 2,
+        "source": 1,
+        "target": 2,
+        "relation_key": "names",
+        "relation_focus": 0.23,
+        "action_key": "collapses",
+        "action_focus": 0.42
+      },
+      {
+        "id": 3,
+        "source": 3,
+        "target": 1,
+        "relation_key": "reveals",
+        "relation_focus": 0.84,
+        "action_key": "spreads",
+        "action_focus": 0.84
+      },
+      {
+        "id": 4,
+        "source": 1,
+        "target": 3,
+        "relation_key": "witnesses",
+        "relation_focus": 0.39,
+        "action_key": "becomes_embodied",
+        "action_focus": 0.45
+      },
+      {
+        "id": 5,
+        "source": 3,
+        "target": 2,
+        "relation_key": "embodies",
+        "relation_focus": 0.92,
+        "action_key": "weakens",
+        "action_focus": 0.29
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "relation_changed",
+      "link_before": {
+        "id": 1,
+        "source": 2,
+        "target": 3,
+        "relation_key": "listens_to",
+        "relation_focus": 0.97,
+        "action_key": "stabilizes",
+        "action_focus": 0.74
+      },
+      "link_after": {
+        "id": 1,
+        "source": 2,
+        "target": 3,
+        "relation_key": "generates",
+        "relation_focus": 0.62,
+        "action_key": "stabilizes",
+        "action_focus": 0.74
+      }
+    }
+  ],
+  "id": 754
+}

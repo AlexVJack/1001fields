@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "stranger",
+        "focus": 0.98
+      },
+      {
+        "id": 2,
+        "key": "boundary",
+        "focus": 0.28
+      },
+      {
+        "id": 3,
+        "key": "gate",
+        "focus": 0.05
+      },
+      {
+        "id": 4,
+        "key": "herald",
+        "focus": 0.46
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 3,
+        "target": 2,
+        "relation_key": "dominates",
+        "relation_focus": 0.15,
+        "action_key": "crosses_a_threshold",
+        "action_focus": 0.33
+      },
+      {
+        "id": 2,
+        "source": 2,
+        "target": 3,
+        "relation_key": "listens_to",
+        "relation_focus": 0.83,
+        "action_key": "exhales",
+        "action_focus": 0.39
+      }
+    ]
+  },
+  "mutations": [],
+  "id": 559
+}

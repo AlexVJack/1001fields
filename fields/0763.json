@@ -1,0 +1,54 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "desire",
+        "focus": 0.66
+      },
+      {
+        "id": 2,
+        "key": "air",
+        "focus": 0.85
+      },
+      {
+        "id": 3,
+        "key": "trace",
+        "focus": 0.93
+      },
+      {
+        "id": 4,
+        "key": "labyrinth",
+        "focus": 0.98
+      }
+    ],
+    "links": []
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "symbol_changed",
+      "symbol_id": 2,
+      "old_key": "air",
+      "new_key": "hand",
+      "old_focus": 0.85,
+      "new_focus": 0.88
+    },
+    {
+      "step": 2,
+      "type": "link_added",
+      "link": {
+        "id": 1,
+        "source": 4,
+        "target": 3,
+        "relation_key": "names",
+        "relation_focus": 1.0,
+        "action_key": "approaches",
+        "action_focus": 0.72
+      }
+    }
+  ],
+  "id": 763
+}

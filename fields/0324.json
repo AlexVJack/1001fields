@@ -1,0 +1,136 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "hunger",
+        "focus": 0.47
+      },
+      {
+        "id": 2,
+        "key": "pause",
+        "focus": 0.87
+      },
+      {
+        "id": 3,
+        "key": "memory",
+        "focus": 0.62
+      },
+      {
+        "id": 4,
+        "key": "guardian",
+        "focus": 0.62
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 2,
+        "target": 1,
+        "relation_key": "transforms",
+        "relation_focus": 0.93,
+        "action_key": "settles",
+        "action_focus": 0.37
+      },
+      {
+        "id": 2,
+        "source": 1,
+        "target": 3,
+        "relation_key": "mirrors",
+        "relation_focus": 0.65,
+        "action_key": "stabilizes",
+        "action_focus": 0.03
+      },
+      {
+        "id": 3,
+        "source": 2,
+        "target": 4,
+        "relation_key": "clarifies",
+        "relation_focus": 0.27,
+        "action_key": "approaches",
+        "action_focus": 0.22
+      },
+      {
+        "id": 4,
+        "source": 1,
+        "target": 4,
+        "relation_key": "depends_on",
+        "relation_focus": 0.13,
+        "action_key": "splits",
+        "action_focus": 0.5
+      },
+      {
+        "id": 5,
+        "source": 3,
+        "target": 4,
+        "relation_key": "reveals",
+        "relation_focus": 0.42,
+        "action_key": "intensifies",
+        "action_focus": 0.52
+      },
+      {
+        "id": 6,
+        "source": 4,
+        "target": 2,
+        "relation_key": "dominates",
+        "relation_focus": 0.39,
+        "action_key": "splits",
+        "action_focus": 0.97
+      },
+      {
+        "id": 7,
+        "source": 3,
+        "target": 1,
+        "relation_key": "contains",
+        "relation_focus": 0.52,
+        "action_key": "intensifies",
+        "action_focus": 0.45
+      },
+      {
+        "id": 8,
+        "source": 3,
+        "target": 2,
+        "relation_key": "infects",
+        "relation_focus": 0.26,
+        "action_key": "merges",
+        "action_focus": 0.73
+      },
+      {
+        "id": 9,
+        "source": 4,
+        "target": 1,
+        "relation_key": "separates",
+        "relation_focus": 0.41,
+        "action_key": "collapses",
+        "action_focus": 0.67
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "action_changed",
+      "link_before": {
+        "id": 8,
+        "source": 3,
+        "target": 2,
+        "relation_key": "infects",
+        "relation_focus": 0.26,
+        "action_key": "merges",
+        "action_focus": 0.73
+      },
+      "link_after": {
+        "id": 8,
+        "source": 3,
+        "target": 2,
+        "relation_key": "infects",
+        "relation_focus": 0.26,
+        "action_key": "becomes_quiet",
+        "action_focus": 0.48
+      }
+    }
+  ],
+  "id": 324
+}

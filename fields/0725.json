@@ -1,0 +1,206 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "void",
+        "focus": 0.94
+      },
+      {
+        "id": 2,
+        "key": "witness",
+        "focus": 0.08
+      },
+      {
+        "id": 3,
+        "key": "stranger",
+        "focus": 0.93
+      },
+      {
+        "id": 4,
+        "key": "secret",
+        "focus": 0.32
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 1,
+        "target": 4,
+        "relation_key": "attracts",
+        "relation_focus": 0.35,
+        "action_key": "destabilizes",
+        "action_focus": 0.46
+      },
+      {
+        "id": 2,
+        "source": 3,
+        "target": 1,
+        "relation_key": "transforms",
+        "relation_focus": 0.0,
+        "action_key": "awakens",
+        "action_focus": 0.89
+      },
+      {
+        "id": 3,
+        "source": 3,
+        "target": 2,
+        "relation_key": "dominates",
+        "relation_focus": 0.83,
+        "action_key": "becomes_hidden",
+        "action_focus": 0.2
+      },
+      {
+        "id": 4,
+        "source": 2,
+        "target": 4,
+        "relation_key": "feeds",
+        "relation_focus": 0.78,
+        "action_key": "dissolves",
+        "action_focus": 0.43
+      },
+      {
+        "id": 5,
+        "source": 2,
+        "target": 1,
+        "relation_key": "submits_to",
+        "relation_focus": 0.16,
+        "action_key": "becomes_hidden",
+        "action_focus": 0.03
+      },
+      {
+        "id": 6,
+        "source": 1,
+        "target": 3,
+        "relation_key": "misnames",
+        "relation_focus": 0.42,
+        "action_key": "stabilizes",
+        "action_focus": 0.8
+      },
+      {
+        "id": 7,
+        "source": 4,
+        "target": 3,
+        "relation_key": "misnames",
+        "relation_focus": 0.74,
+        "action_key": "dissolves",
+        "action_focus": 0.6
+      },
+      {
+        "id": 8,
+        "source": 3,
+        "target": 4,
+        "relation_key": "touches",
+        "relation_focus": 0.81,
+        "action_key": "becomes_visible",
+        "action_focus": 0.85
+      },
+      {
+        "id": 9,
+        "source": 4,
+        "target": 2,
+        "relation_key": "heals",
+        "relation_focus": 0.97,
+        "action_key": "crystallizes",
+        "action_focus": 0.46
+      },
+      {
+        "id": 10,
+        "source": 1,
+        "target": 2,
+        "relation_key": "infects",
+        "relation_focus": 0.19,
+        "action_key": "becomes_quiet",
+        "action_focus": 0.03
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "action_changed",
+      "link_before": {
+        "id": 6,
+        "source": 1,
+        "target": 3,
+        "relation_key": "misnames",
+        "relation_focus": 0.42,
+        "action_key": "stabilizes",
+        "action_focus": 0.8
+      },
+      "link_after": {
+        "id": 6,
+        "source": 1,
+        "target": 3,
+        "relation_key": "misnames",
+        "relation_focus": 0.42,
+        "action_key": "becomes_quiet",
+        "action_focus": 0.73
+      }
+    },
+    {
+      "step": 2,
+      "type": "relation_changed",
+      "link_before": {
+        "id": 4,
+        "source": 2,
+        "target": 4,
+        "relation_key": "feeds",
+        "relation_focus": 0.78,
+        "action_key": "dissolves",
+        "action_focus": 0.43
+      },
+      "link_after": {
+        "id": 4,
+        "source": 2,
+        "target": 4,
+        "relation_key": "separates",
+        "relation_focus": 0.72,
+        "action_key": "dissolves",
+        "action_focus": 0.43
+      }
+    },
+    {
+      "step": 3,
+      "type": "link_removed",
+      "link": {
+        "id": 4,
+        "source": 2,
+        "target": 4,
+        "relation_key": "separates",
+        "relation_focus": 0.72,
+        "action_key": "dissolves",
+        "action_focus": 0.43
+      }
+    },
+    {
+      "step": 4,
+      "type": "link_added",
+      "link": {
+        "id": 11,
+        "source": 2,
+        "target": 3,
+        "relation_key": "generates",
+        "relation_focus": 0.09,
+        "action_key": "becomes_visible",
+        "action_focus": 0.94
+      }
+    },
+    {
+      "step": 5,
+      "type": "link_added",
+      "link": {
+        "id": 12,
+        "source": 4,
+        "target": 1,
+        "relation_key": "generates",
+        "relation_focus": 0.89,
+        "action_key": "merges",
+        "action_focus": 0.79
+      }
+    }
+  ],
+  "id": 725
+}

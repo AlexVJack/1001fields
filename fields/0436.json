@@ -1,0 +1,189 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "child",
+        "focus": 0.52
+      },
+      {
+        "id": 2,
+        "key": "ash",
+        "focus": 0.47
+      },
+      {
+        "id": 3,
+        "key": "voice",
+        "focus": 0.19
+      },
+      {
+        "id": 4,
+        "key": "shelter",
+        "focus": 0.78
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 4,
+        "target": 3,
+        "relation_key": "binds",
+        "relation_focus": 0.95,
+        "action_key": "splits",
+        "action_focus": 0.53
+      },
+      {
+        "id": 2,
+        "source": 4,
+        "target": 1,
+        "relation_key": "touches",
+        "relation_focus": 0.21,
+        "action_key": "exhales",
+        "action_focus": 0.43
+      },
+      {
+        "id": 3,
+        "source": 4,
+        "target": 2,
+        "relation_key": "hides",
+        "relation_focus": 0.07,
+        "action_key": "stabilizes",
+        "action_focus": 0.16
+      },
+      {
+        "id": 4,
+        "source": 3,
+        "target": 2,
+        "relation_key": "dominates",
+        "relation_focus": 0.39,
+        "action_key": "becomes_embodied",
+        "action_focus": 0.11
+      },
+      {
+        "id": 5,
+        "source": 3,
+        "target": 1,
+        "relation_key": "erases",
+        "relation_focus": 0.2,
+        "action_key": "destabilizes",
+        "action_focus": 0.44
+      },
+      {
+        "id": 6,
+        "source": 2,
+        "target": 1,
+        "relation_key": "generates",
+        "relation_focus": 0.75,
+        "action_key": "closes",
+        "action_focus": 0.51
+      },
+      {
+        "id": 7,
+        "source": 1,
+        "target": 3,
+        "relation_key": "blocks",
+        "relation_focus": 0.93,
+        "action_key": "spreads",
+        "action_focus": 0.75
+      },
+      {
+        "id": 8,
+        "source": 1,
+        "target": 4,
+        "relation_key": "echoes",
+        "relation_focus": 0.96,
+        "action_key": "spreads",
+        "action_focus": 0.11
+      },
+      {
+        "id": 9,
+        "source": 1,
+        "target": 2,
+        "relation_key": "dominates",
+        "relation_focus": 0.22,
+        "action_key": "merges",
+        "action_focus": 0.97
+      },
+      {
+        "id": 10,
+        "source": 3,
+        "target": 4,
+        "relation_key": "erases",
+        "relation_focus": 0.88,
+        "action_key": "settles",
+        "action_focus": 0.43
+      },
+      {
+        "id": 11,
+        "source": 2,
+        "target": 3,
+        "relation_key": "endures",
+        "relation_focus": 0.5,
+        "action_key": "creates_a_third_thing",
+        "action_focus": 0.84
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "link_added",
+      "link": {
+        "id": 12,
+        "source": 2,
+        "target": 4,
+        "relation_key": "feeds",
+        "relation_focus": 0.53,
+        "action_key": "spreads",
+        "action_focus": 0.82
+      }
+    },
+    {
+      "step": 2,
+      "type": "relation_changed",
+      "link_before": {
+        "id": 5,
+        "source": 3,
+        "target": 1,
+        "relation_key": "erases",
+        "relation_focus": 0.2,
+        "action_key": "destabilizes",
+        "action_focus": 0.44
+      },
+      "link_after": {
+        "id": 5,
+        "source": 3,
+        "target": 1,
+        "relation_key": "witnesses",
+        "relation_focus": 0.24,
+        "action_key": "destabilizes",
+        "action_focus": 0.44
+      }
+    },
+    {
+      "step": 3,
+      "type": "action_changed",
+      "link_before": {
+        "id": 5,
+        "source": 3,
+        "target": 1,
+        "relation_key": "witnesses",
+        "relation_focus": 0.24,
+        "action_key": "destabilizes",
+        "action_focus": 0.44
+      },
+      "link_after": {
+        "id": 5,
+        "source": 3,
+        "target": 1,
+        "relation_key": "witnesses",
+        "relation_focus": 0.24,
+        "action_key": "opens",
+        "action_focus": 0.67
+      }
+    }
+  ],
+  "id": 436
+}

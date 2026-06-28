@@ -1,0 +1,64 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "storm",
+        "focus": 0.07
+      },
+      {
+        "id": 2,
+        "key": "spark",
+        "focus": 0.83
+      },
+      {
+        "id": 3,
+        "key": "threshold",
+        "focus": 0.63
+      },
+      {
+        "id": 4,
+        "key": "breath",
+        "focus": 0.32
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 1,
+        "target": 3,
+        "relation_key": "listens_to",
+        "relation_focus": 0.12,
+        "action_key": "decays",
+        "action_focus": 0.9
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "link_removed",
+      "link": {
+        "id": 1,
+        "source": 1,
+        "target": 3,
+        "relation_key": "listens_to",
+        "relation_focus": 0.12,
+        "action_key": "decays",
+        "action_focus": 0.9
+      }
+    },
+    {
+      "step": 2,
+      "type": "symbol_changed",
+      "symbol_id": 1,
+      "old_key": "storm",
+      "new_key": "abyss",
+      "old_focus": 0.07,
+      "new_focus": 0.4
+    }
+  ],
+  "id": 735
+}

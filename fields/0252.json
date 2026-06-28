@@ -1,0 +1,106 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "herald",
+        "focus": 0.57
+      },
+      {
+        "id": 2,
+        "key": "spark",
+        "focus": 0.85
+      },
+      {
+        "id": 3,
+        "key": "fear",
+        "focus": 1.0
+      },
+      {
+        "id": 4,
+        "key": "gate",
+        "focus": 0.12
+      }
+    ],
+    "links": []
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "link_added",
+      "link": {
+        "id": 1,
+        "source": 1,
+        "target": 2,
+        "relation_key": "listens_to",
+        "relation_focus": 0.28,
+        "action_key": "collapses",
+        "action_focus": 0.24
+      }
+    },
+    {
+      "step": 2,
+      "type": "link_removed",
+      "link": {
+        "id": 1,
+        "source": 1,
+        "target": 2,
+        "relation_key": "listens_to",
+        "relation_focus": 0.28,
+        "action_key": "collapses",
+        "action_focus": 0.24
+      }
+    },
+    {
+      "step": 3,
+      "type": "link_added",
+      "link": {
+        "id": 2,
+        "source": 4,
+        "target": 2,
+        "relation_key": "generates",
+        "relation_focus": 0.63,
+        "action_key": "collapses",
+        "action_focus": 0.24
+      }
+    },
+    {
+      "step": 4,
+      "type": "link_added",
+      "link": {
+        "id": 3,
+        "source": 2,
+        "target": 4,
+        "relation_key": "submits_to",
+        "relation_focus": 0.29,
+        "action_key": "opens",
+        "action_focus": 0.35
+      }
+    },
+    {
+      "step": 5,
+      "type": "action_changed",
+      "link_before": {
+        "id": 2,
+        "source": 4,
+        "target": 2,
+        "relation_key": "generates",
+        "relation_focus": 0.63,
+        "action_key": "collapses",
+        "action_focus": 0.24
+      },
+      "link_after": {
+        "id": 2,
+        "source": 4,
+        "target": 2,
+        "relation_key": "generates",
+        "relation_focus": 0.63,
+        "action_key": "mutates",
+        "action_focus": 0.13
+      }
+    }
+  ],
+  "id": 252
+}

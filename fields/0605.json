@@ -1,0 +1,126 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "gate",
+        "focus": 0.28
+      },
+      {
+        "id": 2,
+        "key": "network",
+        "focus": 0.8
+      },
+      {
+        "id": 3,
+        "key": "trace",
+        "focus": 0.2
+      },
+      {
+        "id": 4,
+        "key": "stranger",
+        "focus": 0.36
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 3,
+        "target": 4,
+        "relation_key": "dominates",
+        "relation_focus": 0.11,
+        "action_key": "becomes_clear",
+        "action_focus": 0.62
+      },
+      {
+        "id": 2,
+        "source": 3,
+        "target": 2,
+        "relation_key": "witnesses",
+        "relation_focus": 0.44,
+        "action_key": "weakens",
+        "action_focus": 0.65
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "link_added",
+      "link": {
+        "id": 3,
+        "source": 1,
+        "target": 3,
+        "relation_key": "binds",
+        "relation_focus": 0.55,
+        "action_key": "mutates",
+        "action_focus": 0.41
+      }
+    },
+    {
+      "step": 2,
+      "type": "symbol_changed",
+      "symbol_id": 2,
+      "old_key": "network",
+      "new_key": "labyrinth",
+      "old_focus": 0.8,
+      "new_focus": 0.53
+    },
+    {
+      "step": 3,
+      "type": "relation_changed",
+      "link_before": {
+        "id": 3,
+        "source": 1,
+        "target": 3,
+        "relation_key": "binds",
+        "relation_focus": 0.55,
+        "action_key": "mutates",
+        "action_focus": 0.41
+      },
+      "link_after": {
+        "id": 3,
+        "source": 1,
+        "target": 3,
+        "relation_key": "hides",
+        "relation_focus": 1.0,
+        "action_key": "mutates",
+        "action_focus": 0.41
+      }
+    },
+    {
+      "step": 4,
+      "type": "symbol_changed",
+      "symbol_id": 1,
+      "old_key": "gate",
+      "new_key": "secret",
+      "old_focus": 0.28,
+      "new_focus": 0.25
+    },
+    {
+      "step": 5,
+      "type": "link_inverted",
+      "link_before": {
+        "id": 2,
+        "source": 3,
+        "target": 2,
+        "relation_key": "witnesses",
+        "relation_focus": 0.44,
+        "action_key": "weakens",
+        "action_focus": 0.65
+      },
+      "link_after": {
+        "id": 2,
+        "source": 2,
+        "target": 3,
+        "relation_key": "witnesses",
+        "relation_focus": 0.44,
+        "action_key": "weakens",
+        "action_focus": 0.65
+      }
+    }
+  ],
+  "id": 605
+}

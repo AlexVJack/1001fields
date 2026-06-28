@@ -1,0 +1,104 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "shadow",
+        "focus": 0.33
+      },
+      {
+        "id": 2,
+        "key": "desire",
+        "focus": 0.76
+      },
+      {
+        "id": 3,
+        "key": "stone",
+        "focus": 0.02
+      },
+      {
+        "id": 4,
+        "key": "mirror",
+        "focus": 0.09
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 1,
+        "target": 2,
+        "relation_key": "embodies",
+        "relation_focus": 0.77,
+        "action_key": "becomes_quiet",
+        "action_focus": 0.0
+      },
+      {
+        "id": 2,
+        "source": 2,
+        "target": 4,
+        "relation_key": "listens_to",
+        "relation_focus": 0.74,
+        "action_key": "becomes_hidden",
+        "action_focus": 0.42
+      },
+      {
+        "id": 3,
+        "source": 3,
+        "target": 4,
+        "relation_key": "contains",
+        "relation_focus": 0.63,
+        "action_key": "refuses_change",
+        "action_focus": 0.03
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "link_inverted",
+      "link_before": {
+        "id": 2,
+        "source": 2,
+        "target": 4,
+        "relation_key": "listens_to",
+        "relation_focus": 0.74,
+        "action_key": "becomes_hidden",
+        "action_focus": 0.42
+      },
+      "link_after": {
+        "id": 2,
+        "source": 4,
+        "target": 2,
+        "relation_key": "listens_to",
+        "relation_focus": 0.74,
+        "action_key": "becomes_hidden",
+        "action_focus": 0.42
+      }
+    },
+    {
+      "step": 2,
+      "type": "relation_changed",
+      "link_before": {
+        "id": 1,
+        "source": 1,
+        "target": 2,
+        "relation_key": "embodies",
+        "relation_focus": 0.77,
+        "action_key": "becomes_quiet",
+        "action_focus": 0.0
+      },
+      "link_after": {
+        "id": 1,
+        "source": 1,
+        "target": 2,
+        "relation_key": "mirrors",
+        "relation_focus": 0.76,
+        "action_key": "becomes_quiet",
+        "action_focus": 0.0
+      }
+    }
+  ],
+  "id": 84
+}

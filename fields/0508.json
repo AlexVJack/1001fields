@@ -1,0 +1,113 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "machine",
+        "focus": 0.68
+      },
+      {
+        "id": 2,
+        "key": "abyss",
+        "focus": 0.86
+      },
+      {
+        "id": 3,
+        "key": "mirror",
+        "focus": 0.38
+      },
+      {
+        "id": 4,
+        "key": "debt",
+        "focus": 0.54
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 1,
+        "target": 3,
+        "relation_key": "blocks",
+        "relation_focus": 0.83,
+        "action_key": "exhales",
+        "action_focus": 0.69
+      },
+      {
+        "id": 2,
+        "source": 3,
+        "target": 1,
+        "relation_key": "reveals",
+        "relation_focus": 0.73,
+        "action_key": "becomes_visible",
+        "action_focus": 0.46
+      },
+      {
+        "id": 3,
+        "source": 4,
+        "target": 1,
+        "relation_key": "witnesses",
+        "relation_focus": 0.83,
+        "action_key": "settles",
+        "action_focus": 0.36
+      },
+      {
+        "id": 4,
+        "source": 2,
+        "target": 1,
+        "relation_key": "repels",
+        "relation_focus": 0.84,
+        "action_key": "inverts",
+        "action_focus": 0.63
+      },
+      {
+        "id": 5,
+        "source": 3,
+        "target": 4,
+        "relation_key": "remembers",
+        "relation_focus": 0.76,
+        "action_key": "decays",
+        "action_focus": 0.9
+      },
+      {
+        "id": 6,
+        "source": 3,
+        "target": 2,
+        "relation_key": "endures",
+        "relation_focus": 0.59,
+        "action_key": "creates_a_third_thing",
+        "action_focus": 0.4
+      },
+      {
+        "id": 7,
+        "source": 4,
+        "target": 2,
+        "relation_key": "blocks",
+        "relation_focus": 0.17,
+        "action_key": "merges",
+        "action_focus": 0.44
+      },
+      {
+        "id": 8,
+        "source": 2,
+        "target": 3,
+        "relation_key": "witnesses",
+        "relation_focus": 1.0,
+        "action_key": "approaches",
+        "action_focus": 0.61
+      },
+      {
+        "id": 9,
+        "source": 1,
+        "target": 4,
+        "relation_key": "heals",
+        "relation_focus": 0.8,
+        "action_key": "intensifies",
+        "action_focus": 0.77
+      }
+    ]
+  },
+  "mutations": [],
+  "id": 508
+}

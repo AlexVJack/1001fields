@@ -1,0 +1,131 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "stone",
+        "focus": 0.17
+      },
+      {
+        "id": 2,
+        "key": "burden",
+        "focus": 0.44
+      },
+      {
+        "id": 3,
+        "key": "attention",
+        "focus": 0.69
+      },
+      {
+        "id": 4,
+        "key": "water",
+        "focus": 0.5
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 4,
+        "target": 2,
+        "relation_key": "touches",
+        "relation_focus": 0.7,
+        "action_key": "becomes_embodied",
+        "action_focus": 0.74
+      },
+      {
+        "id": 2,
+        "source": 2,
+        "target": 3,
+        "relation_key": "feeds",
+        "relation_focus": 0.69,
+        "action_key": "refuses_change",
+        "action_focus": 0.14
+      },
+      {
+        "id": 3,
+        "source": 1,
+        "target": 2,
+        "relation_key": "repels",
+        "relation_focus": 0.78,
+        "action_key": "splits",
+        "action_focus": 0.66
+      },
+      {
+        "id": 4,
+        "source": 3,
+        "target": 4,
+        "relation_key": "protects",
+        "relation_focus": 0.96,
+        "action_key": "lets_go",
+        "action_focus": 0.52
+      },
+      {
+        "id": 5,
+        "source": 1,
+        "target": 3,
+        "relation_key": "witnesses",
+        "relation_focus": 0.55,
+        "action_key": "destabilizes",
+        "action_focus": 0.12
+      },
+      {
+        "id": 6,
+        "source": 1,
+        "target": 4,
+        "relation_key": "reveals",
+        "relation_focus": 0.56,
+        "action_key": "repeats",
+        "action_focus": 0.22
+      },
+      {
+        "id": 7,
+        "source": 4,
+        "target": 1,
+        "relation_key": "names",
+        "relation_focus": 0.78,
+        "action_key": "inverts",
+        "action_focus": 0.97
+      },
+      {
+        "id": 8,
+        "source": 2,
+        "target": 4,
+        "relation_key": "submits_to",
+        "relation_focus": 0.93,
+        "action_key": "weakens",
+        "action_focus": 0.94
+      },
+      {
+        "id": 9,
+        "source": 3,
+        "target": 2,
+        "relation_key": "generates",
+        "relation_focus": 0.61,
+        "action_key": "collapses",
+        "action_focus": 0.6
+      },
+      {
+        "id": 10,
+        "source": 3,
+        "target": 1,
+        "relation_key": "listens_to",
+        "relation_focus": 0.11,
+        "action_key": "intensifies",
+        "action_focus": 0.88
+      },
+      {
+        "id": 11,
+        "source": 2,
+        "target": 1,
+        "relation_key": "heals",
+        "relation_focus": 0.24,
+        "action_key": "settles",
+        "action_focus": 0.16
+      }
+    ]
+  },
+  "mutations": [],
+  "id": 82
+}

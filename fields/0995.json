@@ -1,0 +1,153 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "child",
+        "focus": 0.92
+      },
+      {
+        "id": 2,
+        "key": "shelter",
+        "focus": 0.11
+      },
+      {
+        "id": 3,
+        "key": "signal",
+        "focus": 0.11
+      },
+      {
+        "id": 4,
+        "key": "abyss",
+        "focus": 0.37
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 3,
+        "target": 2,
+        "relation_key": "echoes",
+        "relation_focus": 0.38,
+        "action_key": "becomes_hidden",
+        "action_focus": 0.08
+      },
+      {
+        "id": 2,
+        "source": 4,
+        "target": 3,
+        "relation_key": "consumes",
+        "relation_focus": 0.73,
+        "action_key": "becomes_embodied",
+        "action_focus": 0.04
+      },
+      {
+        "id": 3,
+        "source": 1,
+        "target": 4,
+        "relation_key": "witnesses",
+        "relation_focus": 0.83,
+        "action_key": "repeats",
+        "action_focus": 0.24
+      },
+      {
+        "id": 4,
+        "source": 4,
+        "target": 1,
+        "relation_key": "heals",
+        "relation_focus": 0.16,
+        "action_key": "mutates",
+        "action_focus": 0.05
+      },
+      {
+        "id": 5,
+        "source": 4,
+        "target": 2,
+        "relation_key": "dominates",
+        "relation_focus": 0.71,
+        "action_key": "splits",
+        "action_focus": 0.27
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "relation_changed",
+      "link_before": {
+        "id": 1,
+        "source": 3,
+        "target": 2,
+        "relation_key": "echoes",
+        "relation_focus": 0.38,
+        "action_key": "becomes_hidden",
+        "action_focus": 0.08
+      },
+      "link_after": {
+        "id": 1,
+        "source": 3,
+        "target": 2,
+        "relation_key": "embodies",
+        "relation_focus": 0.94,
+        "action_key": "becomes_hidden",
+        "action_focus": 0.08
+      }
+    },
+    {
+      "step": 2,
+      "type": "symbol_changed",
+      "symbol_id": 1,
+      "old_key": "child",
+      "new_key": "name",
+      "old_focus": 0.92,
+      "new_focus": 0.92
+    },
+    {
+      "step": 3,
+      "type": "relation_changed",
+      "link_before": {
+        "id": 3,
+        "source": 1,
+        "target": 4,
+        "relation_key": "witnesses",
+        "relation_focus": 0.83,
+        "action_key": "repeats",
+        "action_focus": 0.24
+      },
+      "link_after": {
+        "id": 3,
+        "source": 1,
+        "target": 4,
+        "relation_key": "repels",
+        "relation_focus": 0.12,
+        "action_key": "repeats",
+        "action_focus": 0.24
+      }
+    },
+    {
+      "step": 4,
+      "type": "relation_changed",
+      "link_before": {
+        "id": 5,
+        "source": 4,
+        "target": 2,
+        "relation_key": "dominates",
+        "relation_focus": 0.71,
+        "action_key": "splits",
+        "action_focus": 0.27
+      },
+      "link_after": {
+        "id": 5,
+        "source": 4,
+        "target": 2,
+        "relation_key": "binds",
+        "relation_focus": 0.05,
+        "action_key": "splits",
+        "action_focus": 0.27
+      }
+    }
+  ],
+  "id": 995
+}

@@ -1,0 +1,113 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "key",
+        "focus": 0.6
+      },
+      {
+        "id": 2,
+        "key": "bridge",
+        "focus": 0.27
+      },
+      {
+        "id": 3,
+        "key": "fire",
+        "focus": 0.55
+      },
+      {
+        "id": 4,
+        "key": "window",
+        "focus": 0.62
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 2,
+        "target": 4,
+        "relation_key": "echoes",
+        "relation_focus": 0.29,
+        "action_key": "awakens",
+        "action_focus": 0.79
+      },
+      {
+        "id": 2,
+        "source": 1,
+        "target": 3,
+        "relation_key": "misnames",
+        "relation_focus": 0.17,
+        "action_key": "exhales",
+        "action_focus": 0.31
+      },
+      {
+        "id": 3,
+        "source": 1,
+        "target": 2,
+        "relation_key": "feeds",
+        "relation_focus": 0.74,
+        "action_key": "collapses",
+        "action_focus": 0.4
+      },
+      {
+        "id": 4,
+        "source": 3,
+        "target": 2,
+        "relation_key": "depends_on",
+        "relation_focus": 0.48,
+        "action_key": "accelerates",
+        "action_focus": 0.21
+      },
+      {
+        "id": 5,
+        "source": 3,
+        "target": 1,
+        "relation_key": "clarifies",
+        "relation_focus": 0.47,
+        "action_key": "decays",
+        "action_focus": 0.16
+      },
+      {
+        "id": 6,
+        "source": 3,
+        "target": 4,
+        "relation_key": "listens_to",
+        "relation_focus": 0.9,
+        "action_key": "opens",
+        "action_focus": 0.19
+      },
+      {
+        "id": 7,
+        "source": 2,
+        "target": 1,
+        "relation_key": "witnesses",
+        "relation_focus": 0.32,
+        "action_key": "repeats",
+        "action_focus": 0.3
+      },
+      {
+        "id": 8,
+        "source": 4,
+        "target": 2,
+        "relation_key": "protects",
+        "relation_focus": 0.02,
+        "action_key": "approaches",
+        "action_focus": 0.71
+      },
+      {
+        "id": 9,
+        "source": 2,
+        "target": 3,
+        "relation_key": "submits_to",
+        "relation_focus": 0.29,
+        "action_key": "repeats",
+        "action_focus": 0.22
+      }
+    ]
+  },
+  "mutations": [],
+  "id": 190
+}

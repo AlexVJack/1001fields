@@ -1,0 +1,127 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "gate",
+        "focus": 0.02
+      },
+      {
+        "id": 2,
+        "key": "voice",
+        "focus": 0.82
+      },
+      {
+        "id": 3,
+        "key": "harbor",
+        "focus": 0.69
+      },
+      {
+        "id": 4,
+        "key": "fire",
+        "focus": 0.75
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 3,
+        "target": 4,
+        "relation_key": "mirrors",
+        "relation_focus": 0.25,
+        "action_key": "creates_a_third_thing",
+        "action_focus": 0.87
+      },
+      {
+        "id": 2,
+        "source": 3,
+        "target": 2,
+        "relation_key": "listens_to",
+        "relation_focus": 0.97,
+        "action_key": "opens",
+        "action_focus": 0.46
+      },
+      {
+        "id": 3,
+        "source": 2,
+        "target": 4,
+        "relation_key": "remembers",
+        "relation_focus": 0.09,
+        "action_key": "intensifies",
+        "action_focus": 0.63
+      },
+      {
+        "id": 4,
+        "source": 4,
+        "target": 2,
+        "relation_key": "blocks",
+        "relation_focus": 0.33,
+        "action_key": "closes",
+        "action_focus": 0.3
+      },
+      {
+        "id": 5,
+        "source": 2,
+        "target": 1,
+        "relation_key": "generates",
+        "relation_focus": 0.05,
+        "action_key": "becomes_hidden",
+        "action_focus": 0.39
+      },
+      {
+        "id": 6,
+        "source": 4,
+        "target": 1,
+        "relation_key": "blocks",
+        "relation_focus": 0.67,
+        "action_key": "awakens",
+        "action_focus": 0.07
+      },
+      {
+        "id": 7,
+        "source": 4,
+        "target": 3,
+        "relation_key": "contains",
+        "relation_focus": 0.0,
+        "action_key": "accelerates",
+        "action_focus": 0.77
+      },
+      {
+        "id": 8,
+        "source": 3,
+        "target": 1,
+        "relation_key": "depends_on",
+        "relation_focus": 0.1,
+        "action_key": "collapses",
+        "action_focus": 0.79
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "link_inverted",
+      "link_before": {
+        "id": 6,
+        "source": 4,
+        "target": 1,
+        "relation_key": "blocks",
+        "relation_focus": 0.67,
+        "action_key": "awakens",
+        "action_focus": 0.07
+      },
+      "link_after": {
+        "id": 6,
+        "source": 1,
+        "target": 4,
+        "relation_key": "blocks",
+        "relation_focus": 0.67,
+        "action_key": "awakens",
+        "action_focus": 0.07
+      }
+    }
+  ],
+  "id": 875
+}

@@ -1,0 +1,45 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "oracle",
+        "focus": 0.42
+      },
+      {
+        "id": 2,
+        "key": "breath",
+        "focus": 0.56
+      },
+      {
+        "id": 3,
+        "key": "map",
+        "focus": 0.77
+      },
+      {
+        "id": 4,
+        "key": "memory",
+        "focus": 0.83
+      }
+    ],
+    "links": []
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "link_added",
+      "link": {
+        "id": 1,
+        "source": 1,
+        "target": 3,
+        "relation_key": "protects",
+        "relation_focus": 0.25,
+        "action_key": "closes",
+        "action_focus": 0.36
+      }
+    }
+  ],
+  "id": 999
+}

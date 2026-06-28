@@ -1,0 +1,95 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "archive",
+        "focus": 0.99
+      },
+      {
+        "id": 2,
+        "key": "signal",
+        "focus": 0.39
+      },
+      {
+        "id": 3,
+        "key": "burden",
+        "focus": 0.29
+      },
+      {
+        "id": 4,
+        "key": "witness",
+        "focus": 0.4
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 1,
+        "target": 2,
+        "relation_key": "protects",
+        "relation_focus": 0.71,
+        "action_key": "merges",
+        "action_focus": 0.32
+      },
+      {
+        "id": 2,
+        "source": 3,
+        "target": 2,
+        "relation_key": "binds",
+        "relation_focus": 0.91,
+        "action_key": "becomes_embodied",
+        "action_focus": 0.58
+      },
+      {
+        "id": 3,
+        "source": 3,
+        "target": 1,
+        "relation_key": "embodies",
+        "relation_focus": 0.33,
+        "action_key": "repeats",
+        "action_focus": 0.92
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "link_inverted",
+      "link_before": {
+        "id": 1,
+        "source": 1,
+        "target": 2,
+        "relation_key": "protects",
+        "relation_focus": 0.71,
+        "action_key": "merges",
+        "action_focus": 0.32
+      },
+      "link_after": {
+        "id": 1,
+        "source": 2,
+        "target": 1,
+        "relation_key": "protects",
+        "relation_focus": 0.71,
+        "action_key": "merges",
+        "action_focus": 0.32
+      }
+    },
+    {
+      "step": 2,
+      "type": "link_added",
+      "link": {
+        "id": 4,
+        "source": 4,
+        "target": 1,
+        "relation_key": "consumes",
+        "relation_focus": 0.15,
+        "action_key": "returns",
+        "action_focus": 0.75
+      }
+    }
+  ],
+  "id": 861
+}

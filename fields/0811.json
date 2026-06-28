@@ -1,0 +1,86 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "signal",
+        "focus": 0.77
+      },
+      {
+        "id": 2,
+        "key": "fire",
+        "focus": 0.74
+      },
+      {
+        "id": 3,
+        "key": "machine",
+        "focus": 0.28
+      },
+      {
+        "id": 4,
+        "key": "attention",
+        "focus": 0.51
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 2,
+        "target": 4,
+        "relation_key": "embodies",
+        "relation_focus": 0.18,
+        "action_key": "destabilizes",
+        "action_focus": 0.9
+      },
+      {
+        "id": 2,
+        "source": 3,
+        "target": 2,
+        "relation_key": "generates",
+        "relation_focus": 0.1,
+        "action_key": "crosses_a_threshold",
+        "action_focus": 0.03
+      },
+      {
+        "id": 3,
+        "source": 4,
+        "target": 1,
+        "relation_key": "echoes",
+        "relation_focus": 0.1,
+        "action_key": "stabilizes",
+        "action_focus": 0.65
+      },
+      {
+        "id": 4,
+        "source": 4,
+        "target": 3,
+        "relation_key": "separates",
+        "relation_focus": 0.55,
+        "action_key": "becomes_hidden",
+        "action_focus": 1.0
+      },
+      {
+        "id": 5,
+        "source": 2,
+        "target": 1,
+        "relation_key": "attracts",
+        "relation_focus": 0.25,
+        "action_key": "mutates",
+        "action_focus": 0.98
+      },
+      {
+        "id": 6,
+        "source": 3,
+        "target": 4,
+        "relation_key": "infects",
+        "relation_focus": 0.52,
+        "action_key": "spreads",
+        "action_focus": 0.53
+      }
+    ]
+  },
+  "mutations": [],
+  "id": 811
+}

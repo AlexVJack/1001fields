@@ -1,0 +1,68 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "exile",
+        "focus": 0.51
+      },
+      {
+        "id": 2,
+        "key": "network",
+        "focus": 0.11
+      },
+      {
+        "id": 3,
+        "key": "ruin",
+        "focus": 0.76
+      },
+      {
+        "id": 4,
+        "key": "attention",
+        "focus": 0.37
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 2,
+        "target": 1,
+        "relation_key": "names",
+        "relation_focus": 0.82,
+        "action_key": "becomes_clear",
+        "action_focus": 0.62
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "link_added",
+      "link": {
+        "id": 2,
+        "source": 4,
+        "target": 1,
+        "relation_key": "binds",
+        "relation_focus": 0.35,
+        "action_key": "intensifies",
+        "action_focus": 0.16
+      }
+    },
+    {
+      "step": 2,
+      "type": "link_added",
+      "link": {
+        "id": 3,
+        "source": 2,
+        "target": 4,
+        "relation_key": "erases",
+        "relation_focus": 0.41,
+        "action_key": "awakens",
+        "action_focus": 0.19
+      }
+    }
+  ],
+  "id": 178
+}

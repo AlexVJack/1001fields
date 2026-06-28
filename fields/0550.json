@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "map",
+        "focus": 0.2
+      },
+      {
+        "id": 2,
+        "key": "sage",
+        "focus": 0.05
+      },
+      {
+        "id": 3,
+        "key": "shelter",
+        "focus": 0.14
+      },
+      {
+        "id": 4,
+        "key": "voice",
+        "focus": 0.15
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 1,
+        "target": 3,
+        "relation_key": "protects",
+        "relation_focus": 0.63,
+        "action_key": "destabilizes",
+        "action_focus": 0.22
+      },
+      {
+        "id": 2,
+        "source": 2,
+        "target": 3,
+        "relation_key": "hides",
+        "relation_focus": 0.8,
+        "action_key": "closes",
+        "action_focus": 0.4
+      }
+    ]
+  },
+  "mutations": [],
+  "id": 550
+}

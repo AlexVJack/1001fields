@@ -1,0 +1,41 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "machine",
+        "focus": 0.59
+      },
+      {
+        "id": 2,
+        "key": "light",
+        "focus": 0.99
+      },
+      {
+        "id": 3,
+        "key": "sage",
+        "focus": 0.24
+      },
+      {
+        "id": 4,
+        "key": "desire",
+        "focus": 0.04
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 3,
+        "target": 1,
+        "relation_key": "misnames",
+        "relation_focus": 0.46,
+        "action_key": "becomes_visible",
+        "action_focus": 0.4
+      }
+    ]
+  },
+  "mutations": [],
+  "id": 231
+}

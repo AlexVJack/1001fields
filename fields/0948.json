@@ -1,0 +1,86 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "threshold",
+        "focus": 0.4
+      },
+      {
+        "id": 2,
+        "key": "void",
+        "focus": 0.58
+      },
+      {
+        "id": 3,
+        "key": "sage",
+        "focus": 0.27
+      },
+      {
+        "id": 4,
+        "key": "signal",
+        "focus": 0.87
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 3,
+        "target": 2,
+        "relation_key": "repels",
+        "relation_focus": 0.96,
+        "action_key": "inverts",
+        "action_focus": 0.38
+      },
+      {
+        "id": 2,
+        "source": 2,
+        "target": 4,
+        "relation_key": "depends_on",
+        "relation_focus": 0.37,
+        "action_key": "crosses_a_threshold",
+        "action_focus": 0.71
+      },
+      {
+        "id": 3,
+        "source": 4,
+        "target": 1,
+        "relation_key": "witnesses",
+        "relation_focus": 0.77,
+        "action_key": "lets_go",
+        "action_focus": 0.91
+      },
+      {
+        "id": 4,
+        "source": 3,
+        "target": 4,
+        "relation_key": "remembers",
+        "relation_focus": 0.26,
+        "action_key": "destabilizes",
+        "action_focus": 0.63
+      },
+      {
+        "id": 5,
+        "source": 2,
+        "target": 1,
+        "relation_key": "listens_to",
+        "relation_focus": 0.23,
+        "action_key": "weakens",
+        "action_focus": 0.4
+      },
+      {
+        "id": 6,
+        "source": 4,
+        "target": 2,
+        "relation_key": "embodies",
+        "relation_focus": 0.13,
+        "action_key": "exhales",
+        "action_focus": 0.98
+      }
+    ]
+  },
+  "mutations": [],
+  "id": 948
+}

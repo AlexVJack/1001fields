@@ -1,0 +1,144 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "body",
+        "focus": 0.87
+      },
+      {
+        "id": 2,
+        "key": "machine",
+        "focus": 0.42
+      },
+      {
+        "id": 3,
+        "key": "map",
+        "focus": 0.11
+      },
+      {
+        "id": 4,
+        "key": "key",
+        "focus": 0.43
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 2,
+        "target": 3,
+        "relation_key": "names",
+        "relation_focus": 0.07,
+        "action_key": "exhales",
+        "action_focus": 0.75
+      },
+      {
+        "id": 2,
+        "source": 3,
+        "target": 2,
+        "relation_key": "clarifies",
+        "relation_focus": 0.9,
+        "action_key": "decays",
+        "action_focus": 0.26
+      },
+      {
+        "id": 3,
+        "source": 4,
+        "target": 3,
+        "relation_key": "misnames",
+        "relation_focus": 0.83,
+        "action_key": "creates_a_third_thing",
+        "action_focus": 0.58
+      },
+      {
+        "id": 4,
+        "source": 1,
+        "target": 4,
+        "relation_key": "mirrors",
+        "relation_focus": 0.93,
+        "action_key": "stabilizes",
+        "action_focus": 0.8
+      },
+      {
+        "id": 5,
+        "source": 3,
+        "target": 4,
+        "relation_key": "remembers",
+        "relation_focus": 0.52,
+        "action_key": "mutates",
+        "action_focus": 0.72
+      },
+      {
+        "id": 6,
+        "source": 3,
+        "target": 1,
+        "relation_key": "binds",
+        "relation_focus": 0.56,
+        "action_key": "creates_a_third_thing",
+        "action_focus": 0.71
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "relation_changed",
+      "link_before": {
+        "id": 6,
+        "source": 3,
+        "target": 1,
+        "relation_key": "binds",
+        "relation_focus": 0.56,
+        "action_key": "creates_a_third_thing",
+        "action_focus": 0.71
+      },
+      "link_after": {
+        "id": 6,
+        "source": 3,
+        "target": 1,
+        "relation_key": "misnames",
+        "relation_focus": 0.26,
+        "action_key": "creates_a_third_thing",
+        "action_focus": 0.71
+      }
+    },
+    {
+      "step": 2,
+      "type": "action_changed",
+      "link_before": {
+        "id": 6,
+        "source": 3,
+        "target": 1,
+        "relation_key": "misnames",
+        "relation_focus": 0.26,
+        "action_key": "creates_a_third_thing",
+        "action_focus": 0.71
+      },
+      "link_after": {
+        "id": 6,
+        "source": 3,
+        "target": 1,
+        "relation_key": "misnames",
+        "relation_focus": 0.26,
+        "action_key": "destabilizes",
+        "action_focus": 0.71
+      }
+    },
+    {
+      "step": 3,
+      "type": "link_removed",
+      "link": {
+        "id": 6,
+        "source": 3,
+        "target": 1,
+        "relation_key": "misnames",
+        "relation_focus": 0.26,
+        "action_key": "destabilizes",
+        "action_focus": 0.71
+      }
+    }
+  ],
+  "id": 146
+}

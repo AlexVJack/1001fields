@@ -1,0 +1,104 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "burden",
+        "focus": 0.73
+      },
+      {
+        "id": 2,
+        "key": "tower",
+        "focus": 0.38
+      },
+      {
+        "id": 3,
+        "key": "mirror",
+        "focus": 0.77
+      },
+      {
+        "id": 4,
+        "key": "silence",
+        "focus": 0.89
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 3,
+        "target": 2,
+        "relation_key": "reveals",
+        "relation_focus": 0.77,
+        "action_key": "approaches",
+        "action_focus": 0.98
+      },
+      {
+        "id": 2,
+        "source": 3,
+        "target": 1,
+        "relation_key": "heals",
+        "relation_focus": 0.25,
+        "action_key": "becomes_visible",
+        "action_focus": 0.46
+      },
+      {
+        "id": 3,
+        "source": 2,
+        "target": 1,
+        "relation_key": "distorts",
+        "relation_focus": 0.22,
+        "action_key": "closes",
+        "action_focus": 0.32
+      },
+      {
+        "id": 4,
+        "source": 4,
+        "target": 1,
+        "relation_key": "echoes",
+        "relation_focus": 0.34,
+        "action_key": "becomes_visible",
+        "action_focus": 0.37
+      },
+      {
+        "id": 5,
+        "source": 1,
+        "target": 4,
+        "relation_key": "clarifies",
+        "relation_focus": 0.19,
+        "action_key": "exhales",
+        "action_focus": 0.72
+      },
+      {
+        "id": 6,
+        "source": 4,
+        "target": 3,
+        "relation_key": "transforms",
+        "relation_focus": 0.14,
+        "action_key": "spreads",
+        "action_focus": 0.19
+      },
+      {
+        "id": 7,
+        "source": 1,
+        "target": 2,
+        "relation_key": "dominates",
+        "relation_focus": 0.45,
+        "action_key": "becomes_quiet",
+        "action_focus": 0.94
+      },
+      {
+        "id": 8,
+        "source": 2,
+        "target": 3,
+        "relation_key": "feeds",
+        "relation_focus": 0.38,
+        "action_key": "splits",
+        "action_focus": 0.67
+      }
+    ]
+  },
+  "mutations": [],
+  "id": 562
+}

@@ -1,0 +1,91 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "burden",
+        "focus": 0.64
+      },
+      {
+        "id": 2,
+        "key": "thread",
+        "focus": 0.29
+      },
+      {
+        "id": 3,
+        "key": "air",
+        "focus": 0.32
+      },
+      {
+        "id": 4,
+        "key": "shadow",
+        "focus": 0.09
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 2,
+        "target": 4,
+        "relation_key": "embodies",
+        "relation_focus": 0.15,
+        "action_key": "weakens",
+        "action_focus": 0.72
+      },
+      {
+        "id": 2,
+        "source": 1,
+        "target": 3,
+        "relation_key": "misnames",
+        "relation_focus": 0.58,
+        "action_key": "lets_go",
+        "action_focus": 0.74
+      },
+      {
+        "id": 3,
+        "source": 3,
+        "target": 2,
+        "relation_key": "erases",
+        "relation_focus": 0.59,
+        "action_key": "returns",
+        "action_focus": 0.14
+      },
+      {
+        "id": 4,
+        "source": 4,
+        "target": 3,
+        "relation_key": "consumes",
+        "relation_focus": 0.59,
+        "action_key": "settles",
+        "action_focus": 0.43
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "action_changed",
+      "link_before": {
+        "id": 2,
+        "source": 1,
+        "target": 3,
+        "relation_key": "misnames",
+        "relation_focus": 0.58,
+        "action_key": "lets_go",
+        "action_focus": 0.74
+      },
+      "link_after": {
+        "id": 2,
+        "source": 1,
+        "target": 3,
+        "relation_key": "misnames",
+        "relation_focus": 0.58,
+        "action_key": "becomes_visible",
+        "action_focus": 0.02
+      }
+    }
+  ],
+  "id": 589
+}

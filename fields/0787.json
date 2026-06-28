@@ -1,0 +1,95 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "bridge",
+        "focus": 0.57
+      },
+      {
+        "id": 2,
+        "key": "ruin",
+        "focus": 0.84
+      },
+      {
+        "id": 3,
+        "key": "sage",
+        "focus": 0.13
+      },
+      {
+        "id": 4,
+        "key": "storm",
+        "focus": 0.68
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 4,
+        "target": 2,
+        "relation_key": "reveals",
+        "relation_focus": 0.65,
+        "action_key": "creates_a_third_thing",
+        "action_focus": 0.83
+      },
+      {
+        "id": 2,
+        "source": 2,
+        "target": 1,
+        "relation_key": "depends_on",
+        "relation_focus": 0.45,
+        "action_key": "becomes_embodied",
+        "action_focus": 0.67
+      },
+      {
+        "id": 3,
+        "source": 3,
+        "target": 1,
+        "relation_key": "depends_on",
+        "relation_focus": 0.07,
+        "action_key": "stabilizes",
+        "action_focus": 0.03
+      },
+      {
+        "id": 4,
+        "source": 2,
+        "target": 3,
+        "relation_key": "remembers",
+        "relation_focus": 0.71,
+        "action_key": "intensifies",
+        "action_focus": 0.71
+      },
+      {
+        "id": 5,
+        "source": 4,
+        "target": 3,
+        "relation_key": "hides",
+        "relation_focus": 0.45,
+        "action_key": "destabilizes",
+        "action_focus": 0.63
+      },
+      {
+        "id": 6,
+        "source": 2,
+        "target": 4,
+        "relation_key": "witnesses",
+        "relation_focus": 0.96,
+        "action_key": "repeats",
+        "action_focus": 0.98
+      },
+      {
+        "id": 7,
+        "source": 3,
+        "target": 4,
+        "relation_key": "protects",
+        "relation_focus": 0.89,
+        "action_key": "awakens",
+        "action_focus": 0.21
+      }
+    ]
+  },
+  "mutations": [],
+  "id": 787
+}

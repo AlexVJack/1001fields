@@ -1,0 +1,104 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "fear",
+        "focus": 0.46
+      },
+      {
+        "id": 2,
+        "key": "name",
+        "focus": 0.01
+      },
+      {
+        "id": 3,
+        "key": "light",
+        "focus": 0.95
+      },
+      {
+        "id": 4,
+        "key": "voice",
+        "focus": 0.74
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 4,
+        "target": 2,
+        "relation_key": "remembers",
+        "relation_focus": 0.31,
+        "action_key": "crosses_a_threshold",
+        "action_focus": 0.85
+      },
+      {
+        "id": 2,
+        "source": 3,
+        "target": 1,
+        "relation_key": "misnames",
+        "relation_focus": 0.81,
+        "action_key": "stabilizes",
+        "action_focus": 0.52
+      },
+      {
+        "id": 3,
+        "source": 2,
+        "target": 1,
+        "relation_key": "binds",
+        "relation_focus": 0.95,
+        "action_key": "decays",
+        "action_focus": 0.56
+      },
+      {
+        "id": 4,
+        "source": 4,
+        "target": 1,
+        "relation_key": "mirrors",
+        "relation_focus": 0.74,
+        "action_key": "becomes_clear",
+        "action_focus": 0.8
+      },
+      {
+        "id": 5,
+        "source": 3,
+        "target": 4,
+        "relation_key": "generates",
+        "relation_focus": 0.66,
+        "action_key": "closes",
+        "action_focus": 0.5
+      },
+      {
+        "id": 6,
+        "source": 2,
+        "target": 3,
+        "relation_key": "names",
+        "relation_focus": 0.39,
+        "action_key": "splits",
+        "action_focus": 0.93
+      },
+      {
+        "id": 7,
+        "source": 4,
+        "target": 3,
+        "relation_key": "erases",
+        "relation_focus": 0.15,
+        "action_key": "awakens",
+        "action_focus": 0.08
+      },
+      {
+        "id": 8,
+        "source": 2,
+        "target": 4,
+        "relation_key": "erases",
+        "relation_focus": 0.55,
+        "action_key": "becomes_hidden",
+        "action_focus": 0.85
+      }
+    ]
+  },
+  "mutations": [],
+  "id": 445
+}

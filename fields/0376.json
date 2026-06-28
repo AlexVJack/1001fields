@@ -1,0 +1,77 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "shadow",
+        "focus": 0.85
+      },
+      {
+        "id": 2,
+        "key": "secret",
+        "focus": 0.38
+      },
+      {
+        "id": 3,
+        "key": "fear",
+        "focus": 0.58
+      },
+      {
+        "id": 4,
+        "key": "labyrinth",
+        "focus": 0.42
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 2,
+        "target": 4,
+        "relation_key": "hides",
+        "relation_focus": 0.8,
+        "action_key": "opens",
+        "action_focus": 0.09
+      },
+      {
+        "id": 2,
+        "source": 2,
+        "target": 1,
+        "relation_key": "blocks",
+        "relation_focus": 0.35,
+        "action_key": "crystallizes",
+        "action_focus": 0.9
+      },
+      {
+        "id": 3,
+        "source": 4,
+        "target": 2,
+        "relation_key": "distorts",
+        "relation_focus": 0.43,
+        "action_key": "becomes_hidden",
+        "action_focus": 0.69
+      },
+      {
+        "id": 4,
+        "source": 1,
+        "target": 2,
+        "relation_key": "remembers",
+        "relation_focus": 0.16,
+        "action_key": "becomes_quiet",
+        "action_focus": 0.77
+      },
+      {
+        "id": 5,
+        "source": 4,
+        "target": 3,
+        "relation_key": "distorts",
+        "relation_focus": 1.0,
+        "action_key": "collapses",
+        "action_focus": 0.16
+      }
+    ]
+  },
+  "mutations": [],
+  "id": 376
+}

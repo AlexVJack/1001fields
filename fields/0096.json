@@ -1,0 +1,64 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "pause",
+        "focus": 0.89
+      },
+      {
+        "id": 2,
+        "key": "fear",
+        "focus": 0.08
+      },
+      {
+        "id": 3,
+        "key": "map",
+        "focus": 0.58
+      },
+      {
+        "id": 4,
+        "key": "shadow",
+        "focus": 0.03
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 4,
+        "target": 1,
+        "relation_key": "binds",
+        "relation_focus": 0.9,
+        "action_key": "opens",
+        "action_focus": 0.48
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "link_removed",
+      "link": {
+        "id": 1,
+        "source": 4,
+        "target": 1,
+        "relation_key": "binds",
+        "relation_focus": 0.9,
+        "action_key": "opens",
+        "action_focus": 0.48
+      }
+    },
+    {
+      "step": 2,
+      "type": "symbol_changed",
+      "symbol_id": 2,
+      "old_key": "fear",
+      "new_key": "herald",
+      "old_focus": 0.08,
+      "new_focus": 0.13
+    }
+  ],
+  "id": 96
+}

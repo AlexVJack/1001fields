@@ -1,0 +1,197 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "spark",
+        "focus": 0.45
+      },
+      {
+        "id": 2,
+        "key": "signal",
+        "focus": 0.51
+      },
+      {
+        "id": 3,
+        "key": "fear",
+        "focus": 0.61
+      },
+      {
+        "id": 4,
+        "key": "law",
+        "focus": 0.24
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 3,
+        "target": 4,
+        "relation_key": "heals",
+        "relation_focus": 0.84,
+        "action_key": "becomes_clear",
+        "action_focus": 0.76
+      },
+      {
+        "id": 2,
+        "source": 1,
+        "target": 4,
+        "relation_key": "erases",
+        "relation_focus": 0.71,
+        "action_key": "collapses",
+        "action_focus": 0.12
+      },
+      {
+        "id": 3,
+        "source": 2,
+        "target": 4,
+        "relation_key": "consumes",
+        "relation_focus": 0.98,
+        "action_key": "merges",
+        "action_focus": 0.47
+      },
+      {
+        "id": 4,
+        "source": 1,
+        "target": 3,
+        "relation_key": "remembers",
+        "relation_focus": 0.79,
+        "action_key": "opens",
+        "action_focus": 0.81
+      },
+      {
+        "id": 5,
+        "source": 4,
+        "target": 3,
+        "relation_key": "embodies",
+        "relation_focus": 0.61,
+        "action_key": "spreads",
+        "action_focus": 0.45
+      },
+      {
+        "id": 6,
+        "source": 2,
+        "target": 3,
+        "relation_key": "contains",
+        "relation_focus": 0.56,
+        "action_key": "inverts",
+        "action_focus": 0.47
+      },
+      {
+        "id": 7,
+        "source": 3,
+        "target": 2,
+        "relation_key": "consumes",
+        "relation_focus": 0.13,
+        "action_key": "splits",
+        "action_focus": 0.72
+      },
+      {
+        "id": 8,
+        "source": 1,
+        "target": 2,
+        "relation_key": "touches",
+        "relation_focus": 0.43,
+        "action_key": "exhales",
+        "action_focus": 0.77
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "link_added",
+      "link": {
+        "id": 9,
+        "source": 4,
+        "target": 2,
+        "relation_key": "repels",
+        "relation_focus": 0.68,
+        "action_key": "decays",
+        "action_focus": 0.2
+      }
+    },
+    {
+      "step": 2,
+      "type": "relation_changed",
+      "link_before": {
+        "id": 6,
+        "source": 2,
+        "target": 3,
+        "relation_key": "contains",
+        "relation_focus": 0.56,
+        "action_key": "inverts",
+        "action_focus": 0.47
+      },
+      "link_after": {
+        "id": 6,
+        "source": 2,
+        "target": 3,
+        "relation_key": "clarifies",
+        "relation_focus": 0.23,
+        "action_key": "inverts",
+        "action_focus": 0.47
+      }
+    },
+    {
+      "step": 3,
+      "type": "link_inverted",
+      "link_before": {
+        "id": 8,
+        "source": 1,
+        "target": 2,
+        "relation_key": "touches",
+        "relation_focus": 0.43,
+        "action_key": "exhales",
+        "action_focus": 0.77
+      },
+      "link_after": {
+        "id": 8,
+        "source": 2,
+        "target": 1,
+        "relation_key": "touches",
+        "relation_focus": 0.43,
+        "action_key": "exhales",
+        "action_focus": 0.77
+      }
+    },
+    {
+      "step": 4,
+      "type": "relation_changed",
+      "link_before": {
+        "id": 9,
+        "source": 4,
+        "target": 2,
+        "relation_key": "repels",
+        "relation_focus": 0.68,
+        "action_key": "decays",
+        "action_focus": 0.2
+      },
+      "link_after": {
+        "id": 9,
+        "source": 4,
+        "target": 2,
+        "relation_key": "clarifies",
+        "relation_focus": 0.83,
+        "action_key": "decays",
+        "action_focus": 0.2
+      }
+    },
+    {
+      "step": 5,
+      "type": "link_added",
+      "link": {
+        "id": 10,
+        "source": 3,
+        "target": 1,
+        "relation_key": "attracts",
+        "relation_focus": 0.7,
+        "action_key": "splits",
+        "action_focus": 0.27
+      }
+    }
+  ],
+  "id": 909
+}

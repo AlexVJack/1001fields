@@ -1,0 +1,122 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "promise",
+        "focus": 0.64
+      },
+      {
+        "id": 2,
+        "key": "hand",
+        "focus": 0.61
+      },
+      {
+        "id": 3,
+        "key": "water",
+        "focus": 0.1
+      },
+      {
+        "id": 4,
+        "key": "tower",
+        "focus": 0.84
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 1,
+        "target": 3,
+        "relation_key": "erases",
+        "relation_focus": 0.64,
+        "action_key": "repeats",
+        "action_focus": 0.48
+      },
+      {
+        "id": 2,
+        "source": 3,
+        "target": 4,
+        "relation_key": "clarifies",
+        "relation_focus": 0.64,
+        "action_key": "stabilizes",
+        "action_focus": 0.21
+      },
+      {
+        "id": 3,
+        "source": 2,
+        "target": 3,
+        "relation_key": "clarifies",
+        "relation_focus": 0.5,
+        "action_key": "inverts",
+        "action_focus": 0.51
+      },
+      {
+        "id": 4,
+        "source": 2,
+        "target": 1,
+        "relation_key": "misnames",
+        "relation_focus": 0.31,
+        "action_key": "opens",
+        "action_focus": 0.5
+      },
+      {
+        "id": 5,
+        "source": 3,
+        "target": 1,
+        "relation_key": "erases",
+        "relation_focus": 0.42,
+        "action_key": "spreads",
+        "action_focus": 0.7
+      },
+      {
+        "id": 6,
+        "source": 2,
+        "target": 4,
+        "relation_key": "clarifies",
+        "relation_focus": 0.42,
+        "action_key": "decays",
+        "action_focus": 0.51
+      },
+      {
+        "id": 7,
+        "source": 4,
+        "target": 3,
+        "relation_key": "consumes",
+        "relation_focus": 0.32,
+        "action_key": "lets_go",
+        "action_focus": 0.27
+      },
+      {
+        "id": 8,
+        "source": 1,
+        "target": 4,
+        "relation_key": "feeds",
+        "relation_focus": 0.27,
+        "action_key": "creates_a_third_thing",
+        "action_focus": 0.46
+      },
+      {
+        "id": 9,
+        "source": 4,
+        "target": 1,
+        "relation_key": "listens_to",
+        "relation_focus": 0.95,
+        "action_key": "becomes_visible",
+        "action_focus": 0.78
+      },
+      {
+        "id": 10,
+        "source": 4,
+        "target": 2,
+        "relation_key": "erases",
+        "relation_focus": 0.12,
+        "action_key": "approaches",
+        "action_focus": 0.55
+      }
+    ]
+  },
+  "mutations": [],
+  "id": 829
+}

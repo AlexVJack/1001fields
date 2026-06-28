@@ -1,0 +1,153 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "herald",
+        "focus": 0.56
+      },
+      {
+        "id": 2,
+        "key": "crack",
+        "focus": 0.33
+      },
+      {
+        "id": 3,
+        "key": "pause",
+        "focus": 0.82
+      },
+      {
+        "id": 4,
+        "key": "key",
+        "focus": 0.5
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 1,
+        "target": 4,
+        "relation_key": "names",
+        "relation_focus": 0.76,
+        "action_key": "approaches",
+        "action_focus": 0.04
+      },
+      {
+        "id": 2,
+        "source": 2,
+        "target": 3,
+        "relation_key": "attracts",
+        "relation_focus": 0.22,
+        "action_key": "stabilizes",
+        "action_focus": 0.98
+      },
+      {
+        "id": 3,
+        "source": 2,
+        "target": 1,
+        "relation_key": "echoes",
+        "relation_focus": 0.6,
+        "action_key": "settles",
+        "action_focus": 0.82
+      },
+      {
+        "id": 4,
+        "source": 4,
+        "target": 3,
+        "relation_key": "erases",
+        "relation_focus": 0.18,
+        "action_key": "becomes_clear",
+        "action_focus": 0.55
+      },
+      {
+        "id": 5,
+        "source": 3,
+        "target": 4,
+        "relation_key": "heals",
+        "relation_focus": 0.92,
+        "action_key": "spreads",
+        "action_focus": 0.03
+      },
+      {
+        "id": 6,
+        "source": 1,
+        "target": 2,
+        "relation_key": "infects",
+        "relation_focus": 0.64,
+        "action_key": "stabilizes",
+        "action_focus": 0.87
+      },
+      {
+        "id": 7,
+        "source": 4,
+        "target": 2,
+        "relation_key": "witnesses",
+        "relation_focus": 0.88,
+        "action_key": "destabilizes",
+        "action_focus": 0.09
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "action_changed",
+      "link_before": {
+        "id": 5,
+        "source": 3,
+        "target": 4,
+        "relation_key": "heals",
+        "relation_focus": 0.92,
+        "action_key": "spreads",
+        "action_focus": 0.03
+      },
+      "link_after": {
+        "id": 5,
+        "source": 3,
+        "target": 4,
+        "relation_key": "heals",
+        "relation_focus": 0.92,
+        "action_key": "intensifies",
+        "action_focus": 0.89
+      }
+    },
+    {
+      "step": 2,
+      "type": "relation_changed",
+      "link_before": {
+        "id": 7,
+        "source": 4,
+        "target": 2,
+        "relation_key": "witnesses",
+        "relation_focus": 0.88,
+        "action_key": "destabilizes",
+        "action_focus": 0.09
+      },
+      "link_after": {
+        "id": 7,
+        "source": 4,
+        "target": 2,
+        "relation_key": "blocks",
+        "relation_focus": 0.2,
+        "action_key": "destabilizes",
+        "action_focus": 0.09
+      }
+    },
+    {
+      "step": 3,
+      "type": "link_added",
+      "link": {
+        "id": 8,
+        "source": 3,
+        "target": 1,
+        "relation_key": "binds",
+        "relation_focus": 0.6,
+        "action_key": "closes",
+        "action_focus": 0.26
+      }
+    }
+  ],
+  "id": 345
+}

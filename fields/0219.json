@@ -1,0 +1,68 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "archive",
+        "focus": 0.55
+      },
+      {
+        "id": 2,
+        "key": "fear",
+        "focus": 0.63
+      },
+      {
+        "id": 3,
+        "key": "voice",
+        "focus": 0.84
+      },
+      {
+        "id": 4,
+        "key": "shadow",
+        "focus": 0.15
+      }
+    ],
+    "links": []
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "symbol_changed",
+      "symbol_id": 4,
+      "old_key": "shadow",
+      "new_key": "memory",
+      "old_focus": 0.15,
+      "new_focus": 0.57
+    },
+    {
+      "step": 2,
+      "type": "symbol_changed",
+      "symbol_id": 4,
+      "old_key": "memory",
+      "new_key": "mirror",
+      "old_focus": 0.57,
+      "new_focus": 0.31
+    },
+    {
+      "step": 3,
+      "type": "symbol_changed",
+      "symbol_id": 3,
+      "old_key": "voice",
+      "new_key": "fire",
+      "old_focus": 0.84,
+      "new_focus": 0.77
+    },
+    {
+      "step": 4,
+      "type": "symbol_changed",
+      "symbol_id": 3,
+      "old_key": "fire",
+      "new_key": "shadow",
+      "old_focus": 0.77,
+      "new_focus": 0.24
+    }
+  ],
+  "id": 219
+}

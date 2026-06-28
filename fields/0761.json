@@ -1,0 +1,54 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "mask",
+        "focus": 0.01
+      },
+      {
+        "id": 2,
+        "key": "key",
+        "focus": 0.85
+      },
+      {
+        "id": 3,
+        "key": "air",
+        "focus": 0.68
+      },
+      {
+        "id": 4,
+        "key": "crack",
+        "focus": 0.96
+      }
+    ],
+    "links": []
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "symbol_changed",
+      "symbol_id": 3,
+      "old_key": "air",
+      "new_key": "abyss",
+      "old_focus": 0.68,
+      "new_focus": 0.02
+    },
+    {
+      "step": 2,
+      "type": "link_added",
+      "link": {
+        "id": 1,
+        "source": 3,
+        "target": 4,
+        "relation_key": "mirrors",
+        "relation_focus": 0.15,
+        "action_key": "merges",
+        "action_focus": 0.25
+      }
+    }
+  ],
+  "id": 761
+}

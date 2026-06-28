@@ -1,0 +1,154 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "breath",
+        "focus": 0.34
+      },
+      {
+        "id": 2,
+        "key": "crack",
+        "focus": 0.8
+      },
+      {
+        "id": 3,
+        "key": "spark",
+        "focus": 0.02
+      },
+      {
+        "id": 4,
+        "key": "boundary",
+        "focus": 0.24
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 2,
+        "target": 4,
+        "relation_key": "generates",
+        "relation_focus": 0.59,
+        "action_key": "inverts",
+        "action_focus": 0.21
+      },
+      {
+        "id": 2,
+        "source": 4,
+        "target": 2,
+        "relation_key": "transforms",
+        "relation_focus": 0.69,
+        "action_key": "creates_a_third_thing",
+        "action_focus": 0.55
+      },
+      {
+        "id": 3,
+        "source": 2,
+        "target": 3,
+        "relation_key": "embodies",
+        "relation_focus": 0.6,
+        "action_key": "becomes_embodied",
+        "action_focus": 0.5
+      },
+      {
+        "id": 4,
+        "source": 3,
+        "target": 2,
+        "relation_key": "feeds",
+        "relation_focus": 0.25,
+        "action_key": "lets_go",
+        "action_focus": 0.1
+      },
+      {
+        "id": 5,
+        "source": 1,
+        "target": 2,
+        "relation_key": "distorts",
+        "relation_focus": 0.07,
+        "action_key": "awakens",
+        "action_focus": 0.71
+      },
+      {
+        "id": 6,
+        "source": 1,
+        "target": 3,
+        "relation_key": "depends_on",
+        "relation_focus": 0.0,
+        "action_key": "becomes_hidden",
+        "action_focus": 0.81
+      },
+      {
+        "id": 7,
+        "source": 2,
+        "target": 1,
+        "relation_key": "clarifies",
+        "relation_focus": 0.33,
+        "action_key": "destabilizes",
+        "action_focus": 0.51
+      },
+      {
+        "id": 8,
+        "source": 4,
+        "target": 3,
+        "relation_key": "attracts",
+        "relation_focus": 0.22,
+        "action_key": "collapses",
+        "action_focus": 0.46
+      },
+      {
+        "id": 9,
+        "source": 3,
+        "target": 1,
+        "relation_key": "witnesses",
+        "relation_focus": 0.39,
+        "action_key": "creates_a_third_thing",
+        "action_focus": 0.88
+      },
+      {
+        "id": 10,
+        "source": 4,
+        "target": 1,
+        "relation_key": "attracts",
+        "relation_focus": 0.28,
+        "action_key": "creates_a_third_thing",
+        "action_focus": 0.94
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "symbol_changed",
+      "symbol_id": 1,
+      "old_key": "breath",
+      "new_key": "threshold",
+      "old_focus": 0.34,
+      "new_focus": 0.93
+    },
+    {
+      "step": 2,
+      "type": "link_removed",
+      "link": {
+        "id": 10,
+        "source": 4,
+        "target": 1,
+        "relation_key": "attracts",
+        "relation_focus": 0.28,
+        "action_key": "creates_a_third_thing",
+        "action_focus": 0.94
+      }
+    },
+    {
+      "step": 3,
+      "type": "symbol_changed",
+      "symbol_id": 1,
+      "old_key": "threshold",
+      "new_key": "stone",
+      "old_focus": 0.93,
+      "new_focus": 0.64
+    }
+  ],
+  "id": 51
+}

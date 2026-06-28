@@ -1,0 +1,140 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "attention",
+        "focus": 0.58
+      },
+      {
+        "id": 2,
+        "key": "tower",
+        "focus": 0.0
+      },
+      {
+        "id": 3,
+        "key": "hand",
+        "focus": 0.48
+      },
+      {
+        "id": 4,
+        "key": "abyss",
+        "focus": 0.95
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 1,
+        "target": 3,
+        "relation_key": "transforms",
+        "relation_focus": 0.47,
+        "action_key": "becomes_visible",
+        "action_focus": 0.8
+      },
+      {
+        "id": 2,
+        "source": 2,
+        "target": 3,
+        "relation_key": "feeds",
+        "relation_focus": 0.33,
+        "action_key": "weakens",
+        "action_focus": 0.88
+      },
+      {
+        "id": 3,
+        "source": 2,
+        "target": 1,
+        "relation_key": "reveals",
+        "relation_focus": 0.93,
+        "action_key": "exhales",
+        "action_focus": 0.1
+      },
+      {
+        "id": 4,
+        "source": 3,
+        "target": 2,
+        "relation_key": "touches",
+        "relation_focus": 0.49,
+        "action_key": "creates_a_third_thing",
+        "action_focus": 0.21
+      },
+      {
+        "id": 5,
+        "source": 4,
+        "target": 2,
+        "relation_key": "clarifies",
+        "relation_focus": 0.92,
+        "action_key": "crosses_a_threshold",
+        "action_focus": 0.23
+      },
+      {
+        "id": 6,
+        "source": 1,
+        "target": 2,
+        "relation_key": "infects",
+        "relation_focus": 0.85,
+        "action_key": "opens",
+        "action_focus": 0.91
+      },
+      {
+        "id": 7,
+        "source": 1,
+        "target": 4,
+        "relation_key": "mirrors",
+        "relation_focus": 0.02,
+        "action_key": "crystallizes",
+        "action_focus": 0.15
+      },
+      {
+        "id": 8,
+        "source": 2,
+        "target": 4,
+        "relation_key": "embodies",
+        "relation_focus": 0.99,
+        "action_key": "weakens",
+        "action_focus": 0.86
+      },
+      {
+        "id": 9,
+        "source": 3,
+        "target": 1,
+        "relation_key": "names",
+        "relation_focus": 0.63,
+        "action_key": "becomes_clear",
+        "action_focus": 0.03
+      },
+      {
+        "id": 10,
+        "source": 4,
+        "target": 3,
+        "relation_key": "embodies",
+        "relation_focus": 0.87,
+        "action_key": "closes",
+        "action_focus": 0.13
+      },
+      {
+        "id": 11,
+        "source": 4,
+        "target": 1,
+        "relation_key": "names",
+        "relation_focus": 0.98,
+        "action_key": "becomes_quiet",
+        "action_focus": 0.95
+      },
+      {
+        "id": 12,
+        "source": 3,
+        "target": 4,
+        "relation_key": "attracts",
+        "relation_focus": 0.53,
+        "action_key": "mutates",
+        "action_focus": 0.57
+      }
+    ]
+  },
+  "mutations": [],
+  "id": 507
+}

@@ -1,0 +1,95 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "network",
+        "focus": 0.18
+      },
+      {
+        "id": 2,
+        "key": "voice",
+        "focus": 0.27
+      },
+      {
+        "id": 3,
+        "key": "labyrinth",
+        "focus": 0.86
+      },
+      {
+        "id": 4,
+        "key": "boundary",
+        "focus": 0.44
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 2,
+        "target": 4,
+        "relation_key": "contains",
+        "relation_focus": 0.81,
+        "action_key": "decays",
+        "action_focus": 0.42
+      },
+      {
+        "id": 2,
+        "source": 2,
+        "target": 1,
+        "relation_key": "protects",
+        "relation_focus": 0.34,
+        "action_key": "opens",
+        "action_focus": 0.24
+      },
+      {
+        "id": 3,
+        "source": 3,
+        "target": 1,
+        "relation_key": "hides",
+        "relation_focus": 0.46,
+        "action_key": "approaches",
+        "action_focus": 0.52
+      },
+      {
+        "id": 4,
+        "source": 1,
+        "target": 3,
+        "relation_key": "names",
+        "relation_focus": 0.88,
+        "action_key": "collapses",
+        "action_focus": 0.44
+      },
+      {
+        "id": 5,
+        "source": 3,
+        "target": 2,
+        "relation_key": "clarifies",
+        "relation_focus": 0.31,
+        "action_key": "collapses",
+        "action_focus": 0.67
+      },
+      {
+        "id": 6,
+        "source": 1,
+        "target": 2,
+        "relation_key": "distorts",
+        "relation_focus": 0.71,
+        "action_key": "becomes_clear",
+        "action_focus": 0.23
+      },
+      {
+        "id": 7,
+        "source": 4,
+        "target": 3,
+        "relation_key": "submits_to",
+        "relation_focus": 0.37,
+        "action_key": "weakens",
+        "action_focus": 0.37
+      }
+    ]
+  },
+  "mutations": [],
+  "id": 896
+}

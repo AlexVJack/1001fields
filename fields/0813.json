@@ -1,0 +1,113 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "vessel",
+        "focus": 0.94
+      },
+      {
+        "id": 2,
+        "key": "storm",
+        "focus": 0.19
+      },
+      {
+        "id": 3,
+        "key": "ruin",
+        "focus": 0.94
+      },
+      {
+        "id": 4,
+        "key": "memory",
+        "focus": 0.18
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 4,
+        "target": 3,
+        "relation_key": "infects",
+        "relation_focus": 0.33,
+        "action_key": "returns",
+        "action_focus": 0.96
+      },
+      {
+        "id": 2,
+        "source": 4,
+        "target": 2,
+        "relation_key": "blocks",
+        "relation_focus": 0.03,
+        "action_key": "becomes_clear",
+        "action_focus": 0.07
+      },
+      {
+        "id": 3,
+        "source": 1,
+        "target": 2,
+        "relation_key": "dominates",
+        "relation_focus": 0.27,
+        "action_key": "becomes_quiet",
+        "action_focus": 0.15
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "relation_changed",
+      "link_before": {
+        "id": 1,
+        "source": 4,
+        "target": 3,
+        "relation_key": "infects",
+        "relation_focus": 0.33,
+        "action_key": "returns",
+        "action_focus": 0.96
+      },
+      "link_after": {
+        "id": 1,
+        "source": 4,
+        "target": 3,
+        "relation_key": "witnesses",
+        "relation_focus": 0.93,
+        "action_key": "returns",
+        "action_focus": 0.96
+      }
+    },
+    {
+      "step": 2,
+      "type": "symbol_changed",
+      "symbol_id": 2,
+      "old_key": "storm",
+      "new_key": "exile",
+      "old_focus": 0.19,
+      "new_focus": 0.3
+    },
+    {
+      "step": 3,
+      "type": "relation_changed",
+      "link_before": {
+        "id": 1,
+        "source": 4,
+        "target": 3,
+        "relation_key": "witnesses",
+        "relation_focus": 0.93,
+        "action_key": "returns",
+        "action_focus": 0.96
+      },
+      "link_after": {
+        "id": 1,
+        "source": 4,
+        "target": 3,
+        "relation_key": "remembers",
+        "relation_focus": 0.54,
+        "action_key": "returns",
+        "action_focus": 0.96
+      }
+    }
+  ],
+  "id": 813
+}

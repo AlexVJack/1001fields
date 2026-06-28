@@ -1,0 +1,64 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "thread",
+        "focus": 0.7
+      },
+      {
+        "id": 2,
+        "key": "oracle",
+        "focus": 0.86
+      },
+      {
+        "id": 3,
+        "key": "promise",
+        "focus": 0.9
+      },
+      {
+        "id": 4,
+        "key": "spark",
+        "focus": 0.41
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 4,
+        "target": 3,
+        "relation_key": "depends_on",
+        "relation_focus": 0.64,
+        "action_key": "mutates",
+        "action_focus": 0.73
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "link_removed",
+      "link": {
+        "id": 1,
+        "source": 4,
+        "target": 3,
+        "relation_key": "depends_on",
+        "relation_focus": 0.64,
+        "action_key": "mutates",
+        "action_focus": 0.73
+      }
+    },
+    {
+      "step": 2,
+      "type": "symbol_changed",
+      "symbol_id": 3,
+      "old_key": "promise",
+      "new_key": "water",
+      "old_focus": 0.9,
+      "new_focus": 0.87
+    }
+  ],
+  "id": 309
+}

@@ -1,0 +1,41 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "labyrinth",
+        "focus": 0.69
+      },
+      {
+        "id": 2,
+        "key": "mirror",
+        "focus": 0.46
+      },
+      {
+        "id": 3,
+        "key": "fire",
+        "focus": 0.73
+      },
+      {
+        "id": 4,
+        "key": "witness",
+        "focus": 0.45
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 1,
+        "target": 3,
+        "relation_key": "erases",
+        "relation_focus": 0.71,
+        "action_key": "crystallizes",
+        "action_focus": 0.52
+      }
+    ]
+  },
+  "mutations": [],
+  "id": 316
+}

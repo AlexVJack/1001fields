@@ -1,0 +1,131 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "threshold",
+        "focus": 0.48
+      },
+      {
+        "id": 2,
+        "key": "herald",
+        "focus": 0.69
+      },
+      {
+        "id": 3,
+        "key": "ash",
+        "focus": 0.23
+      },
+      {
+        "id": 4,
+        "key": "fire",
+        "focus": 0.04
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 2,
+        "target": 1,
+        "relation_key": "protects",
+        "relation_focus": 0.88,
+        "action_key": "inverts",
+        "action_focus": 0.32
+      },
+      {
+        "id": 2,
+        "source": 3,
+        "target": 4,
+        "relation_key": "separates",
+        "relation_focus": 0.28,
+        "action_key": "awakens",
+        "action_focus": 0.77
+      },
+      {
+        "id": 3,
+        "source": 1,
+        "target": 4,
+        "relation_key": "consumes",
+        "relation_focus": 0.62,
+        "action_key": "crystallizes",
+        "action_focus": 0.89
+      },
+      {
+        "id": 4,
+        "source": 4,
+        "target": 1,
+        "relation_key": "touches",
+        "relation_focus": 0.28,
+        "action_key": "decays",
+        "action_focus": 0.15
+      },
+      {
+        "id": 5,
+        "source": 3,
+        "target": 2,
+        "relation_key": "consumes",
+        "relation_focus": 0.45,
+        "action_key": "collapses",
+        "action_focus": 0.22
+      },
+      {
+        "id": 6,
+        "source": 2,
+        "target": 3,
+        "relation_key": "depends_on",
+        "relation_focus": 0.53,
+        "action_key": "creates_a_third_thing",
+        "action_focus": 0.97
+      },
+      {
+        "id": 7,
+        "source": 1,
+        "target": 3,
+        "relation_key": "transforms",
+        "relation_focus": 0.23,
+        "action_key": "becomes_visible",
+        "action_focus": 0.74
+      },
+      {
+        "id": 8,
+        "source": 4,
+        "target": 2,
+        "relation_key": "attracts",
+        "relation_focus": 0.06,
+        "action_key": "becomes_quiet",
+        "action_focus": 0.16
+      },
+      {
+        "id": 9,
+        "source": 4,
+        "target": 3,
+        "relation_key": "blocks",
+        "relation_focus": 0.86,
+        "action_key": "opens",
+        "action_focus": 0.8
+      },
+      {
+        "id": 10,
+        "source": 2,
+        "target": 4,
+        "relation_key": "reveals",
+        "relation_focus": 0.35,
+        "action_key": "accelerates",
+        "action_focus": 0.3
+      },
+      {
+        "id": 11,
+        "source": 1,
+        "target": 2,
+        "relation_key": "submits_to",
+        "relation_focus": 0.71,
+        "action_key": "becomes_embodied",
+        "action_focus": 0.08
+      }
+    ]
+  },
+  "mutations": [],
+  "id": 282
+}

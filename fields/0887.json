@@ -1,0 +1,121 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "map",
+        "focus": 0.76
+      },
+      {
+        "id": 2,
+        "key": "shelter",
+        "focus": 0.18
+      },
+      {
+        "id": 3,
+        "key": "boundary",
+        "focus": 0.69
+      },
+      {
+        "id": 4,
+        "key": "secret",
+        "focus": 0.85
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 2,
+        "target": 3,
+        "relation_key": "submits_to",
+        "relation_focus": 0.8,
+        "action_key": "splits",
+        "action_focus": 0.04
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "relation_changed",
+      "link_before": {
+        "id": 1,
+        "source": 2,
+        "target": 3,
+        "relation_key": "submits_to",
+        "relation_focus": 0.8,
+        "action_key": "splits",
+        "action_focus": 0.04
+      },
+      "link_after": {
+        "id": 1,
+        "source": 2,
+        "target": 3,
+        "relation_key": "mirrors",
+        "relation_focus": 0.08,
+        "action_key": "splits",
+        "action_focus": 0.04
+      }
+    },
+    {
+      "step": 2,
+      "type": "relation_changed",
+      "link_before": {
+        "id": 1,
+        "source": 2,
+        "target": 3,
+        "relation_key": "mirrors",
+        "relation_focus": 0.08,
+        "action_key": "splits",
+        "action_focus": 0.04
+      },
+      "link_after": {
+        "id": 1,
+        "source": 2,
+        "target": 3,
+        "relation_key": "hides",
+        "relation_focus": 0.42,
+        "action_key": "splits",
+        "action_focus": 0.04
+      }
+    },
+    {
+      "step": 3,
+      "type": "link_added",
+      "link": {
+        "id": 2,
+        "source": 1,
+        "target": 2,
+        "relation_key": "distorts",
+        "relation_focus": 0.98,
+        "action_key": "exhales",
+        "action_focus": 0.97
+      }
+    },
+    {
+      "step": 4,
+      "type": "link_inverted",
+      "link_before": {
+        "id": 1,
+        "source": 2,
+        "target": 3,
+        "relation_key": "hides",
+        "relation_focus": 0.42,
+        "action_key": "splits",
+        "action_focus": 0.04
+      },
+      "link_after": {
+        "id": 1,
+        "source": 3,
+        "target": 2,
+        "relation_key": "hides",
+        "relation_focus": 0.42,
+        "action_key": "splits",
+        "action_focus": 0.04
+      }
+    }
+  ],
+  "id": 887
+}

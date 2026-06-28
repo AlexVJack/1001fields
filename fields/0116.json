@@ -1,0 +1,163 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "law",
+        "focus": 0.55
+      },
+      {
+        "id": 2,
+        "key": "air",
+        "focus": 0.45
+      },
+      {
+        "id": 3,
+        "key": "map",
+        "focus": 0.58
+      },
+      {
+        "id": 4,
+        "key": "debt",
+        "focus": 0.65
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 1,
+        "target": 4,
+        "relation_key": "reveals",
+        "relation_focus": 0.14,
+        "action_key": "inverts",
+        "action_focus": 0.6
+      },
+      {
+        "id": 2,
+        "source": 4,
+        "target": 3,
+        "relation_key": "consumes",
+        "relation_focus": 0.51,
+        "action_key": "dissolves",
+        "action_focus": 0.49
+      },
+      {
+        "id": 3,
+        "source": 1,
+        "target": 3,
+        "relation_key": "attracts",
+        "relation_focus": 0.29,
+        "action_key": "splits",
+        "action_focus": 0.7
+      },
+      {
+        "id": 4,
+        "source": 3,
+        "target": 4,
+        "relation_key": "hides",
+        "relation_focus": 0.79,
+        "action_key": "splits",
+        "action_focus": 0.45
+      },
+      {
+        "id": 5,
+        "source": 2,
+        "target": 1,
+        "relation_key": "endures",
+        "relation_focus": 0.3,
+        "action_key": "lets_go",
+        "action_focus": 0.16
+      },
+      {
+        "id": 6,
+        "source": 4,
+        "target": 1,
+        "relation_key": "separates",
+        "relation_focus": 0.98,
+        "action_key": "becomes_quiet",
+        "action_focus": 0.2
+      },
+      {
+        "id": 7,
+        "source": 3,
+        "target": 2,
+        "relation_key": "mirrors",
+        "relation_focus": 0.02,
+        "action_key": "decays",
+        "action_focus": 0.34
+      },
+      {
+        "id": 8,
+        "source": 2,
+        "target": 3,
+        "relation_key": "distorts",
+        "relation_focus": 0.73,
+        "action_key": "becomes_embodied",
+        "action_focus": 0.47
+      },
+      {
+        "id": 9,
+        "source": 3,
+        "target": 1,
+        "relation_key": "clarifies",
+        "relation_focus": 0.04,
+        "action_key": "becomes_visible",
+        "action_focus": 0.55
+      },
+      {
+        "id": 10,
+        "source": 4,
+        "target": 2,
+        "relation_key": "witnesses",
+        "relation_focus": 0.24,
+        "action_key": "stabilizes",
+        "action_focus": 0.18
+      },
+      {
+        "id": 11,
+        "source": 2,
+        "target": 4,
+        "relation_key": "submits_to",
+        "relation_focus": 0.08,
+        "action_key": "exhales",
+        "action_focus": 0.86
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "symbol_changed",
+      "symbol_id": 1,
+      "old_key": "law",
+      "new_key": "light",
+      "old_focus": 0.55,
+      "new_focus": 0.55
+    },
+    {
+      "step": 2,
+      "type": "link_inverted",
+      "link_before": {
+        "id": 5,
+        "source": 2,
+        "target": 1,
+        "relation_key": "endures",
+        "relation_focus": 0.3,
+        "action_key": "lets_go",
+        "action_focus": 0.16
+      },
+      "link_after": {
+        "id": 5,
+        "source": 1,
+        "target": 2,
+        "relation_key": "endures",
+        "relation_focus": 0.3,
+        "action_key": "lets_go",
+        "action_focus": 0.16
+      }
+    }
+  ],
+  "id": 116
+}

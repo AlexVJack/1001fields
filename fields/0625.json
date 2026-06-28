@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "air",
+        "focus": 0.14
+      },
+      {
+        "id": 2,
+        "key": "abyss",
+        "focus": 0.6
+      },
+      {
+        "id": 3,
+        "key": "mirror",
+        "focus": 0.54
+      },
+      {
+        "id": 4,
+        "key": "key",
+        "focus": 0.13
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 2,
+        "target": 4,
+        "relation_key": "clarifies",
+        "relation_focus": 0.2,
+        "action_key": "intensifies",
+        "action_focus": 0.73
+      },
+      {
+        "id": 2,
+        "source": 1,
+        "target": 4,
+        "relation_key": "binds",
+        "relation_focus": 0.97,
+        "action_key": "accelerates",
+        "action_focus": 0.47
+      }
+    ]
+  },
+  "mutations": [],
+  "id": 625
+}

@@ -1,0 +1,73 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "sage",
+        "focus": 0.44
+      },
+      {
+        "id": 2,
+        "key": "body",
+        "focus": 0.69
+      },
+      {
+        "id": 3,
+        "key": "ash",
+        "focus": 0.57
+      },
+      {
+        "id": 4,
+        "key": "pause",
+        "focus": 0.82
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 4,
+        "target": 2,
+        "relation_key": "echoes",
+        "relation_focus": 0.04,
+        "action_key": "repeats",
+        "action_focus": 0.47
+      },
+      {
+        "id": 2,
+        "source": 3,
+        "target": 1,
+        "relation_key": "erases",
+        "relation_focus": 0.26,
+        "action_key": "intensifies",
+        "action_focus": 0.39
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "action_changed",
+      "link_before": {
+        "id": 2,
+        "source": 3,
+        "target": 1,
+        "relation_key": "erases",
+        "relation_focus": 0.26,
+        "action_key": "intensifies",
+        "action_focus": 0.39
+      },
+      "link_after": {
+        "id": 2,
+        "source": 3,
+        "target": 1,
+        "relation_key": "erases",
+        "relation_focus": 0.26,
+        "action_key": "dissolves",
+        "action_focus": 0.68
+      }
+    }
+  ],
+  "id": 934
+}

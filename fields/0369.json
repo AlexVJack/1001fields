@@ -1,0 +1,100 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "abyss",
+        "focus": 0.92
+      },
+      {
+        "id": 2,
+        "key": "threshold",
+        "focus": 0.54
+      },
+      {
+        "id": 3,
+        "key": "bridge",
+        "focus": 0.05
+      },
+      {
+        "id": 4,
+        "key": "trace",
+        "focus": 0.38
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 1,
+        "target": 4,
+        "relation_key": "transforms",
+        "relation_focus": 0.54,
+        "action_key": "returns",
+        "action_focus": 0.69
+      },
+      {
+        "id": 2,
+        "source": 4,
+        "target": 1,
+        "relation_key": "misnames",
+        "relation_focus": 0.82,
+        "action_key": "inverts",
+        "action_focus": 0.52
+      },
+      {
+        "id": 3,
+        "source": 4,
+        "target": 3,
+        "relation_key": "transforms",
+        "relation_focus": 0.53,
+        "action_key": "decays",
+        "action_focus": 0.3
+      },
+      {
+        "id": 4,
+        "source": 2,
+        "target": 4,
+        "relation_key": "infects",
+        "relation_focus": 0.84,
+        "action_key": "becomes_clear",
+        "action_focus": 0.93
+      },
+      {
+        "id": 5,
+        "source": 3,
+        "target": 1,
+        "relation_key": "mirrors",
+        "relation_focus": 0.93,
+        "action_key": "exhales",
+        "action_focus": 0.76
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "link_inverted",
+      "link_before": {
+        "id": 4,
+        "source": 2,
+        "target": 4,
+        "relation_key": "infects",
+        "relation_focus": 0.84,
+        "action_key": "becomes_clear",
+        "action_focus": 0.93
+      },
+      "link_after": {
+        "id": 4,
+        "source": 4,
+        "target": 2,
+        "relation_key": "infects",
+        "relation_focus": 0.84,
+        "action_key": "becomes_clear",
+        "action_focus": 0.93
+      }
+    }
+  ],
+  "id": 369
+}

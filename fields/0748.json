@@ -1,0 +1,95 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "sage",
+        "focus": 0.42
+      },
+      {
+        "id": 2,
+        "key": "map",
+        "focus": 0.52
+      },
+      {
+        "id": 3,
+        "key": "exile",
+        "focus": 0.34
+      },
+      {
+        "id": 4,
+        "key": "storm",
+        "focus": 0.79
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 2,
+        "target": 3,
+        "relation_key": "transforms",
+        "relation_focus": 0.32,
+        "action_key": "merges",
+        "action_focus": 0.23
+      },
+      {
+        "id": 2,
+        "source": 3,
+        "target": 2,
+        "relation_key": "dominates",
+        "relation_focus": 0.58,
+        "action_key": "becomes_visible",
+        "action_focus": 0.73
+      },
+      {
+        "id": 3,
+        "source": 3,
+        "target": 1,
+        "relation_key": "embodies",
+        "relation_focus": 0.88,
+        "action_key": "inverts",
+        "action_focus": 0.77
+      },
+      {
+        "id": 4,
+        "source": 4,
+        "target": 1,
+        "relation_key": "dominates",
+        "relation_focus": 0.72,
+        "action_key": "mutates",
+        "action_focus": 0.39
+      },
+      {
+        "id": 5,
+        "source": 1,
+        "target": 2,
+        "relation_key": "echoes",
+        "relation_focus": 0.96,
+        "action_key": "becomes_visible",
+        "action_focus": 0.22
+      },
+      {
+        "id": 6,
+        "source": 3,
+        "target": 4,
+        "relation_key": "infects",
+        "relation_focus": 0.59,
+        "action_key": "closes",
+        "action_focus": 0.58
+      },
+      {
+        "id": 7,
+        "source": 1,
+        "target": 4,
+        "relation_key": "echoes",
+        "relation_focus": 0.98,
+        "action_key": "settles",
+        "action_focus": 0.33
+      }
+    ]
+  },
+  "mutations": [],
+  "id": 748
+}

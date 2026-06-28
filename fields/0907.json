@@ -1,0 +1,118 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "promise",
+        "focus": 0.08
+      },
+      {
+        "id": 2,
+        "key": "garden",
+        "focus": 0.54
+      },
+      {
+        "id": 3,
+        "key": "water",
+        "focus": 0.32
+      },
+      {
+        "id": 4,
+        "key": "storm",
+        "focus": 0.38
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 1,
+        "target": 3,
+        "relation_key": "feeds",
+        "relation_focus": 0.07,
+        "action_key": "crystallizes",
+        "action_focus": 0.89
+      },
+      {
+        "id": 2,
+        "source": 4,
+        "target": 3,
+        "relation_key": "protects",
+        "relation_focus": 0.04,
+        "action_key": "returns",
+        "action_focus": 0.39
+      },
+      {
+        "id": 3,
+        "source": 3,
+        "target": 1,
+        "relation_key": "distorts",
+        "relation_focus": 0.88,
+        "action_key": "awakens",
+        "action_focus": 0.61
+      },
+      {
+        "id": 4,
+        "source": 3,
+        "target": 4,
+        "relation_key": "erases",
+        "relation_focus": 0.58,
+        "action_key": "spreads",
+        "action_focus": 0.8
+      },
+      {
+        "id": 5,
+        "source": 4,
+        "target": 1,
+        "relation_key": "transforms",
+        "relation_focus": 0.32,
+        "action_key": "refuses_change",
+        "action_focus": 0.28
+      },
+      {
+        "id": 6,
+        "source": 2,
+        "target": 1,
+        "relation_key": "dominates",
+        "relation_focus": 0.14,
+        "action_key": "refuses_change",
+        "action_focus": 0.99
+      },
+      {
+        "id": 7,
+        "source": 1,
+        "target": 2,
+        "relation_key": "infects",
+        "relation_focus": 0.72,
+        "action_key": "stabilizes",
+        "action_focus": 0.38
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "link_inverted",
+      "link_before": {
+        "id": 5,
+        "source": 4,
+        "target": 1,
+        "relation_key": "transforms",
+        "relation_focus": 0.32,
+        "action_key": "refuses_change",
+        "action_focus": 0.28
+      },
+      "link_after": {
+        "id": 5,
+        "source": 1,
+        "target": 4,
+        "relation_key": "transforms",
+        "relation_focus": 0.32,
+        "action_key": "refuses_change",
+        "action_focus": 0.28
+      }
+    }
+  ],
+  "id": 907
+}

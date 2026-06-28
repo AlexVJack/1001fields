@@ -1,0 +1,67 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "oracle",
+        "focus": 0.45
+      },
+      {
+        "id": 2,
+        "key": "void",
+        "focus": 0.51
+      },
+      {
+        "id": 3,
+        "key": "stone",
+        "focus": 0.88
+      },
+      {
+        "id": 4,
+        "key": "silence",
+        "focus": 0.41
+      }
+    ],
+    "links": []
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "symbol_changed",
+      "symbol_id": 3,
+      "old_key": "stone",
+      "new_key": "boundary",
+      "old_focus": 0.88,
+      "new_focus": 0.59
+    },
+    {
+      "step": 2,
+      "type": "link_added",
+      "link": {
+        "id": 1,
+        "source": 3,
+        "target": 4,
+        "relation_key": "distorts",
+        "relation_focus": 0.34,
+        "action_key": "intensifies",
+        "action_focus": 0.42
+      }
+    },
+    {
+      "step": 3,
+      "type": "link_added",
+      "link": {
+        "id": 2,
+        "source": 3,
+        "target": 1,
+        "relation_key": "misnames",
+        "relation_focus": 0.77,
+        "action_key": "repeats",
+        "action_focus": 0.13
+      }
+    }
+  ],
+  "id": 118
+}

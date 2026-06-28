@@ -1,0 +1,31 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "hunger",
+        "focus": 0.69
+      },
+      {
+        "id": 2,
+        "key": "oracle",
+        "focus": 0.1
+      },
+      {
+        "id": 3,
+        "key": "labyrinth",
+        "focus": 0.49
+      },
+      {
+        "id": 4,
+        "key": "water",
+        "focus": 0.57
+      }
+    ],
+    "links": []
+  },
+  "mutations": [],
+  "id": 484
+}

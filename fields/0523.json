@@ -1,0 +1,41 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "hunger",
+        "focus": 0.15
+      },
+      {
+        "id": 2,
+        "key": "network",
+        "focus": 0.99
+      },
+      {
+        "id": 3,
+        "key": "trace",
+        "focus": 0.28
+      },
+      {
+        "id": 4,
+        "key": "memory",
+        "focus": 0.58
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 1,
+        "target": 4,
+        "relation_key": "echoes",
+        "relation_focus": 0.79,
+        "action_key": "approaches",
+        "action_focus": 0.12
+      }
+    ]
+  },
+  "mutations": [],
+  "id": 523
+}

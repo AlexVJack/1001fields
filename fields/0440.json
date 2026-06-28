@@ -1,0 +1,31 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "secret",
+        "focus": 0.73
+      },
+      {
+        "id": 2,
+        "key": "law",
+        "focus": 0.06
+      },
+      {
+        "id": 3,
+        "key": "name",
+        "focus": 0.85
+      },
+      {
+        "id": 4,
+        "key": "storm",
+        "focus": 0.59
+      }
+    ],
+    "links": []
+  },
+  "mutations": [],
+  "id": 440
+}

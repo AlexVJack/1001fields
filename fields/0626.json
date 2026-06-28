@@ -1,0 +1,86 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "garden",
+        "focus": 0.47
+      },
+      {
+        "id": 2,
+        "key": "desire",
+        "focus": 0.4
+      },
+      {
+        "id": 3,
+        "key": "hand",
+        "focus": 0.33
+      },
+      {
+        "id": 4,
+        "key": "voice",
+        "focus": 0.53
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 2,
+        "target": 4,
+        "relation_key": "erases",
+        "relation_focus": 0.6,
+        "action_key": "becomes_quiet",
+        "action_focus": 0.67
+      },
+      {
+        "id": 2,
+        "source": 4,
+        "target": 3,
+        "relation_key": "protects",
+        "relation_focus": 0.48,
+        "action_key": "destabilizes",
+        "action_focus": 0.02
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "action_changed",
+      "link_before": {
+        "id": 2,
+        "source": 4,
+        "target": 3,
+        "relation_key": "protects",
+        "relation_focus": 0.48,
+        "action_key": "destabilizes",
+        "action_focus": 0.02
+      },
+      "link_after": {
+        "id": 2,
+        "source": 4,
+        "target": 3,
+        "relation_key": "protects",
+        "relation_focus": 0.48,
+        "action_key": "merges",
+        "action_focus": 0.39
+      }
+    },
+    {
+      "step": 2,
+      "type": "link_added",
+      "link": {
+        "id": 3,
+        "source": 3,
+        "target": 2,
+        "relation_key": "generates",
+        "relation_focus": 0.78,
+        "action_key": "destabilizes",
+        "action_focus": 0.3
+      }
+    }
+  ],
+  "id": 626
+}

@@ -1,0 +1,86 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "water",
+        "focus": 0.73
+      },
+      {
+        "id": 2,
+        "key": "breath",
+        "focus": 0.82
+      },
+      {
+        "id": 3,
+        "key": "stone",
+        "focus": 0.24
+      },
+      {
+        "id": 4,
+        "key": "hand",
+        "focus": 0.92
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 1,
+        "target": 3,
+        "relation_key": "infects",
+        "relation_focus": 0.55,
+        "action_key": "decays",
+        "action_focus": 0.04
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "relation_changed",
+      "link_before": {
+        "id": 1,
+        "source": 1,
+        "target": 3,
+        "relation_key": "infects",
+        "relation_focus": 0.55,
+        "action_key": "decays",
+        "action_focus": 0.04
+      },
+      "link_after": {
+        "id": 1,
+        "source": 1,
+        "target": 3,
+        "relation_key": "submits_to",
+        "relation_focus": 0.63,
+        "action_key": "decays",
+        "action_focus": 0.04
+      }
+    },
+    {
+      "step": 2,
+      "type": "link_inverted",
+      "link_before": {
+        "id": 1,
+        "source": 1,
+        "target": 3,
+        "relation_key": "submits_to",
+        "relation_focus": 0.63,
+        "action_key": "decays",
+        "action_focus": 0.04
+      },
+      "link_after": {
+        "id": 1,
+        "source": 3,
+        "target": 1,
+        "relation_key": "submits_to",
+        "relation_focus": 0.63,
+        "action_key": "decays",
+        "action_focus": 0.04
+      }
+    }
+  ],
+  "id": 359
+}

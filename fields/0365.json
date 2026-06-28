@@ -1,0 +1,109 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "body",
+        "focus": 0.33
+      },
+      {
+        "id": 2,
+        "key": "fire",
+        "focus": 0.21
+      },
+      {
+        "id": 3,
+        "key": "burden",
+        "focus": 0.31
+      },
+      {
+        "id": 4,
+        "key": "crack",
+        "focus": 0.32
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 3,
+        "target": 1,
+        "relation_key": "dominates",
+        "relation_focus": 0.6,
+        "action_key": "inverts",
+        "action_focus": 0.18
+      },
+      {
+        "id": 2,
+        "source": 1,
+        "target": 3,
+        "relation_key": "contains",
+        "relation_focus": 0.63,
+        "action_key": "approaches",
+        "action_focus": 0.08
+      },
+      {
+        "id": 3,
+        "source": 4,
+        "target": 3,
+        "relation_key": "reveals",
+        "relation_focus": 0.02,
+        "action_key": "intensifies",
+        "action_focus": 0.85
+      },
+      {
+        "id": 4,
+        "source": 2,
+        "target": 1,
+        "relation_key": "attracts",
+        "relation_focus": 0.84,
+        "action_key": "crosses_a_threshold",
+        "action_focus": 0.93
+      },
+      {
+        "id": 5,
+        "source": 3,
+        "target": 2,
+        "relation_key": "generates",
+        "relation_focus": 0.01,
+        "action_key": "mutates",
+        "action_focus": 0.43
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "symbol_changed",
+      "symbol_id": 2,
+      "old_key": "fire",
+      "new_key": "ash",
+      "old_focus": 0.21,
+      "new_focus": 0.66
+    },
+    {
+      "step": 2,
+      "type": "link_inverted",
+      "link_before": {
+        "id": 3,
+        "source": 4,
+        "target": 3,
+        "relation_key": "reveals",
+        "relation_focus": 0.02,
+        "action_key": "intensifies",
+        "action_focus": 0.85
+      },
+      "link_after": {
+        "id": 3,
+        "source": 3,
+        "target": 4,
+        "relation_key": "reveals",
+        "relation_focus": 0.02,
+        "action_key": "intensifies",
+        "action_focus": 0.85
+      }
+    }
+  ],
+  "id": 365
+}

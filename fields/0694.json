@@ -1,0 +1,86 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "key",
+        "focus": 0.04
+      },
+      {
+        "id": 2,
+        "key": "promise",
+        "focus": 0.22
+      },
+      {
+        "id": 3,
+        "key": "desire",
+        "focus": 0.25
+      },
+      {
+        "id": 4,
+        "key": "herald",
+        "focus": 0.98
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 1,
+        "target": 4,
+        "relation_key": "embodies",
+        "relation_focus": 0.47,
+        "action_key": "settles",
+        "action_focus": 1.0
+      },
+      {
+        "id": 2,
+        "source": 4,
+        "target": 1,
+        "relation_key": "feeds",
+        "relation_focus": 0.93,
+        "action_key": "spreads",
+        "action_focus": 0.04
+      },
+      {
+        "id": 3,
+        "source": 2,
+        "target": 4,
+        "relation_key": "transforms",
+        "relation_focus": 0.43,
+        "action_key": "awakens",
+        "action_focus": 0.58
+      },
+      {
+        "id": 4,
+        "source": 3,
+        "target": 4,
+        "relation_key": "erases",
+        "relation_focus": 0.87,
+        "action_key": "becomes_embodied",
+        "action_focus": 0.44
+      },
+      {
+        "id": 5,
+        "source": 1,
+        "target": 2,
+        "relation_key": "attracts",
+        "relation_focus": 0.44,
+        "action_key": "crystallizes",
+        "action_focus": 0.6
+      },
+      {
+        "id": 6,
+        "source": 4,
+        "target": 3,
+        "relation_key": "witnesses",
+        "relation_focus": 0.97,
+        "action_key": "splits",
+        "action_focus": 0.76
+      }
+    ]
+  },
+  "mutations": [],
+  "id": 694
+}

@@ -1,0 +1,157 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "body",
+        "focus": 0.16
+      },
+      {
+        "id": 2,
+        "key": "shelter",
+        "focus": 0.7
+      },
+      {
+        "id": 3,
+        "key": "witness",
+        "focus": 0.08
+      },
+      {
+        "id": 4,
+        "key": "threshold",
+        "focus": 0.2
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 4,
+        "target": 3,
+        "relation_key": "binds",
+        "relation_focus": 0.1,
+        "action_key": "accelerates",
+        "action_focus": 0.93
+      },
+      {
+        "id": 2,
+        "source": 1,
+        "target": 4,
+        "relation_key": "erases",
+        "relation_focus": 0.53,
+        "action_key": "opens",
+        "action_focus": 0.71
+      },
+      {
+        "id": 3,
+        "source": 2,
+        "target": 4,
+        "relation_key": "feeds",
+        "relation_focus": 0.39,
+        "action_key": "mutates",
+        "action_focus": 0.33
+      },
+      {
+        "id": 4,
+        "source": 3,
+        "target": 4,
+        "relation_key": "erases",
+        "relation_focus": 0.42,
+        "action_key": "becomes_hidden",
+        "action_focus": 0.1
+      },
+      {
+        "id": 5,
+        "source": 2,
+        "target": 1,
+        "relation_key": "touches",
+        "relation_focus": 0.93,
+        "action_key": "decays",
+        "action_focus": 0.23
+      },
+      {
+        "id": 6,
+        "source": 1,
+        "target": 2,
+        "relation_key": "depends_on",
+        "relation_focus": 0.73,
+        "action_key": "exhales",
+        "action_focus": 0.36
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "link_added",
+      "link": {
+        "id": 7,
+        "source": 4,
+        "target": 1,
+        "relation_key": "mirrors",
+        "relation_focus": 0.28,
+        "action_key": "crystallizes",
+        "action_focus": 0.21
+      }
+    },
+    {
+      "step": 2,
+      "type": "link_added",
+      "link": {
+        "id": 8,
+        "source": 2,
+        "target": 3,
+        "relation_key": "remembers",
+        "relation_focus": 0.67,
+        "action_key": "weakens",
+        "action_focus": 0.28
+      }
+    },
+    {
+      "step": 3,
+      "type": "link_inverted",
+      "link_before": {
+        "id": 8,
+        "source": 2,
+        "target": 3,
+        "relation_key": "remembers",
+        "relation_focus": 0.67,
+        "action_key": "weakens",
+        "action_focus": 0.28
+      },
+      "link_after": {
+        "id": 8,
+        "source": 3,
+        "target": 2,
+        "relation_key": "remembers",
+        "relation_focus": 0.67,
+        "action_key": "weakens",
+        "action_focus": 0.28
+      }
+    },
+    {
+      "step": 4,
+      "type": "link_added",
+      "link": {
+        "id": 9,
+        "source": 4,
+        "target": 2,
+        "relation_key": "consumes",
+        "relation_focus": 0.06,
+        "action_key": "closes",
+        "action_focus": 0.38
+      }
+    },
+    {
+      "step": 5,
+      "type": "symbol_changed",
+      "symbol_id": 1,
+      "old_key": "body",
+      "new_key": "bridge",
+      "old_focus": 0.16,
+      "new_focus": 0.07
+    }
+  ],
+  "id": 781
+}

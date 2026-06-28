@@ -1,0 +1,117 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "secret",
+        "focus": 0.14
+      },
+      {
+        "id": 2,
+        "key": "window",
+        "focus": 0.71
+      },
+      {
+        "id": 3,
+        "key": "tower",
+        "focus": 0.95
+      },
+      {
+        "id": 4,
+        "key": "void",
+        "focus": 0.64
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 2,
+        "target": 1,
+        "relation_key": "reveals",
+        "relation_focus": 0.35,
+        "action_key": "refuses_change",
+        "action_focus": 0.99
+      },
+      {
+        "id": 2,
+        "source": 3,
+        "target": 2,
+        "relation_key": "dominates",
+        "relation_focus": 0.15,
+        "action_key": "becomes_quiet",
+        "action_focus": 0.8
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "symbol_changed",
+      "symbol_id": 4,
+      "old_key": "void",
+      "new_key": "storm",
+      "old_focus": 0.64,
+      "new_focus": 0.77
+    },
+    {
+      "step": 2,
+      "type": "action_changed",
+      "link_before": {
+        "id": 2,
+        "source": 3,
+        "target": 2,
+        "relation_key": "dominates",
+        "relation_focus": 0.15,
+        "action_key": "becomes_quiet",
+        "action_focus": 0.8
+      },
+      "link_after": {
+        "id": 2,
+        "source": 3,
+        "target": 2,
+        "relation_key": "dominates",
+        "relation_focus": 0.15,
+        "action_key": "destabilizes",
+        "action_focus": 0.55
+      }
+    },
+    {
+      "step": 3,
+      "type": "link_added",
+      "link": {
+        "id": 3,
+        "source": 2,
+        "target": 4,
+        "relation_key": "consumes",
+        "relation_focus": 0.48,
+        "action_key": "awakens",
+        "action_focus": 0.3
+      }
+    },
+    {
+      "step": 4,
+      "type": "link_inverted",
+      "link_before": {
+        "id": 3,
+        "source": 2,
+        "target": 4,
+        "relation_key": "consumes",
+        "relation_focus": 0.48,
+        "action_key": "awakens",
+        "action_focus": 0.3
+      },
+      "link_after": {
+        "id": 3,
+        "source": 4,
+        "target": 2,
+        "relation_key": "consumes",
+        "relation_focus": 0.48,
+        "action_key": "awakens",
+        "action_focus": 0.3
+      }
+    }
+  ],
+  "id": 872
+}

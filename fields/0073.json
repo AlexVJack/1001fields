@@ -1,0 +1,175 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "stone",
+        "focus": 0.76
+      },
+      {
+        "id": 2,
+        "key": "stranger",
+        "focus": 0.85
+      },
+      {
+        "id": 3,
+        "key": "void",
+        "focus": 0.17
+      },
+      {
+        "id": 4,
+        "key": "thread",
+        "focus": 0.97
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 4,
+        "target": 3,
+        "relation_key": "embodies",
+        "relation_focus": 0.31,
+        "action_key": "weakens",
+        "action_focus": 0.51
+      },
+      {
+        "id": 2,
+        "source": 1,
+        "target": 3,
+        "relation_key": "feeds",
+        "relation_focus": 0.93,
+        "action_key": "becomes_quiet",
+        "action_focus": 0.41
+      },
+      {
+        "id": 3,
+        "source": 3,
+        "target": 2,
+        "relation_key": "touches",
+        "relation_focus": 0.11,
+        "action_key": "destabilizes",
+        "action_focus": 0.02
+      },
+      {
+        "id": 4,
+        "source": 4,
+        "target": 2,
+        "relation_key": "misnames",
+        "relation_focus": 0.34,
+        "action_key": "exhales",
+        "action_focus": 0.93
+      },
+      {
+        "id": 5,
+        "source": 3,
+        "target": 1,
+        "relation_key": "contains",
+        "relation_focus": 0.48,
+        "action_key": "opens",
+        "action_focus": 0.37
+      },
+      {
+        "id": 6,
+        "source": 3,
+        "target": 4,
+        "relation_key": "attracts",
+        "relation_focus": 0.18,
+        "action_key": "approaches",
+        "action_focus": 0.77
+      },
+      {
+        "id": 7,
+        "source": 1,
+        "target": 2,
+        "relation_key": "hides",
+        "relation_focus": 0.43,
+        "action_key": "mutates",
+        "action_focus": 0.75
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "link_removed",
+      "link": {
+        "id": 3,
+        "source": 3,
+        "target": 2,
+        "relation_key": "touches",
+        "relation_focus": 0.11,
+        "action_key": "destabilizes",
+        "action_focus": 0.02
+      }
+    },
+    {
+      "step": 2,
+      "type": "action_changed",
+      "link_before": {
+        "id": 7,
+        "source": 1,
+        "target": 2,
+        "relation_key": "hides",
+        "relation_focus": 0.43,
+        "action_key": "mutates",
+        "action_focus": 0.75
+      },
+      "link_after": {
+        "id": 7,
+        "source": 1,
+        "target": 2,
+        "relation_key": "hides",
+        "relation_focus": 0.43,
+        "action_key": "destabilizes",
+        "action_focus": 0.74
+      }
+    },
+    {
+      "step": 3,
+      "type": "relation_changed",
+      "link_before": {
+        "id": 5,
+        "source": 3,
+        "target": 1,
+        "relation_key": "contains",
+        "relation_focus": 0.48,
+        "action_key": "opens",
+        "action_focus": 0.37
+      },
+      "link_after": {
+        "id": 5,
+        "source": 3,
+        "target": 1,
+        "relation_key": "misnames",
+        "relation_focus": 0.48,
+        "action_key": "opens",
+        "action_focus": 0.37
+      }
+    },
+    {
+      "step": 4,
+      "type": "relation_changed",
+      "link_before": {
+        "id": 5,
+        "source": 3,
+        "target": 1,
+        "relation_key": "misnames",
+        "relation_focus": 0.48,
+        "action_key": "opens",
+        "action_focus": 0.37
+      },
+      "link_after": {
+        "id": 5,
+        "source": 3,
+        "target": 1,
+        "relation_key": "separates",
+        "relation_focus": 0.78,
+        "action_key": "opens",
+        "action_focus": 0.37
+      }
+    }
+  ],
+  "id": 73
+}

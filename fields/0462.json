@@ -1,0 +1,113 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "sage",
+        "focus": 0.02
+      },
+      {
+        "id": 2,
+        "key": "storm",
+        "focus": 0.21
+      },
+      {
+        "id": 3,
+        "key": "signal",
+        "focus": 0.97
+      },
+      {
+        "id": 4,
+        "key": "spark",
+        "focus": 0.35
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 4,
+        "target": 3,
+        "relation_key": "misnames",
+        "relation_focus": 0.78,
+        "action_key": "exhales",
+        "action_focus": 0.75
+      },
+      {
+        "id": 2,
+        "source": 3,
+        "target": 1,
+        "relation_key": "separates",
+        "relation_focus": 0.8,
+        "action_key": "becomes_clear",
+        "action_focus": 0.27
+      },
+      {
+        "id": 3,
+        "source": 1,
+        "target": 2,
+        "relation_key": "clarifies",
+        "relation_focus": 0.84,
+        "action_key": "stabilizes",
+        "action_focus": 0.29
+      },
+      {
+        "id": 4,
+        "source": 3,
+        "target": 4,
+        "relation_key": "echoes",
+        "relation_focus": 0.47,
+        "action_key": "weakens",
+        "action_focus": 0.49
+      },
+      {
+        "id": 5,
+        "source": 4,
+        "target": 2,
+        "relation_key": "remembers",
+        "relation_focus": 0.56,
+        "action_key": "becomes_clear",
+        "action_focus": 0.93
+      },
+      {
+        "id": 6,
+        "source": 1,
+        "target": 4,
+        "relation_key": "contains",
+        "relation_focus": 0.88,
+        "action_key": "destabilizes",
+        "action_focus": 0.14
+      },
+      {
+        "id": 7,
+        "source": 4,
+        "target": 1,
+        "relation_key": "protects",
+        "relation_focus": 0.45,
+        "action_key": "becomes_hidden",
+        "action_focus": 0.03
+      },
+      {
+        "id": 8,
+        "source": 2,
+        "target": 3,
+        "relation_key": "witnesses",
+        "relation_focus": 0.83,
+        "action_key": "refuses_change",
+        "action_focus": 0.12
+      },
+      {
+        "id": 9,
+        "source": 2,
+        "target": 1,
+        "relation_key": "binds",
+        "relation_focus": 0.62,
+        "action_key": "merges",
+        "action_focus": 0.91
+      }
+    ]
+  },
+  "mutations": [],
+  "id": 462
+}

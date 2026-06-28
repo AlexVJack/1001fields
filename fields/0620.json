@@ -1,0 +1,126 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "burden",
+        "focus": 0.62
+      },
+      {
+        "id": 2,
+        "key": "shelter",
+        "focus": 0.48
+      },
+      {
+        "id": 3,
+        "key": "boundary",
+        "focus": 0.55
+      },
+      {
+        "id": 4,
+        "key": "ash",
+        "focus": 0.72
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 4,
+        "target": 3,
+        "relation_key": "reveals",
+        "relation_focus": 0.65,
+        "action_key": "crosses_a_threshold",
+        "action_focus": 0.11
+      },
+      {
+        "id": 2,
+        "source": 1,
+        "target": 2,
+        "relation_key": "touches",
+        "relation_focus": 0.01,
+        "action_key": "spreads",
+        "action_focus": 0.77
+      },
+      {
+        "id": 3,
+        "source": 3,
+        "target": 4,
+        "relation_key": "witnesses",
+        "relation_focus": 0.2,
+        "action_key": "repeats",
+        "action_focus": 0.61
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "symbol_changed",
+      "symbol_id": 2,
+      "old_key": "shelter",
+      "new_key": "crack",
+      "old_focus": 0.48,
+      "new_focus": 0.42
+    },
+    {
+      "step": 2,
+      "type": "relation_changed",
+      "link_before": {
+        "id": 1,
+        "source": 4,
+        "target": 3,
+        "relation_key": "reveals",
+        "relation_focus": 0.65,
+        "action_key": "crosses_a_threshold",
+        "action_focus": 0.11
+      },
+      "link_after": {
+        "id": 1,
+        "source": 4,
+        "target": 3,
+        "relation_key": "mirrors",
+        "relation_focus": 0.68,
+        "action_key": "crosses_a_threshold",
+        "action_focus": 0.11
+      }
+    },
+    {
+      "step": 3,
+      "type": "symbol_changed",
+      "symbol_id": 2,
+      "old_key": "crack",
+      "new_key": "window",
+      "old_focus": 0.42,
+      "new_focus": 0.75
+    },
+    {
+      "step": 4,
+      "type": "link_removed",
+      "link": {
+        "id": 2,
+        "source": 1,
+        "target": 2,
+        "relation_key": "touches",
+        "relation_focus": 0.01,
+        "action_key": "spreads",
+        "action_focus": 0.77
+      }
+    },
+    {
+      "step": 5,
+      "type": "link_removed",
+      "link": {
+        "id": 1,
+        "source": 4,
+        "target": 3,
+        "relation_key": "mirrors",
+        "relation_focus": 0.68,
+        "action_key": "crosses_a_threshold",
+        "action_focus": 0.11
+      }
+    }
+  ],
+  "id": 620
+}

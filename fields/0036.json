@@ -1,0 +1,184 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "ash",
+        "focus": 0.85
+      },
+      {
+        "id": 2,
+        "key": "crack",
+        "focus": 0.8
+      },
+      {
+        "id": 3,
+        "key": "gate",
+        "focus": 0.24
+      },
+      {
+        "id": 4,
+        "key": "debt",
+        "focus": 0.75
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 3,
+        "target": 2,
+        "relation_key": "dominates",
+        "relation_focus": 0.24,
+        "action_key": "repeats",
+        "action_focus": 0.26
+      },
+      {
+        "id": 2,
+        "source": 2,
+        "target": 1,
+        "relation_key": "remembers",
+        "relation_focus": 0.26,
+        "action_key": "becomes_visible",
+        "action_focus": 0.08
+      },
+      {
+        "id": 3,
+        "source": 1,
+        "target": 2,
+        "relation_key": "witnesses",
+        "relation_focus": 0.8,
+        "action_key": "refuses_change",
+        "action_focus": 0.8
+      },
+      {
+        "id": 4,
+        "source": 3,
+        "target": 1,
+        "relation_key": "repels",
+        "relation_focus": 0.03,
+        "action_key": "awakens",
+        "action_focus": 0.11
+      },
+      {
+        "id": 5,
+        "source": 4,
+        "target": 3,
+        "relation_key": "transforms",
+        "relation_focus": 0.86,
+        "action_key": "accelerates",
+        "action_focus": 0.09
+      },
+      {
+        "id": 6,
+        "source": 3,
+        "target": 4,
+        "relation_key": "heals",
+        "relation_focus": 0.05,
+        "action_key": "mutates",
+        "action_focus": 0.36
+      },
+      {
+        "id": 7,
+        "source": 1,
+        "target": 4,
+        "relation_key": "mirrors",
+        "relation_focus": 0.65,
+        "action_key": "spreads",
+        "action_focus": 0.31
+      },
+      {
+        "id": 8,
+        "source": 1,
+        "target": 3,
+        "relation_key": "listens_to",
+        "relation_focus": 0.32,
+        "action_key": "closes",
+        "action_focus": 0.4
+      },
+      {
+        "id": 9,
+        "source": 4,
+        "target": 1,
+        "relation_key": "separates",
+        "relation_focus": 0.18,
+        "action_key": "accelerates",
+        "action_focus": 0.59
+      },
+      {
+        "id": 10,
+        "source": 4,
+        "target": 2,
+        "relation_key": "misnames",
+        "relation_focus": 0.92,
+        "action_key": "repeats",
+        "action_focus": 0.44
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "link_added",
+      "link": {
+        "id": 11,
+        "source": 2,
+        "target": 4,
+        "relation_key": "witnesses",
+        "relation_focus": 0.69,
+        "action_key": "mutates",
+        "action_focus": 0.22
+      }
+    },
+    {
+      "step": 2,
+      "type": "symbol_changed",
+      "symbol_id": 4,
+      "old_key": "debt",
+      "new_key": "boundary",
+      "old_focus": 0.75,
+      "new_focus": 0.81
+    },
+    {
+      "step": 3,
+      "type": "link_removed",
+      "link": {
+        "id": 3,
+        "source": 1,
+        "target": 2,
+        "relation_key": "witnesses",
+        "relation_focus": 0.8,
+        "action_key": "refuses_change",
+        "action_focus": 0.8
+      }
+    },
+    {
+      "step": 4,
+      "type": "link_removed",
+      "link": {
+        "id": 8,
+        "source": 1,
+        "target": 3,
+        "relation_key": "listens_to",
+        "relation_focus": 0.32,
+        "action_key": "closes",
+        "action_focus": 0.4
+      }
+    },
+    {
+      "step": 5,
+      "type": "link_added",
+      "link": {
+        "id": 12,
+        "source": 2,
+        "target": 3,
+        "relation_key": "hides",
+        "relation_focus": 0.55,
+        "action_key": "awakens",
+        "action_focus": 0.87
+      }
+    }
+  ],
+  "id": 36
+}

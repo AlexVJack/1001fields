@@ -1,0 +1,95 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "harbor",
+        "focus": 0.02
+      },
+      {
+        "id": 2,
+        "key": "herald",
+        "focus": 0.6
+      },
+      {
+        "id": 3,
+        "key": "name",
+        "focus": 0.06
+      },
+      {
+        "id": 4,
+        "key": "hand",
+        "focus": 0.25
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 3,
+        "target": 4,
+        "relation_key": "heals",
+        "relation_focus": 0.21,
+        "action_key": "mutates",
+        "action_focus": 0.23
+      },
+      {
+        "id": 2,
+        "source": 2,
+        "target": 3,
+        "relation_key": "touches",
+        "relation_focus": 0.59,
+        "action_key": "becomes_quiet",
+        "action_focus": 0.11
+      },
+      {
+        "id": 3,
+        "source": 3,
+        "target": 1,
+        "relation_key": "touches",
+        "relation_focus": 0.21,
+        "action_key": "crystallizes",
+        "action_focus": 0.84
+      },
+      {
+        "id": 4,
+        "source": 1,
+        "target": 4,
+        "relation_key": "depends_on",
+        "relation_focus": 0.13,
+        "action_key": "mutates",
+        "action_focus": 0.59
+      },
+      {
+        "id": 5,
+        "source": 4,
+        "target": 2,
+        "relation_key": "repels",
+        "relation_focus": 0.9,
+        "action_key": "closes",
+        "action_focus": 0.79
+      },
+      {
+        "id": 6,
+        "source": 4,
+        "target": 3,
+        "relation_key": "hides",
+        "relation_focus": 0.75,
+        "action_key": "mutates",
+        "action_focus": 0.46
+      },
+      {
+        "id": 7,
+        "source": 1,
+        "target": 3,
+        "relation_key": "blocks",
+        "relation_focus": 0.57,
+        "action_key": "becomes_hidden",
+        "action_focus": 0.33
+      }
+    ]
+  },
+  "mutations": [],
+  "id": 644
+}

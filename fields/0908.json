@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "name",
+        "focus": 0.26
+      },
+      {
+        "id": 2,
+        "key": "trace",
+        "focus": 0.7
+      },
+      {
+        "id": 3,
+        "key": "child",
+        "focus": 0.22
+      },
+      {
+        "id": 4,
+        "key": "guardian",
+        "focus": 0.4
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 2,
+        "target": 4,
+        "relation_key": "clarifies",
+        "relation_focus": 0.62,
+        "action_key": "refuses_change",
+        "action_focus": 0.44
+      },
+      {
+        "id": 2,
+        "source": 2,
+        "target": 3,
+        "relation_key": "feeds",
+        "relation_focus": 0.65,
+        "action_key": "creates_a_third_thing",
+        "action_focus": 0.7
+      }
+    ]
+  },
+  "mutations": [],
+  "id": 908
+}

@@ -1,0 +1,82 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "pause",
+        "focus": 0.07
+      },
+      {
+        "id": 2,
+        "key": "debt",
+        "focus": 0.72
+      },
+      {
+        "id": 3,
+        "key": "name",
+        "focus": 0.56
+      },
+      {
+        "id": 4,
+        "key": "breath",
+        "focus": 0.94
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 1,
+        "target": 3,
+        "relation_key": "remembers",
+        "relation_focus": 0.78,
+        "action_key": "becomes_clear",
+        "action_focus": 0.15
+      },
+      {
+        "id": 2,
+        "source": 1,
+        "target": 2,
+        "relation_key": "repels",
+        "relation_focus": 0.07,
+        "action_key": "repeats",
+        "action_focus": 0.95
+      },
+      {
+        "id": 3,
+        "source": 2,
+        "target": 1,
+        "relation_key": "repels",
+        "relation_focus": 0.72,
+        "action_key": "creates_a_third_thing",
+        "action_focus": 0.28
+      },
+      {
+        "id": 4,
+        "source": 4,
+        "target": 2,
+        "relation_key": "submits_to",
+        "relation_focus": 0.81,
+        "action_key": "inverts",
+        "action_focus": 0.28
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "link_added",
+      "link": {
+        "id": 5,
+        "source": 2,
+        "target": 3,
+        "relation_key": "mirrors",
+        "relation_focus": 0.61,
+        "action_key": "awakens",
+        "action_focus": 0.79
+      }
+    }
+  ],
+  "id": 952
+}

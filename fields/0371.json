@@ -1,0 +1,31 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "garden",
+        "focus": 0.54
+      },
+      {
+        "id": 2,
+        "key": "body",
+        "focus": 0.68
+      },
+      {
+        "id": 3,
+        "key": "archive",
+        "focus": 0.22
+      },
+      {
+        "id": 4,
+        "key": "ash",
+        "focus": 0.87
+      }
+    ],
+    "links": []
+  },
+  "mutations": [],
+  "id": 371
+}

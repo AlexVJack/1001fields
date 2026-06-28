@@ -1,0 +1,122 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "sage",
+        "focus": 0.04
+      },
+      {
+        "id": 2,
+        "key": "garden",
+        "focus": 0.41
+      },
+      {
+        "id": 3,
+        "key": "ruin",
+        "focus": 0.1
+      },
+      {
+        "id": 4,
+        "key": "fear",
+        "focus": 0.98
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 4,
+        "target": 1,
+        "relation_key": "feeds",
+        "relation_focus": 0.03,
+        "action_key": "crosses_a_threshold",
+        "action_focus": 0.12
+      },
+      {
+        "id": 2,
+        "source": 3,
+        "target": 2,
+        "relation_key": "mirrors",
+        "relation_focus": 0.9,
+        "action_key": "collapses",
+        "action_focus": 0.31
+      },
+      {
+        "id": 3,
+        "source": 1,
+        "target": 3,
+        "relation_key": "hides",
+        "relation_focus": 0.53,
+        "action_key": "crystallizes",
+        "action_focus": 0.84
+      },
+      {
+        "id": 4,
+        "source": 1,
+        "target": 2,
+        "relation_key": "transforms",
+        "relation_focus": 0.16,
+        "action_key": "decays",
+        "action_focus": 0.55
+      },
+      {
+        "id": 5,
+        "source": 3,
+        "target": 4,
+        "relation_key": "repels",
+        "relation_focus": 0.5,
+        "action_key": "stabilizes",
+        "action_focus": 0.45
+      },
+      {
+        "id": 6,
+        "source": 2,
+        "target": 1,
+        "relation_key": "listens_to",
+        "relation_focus": 0.52,
+        "action_key": "splits",
+        "action_focus": 0.32
+      },
+      {
+        "id": 7,
+        "source": 2,
+        "target": 3,
+        "relation_key": "blocks",
+        "relation_focus": 0.17,
+        "action_key": "becomes_hidden",
+        "action_focus": 0.06
+      },
+      {
+        "id": 8,
+        "source": 3,
+        "target": 1,
+        "relation_key": "submits_to",
+        "relation_focus": 0.08,
+        "action_key": "weakens",
+        "action_focus": 0.19
+      },
+      {
+        "id": 9,
+        "source": 1,
+        "target": 4,
+        "relation_key": "transforms",
+        "relation_focus": 0.27,
+        "action_key": "becomes_hidden",
+        "action_focus": 0.92
+      },
+      {
+        "id": 10,
+        "source": 4,
+        "target": 2,
+        "relation_key": "infects",
+        "relation_focus": 0.18,
+        "action_key": "splits",
+        "action_focus": 0.08
+      }
+    ]
+  },
+  "mutations": [],
+  "id": 52
+}

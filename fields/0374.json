@@ -1,0 +1,131 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "sage",
+        "focus": 0.39
+      },
+      {
+        "id": 2,
+        "key": "oracle",
+        "focus": 0.86
+      },
+      {
+        "id": 3,
+        "key": "ash",
+        "focus": 0.88
+      },
+      {
+        "id": 4,
+        "key": "archive",
+        "focus": 1.0
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 2,
+        "target": 1,
+        "relation_key": "embodies",
+        "relation_focus": 0.93,
+        "action_key": "opens",
+        "action_focus": 0.77
+      },
+      {
+        "id": 2,
+        "source": 3,
+        "target": 4,
+        "relation_key": "submits_to",
+        "relation_focus": 0.34,
+        "action_key": "lets_go",
+        "action_focus": 0.77
+      },
+      {
+        "id": 3,
+        "source": 4,
+        "target": 3,
+        "relation_key": "echoes",
+        "relation_focus": 0.63,
+        "action_key": "spreads",
+        "action_focus": 0.52
+      },
+      {
+        "id": 4,
+        "source": 3,
+        "target": 1,
+        "relation_key": "misnames",
+        "relation_focus": 0.33,
+        "action_key": "exhales",
+        "action_focus": 0.7
+      },
+      {
+        "id": 5,
+        "source": 1,
+        "target": 3,
+        "relation_key": "attracts",
+        "relation_focus": 0.6,
+        "action_key": "accelerates",
+        "action_focus": 0.77
+      },
+      {
+        "id": 6,
+        "source": 4,
+        "target": 2,
+        "relation_key": "misnames",
+        "relation_focus": 0.28,
+        "action_key": "creates_a_third_thing",
+        "action_focus": 0.59
+      },
+      {
+        "id": 7,
+        "source": 2,
+        "target": 3,
+        "relation_key": "protects",
+        "relation_focus": 0.74,
+        "action_key": "intensifies",
+        "action_focus": 0.14
+      },
+      {
+        "id": 8,
+        "source": 3,
+        "target": 2,
+        "relation_key": "remembers",
+        "relation_focus": 0.0,
+        "action_key": "crystallizes",
+        "action_focus": 0.28
+      },
+      {
+        "id": 9,
+        "source": 1,
+        "target": 2,
+        "relation_key": "witnesses",
+        "relation_focus": 0.35,
+        "action_key": "repeats",
+        "action_focus": 0.61
+      },
+      {
+        "id": 10,
+        "source": 2,
+        "target": 4,
+        "relation_key": "misnames",
+        "relation_focus": 0.32,
+        "action_key": "splits",
+        "action_focus": 0.79
+      },
+      {
+        "id": 11,
+        "source": 1,
+        "target": 4,
+        "relation_key": "transforms",
+        "relation_focus": 0.16,
+        "action_key": "lets_go",
+        "action_focus": 0.07
+      }
+    ]
+  },
+  "mutations": [],
+  "id": 374
+}

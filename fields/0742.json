@@ -1,0 +1,86 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "archive",
+        "focus": 0.99
+      },
+      {
+        "id": 2,
+        "key": "hunger",
+        "focus": 0.29
+      },
+      {
+        "id": 3,
+        "key": "key",
+        "focus": 0.83
+      },
+      {
+        "id": 4,
+        "key": "network",
+        "focus": 0.41
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 2,
+        "target": 1,
+        "relation_key": "attracts",
+        "relation_focus": 0.1,
+        "action_key": "returns",
+        "action_focus": 0.27
+      },
+      {
+        "id": 2,
+        "source": 2,
+        "target": 3,
+        "relation_key": "erases",
+        "relation_focus": 0.96,
+        "action_key": "dissolves",
+        "action_focus": 0.3
+      },
+      {
+        "id": 3,
+        "source": 1,
+        "target": 2,
+        "relation_key": "blocks",
+        "relation_focus": 0.84,
+        "action_key": "merges",
+        "action_focus": 0.41
+      },
+      {
+        "id": 4,
+        "source": 1,
+        "target": 3,
+        "relation_key": "separates",
+        "relation_focus": 0.18,
+        "action_key": "dissolves",
+        "action_focus": 0.74
+      },
+      {
+        "id": 5,
+        "source": 1,
+        "target": 4,
+        "relation_key": "misnames",
+        "relation_focus": 0.8,
+        "action_key": "accelerates",
+        "action_focus": 0.0
+      },
+      {
+        "id": 6,
+        "source": 4,
+        "target": 2,
+        "relation_key": "separates",
+        "relation_focus": 0.66,
+        "action_key": "lets_go",
+        "action_focus": 0.91
+      }
+    ]
+  },
+  "mutations": [],
+  "id": 742
+}

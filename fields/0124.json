@@ -1,0 +1,31 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "boundary",
+        "focus": 0.11
+      },
+      {
+        "id": 2,
+        "key": "debt",
+        "focus": 0.67
+      },
+      {
+        "id": 3,
+        "key": "harbor",
+        "focus": 0.83
+      },
+      {
+        "id": 4,
+        "key": "key",
+        "focus": 0.73
+      }
+    ],
+    "links": []
+  },
+  "mutations": [],
+  "id": 124
+}

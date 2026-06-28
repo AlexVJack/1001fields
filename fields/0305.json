@@ -1,0 +1,144 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "crack",
+        "focus": 0.74
+      },
+      {
+        "id": 2,
+        "key": "stranger",
+        "focus": 0.02
+      },
+      {
+        "id": 3,
+        "key": "map",
+        "focus": 0.17
+      },
+      {
+        "id": 4,
+        "key": "bridge",
+        "focus": 0.12
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 4,
+        "target": 1,
+        "relation_key": "embodies",
+        "relation_focus": 0.27,
+        "action_key": "weakens",
+        "action_focus": 0.42
+      },
+      {
+        "id": 2,
+        "source": 3,
+        "target": 2,
+        "relation_key": "reveals",
+        "relation_focus": 0.22,
+        "action_key": "awakens",
+        "action_focus": 0.74
+      },
+      {
+        "id": 3,
+        "source": 1,
+        "target": 3,
+        "relation_key": "transforms",
+        "relation_focus": 0.37,
+        "action_key": "exhales",
+        "action_focus": 0.83
+      },
+      {
+        "id": 4,
+        "source": 4,
+        "target": 3,
+        "relation_key": "hides",
+        "relation_focus": 0.05,
+        "action_key": "becomes_quiet",
+        "action_focus": 0.91
+      },
+      {
+        "id": 5,
+        "source": 1,
+        "target": 4,
+        "relation_key": "embodies",
+        "relation_focus": 0.9,
+        "action_key": "approaches",
+        "action_focus": 0.69
+      },
+      {
+        "id": 6,
+        "source": 2,
+        "target": 3,
+        "relation_key": "dominates",
+        "relation_focus": 0.23,
+        "action_key": "splits",
+        "action_focus": 0.77
+      },
+      {
+        "id": 7,
+        "source": 2,
+        "target": 4,
+        "relation_key": "consumes",
+        "relation_focus": 0.34,
+        "action_key": "returns",
+        "action_focus": 0.34
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "link_added",
+      "link": {
+        "id": 8,
+        "source": 3,
+        "target": 1,
+        "relation_key": "generates",
+        "relation_focus": 0.42,
+        "action_key": "becomes_embodied",
+        "action_focus": 0.13
+      }
+    },
+    {
+      "step": 2,
+      "type": "link_added",
+      "link": {
+        "id": 9,
+        "source": 4,
+        "target": 2,
+        "relation_key": "transforms",
+        "relation_focus": 0.22,
+        "action_key": "becomes_clear",
+        "action_focus": 0.15
+      }
+    },
+    {
+      "step": 3,
+      "type": "relation_changed",
+      "link_before": {
+        "id": 5,
+        "source": 1,
+        "target": 4,
+        "relation_key": "embodies",
+        "relation_focus": 0.9,
+        "action_key": "approaches",
+        "action_focus": 0.69
+      },
+      "link_after": {
+        "id": 5,
+        "source": 1,
+        "target": 4,
+        "relation_key": "names",
+        "relation_focus": 0.33,
+        "action_key": "approaches",
+        "action_focus": 0.69
+      }
+    }
+  ],
+  "id": 305
+}

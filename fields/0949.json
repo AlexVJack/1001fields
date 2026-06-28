@@ -1,0 +1,131 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "key",
+        "focus": 0.99
+      },
+      {
+        "id": 2,
+        "key": "body",
+        "focus": 0.39
+      },
+      {
+        "id": 3,
+        "key": "fear",
+        "focus": 0.95
+      },
+      {
+        "id": 4,
+        "key": "signal",
+        "focus": 0.9
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 3,
+        "target": 2,
+        "relation_key": "submits_to",
+        "relation_focus": 0.17,
+        "action_key": "opens",
+        "action_focus": 0.42
+      },
+      {
+        "id": 2,
+        "source": 4,
+        "target": 1,
+        "relation_key": "generates",
+        "relation_focus": 0.47,
+        "action_key": "stabilizes",
+        "action_focus": 0.32
+      },
+      {
+        "id": 3,
+        "source": 2,
+        "target": 4,
+        "relation_key": "dominates",
+        "relation_focus": 0.26,
+        "action_key": "returns",
+        "action_focus": 0.97
+      },
+      {
+        "id": 4,
+        "source": 4,
+        "target": 2,
+        "relation_key": "attracts",
+        "relation_focus": 0.24,
+        "action_key": "mutates",
+        "action_focus": 0.65
+      },
+      {
+        "id": 5,
+        "source": 2,
+        "target": 3,
+        "relation_key": "protects",
+        "relation_focus": 0.74,
+        "action_key": "splits",
+        "action_focus": 0.34
+      },
+      {
+        "id": 6,
+        "source": 2,
+        "target": 1,
+        "relation_key": "names",
+        "relation_focus": 0.99,
+        "action_key": "repeats",
+        "action_focus": 0.8
+      },
+      {
+        "id": 7,
+        "source": 4,
+        "target": 3,
+        "relation_key": "submits_to",
+        "relation_focus": 0.01,
+        "action_key": "becomes_quiet",
+        "action_focus": 0.47
+      },
+      {
+        "id": 8,
+        "source": 3,
+        "target": 4,
+        "relation_key": "attracts",
+        "relation_focus": 0.06,
+        "action_key": "destabilizes",
+        "action_focus": 0.05
+      },
+      {
+        "id": 9,
+        "source": 1,
+        "target": 3,
+        "relation_key": "endures",
+        "relation_focus": 0.3,
+        "action_key": "intensifies",
+        "action_focus": 0.51
+      },
+      {
+        "id": 10,
+        "source": 1,
+        "target": 4,
+        "relation_key": "remembers",
+        "relation_focus": 0.47,
+        "action_key": "opens",
+        "action_focus": 0.72
+      },
+      {
+        "id": 11,
+        "source": 3,
+        "target": 1,
+        "relation_key": "clarifies",
+        "relation_focus": 0.06,
+        "action_key": "closes",
+        "action_focus": 0.64
+      }
+    ]
+  },
+  "mutations": [],
+  "id": 949
+}

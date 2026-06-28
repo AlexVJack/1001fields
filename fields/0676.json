@@ -1,0 +1,122 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "debt",
+        "focus": 0.86
+      },
+      {
+        "id": 2,
+        "key": "child",
+        "focus": 0.25
+      },
+      {
+        "id": 3,
+        "key": "mirror",
+        "focus": 0.23
+      },
+      {
+        "id": 4,
+        "key": "garden",
+        "focus": 0.66
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 4,
+        "target": 1,
+        "relation_key": "submits_to",
+        "relation_focus": 0.59,
+        "action_key": "accelerates",
+        "action_focus": 0.09
+      },
+      {
+        "id": 2,
+        "source": 2,
+        "target": 3,
+        "relation_key": "transforms",
+        "relation_focus": 0.79,
+        "action_key": "merges",
+        "action_focus": 0.0
+      },
+      {
+        "id": 3,
+        "source": 1,
+        "target": 3,
+        "relation_key": "touches",
+        "relation_focus": 0.28,
+        "action_key": "returns",
+        "action_focus": 0.41
+      },
+      {
+        "id": 4,
+        "source": 2,
+        "target": 1,
+        "relation_key": "separates",
+        "relation_focus": 0.11,
+        "action_key": "lets_go",
+        "action_focus": 0.58
+      },
+      {
+        "id": 5,
+        "source": 1,
+        "target": 4,
+        "relation_key": "heals",
+        "relation_focus": 0.29,
+        "action_key": "decays",
+        "action_focus": 0.08
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "link_added",
+      "link": {
+        "id": 6,
+        "source": 3,
+        "target": 1,
+        "relation_key": "touches",
+        "relation_focus": 0.48,
+        "action_key": "awakens",
+        "action_focus": 0.95
+      }
+    },
+    {
+      "step": 2,
+      "type": "symbol_changed",
+      "symbol_id": 2,
+      "old_key": "child",
+      "new_key": "machine",
+      "old_focus": 0.25,
+      "new_focus": 0.26
+    },
+    {
+      "step": 3,
+      "type": "action_changed",
+      "link_before": {
+        "id": 6,
+        "source": 3,
+        "target": 1,
+        "relation_key": "touches",
+        "relation_focus": 0.48,
+        "action_key": "awakens",
+        "action_focus": 0.95
+      },
+      "link_after": {
+        "id": 6,
+        "source": 3,
+        "target": 1,
+        "relation_key": "touches",
+        "relation_focus": 0.48,
+        "action_key": "repeats",
+        "action_focus": 0.63
+      }
+    }
+  ],
+  "id": 676
+}

@@ -1,0 +1,100 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "stranger",
+        "focus": 0.9
+      },
+      {
+        "id": 2,
+        "key": "promise",
+        "focus": 0.49
+      },
+      {
+        "id": 3,
+        "key": "witness",
+        "focus": 0.13
+      },
+      {
+        "id": 4,
+        "key": "map",
+        "focus": 0.86
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 2,
+        "target": 4,
+        "relation_key": "blocks",
+        "relation_focus": 0.11,
+        "action_key": "becomes_quiet",
+        "action_focus": 0.02
+      },
+      {
+        "id": 2,
+        "source": 2,
+        "target": 1,
+        "relation_key": "attracts",
+        "relation_focus": 0.9,
+        "action_key": "intensifies",
+        "action_focus": 0.9
+      },
+      {
+        "id": 3,
+        "source": 1,
+        "target": 3,
+        "relation_key": "misnames",
+        "relation_focus": 0.35,
+        "action_key": "mutates",
+        "action_focus": 0.23
+      },
+      {
+        "id": 4,
+        "source": 4,
+        "target": 1,
+        "relation_key": "erases",
+        "relation_focus": 0.35,
+        "action_key": "approaches",
+        "action_focus": 0.82
+      },
+      {
+        "id": 5,
+        "source": 1,
+        "target": 4,
+        "relation_key": "infects",
+        "relation_focus": 0.36,
+        "action_key": "refuses_change",
+        "action_focus": 0.7
+      },
+      {
+        "id": 6,
+        "source": 1,
+        "target": 2,
+        "relation_key": "attracts",
+        "relation_focus": 0.38,
+        "action_key": "lets_go",
+        "action_focus": 0.6
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "link_removed",
+      "link": {
+        "id": 1,
+        "source": 2,
+        "target": 4,
+        "relation_key": "blocks",
+        "relation_focus": 0.11,
+        "action_key": "becomes_quiet",
+        "action_focus": 0.02
+      }
+    }
+  ],
+  "id": 914
+}

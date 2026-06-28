@@ -1,0 +1,86 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "secret",
+        "focus": 0.71
+      },
+      {
+        "id": 2,
+        "key": "promise",
+        "focus": 0.29
+      },
+      {
+        "id": 3,
+        "key": "stranger",
+        "focus": 0.85
+      },
+      {
+        "id": 4,
+        "key": "shadow",
+        "focus": 0.88
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 3,
+        "target": 1,
+        "relation_key": "contains",
+        "relation_focus": 0.29,
+        "action_key": "decays",
+        "action_focus": 0.53
+      },
+      {
+        "id": 2,
+        "source": 4,
+        "target": 1,
+        "relation_key": "names",
+        "relation_focus": 0.68,
+        "action_key": "inverts",
+        "action_focus": 0.91
+      },
+      {
+        "id": 3,
+        "source": 3,
+        "target": 2,
+        "relation_key": "transforms",
+        "relation_focus": 0.88,
+        "action_key": "stabilizes",
+        "action_focus": 0.09
+      },
+      {
+        "id": 4,
+        "source": 1,
+        "target": 3,
+        "relation_key": "generates",
+        "relation_focus": 0.24,
+        "action_key": "crystallizes",
+        "action_focus": 0.46
+      },
+      {
+        "id": 5,
+        "source": 2,
+        "target": 1,
+        "relation_key": "feeds",
+        "relation_focus": 0.48,
+        "action_key": "crystallizes",
+        "action_focus": 0.7
+      },
+      {
+        "id": 6,
+        "source": 2,
+        "target": 4,
+        "relation_key": "hides",
+        "relation_focus": 0.43,
+        "action_key": "spreads",
+        "action_focus": 0.73
+      }
+    ]
+  },
+  "mutations": [],
+  "id": 633
+}

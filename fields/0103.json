@@ -1,0 +1,113 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "machine",
+        "focus": 0.84
+      },
+      {
+        "id": 2,
+        "key": "ash",
+        "focus": 0.87
+      },
+      {
+        "id": 3,
+        "key": "guardian",
+        "focus": 0.94
+      },
+      {
+        "id": 4,
+        "key": "fear",
+        "focus": 0.93
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 2,
+        "target": 3,
+        "relation_key": "feeds",
+        "relation_focus": 0.17,
+        "action_key": "exhales",
+        "action_focus": 0.71
+      },
+      {
+        "id": 2,
+        "source": 2,
+        "target": 4,
+        "relation_key": "mirrors",
+        "relation_focus": 0.53,
+        "action_key": "refuses_change",
+        "action_focus": 0.34
+      },
+      {
+        "id": 3,
+        "source": 4,
+        "target": 2,
+        "relation_key": "witnesses",
+        "relation_focus": 0.94,
+        "action_key": "returns",
+        "action_focus": 0.21
+      },
+      {
+        "id": 4,
+        "source": 3,
+        "target": 1,
+        "relation_key": "touches",
+        "relation_focus": 0.33,
+        "action_key": "dissolves",
+        "action_focus": 0.36
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "link_inverted",
+      "link_before": {
+        "id": 4,
+        "source": 3,
+        "target": 1,
+        "relation_key": "touches",
+        "relation_focus": 0.33,
+        "action_key": "dissolves",
+        "action_focus": 0.36
+      },
+      "link_after": {
+        "id": 4,
+        "source": 1,
+        "target": 3,
+        "relation_key": "touches",
+        "relation_focus": 0.33,
+        "action_key": "dissolves",
+        "action_focus": 0.36
+      }
+    },
+    {
+      "step": 2,
+      "type": "link_added",
+      "link": {
+        "id": 5,
+        "source": 1,
+        "target": 2,
+        "relation_key": "submits_to",
+        "relation_focus": 0.32,
+        "action_key": "merges",
+        "action_focus": 0.81
+      }
+    },
+    {
+      "step": 3,
+      "type": "symbol_changed",
+      "symbol_id": 2,
+      "old_key": "ash",
+      "new_key": "archive",
+      "old_focus": 0.87,
+      "new_focus": 0.79
+    }
+  ],
+  "id": 103
+}

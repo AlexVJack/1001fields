@@ -1,0 +1,95 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "gate",
+        "focus": 0.02
+      },
+      {
+        "id": 2,
+        "key": "window",
+        "focus": 0.67
+      },
+      {
+        "id": 3,
+        "key": "network",
+        "focus": 0.79
+      },
+      {
+        "id": 4,
+        "key": "promise",
+        "focus": 0.6
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 2,
+        "target": 4,
+        "relation_key": "distorts",
+        "relation_focus": 0.18,
+        "action_key": "collapses",
+        "action_focus": 0.97
+      },
+      {
+        "id": 2,
+        "source": 4,
+        "target": 3,
+        "relation_key": "blocks",
+        "relation_focus": 0.42,
+        "action_key": "weakens",
+        "action_focus": 0.22
+      },
+      {
+        "id": 3,
+        "source": 4,
+        "target": 1,
+        "relation_key": "clarifies",
+        "relation_focus": 0.04,
+        "action_key": "stabilizes",
+        "action_focus": 0.87
+      },
+      {
+        "id": 4,
+        "source": 2,
+        "target": 3,
+        "relation_key": "feeds",
+        "relation_focus": 0.04,
+        "action_key": "merges",
+        "action_focus": 0.36
+      },
+      {
+        "id": 5,
+        "source": 3,
+        "target": 2,
+        "relation_key": "heals",
+        "relation_focus": 0.17,
+        "action_key": "becomes_clear",
+        "action_focus": 0.53
+      },
+      {
+        "id": 6,
+        "source": 3,
+        "target": 1,
+        "relation_key": "witnesses",
+        "relation_focus": 0.3,
+        "action_key": "awakens",
+        "action_focus": 0.8
+      },
+      {
+        "id": 7,
+        "source": 3,
+        "target": 4,
+        "relation_key": "protects",
+        "relation_focus": 0.82,
+        "action_key": "creates_a_third_thing",
+        "action_focus": 0.06
+      }
+    ]
+  },
+  "mutations": [],
+  "id": 833
+}

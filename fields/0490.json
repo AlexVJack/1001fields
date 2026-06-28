@@ -1,0 +1,157 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "air",
+        "focus": 0.62
+      },
+      {
+        "id": 2,
+        "key": "garden",
+        "focus": 0.65
+      },
+      {
+        "id": 3,
+        "key": "witness",
+        "focus": 0.52
+      },
+      {
+        "id": 4,
+        "key": "memory",
+        "focus": 0.77
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 2,
+        "target": 1,
+        "relation_key": "transforms",
+        "relation_focus": 0.85,
+        "action_key": "closes",
+        "action_focus": 0.42
+      },
+      {
+        "id": 2,
+        "source": 3,
+        "target": 1,
+        "relation_key": "contains",
+        "relation_focus": 0.87,
+        "action_key": "merges",
+        "action_focus": 0.12
+      },
+      {
+        "id": 3,
+        "source": 1,
+        "target": 4,
+        "relation_key": "misnames",
+        "relation_focus": 0.36,
+        "action_key": "refuses_change",
+        "action_focus": 0.64
+      },
+      {
+        "id": 4,
+        "source": 4,
+        "target": 2,
+        "relation_key": "witnesses",
+        "relation_focus": 0.74,
+        "action_key": "weakens",
+        "action_focus": 0.6
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "relation_changed",
+      "link_before": {
+        "id": 2,
+        "source": 3,
+        "target": 1,
+        "relation_key": "contains",
+        "relation_focus": 0.87,
+        "action_key": "merges",
+        "action_focus": 0.12
+      },
+      "link_after": {
+        "id": 2,
+        "source": 3,
+        "target": 1,
+        "relation_key": "endures",
+        "relation_focus": 0.29,
+        "action_key": "merges",
+        "action_focus": 0.12
+      }
+    },
+    {
+      "step": 2,
+      "type": "action_changed",
+      "link_before": {
+        "id": 2,
+        "source": 3,
+        "target": 1,
+        "relation_key": "endures",
+        "relation_focus": 0.29,
+        "action_key": "merges",
+        "action_focus": 0.12
+      },
+      "link_after": {
+        "id": 2,
+        "source": 3,
+        "target": 1,
+        "relation_key": "endures",
+        "relation_focus": 0.29,
+        "action_key": "accelerates",
+        "action_focus": 0.1
+      }
+    },
+    {
+      "step": 3,
+      "type": "link_inverted",
+      "link_before": {
+        "id": 2,
+        "source": 3,
+        "target": 1,
+        "relation_key": "endures",
+        "relation_focus": 0.29,
+        "action_key": "accelerates",
+        "action_focus": 0.1
+      },
+      "link_after": {
+        "id": 2,
+        "source": 1,
+        "target": 3,
+        "relation_key": "endures",
+        "relation_focus": 0.29,
+        "action_key": "accelerates",
+        "action_focus": 0.1
+      }
+    },
+    {
+      "step": 4,
+      "type": "link_inverted",
+      "link_before": {
+        "id": 4,
+        "source": 4,
+        "target": 2,
+        "relation_key": "witnesses",
+        "relation_focus": 0.74,
+        "action_key": "weakens",
+        "action_focus": 0.6
+      },
+      "link_after": {
+        "id": 4,
+        "source": 2,
+        "target": 4,
+        "relation_key": "witnesses",
+        "relation_focus": 0.74,
+        "action_key": "weakens",
+        "action_focus": 0.6
+      }
+    }
+  ],
+  "id": 490
+}

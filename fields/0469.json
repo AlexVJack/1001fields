@@ -1,0 +1,136 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "air",
+        "focus": 0.58
+      },
+      {
+        "id": 2,
+        "key": "secret",
+        "focus": 0.24
+      },
+      {
+        "id": 3,
+        "key": "fear",
+        "focus": 0.73
+      },
+      {
+        "id": 4,
+        "key": "trace",
+        "focus": 0.2
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 2,
+        "target": 1,
+        "relation_key": "remembers",
+        "relation_focus": 0.58,
+        "action_key": "inverts",
+        "action_focus": 0.66
+      },
+      {
+        "id": 2,
+        "source": 3,
+        "target": 1,
+        "relation_key": "generates",
+        "relation_focus": 0.5,
+        "action_key": "merges",
+        "action_focus": 0.6
+      },
+      {
+        "id": 3,
+        "source": 4,
+        "target": 3,
+        "relation_key": "witnesses",
+        "relation_focus": 1.0,
+        "action_key": "closes",
+        "action_focus": 0.76
+      },
+      {
+        "id": 4,
+        "source": 1,
+        "target": 3,
+        "relation_key": "generates",
+        "relation_focus": 0.27,
+        "action_key": "accelerates",
+        "action_focus": 0.37
+      },
+      {
+        "id": 5,
+        "source": 1,
+        "target": 4,
+        "relation_key": "repels",
+        "relation_focus": 0.95,
+        "action_key": "spreads",
+        "action_focus": 0.18
+      },
+      {
+        "id": 6,
+        "source": 2,
+        "target": 3,
+        "relation_key": "remembers",
+        "relation_focus": 0.81,
+        "action_key": "weakens",
+        "action_focus": 0.5
+      },
+      {
+        "id": 7,
+        "source": 3,
+        "target": 4,
+        "relation_key": "consumes",
+        "relation_focus": 0.46,
+        "action_key": "lets_go",
+        "action_focus": 0.08
+      },
+      {
+        "id": 8,
+        "source": 1,
+        "target": 2,
+        "relation_key": "attracts",
+        "relation_focus": 0.94,
+        "action_key": "crosses_a_threshold",
+        "action_focus": 0.71
+      },
+      {
+        "id": 9,
+        "source": 4,
+        "target": 1,
+        "relation_key": "contains",
+        "relation_focus": 0.69,
+        "action_key": "destabilizes",
+        "action_focus": 0.21
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "relation_changed",
+      "link_before": {
+        "id": 7,
+        "source": 3,
+        "target": 4,
+        "relation_key": "consumes",
+        "relation_focus": 0.46,
+        "action_key": "lets_go",
+        "action_focus": 0.08
+      },
+      "link_after": {
+        "id": 7,
+        "source": 3,
+        "target": 4,
+        "relation_key": "hides",
+        "relation_focus": 0.76,
+        "action_key": "lets_go",
+        "action_focus": 0.08
+      }
+    }
+  ],
+  "id": 469
+}

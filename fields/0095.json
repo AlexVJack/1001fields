@@ -1,0 +1,77 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "fire",
+        "focus": 0.88
+      },
+      {
+        "id": 2,
+        "key": "signal",
+        "focus": 0.57
+      },
+      {
+        "id": 3,
+        "key": "desire",
+        "focus": 0.91
+      },
+      {
+        "id": 4,
+        "key": "promise",
+        "focus": 0.68
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 2,
+        "target": 3,
+        "relation_key": "misnames",
+        "relation_focus": 0.68,
+        "action_key": "exhales",
+        "action_focus": 0.03
+      },
+      {
+        "id": 2,
+        "source": 1,
+        "target": 4,
+        "relation_key": "dominates",
+        "relation_focus": 0.1,
+        "action_key": "opens",
+        "action_focus": 0.05
+      },
+      {
+        "id": 3,
+        "source": 3,
+        "target": 2,
+        "relation_key": "touches",
+        "relation_focus": 0.94,
+        "action_key": "refuses_change",
+        "action_focus": 0.96
+      },
+      {
+        "id": 4,
+        "source": 2,
+        "target": 1,
+        "relation_key": "infects",
+        "relation_focus": 0.0,
+        "action_key": "becomes_embodied",
+        "action_focus": 0.7
+      },
+      {
+        "id": 5,
+        "source": 4,
+        "target": 1,
+        "relation_key": "submits_to",
+        "relation_focus": 0.91,
+        "action_key": "lets_go",
+        "action_focus": 0.84
+      }
+    ]
+  },
+  "mutations": [],
+  "id": 95
+}

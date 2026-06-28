@@ -1,0 +1,170 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "ash",
+        "focus": 0.69
+      },
+      {
+        "id": 2,
+        "key": "harbor",
+        "focus": 0.92
+      },
+      {
+        "id": 3,
+        "key": "network",
+        "focus": 0.73
+      },
+      {
+        "id": 4,
+        "key": "exile",
+        "focus": 0.69
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 4,
+        "target": 2,
+        "relation_key": "dominates",
+        "relation_focus": 0.87,
+        "action_key": "weakens",
+        "action_focus": 0.73
+      },
+      {
+        "id": 2,
+        "source": 3,
+        "target": 1,
+        "relation_key": "names",
+        "relation_focus": 0.66,
+        "action_key": "settles",
+        "action_focus": 0.5
+      },
+      {
+        "id": 3,
+        "source": 3,
+        "target": 2,
+        "relation_key": "remembers",
+        "relation_focus": 0.4,
+        "action_key": "approaches",
+        "action_focus": 0.66
+      },
+      {
+        "id": 4,
+        "source": 2,
+        "target": 4,
+        "relation_key": "embodies",
+        "relation_focus": 0.72,
+        "action_key": "approaches",
+        "action_focus": 0.91
+      },
+      {
+        "id": 5,
+        "source": 1,
+        "target": 4,
+        "relation_key": "hides",
+        "relation_focus": 0.73,
+        "action_key": "returns",
+        "action_focus": 0.53
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "link_inverted",
+      "link_before": {
+        "id": 3,
+        "source": 3,
+        "target": 2,
+        "relation_key": "remembers",
+        "relation_focus": 0.4,
+        "action_key": "approaches",
+        "action_focus": 0.66
+      },
+      "link_after": {
+        "id": 3,
+        "source": 2,
+        "target": 3,
+        "relation_key": "remembers",
+        "relation_focus": 0.4,
+        "action_key": "approaches",
+        "action_focus": 0.66
+      }
+    },
+    {
+      "step": 2,
+      "type": "link_removed",
+      "link": {
+        "id": 3,
+        "source": 2,
+        "target": 3,
+        "relation_key": "remembers",
+        "relation_focus": 0.4,
+        "action_key": "approaches",
+        "action_focus": 0.66
+      }
+    },
+    {
+      "step": 3,
+      "type": "link_added",
+      "link": {
+        "id": 6,
+        "source": 3,
+        "target": 2,
+        "relation_key": "separates",
+        "relation_focus": 0.4,
+        "action_key": "collapses",
+        "action_focus": 0.0
+      }
+    },
+    {
+      "step": 4,
+      "type": "action_changed",
+      "link_before": {
+        "id": 6,
+        "source": 3,
+        "target": 2,
+        "relation_key": "separates",
+        "relation_focus": 0.4,
+        "action_key": "collapses",
+        "action_focus": 0.0
+      },
+      "link_after": {
+        "id": 6,
+        "source": 3,
+        "target": 2,
+        "relation_key": "separates",
+        "relation_focus": 0.4,
+        "action_key": "becomes_visible",
+        "action_focus": 0.92
+      }
+    },
+    {
+      "step": 5,
+      "type": "action_changed",
+      "link_before": {
+        "id": 1,
+        "source": 4,
+        "target": 2,
+        "relation_key": "dominates",
+        "relation_focus": 0.87,
+        "action_key": "weakens",
+        "action_focus": 0.73
+      },
+      "link_after": {
+        "id": 1,
+        "source": 4,
+        "target": 2,
+        "relation_key": "dominates",
+        "relation_focus": 0.87,
+        "action_key": "becomes_visible",
+        "action_focus": 0.41
+      }
+    }
+  ],
+  "id": 869
+}

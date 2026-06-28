@@ -1,0 +1,144 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "oracle",
+        "focus": 0.67
+      },
+      {
+        "id": 2,
+        "key": "vessel",
+        "focus": 0.5
+      },
+      {
+        "id": 3,
+        "key": "body",
+        "focus": 0.94
+      },
+      {
+        "id": 4,
+        "key": "window",
+        "focus": 0.56
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 1,
+        "target": 3,
+        "relation_key": "mirrors",
+        "relation_focus": 0.72,
+        "action_key": "stabilizes",
+        "action_focus": 0.97
+      },
+      {
+        "id": 2,
+        "source": 2,
+        "target": 1,
+        "relation_key": "embodies",
+        "relation_focus": 0.24,
+        "action_key": "dissolves",
+        "action_focus": 0.18
+      },
+      {
+        "id": 3,
+        "source": 2,
+        "target": 3,
+        "relation_key": "feeds",
+        "relation_focus": 0.91,
+        "action_key": "destabilizes",
+        "action_focus": 0.24
+      },
+      {
+        "id": 4,
+        "source": 3,
+        "target": 1,
+        "relation_key": "attracts",
+        "relation_focus": 0.96,
+        "action_key": "weakens",
+        "action_focus": 0.73
+      },
+      {
+        "id": 5,
+        "source": 4,
+        "target": 2,
+        "relation_key": "erases",
+        "relation_focus": 0.61,
+        "action_key": "crosses_a_threshold",
+        "action_focus": 0.36
+      },
+      {
+        "id": 6,
+        "source": 1,
+        "target": 2,
+        "relation_key": "transforms",
+        "relation_focus": 0.57,
+        "action_key": "merges",
+        "action_focus": 0.7
+      },
+      {
+        "id": 7,
+        "source": 1,
+        "target": 4,
+        "relation_key": "remembers",
+        "relation_focus": 0.28,
+        "action_key": "decays",
+        "action_focus": 0.31
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "link_removed",
+      "link": {
+        "id": 4,
+        "source": 3,
+        "target": 1,
+        "relation_key": "attracts",
+        "relation_focus": 0.96,
+        "action_key": "weakens",
+        "action_focus": 0.73
+      }
+    },
+    {
+      "step": 2,
+      "type": "link_removed",
+      "link": {
+        "id": 2,
+        "source": 2,
+        "target": 1,
+        "relation_key": "embodies",
+        "relation_focus": 0.24,
+        "action_key": "dissolves",
+        "action_focus": 0.18
+      }
+    },
+    {
+      "step": 3,
+      "type": "relation_changed",
+      "link_before": {
+        "id": 7,
+        "source": 1,
+        "target": 4,
+        "relation_key": "remembers",
+        "relation_focus": 0.28,
+        "action_key": "decays",
+        "action_focus": 0.31
+      },
+      "link_after": {
+        "id": 7,
+        "source": 1,
+        "target": 4,
+        "relation_key": "reveals",
+        "relation_focus": 0.81,
+        "action_key": "decays",
+        "action_focus": 0.31
+      }
+    }
+  ],
+  "id": 468
+}

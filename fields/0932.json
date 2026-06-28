@@ -1,0 +1,45 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "gate",
+        "focus": 0.63
+      },
+      {
+        "id": 2,
+        "key": "debt",
+        "focus": 0.33
+      },
+      {
+        "id": 3,
+        "key": "garden",
+        "focus": 0.0
+      },
+      {
+        "id": 4,
+        "key": "desire",
+        "focus": 0.83
+      }
+    ],
+    "links": []
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "link_added",
+      "link": {
+        "id": 1,
+        "source": 1,
+        "target": 4,
+        "relation_key": "distorts",
+        "relation_focus": 0.86,
+        "action_key": "decays",
+        "action_focus": 0.0
+      }
+    }
+  ],
+  "id": 932
+}

@@ -1,0 +1,76 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "harbor",
+        "focus": 0.78
+      },
+      {
+        "id": 2,
+        "key": "machine",
+        "focus": 0.73
+      },
+      {
+        "id": 3,
+        "key": "gate",
+        "focus": 0.59
+      },
+      {
+        "id": 4,
+        "key": "key",
+        "focus": 0.79
+      }
+    ],
+    "links": []
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "symbol_changed",
+      "symbol_id": 3,
+      "old_key": "gate",
+      "new_key": "hunger",
+      "old_focus": 0.59,
+      "new_focus": 0.78
+    },
+    {
+      "step": 2,
+      "type": "link_added",
+      "link": {
+        "id": 1,
+        "source": 1,
+        "target": 2,
+        "relation_key": "echoes",
+        "relation_focus": 0.06,
+        "action_key": "exhales",
+        "action_focus": 0.96
+      }
+    },
+    {
+      "step": 3,
+      "type": "link_removed",
+      "link": {
+        "id": 1,
+        "source": 1,
+        "target": 2,
+        "relation_key": "echoes",
+        "relation_focus": 0.06,
+        "action_key": "exhales",
+        "action_focus": 0.96
+      }
+    },
+    {
+      "step": 4,
+      "type": "symbol_changed",
+      "symbol_id": 1,
+      "old_key": "harbor",
+      "new_key": "tower",
+      "old_focus": 0.78,
+      "new_focus": 0.92
+    }
+  ],
+  "id": 290
+}

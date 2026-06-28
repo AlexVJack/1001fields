@@ -1,0 +1,100 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "fire",
+        "focus": 0.47
+      },
+      {
+        "id": 2,
+        "key": "law",
+        "focus": 0.68
+      },
+      {
+        "id": 3,
+        "key": "hand",
+        "focus": 0.91
+      },
+      {
+        "id": 4,
+        "key": "spark",
+        "focus": 0.92
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 1,
+        "target": 4,
+        "relation_key": "consumes",
+        "relation_focus": 0.07,
+        "action_key": "becomes_hidden",
+        "action_focus": 0.63
+      },
+      {
+        "id": 2,
+        "source": 1,
+        "target": 3,
+        "relation_key": "heals",
+        "relation_focus": 0.33,
+        "action_key": "becomes_visible",
+        "action_focus": 0.43
+      },
+      {
+        "id": 3,
+        "source": 2,
+        "target": 1,
+        "relation_key": "consumes",
+        "relation_focus": 0.28,
+        "action_key": "decays",
+        "action_focus": 0.87
+      },
+      {
+        "id": 4,
+        "source": 2,
+        "target": 4,
+        "relation_key": "embodies",
+        "relation_focus": 0.24,
+        "action_key": "lets_go",
+        "action_focus": 0.41
+      },
+      {
+        "id": 5,
+        "source": 3,
+        "target": 1,
+        "relation_key": "touches",
+        "relation_focus": 0.27,
+        "action_key": "spreads",
+        "action_focus": 0.21
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "action_changed",
+      "link_before": {
+        "id": 2,
+        "source": 1,
+        "target": 3,
+        "relation_key": "heals",
+        "relation_focus": 0.33,
+        "action_key": "becomes_visible",
+        "action_focus": 0.43
+      },
+      "link_after": {
+        "id": 2,
+        "source": 1,
+        "target": 3,
+        "relation_key": "heals",
+        "relation_focus": 0.33,
+        "action_key": "returns",
+        "action_focus": 0.11
+      }
+    }
+  ],
+  "id": 756
+}

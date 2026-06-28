@@ -1,0 +1,68 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "guardian",
+        "focus": 0.3
+      },
+      {
+        "id": 2,
+        "key": "law",
+        "focus": 0.53
+      },
+      {
+        "id": 3,
+        "key": "hunger",
+        "focus": 0.54
+      },
+      {
+        "id": 4,
+        "key": "stone",
+        "focus": 0.77
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 3,
+        "target": 2,
+        "relation_key": "echoes",
+        "relation_focus": 0.99,
+        "action_key": "dissolves",
+        "action_focus": 0.97
+      },
+      {
+        "id": 2,
+        "source": 2,
+        "target": 3,
+        "relation_key": "dominates",
+        "relation_focus": 0.25,
+        "action_key": "approaches",
+        "action_focus": 0.67
+      },
+      {
+        "id": 3,
+        "source": 2,
+        "target": 1,
+        "relation_key": "witnesses",
+        "relation_focus": 0.36,
+        "action_key": "accelerates",
+        "action_focus": 0.92
+      },
+      {
+        "id": 4,
+        "source": 1,
+        "target": 4,
+        "relation_key": "embodies",
+        "relation_focus": 0.55,
+        "action_key": "stabilizes",
+        "action_focus": 0.17
+      }
+    ]
+  },
+  "mutations": [],
+  "id": 270
+}

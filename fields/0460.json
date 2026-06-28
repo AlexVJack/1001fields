@@ -1,0 +1,152 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "vessel",
+        "focus": 0.07
+      },
+      {
+        "id": 2,
+        "key": "witness",
+        "focus": 0.6
+      },
+      {
+        "id": 3,
+        "key": "name",
+        "focus": 0.36
+      },
+      {
+        "id": 4,
+        "key": "stone",
+        "focus": 0.51
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 4,
+        "target": 2,
+        "relation_key": "heals",
+        "relation_focus": 0.08,
+        "action_key": "creates_a_third_thing",
+        "action_focus": 0.15
+      },
+      {
+        "id": 2,
+        "source": 1,
+        "target": 4,
+        "relation_key": "touches",
+        "relation_focus": 0.43,
+        "action_key": "crystallizes",
+        "action_focus": 0.48
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "action_changed",
+      "link_before": {
+        "id": 1,
+        "source": 4,
+        "target": 2,
+        "relation_key": "heals",
+        "relation_focus": 0.08,
+        "action_key": "creates_a_third_thing",
+        "action_focus": 0.15
+      },
+      "link_after": {
+        "id": 1,
+        "source": 4,
+        "target": 2,
+        "relation_key": "heals",
+        "relation_focus": 0.08,
+        "action_key": "settles",
+        "action_focus": 0.14
+      }
+    },
+    {
+      "step": 2,
+      "type": "link_inverted",
+      "link_before": {
+        "id": 1,
+        "source": 4,
+        "target": 2,
+        "relation_key": "heals",
+        "relation_focus": 0.08,
+        "action_key": "settles",
+        "action_focus": 0.14
+      },
+      "link_after": {
+        "id": 1,
+        "source": 2,
+        "target": 4,
+        "relation_key": "heals",
+        "relation_focus": 0.08,
+        "action_key": "settles",
+        "action_focus": 0.14
+      }
+    },
+    {
+      "step": 3,
+      "type": "relation_changed",
+      "link_before": {
+        "id": 1,
+        "source": 2,
+        "target": 4,
+        "relation_key": "heals",
+        "relation_focus": 0.08,
+        "action_key": "settles",
+        "action_focus": 0.14
+      },
+      "link_after": {
+        "id": 1,
+        "source": 2,
+        "target": 4,
+        "relation_key": "protects",
+        "relation_focus": 1.0,
+        "action_key": "settles",
+        "action_focus": 0.14
+      }
+    },
+    {
+      "step": 4,
+      "type": "relation_changed",
+      "link_before": {
+        "id": 2,
+        "source": 1,
+        "target": 4,
+        "relation_key": "touches",
+        "relation_focus": 0.43,
+        "action_key": "crystallizes",
+        "action_focus": 0.48
+      },
+      "link_after": {
+        "id": 2,
+        "source": 1,
+        "target": 4,
+        "relation_key": "depends_on",
+        "relation_focus": 0.36,
+        "action_key": "crystallizes",
+        "action_focus": 0.48
+      }
+    },
+    {
+      "step": 5,
+      "type": "link_removed",
+      "link": {
+        "id": 1,
+        "source": 2,
+        "target": 4,
+        "relation_key": "protects",
+        "relation_focus": 1.0,
+        "action_key": "settles",
+        "action_focus": 0.14
+      }
+    }
+  ],
+  "id": 460
+}

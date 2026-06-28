@@ -1,0 +1,104 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "window",
+        "focus": 0.83
+      },
+      {
+        "id": 2,
+        "key": "stone",
+        "focus": 0.45
+      },
+      {
+        "id": 3,
+        "key": "ash",
+        "focus": 0.99
+      },
+      {
+        "id": 4,
+        "key": "memory",
+        "focus": 0.38
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 1,
+        "target": 4,
+        "relation_key": "generates",
+        "relation_focus": 0.83,
+        "action_key": "refuses_change",
+        "action_focus": 0.78
+      },
+      {
+        "id": 2,
+        "source": 4,
+        "target": 1,
+        "relation_key": "echoes",
+        "relation_focus": 0.33,
+        "action_key": "creates_a_third_thing",
+        "action_focus": 0.6
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "relation_changed",
+      "link_before": {
+        "id": 2,
+        "source": 4,
+        "target": 1,
+        "relation_key": "echoes",
+        "relation_focus": 0.33,
+        "action_key": "creates_a_third_thing",
+        "action_focus": 0.6
+      },
+      "link_after": {
+        "id": 2,
+        "source": 4,
+        "target": 1,
+        "relation_key": "blocks",
+        "relation_focus": 0.69,
+        "action_key": "creates_a_third_thing",
+        "action_focus": 0.6
+      }
+    },
+    {
+      "step": 2,
+      "type": "symbol_changed",
+      "symbol_id": 3,
+      "old_key": "ash",
+      "new_key": "promise",
+      "old_focus": 0.99,
+      "new_focus": 0.94
+    },
+    {
+      "step": 3,
+      "type": "action_changed",
+      "link_before": {
+        "id": 1,
+        "source": 1,
+        "target": 4,
+        "relation_key": "generates",
+        "relation_focus": 0.83,
+        "action_key": "refuses_change",
+        "action_focus": 0.78
+      },
+      "link_after": {
+        "id": 1,
+        "source": 1,
+        "target": 4,
+        "relation_key": "generates",
+        "relation_focus": 0.83,
+        "action_key": "spreads",
+        "action_focus": 0.0
+      }
+    }
+  ],
+  "id": 347
+}

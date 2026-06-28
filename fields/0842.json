@@ -1,0 +1,122 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "attention",
+        "focus": 0.81
+      },
+      {
+        "id": 2,
+        "key": "exile",
+        "focus": 0.6
+      },
+      {
+        "id": 3,
+        "key": "shelter",
+        "focus": 0.89
+      },
+      {
+        "id": 4,
+        "key": "window",
+        "focus": 0.19
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 2,
+        "target": 3,
+        "relation_key": "clarifies",
+        "relation_focus": 0.9,
+        "action_key": "closes",
+        "action_focus": 0.9
+      },
+      {
+        "id": 2,
+        "source": 3,
+        "target": 1,
+        "relation_key": "witnesses",
+        "relation_focus": 0.53,
+        "action_key": "awakens",
+        "action_focus": 0.39
+      },
+      {
+        "id": 3,
+        "source": 1,
+        "target": 4,
+        "relation_key": "clarifies",
+        "relation_focus": 0.79,
+        "action_key": "merges",
+        "action_focus": 0.38
+      },
+      {
+        "id": 4,
+        "source": 2,
+        "target": 4,
+        "relation_key": "names",
+        "relation_focus": 0.55,
+        "action_key": "becomes_clear",
+        "action_focus": 0.79
+      },
+      {
+        "id": 5,
+        "source": 4,
+        "target": 3,
+        "relation_key": "hides",
+        "relation_focus": 0.32,
+        "action_key": "intensifies",
+        "action_focus": 0.9
+      },
+      {
+        "id": 6,
+        "source": 1,
+        "target": 2,
+        "relation_key": "dominates",
+        "relation_focus": 0.54,
+        "action_key": "exhales",
+        "action_focus": 0.29
+      },
+      {
+        "id": 7,
+        "source": 4,
+        "target": 2,
+        "relation_key": "endures",
+        "relation_focus": 0.97,
+        "action_key": "refuses_change",
+        "action_focus": 0.04
+      },
+      {
+        "id": 8,
+        "source": 2,
+        "target": 1,
+        "relation_key": "generates",
+        "relation_focus": 0.17,
+        "action_key": "accelerates",
+        "action_focus": 0.77
+      },
+      {
+        "id": 9,
+        "source": 4,
+        "target": 1,
+        "relation_key": "mirrors",
+        "relation_focus": 0.91,
+        "action_key": "becomes_visible",
+        "action_focus": 0.67
+      },
+      {
+        "id": 10,
+        "source": 3,
+        "target": 4,
+        "relation_key": "protects",
+        "relation_focus": 0.7,
+        "action_key": "settles",
+        "action_focus": 0.9
+      }
+    ]
+  },
+  "mutations": [],
+  "id": 842
+}

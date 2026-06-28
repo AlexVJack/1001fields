@@ -1,0 +1,108 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "exile",
+        "focus": 0.75
+      },
+      {
+        "id": 2,
+        "key": "boundary",
+        "focus": 0.11
+      },
+      {
+        "id": 3,
+        "key": "ash",
+        "focus": 0.04
+      },
+      {
+        "id": 4,
+        "key": "stone",
+        "focus": 0.21
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 4,
+        "target": 1,
+        "relation_key": "infects",
+        "relation_focus": 0.18,
+        "action_key": "becomes_clear",
+        "action_focus": 0.08
+      },
+      {
+        "id": 2,
+        "source": 2,
+        "target": 3,
+        "relation_key": "feeds",
+        "relation_focus": 0.96,
+        "action_key": "merges",
+        "action_focus": 0.61
+      },
+      {
+        "id": 3,
+        "source": 4,
+        "target": 2,
+        "relation_key": "generates",
+        "relation_focus": 0.68,
+        "action_key": "returns",
+        "action_focus": 0.28
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "action_changed",
+      "link_before": {
+        "id": 2,
+        "source": 2,
+        "target": 3,
+        "relation_key": "feeds",
+        "relation_focus": 0.96,
+        "action_key": "merges",
+        "action_focus": 0.61
+      },
+      "link_after": {
+        "id": 2,
+        "source": 2,
+        "target": 3,
+        "relation_key": "feeds",
+        "relation_focus": 0.96,
+        "action_key": "returns",
+        "action_focus": 0.19
+      }
+    },
+    {
+      "step": 2,
+      "type": "link_removed",
+      "link": {
+        "id": 1,
+        "source": 4,
+        "target": 1,
+        "relation_key": "infects",
+        "relation_focus": 0.18,
+        "action_key": "becomes_clear",
+        "action_focus": 0.08
+      }
+    },
+    {
+      "step": 3,
+      "type": "link_added",
+      "link": {
+        "id": 4,
+        "source": 4,
+        "target": 3,
+        "relation_key": "protects",
+        "relation_focus": 0.31,
+        "action_key": "exhales",
+        "action_focus": 0.89
+      }
+    }
+  ],
+  "id": 93
+}

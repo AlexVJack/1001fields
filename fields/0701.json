@@ -1,0 +1,148 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "boundary",
+        "focus": 0.47
+      },
+      {
+        "id": 2,
+        "key": "shadow",
+        "focus": 0.81
+      },
+      {
+        "id": 3,
+        "key": "labyrinth",
+        "focus": 0.72
+      },
+      {
+        "id": 4,
+        "key": "threshold",
+        "focus": 0.95
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 2,
+        "target": 4,
+        "relation_key": "consumes",
+        "relation_focus": 0.83,
+        "action_key": "weakens",
+        "action_focus": 0.57
+      },
+      {
+        "id": 2,
+        "source": 2,
+        "target": 1,
+        "relation_key": "distorts",
+        "relation_focus": 0.41,
+        "action_key": "becomes_embodied",
+        "action_focus": 0.35
+      },
+      {
+        "id": 3,
+        "source": 1,
+        "target": 4,
+        "relation_key": "touches",
+        "relation_focus": 0.46,
+        "action_key": "stabilizes",
+        "action_focus": 0.09
+      },
+      {
+        "id": 4,
+        "source": 3,
+        "target": 2,
+        "relation_key": "mirrors",
+        "relation_focus": 0.55,
+        "action_key": "lets_go",
+        "action_focus": 0.57
+      },
+      {
+        "id": 5,
+        "source": 3,
+        "target": 1,
+        "relation_key": "heals",
+        "relation_focus": 0.51,
+        "action_key": "becomes_quiet",
+        "action_focus": 0.28
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "symbol_changed",
+      "symbol_id": 1,
+      "old_key": "boundary",
+      "new_key": "debt",
+      "old_focus": 0.47,
+      "new_focus": 0.67
+    },
+    {
+      "step": 2,
+      "type": "link_removed",
+      "link": {
+        "id": 5,
+        "source": 3,
+        "target": 1,
+        "relation_key": "heals",
+        "relation_focus": 0.51,
+        "action_key": "becomes_quiet",
+        "action_focus": 0.28
+      }
+    },
+    {
+      "step": 3,
+      "type": "action_changed",
+      "link_before": {
+        "id": 3,
+        "source": 1,
+        "target": 4,
+        "relation_key": "touches",
+        "relation_focus": 0.46,
+        "action_key": "stabilizes",
+        "action_focus": 0.09
+      },
+      "link_after": {
+        "id": 3,
+        "source": 1,
+        "target": 4,
+        "relation_key": "touches",
+        "relation_focus": 0.46,
+        "action_key": "becomes_hidden",
+        "action_focus": 0.35
+      }
+    },
+    {
+      "step": 4,
+      "type": "link_added",
+      "link": {
+        "id": 6,
+        "source": 1,
+        "target": 3,
+        "relation_key": "feeds",
+        "relation_focus": 0.6,
+        "action_key": "exhales",
+        "action_focus": 0.81
+      }
+    },
+    {
+      "step": 5,
+      "type": "link_removed",
+      "link": {
+        "id": 1,
+        "source": 2,
+        "target": 4,
+        "relation_key": "consumes",
+        "relation_focus": 0.83,
+        "action_key": "weakens",
+        "action_focus": 0.57
+      }
+    }
+  ],
+  "id": 701
+}

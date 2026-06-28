@@ -1,0 +1,77 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "sage",
+        "focus": 0.63
+      },
+      {
+        "id": 2,
+        "key": "desire",
+        "focus": 0.53
+      },
+      {
+        "id": 3,
+        "key": "memory",
+        "focus": 0.35
+      },
+      {
+        "id": 4,
+        "key": "attention",
+        "focus": 0.46
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 1,
+        "target": 2,
+        "relation_key": "dominates",
+        "relation_focus": 0.99,
+        "action_key": "approaches",
+        "action_focus": 0.26
+      },
+      {
+        "id": 2,
+        "source": 4,
+        "target": 3,
+        "relation_key": "repels",
+        "relation_focus": 0.3,
+        "action_key": "lets_go",
+        "action_focus": 0.75
+      },
+      {
+        "id": 3,
+        "source": 1,
+        "target": 3,
+        "relation_key": "names",
+        "relation_focus": 0.87,
+        "action_key": "crystallizes",
+        "action_focus": 0.41
+      },
+      {
+        "id": 4,
+        "source": 1,
+        "target": 4,
+        "relation_key": "erases",
+        "relation_focus": 0.6,
+        "action_key": "becomes_hidden",
+        "action_focus": 0.33
+      },
+      {
+        "id": 5,
+        "source": 2,
+        "target": 3,
+        "relation_key": "attracts",
+        "relation_focus": 0.86,
+        "action_key": "crosses_a_threshold",
+        "action_focus": 0.58
+      }
+    ]
+  },
+  "mutations": [],
+  "id": 163
+}

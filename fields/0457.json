@@ -1,0 +1,77 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "witness",
+        "focus": 0.02
+      },
+      {
+        "id": 2,
+        "key": "oracle",
+        "focus": 1.0
+      },
+      {
+        "id": 3,
+        "key": "shelter",
+        "focus": 0.8
+      },
+      {
+        "id": 4,
+        "key": "fire",
+        "focus": 0.76
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 4,
+        "target": 3,
+        "relation_key": "blocks",
+        "relation_focus": 0.66,
+        "action_key": "repeats",
+        "action_focus": 0.91
+      },
+      {
+        "id": 2,
+        "source": 3,
+        "target": 1,
+        "relation_key": "heals",
+        "relation_focus": 0.08,
+        "action_key": "stabilizes",
+        "action_focus": 0.46
+      },
+      {
+        "id": 3,
+        "source": 1,
+        "target": 4,
+        "relation_key": "echoes",
+        "relation_focus": 0.09,
+        "action_key": "intensifies",
+        "action_focus": 0.97
+      },
+      {
+        "id": 4,
+        "source": 3,
+        "target": 4,
+        "relation_key": "listens_to",
+        "relation_focus": 0.02,
+        "action_key": "merges",
+        "action_focus": 0.23
+      },
+      {
+        "id": 5,
+        "source": 2,
+        "target": 1,
+        "relation_key": "consumes",
+        "relation_focus": 0.72,
+        "action_key": "becomes_quiet",
+        "action_focus": 0.47
+      }
+    ]
+  },
+  "mutations": [],
+  "id": 457
+}

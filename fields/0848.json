@@ -1,0 +1,118 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "mask",
+        "focus": 0.02
+      },
+      {
+        "id": 2,
+        "key": "signal",
+        "focus": 0.0
+      },
+      {
+        "id": 3,
+        "key": "witness",
+        "focus": 0.26
+      },
+      {
+        "id": 4,
+        "key": "boundary",
+        "focus": 0.07
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 2,
+        "target": 1,
+        "relation_key": "heals",
+        "relation_focus": 0.05,
+        "action_key": "splits",
+        "action_focus": 0.95
+      },
+      {
+        "id": 2,
+        "source": 4,
+        "target": 3,
+        "relation_key": "protects",
+        "relation_focus": 0.82,
+        "action_key": "becomes_visible",
+        "action_focus": 0.88
+      },
+      {
+        "id": 3,
+        "source": 2,
+        "target": 3,
+        "relation_key": "infects",
+        "relation_focus": 0.26,
+        "action_key": "becomes_visible",
+        "action_focus": 0.24
+      },
+      {
+        "id": 4,
+        "source": 1,
+        "target": 2,
+        "relation_key": "repels",
+        "relation_focus": 0.46,
+        "action_key": "returns",
+        "action_focus": 0.76
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "symbol_changed",
+      "symbol_id": 2,
+      "old_key": "signal",
+      "new_key": "promise",
+      "old_focus": 0.0,
+      "new_focus": 0.47
+    },
+    {
+      "step": 2,
+      "type": "action_changed",
+      "link_before": {
+        "id": 4,
+        "source": 1,
+        "target": 2,
+        "relation_key": "repels",
+        "relation_focus": 0.46,
+        "action_key": "returns",
+        "action_focus": 0.76
+      },
+      "link_after": {
+        "id": 4,
+        "source": 1,
+        "target": 2,
+        "relation_key": "repels",
+        "relation_focus": 0.46,
+        "action_key": "mutates",
+        "action_focus": 0.51
+      }
+    },
+    {
+      "step": 3,
+      "type": "symbol_changed",
+      "symbol_id": 4,
+      "old_key": "boundary",
+      "new_key": "herald",
+      "old_focus": 0.07,
+      "new_focus": 0.59
+    },
+    {
+      "step": 4,
+      "type": "symbol_changed",
+      "symbol_id": 1,
+      "old_key": "mask",
+      "new_key": "oracle",
+      "old_focus": 0.02,
+      "new_focus": 0.88
+    }
+  ],
+  "id": 848
+}

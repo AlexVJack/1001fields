@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "debt",
+        "focus": 0.31
+      },
+      {
+        "id": 2,
+        "key": "harbor",
+        "focus": 0.17
+      },
+      {
+        "id": 3,
+        "key": "light",
+        "focus": 0.53
+      },
+      {
+        "id": 4,
+        "key": "water",
+        "focus": 0.18
+      }
+    ],
+    "links": []
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "symbol_changed",
+      "symbol_id": 3,
+      "old_key": "light",
+      "new_key": "sage",
+      "old_focus": 0.53,
+      "new_focus": 0.77
+    },
+    {
+      "step": 2,
+      "type": "symbol_changed",
+      "symbol_id": 4,
+      "old_key": "water",
+      "new_key": "light",
+      "old_focus": 0.18,
+      "new_focus": 0.52
+    }
+  ],
+  "id": 167
+}

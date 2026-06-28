@@ -1,0 +1,104 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "water",
+        "focus": 0.81
+      },
+      {
+        "id": 2,
+        "key": "exile",
+        "focus": 0.97
+      },
+      {
+        "id": 3,
+        "key": "pause",
+        "focus": 0.48
+      },
+      {
+        "id": 4,
+        "key": "breath",
+        "focus": 0.34
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 1,
+        "target": 2,
+        "relation_key": "witnesses",
+        "relation_focus": 0.29,
+        "action_key": "crystallizes",
+        "action_focus": 0.7
+      },
+      {
+        "id": 2,
+        "source": 1,
+        "target": 3,
+        "relation_key": "blocks",
+        "relation_focus": 0.93,
+        "action_key": "becomes_quiet",
+        "action_focus": 0.41
+      },
+      {
+        "id": 3,
+        "source": 4,
+        "target": 2,
+        "relation_key": "echoes",
+        "relation_focus": 0.28,
+        "action_key": "becomes_visible",
+        "action_focus": 0.5
+      },
+      {
+        "id": 4,
+        "source": 1,
+        "target": 4,
+        "relation_key": "clarifies",
+        "relation_focus": 0.99,
+        "action_key": "opens",
+        "action_focus": 0.76
+      },
+      {
+        "id": 5,
+        "source": 4,
+        "target": 3,
+        "relation_key": "repels",
+        "relation_focus": 0.27,
+        "action_key": "awakens",
+        "action_focus": 1.0
+      },
+      {
+        "id": 6,
+        "source": 3,
+        "target": 2,
+        "relation_key": "infects",
+        "relation_focus": 0.36,
+        "action_key": "inverts",
+        "action_focus": 0.52
+      },
+      {
+        "id": 7,
+        "source": 2,
+        "target": 4,
+        "relation_key": "submits_to",
+        "relation_focus": 0.67,
+        "action_key": "becomes_quiet",
+        "action_focus": 0.86
+      },
+      {
+        "id": 8,
+        "source": 4,
+        "target": 1,
+        "relation_key": "dominates",
+        "relation_focus": 0.85,
+        "action_key": "stabilizes",
+        "action_focus": 0.75
+      }
+    ]
+  },
+  "mutations": [],
+  "id": 464
+}

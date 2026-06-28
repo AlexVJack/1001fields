@@ -1,0 +1,64 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "water",
+        "focus": 0.19
+      },
+      {
+        "id": 2,
+        "key": "mask",
+        "focus": 0.36
+      },
+      {
+        "id": 3,
+        "key": "attention",
+        "focus": 0.59
+      },
+      {
+        "id": 4,
+        "key": "oracle",
+        "focus": 0.29
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 4,
+        "target": 1,
+        "relation_key": "clarifies",
+        "relation_focus": 0.54,
+        "action_key": "destabilizes",
+        "action_focus": 0.64
+      },
+      {
+        "id": 2,
+        "source": 3,
+        "target": 4,
+        "relation_key": "erases",
+        "relation_focus": 0.1,
+        "action_key": "refuses_change",
+        "action_focus": 0.84
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "link_added",
+      "link": {
+        "id": 3,
+        "source": 1,
+        "target": 4,
+        "relation_key": "embodies",
+        "relation_focus": 0.42,
+        "action_key": "splits",
+        "action_focus": 0.33
+      }
+    }
+  ],
+  "id": 773
+}

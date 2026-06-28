@@ -1,0 +1,95 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "void",
+        "focus": 0.15
+      },
+      {
+        "id": 2,
+        "key": "hand",
+        "focus": 0.93
+      },
+      {
+        "id": 3,
+        "key": "name",
+        "focus": 0.29
+      },
+      {
+        "id": 4,
+        "key": "threshold",
+        "focus": 0.2
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 1,
+        "target": 2,
+        "relation_key": "submits_to",
+        "relation_focus": 0.08,
+        "action_key": "approaches",
+        "action_focus": 0.61
+      },
+      {
+        "id": 2,
+        "source": 3,
+        "target": 1,
+        "relation_key": "touches",
+        "relation_focus": 0.33,
+        "action_key": "becomes_hidden",
+        "action_focus": 0.05
+      },
+      {
+        "id": 3,
+        "source": 4,
+        "target": 2,
+        "relation_key": "feeds",
+        "relation_focus": 0.17,
+        "action_key": "dissolves",
+        "action_focus": 0.72
+      },
+      {
+        "id": 4,
+        "source": 1,
+        "target": 3,
+        "relation_key": "erases",
+        "relation_focus": 0.45,
+        "action_key": "dissolves",
+        "action_focus": 0.65
+      },
+      {
+        "id": 5,
+        "source": 3,
+        "target": 2,
+        "relation_key": "echoes",
+        "relation_focus": 0.47,
+        "action_key": "becomes_visible",
+        "action_focus": 1.0
+      },
+      {
+        "id": 6,
+        "source": 4,
+        "target": 3,
+        "relation_key": "mirrors",
+        "relation_focus": 0.64,
+        "action_key": "weakens",
+        "action_focus": 0.55
+      },
+      {
+        "id": 7,
+        "source": 2,
+        "target": 1,
+        "relation_key": "witnesses",
+        "relation_focus": 0.22,
+        "action_key": "closes",
+        "action_focus": 0.71
+      }
+    ]
+  },
+  "mutations": [],
+  "id": 58
+}

@@ -1,0 +1,54 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "void",
+        "focus": 0.67
+      },
+      {
+        "id": 2,
+        "key": "harbor",
+        "focus": 0.27
+      },
+      {
+        "id": 3,
+        "key": "garden",
+        "focus": 0.64
+      },
+      {
+        "id": 4,
+        "key": "ruin",
+        "focus": 0.74
+      }
+    ],
+    "links": []
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "symbol_changed",
+      "symbol_id": 3,
+      "old_key": "garden",
+      "new_key": "thread",
+      "old_focus": 0.64,
+      "new_focus": 0.34
+    },
+    {
+      "step": 2,
+      "type": "link_added",
+      "link": {
+        "id": 1,
+        "source": 2,
+        "target": 4,
+        "relation_key": "protects",
+        "relation_focus": 0.99,
+        "action_key": "becomes_visible",
+        "action_focus": 0.06
+      }
+    }
+  ],
+  "id": 86
+}

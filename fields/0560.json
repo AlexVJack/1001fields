@@ -1,0 +1,81 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "stranger",
+        "focus": 0.26
+      },
+      {
+        "id": 2,
+        "key": "window",
+        "focus": 0.33
+      },
+      {
+        "id": 3,
+        "key": "shadow",
+        "focus": 0.88
+      },
+      {
+        "id": 4,
+        "key": "harbor",
+        "focus": 0.33
+      }
+    ],
+    "links": []
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "symbol_changed",
+      "symbol_id": 4,
+      "old_key": "harbor",
+      "new_key": "stone",
+      "old_focus": 0.33,
+      "new_focus": 0.46
+    },
+    {
+      "step": 2,
+      "type": "symbol_changed",
+      "symbol_id": 1,
+      "old_key": "stranger",
+      "new_key": "boundary",
+      "old_focus": 0.26,
+      "new_focus": 0.6
+    },
+    {
+      "step": 3,
+      "type": "symbol_changed",
+      "symbol_id": 3,
+      "old_key": "shadow",
+      "new_key": "crack",
+      "old_focus": 0.88,
+      "new_focus": 0.72
+    },
+    {
+      "step": 4,
+      "type": "symbol_changed",
+      "symbol_id": 1,
+      "old_key": "boundary",
+      "new_key": "network",
+      "old_focus": 0.6,
+      "new_focus": 0.62
+    },
+    {
+      "step": 5,
+      "type": "link_added",
+      "link": {
+        "id": 1,
+        "source": 3,
+        "target": 4,
+        "relation_key": "witnesses",
+        "relation_focus": 0.37,
+        "action_key": "closes",
+        "action_focus": 0.53
+      }
+    }
+  ],
+  "id": 560
+}

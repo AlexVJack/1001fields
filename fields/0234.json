@@ -1,0 +1,86 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "ruin",
+        "focus": 0.08
+      },
+      {
+        "id": 2,
+        "key": "ash",
+        "focus": 0.12
+      },
+      {
+        "id": 3,
+        "key": "stone",
+        "focus": 0.98
+      },
+      {
+        "id": 4,
+        "key": "threshold",
+        "focus": 0.29
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 3,
+        "target": 1,
+        "relation_key": "blocks",
+        "relation_focus": 0.52,
+        "action_key": "becomes_embodied",
+        "action_focus": 0.01
+      },
+      {
+        "id": 2,
+        "source": 1,
+        "target": 3,
+        "relation_key": "feeds",
+        "relation_focus": 0.01,
+        "action_key": "spreads",
+        "action_focus": 0.33
+      },
+      {
+        "id": 3,
+        "source": 1,
+        "target": 4,
+        "relation_key": "depends_on",
+        "relation_focus": 0.41,
+        "action_key": "becomes_embodied",
+        "action_focus": 0.7
+      },
+      {
+        "id": 4,
+        "source": 4,
+        "target": 3,
+        "relation_key": "depends_on",
+        "relation_focus": 0.38,
+        "action_key": "stabilizes",
+        "action_focus": 0.58
+      },
+      {
+        "id": 5,
+        "source": 4,
+        "target": 2,
+        "relation_key": "generates",
+        "relation_focus": 0.21,
+        "action_key": "becomes_embodied",
+        "action_focus": 0.22
+      },
+      {
+        "id": 6,
+        "source": 2,
+        "target": 4,
+        "relation_key": "erases",
+        "relation_focus": 0.65,
+        "action_key": "returns",
+        "action_focus": 0.83
+      }
+    ]
+  },
+  "mutations": [],
+  "id": 234
+}

@@ -1,0 +1,118 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "storm",
+        "focus": 0.38
+      },
+      {
+        "id": 2,
+        "key": "secret",
+        "focus": 0.84
+      },
+      {
+        "id": 3,
+        "key": "vessel",
+        "focus": 0.33
+      },
+      {
+        "id": 4,
+        "key": "garden",
+        "focus": 0.0
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 2,
+        "target": 1,
+        "relation_key": "names",
+        "relation_focus": 0.04,
+        "action_key": "crystallizes",
+        "action_focus": 0.06
+      },
+      {
+        "id": 2,
+        "source": 3,
+        "target": 1,
+        "relation_key": "infects",
+        "relation_focus": 0.72,
+        "action_key": "dissolves",
+        "action_focus": 0.25
+      },
+      {
+        "id": 3,
+        "source": 1,
+        "target": 2,
+        "relation_key": "embodies",
+        "relation_focus": 0.8,
+        "action_key": "becomes_quiet",
+        "action_focus": 0.0
+      },
+      {
+        "id": 4,
+        "source": 3,
+        "target": 4,
+        "relation_key": "witnesses",
+        "relation_focus": 0.52,
+        "action_key": "becomes_clear",
+        "action_focus": 0.56
+      },
+      {
+        "id": 5,
+        "source": 3,
+        "target": 2,
+        "relation_key": "distorts",
+        "relation_focus": 0.57,
+        "action_key": "becomes_clear",
+        "action_focus": 0.49
+      },
+      {
+        "id": 6,
+        "source": 4,
+        "target": 1,
+        "relation_key": "blocks",
+        "relation_focus": 0.95,
+        "action_key": "approaches",
+        "action_focus": 0.73
+      },
+      {
+        "id": 7,
+        "source": 1,
+        "target": 4,
+        "relation_key": "separates",
+        "relation_focus": 0.08,
+        "action_key": "awakens",
+        "action_focus": 0.55
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "link_inverted",
+      "link_before": {
+        "id": 4,
+        "source": 3,
+        "target": 4,
+        "relation_key": "witnesses",
+        "relation_focus": 0.52,
+        "action_key": "becomes_clear",
+        "action_focus": 0.56
+      },
+      "link_after": {
+        "id": 4,
+        "source": 4,
+        "target": 3,
+        "relation_key": "witnesses",
+        "relation_focus": 0.52,
+        "action_key": "becomes_clear",
+        "action_focus": 0.56
+      }
+    }
+  ],
+  "id": 207
+}

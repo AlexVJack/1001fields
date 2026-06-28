@@ -1,0 +1,104 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "garden",
+        "focus": 0.23
+      },
+      {
+        "id": 2,
+        "key": "sage",
+        "focus": 0.3
+      },
+      {
+        "id": 3,
+        "key": "name",
+        "focus": 0.4
+      },
+      {
+        "id": 4,
+        "key": "crack",
+        "focus": 0.46
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 4,
+        "target": 2,
+        "relation_key": "touches",
+        "relation_focus": 0.43,
+        "action_key": "returns",
+        "action_focus": 0.13
+      },
+      {
+        "id": 2,
+        "source": 2,
+        "target": 3,
+        "relation_key": "misnames",
+        "relation_focus": 0.51,
+        "action_key": "becomes_quiet",
+        "action_focus": 0.28
+      },
+      {
+        "id": 3,
+        "source": 1,
+        "target": 2,
+        "relation_key": "repels",
+        "relation_focus": 0.5,
+        "action_key": "dissolves",
+        "action_focus": 0.98
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "link_inverted",
+      "link_before": {
+        "id": 1,
+        "source": 4,
+        "target": 2,
+        "relation_key": "touches",
+        "relation_focus": 0.43,
+        "action_key": "returns",
+        "action_focus": 0.13
+      },
+      "link_after": {
+        "id": 1,
+        "source": 2,
+        "target": 4,
+        "relation_key": "touches",
+        "relation_focus": 0.43,
+        "action_key": "returns",
+        "action_focus": 0.13
+      }
+    },
+    {
+      "step": 2,
+      "type": "link_inverted",
+      "link_before": {
+        "id": 2,
+        "source": 2,
+        "target": 3,
+        "relation_key": "misnames",
+        "relation_focus": 0.51,
+        "action_key": "becomes_quiet",
+        "action_focus": 0.28
+      },
+      "link_after": {
+        "id": 2,
+        "source": 3,
+        "target": 2,
+        "relation_key": "misnames",
+        "relation_focus": 0.51,
+        "action_key": "becomes_quiet",
+        "action_focus": 0.28
+      }
+    }
+  ],
+  "id": 229
+}

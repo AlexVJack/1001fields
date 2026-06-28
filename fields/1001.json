@@ -1,0 +1,82 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "archive",
+        "focus": 0.85
+      },
+      {
+        "id": 2,
+        "key": "silence",
+        "focus": 0.64
+      },
+      {
+        "id": 3,
+        "key": "secret",
+        "focus": 0.8
+      },
+      {
+        "id": 4,
+        "key": "guardian",
+        "focus": 0.36
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 4,
+        "target": 3,
+        "relation_key": "separates",
+        "relation_focus": 0.82,
+        "action_key": "spreads",
+        "action_focus": 1.0
+      },
+      {
+        "id": 2,
+        "source": 3,
+        "target": 1,
+        "relation_key": "distorts",
+        "relation_focus": 0.3,
+        "action_key": "becomes_quiet",
+        "action_focus": 0.1
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "relation_changed",
+      "link_before": {
+        "id": 2,
+        "source": 3,
+        "target": 1,
+        "relation_key": "distorts",
+        "relation_focus": 0.3,
+        "action_key": "becomes_quiet",
+        "action_focus": 0.1
+      },
+      "link_after": {
+        "id": 2,
+        "source": 3,
+        "target": 1,
+        "relation_key": "feeds",
+        "relation_focus": 0.15,
+        "action_key": "becomes_quiet",
+        "action_focus": 0.1
+      }
+    },
+    {
+      "step": 2,
+      "type": "symbol_changed",
+      "symbol_id": 3,
+      "old_key": "secret",
+      "new_key": "hand",
+      "old_focus": 0.8,
+      "new_focus": 0.58
+    }
+  ],
+  "id": 1001
+}

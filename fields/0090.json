@@ -1,0 +1,118 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "pause",
+        "focus": 0.37
+      },
+      {
+        "id": 2,
+        "key": "shelter",
+        "focus": 0.81
+      },
+      {
+        "id": 3,
+        "key": "oracle",
+        "focus": 0.47
+      },
+      {
+        "id": 4,
+        "key": "ruin",
+        "focus": 0.55
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 1,
+        "target": 2,
+        "relation_key": "dominates",
+        "relation_focus": 0.52,
+        "action_key": "intensifies",
+        "action_focus": 0.19
+      },
+      {
+        "id": 2,
+        "source": 4,
+        "target": 2,
+        "relation_key": "generates",
+        "relation_focus": 0.45,
+        "action_key": "exhales",
+        "action_focus": 0.41
+      },
+      {
+        "id": 3,
+        "source": 3,
+        "target": 2,
+        "relation_key": "depends_on",
+        "relation_focus": 0.89,
+        "action_key": "becomes_quiet",
+        "action_focus": 0.97
+      },
+      {
+        "id": 4,
+        "source": 2,
+        "target": 3,
+        "relation_key": "depends_on",
+        "relation_focus": 0.03,
+        "action_key": "collapses",
+        "action_focus": 0.65
+      },
+      {
+        "id": 5,
+        "source": 1,
+        "target": 3,
+        "relation_key": "listens_to",
+        "relation_focus": 0.35,
+        "action_key": "merges",
+        "action_focus": 0.56
+      },
+      {
+        "id": 6,
+        "source": 2,
+        "target": 1,
+        "relation_key": "generates",
+        "relation_focus": 0.66,
+        "action_key": "merges",
+        "action_focus": 0.71
+      },
+      {
+        "id": 7,
+        "source": 2,
+        "target": 4,
+        "relation_key": "heals",
+        "relation_focus": 0.75,
+        "action_key": "decays",
+        "action_focus": 0.9
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "relation_changed",
+      "link_before": {
+        "id": 4,
+        "source": 2,
+        "target": 3,
+        "relation_key": "depends_on",
+        "relation_focus": 0.03,
+        "action_key": "collapses",
+        "action_focus": 0.65
+      },
+      "link_after": {
+        "id": 4,
+        "source": 2,
+        "target": 3,
+        "relation_key": "clarifies",
+        "relation_focus": 0.37,
+        "action_key": "collapses",
+        "action_focus": 0.65
+      }
+    }
+  ],
+  "id": 90
+}

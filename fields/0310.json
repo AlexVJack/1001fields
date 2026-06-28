@@ -1,0 +1,41 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "shadow",
+        "focus": 0.83
+      },
+      {
+        "id": 2,
+        "key": "guardian",
+        "focus": 0.18
+      },
+      {
+        "id": 3,
+        "key": "key",
+        "focus": 0.5
+      },
+      {
+        "id": 4,
+        "key": "void",
+        "focus": 0.87
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 1,
+        "target": 2,
+        "relation_key": "infects",
+        "relation_focus": 0.86,
+        "action_key": "returns",
+        "action_focus": 0.56
+      }
+    ]
+  },
+  "mutations": [],
+  "id": 310
+}

@@ -1,0 +1,59 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "name",
+        "focus": 0.24
+      },
+      {
+        "id": 2,
+        "key": "network",
+        "focus": 0.23
+      },
+      {
+        "id": 3,
+        "key": "machine",
+        "focus": 0.08
+      },
+      {
+        "id": 4,
+        "key": "threshold",
+        "focus": 0.31
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 2,
+        "target": 3,
+        "relation_key": "reveals",
+        "relation_focus": 0.53,
+        "action_key": "decays",
+        "action_focus": 0.43
+      },
+      {
+        "id": 2,
+        "source": 3,
+        "target": 4,
+        "relation_key": "transforms",
+        "relation_focus": 0.01,
+        "action_key": "merges",
+        "action_focus": 0.17
+      },
+      {
+        "id": 3,
+        "source": 1,
+        "target": 3,
+        "relation_key": "witnesses",
+        "relation_focus": 0.52,
+        "action_key": "lets_go",
+        "action_focus": 0.79
+      }
+    ]
+  },
+  "mutations": [],
+  "id": 933
+}

@@ -1,0 +1,122 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "threshold",
+        "focus": 0.02
+      },
+      {
+        "id": 2,
+        "key": "air",
+        "focus": 0.51
+      },
+      {
+        "id": 3,
+        "key": "harbor",
+        "focus": 0.68
+      },
+      {
+        "id": 4,
+        "key": "shelter",
+        "focus": 0.55
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 3,
+        "target": 2,
+        "relation_key": "submits_to",
+        "relation_focus": 0.55,
+        "action_key": "decays",
+        "action_focus": 0.95
+      },
+      {
+        "id": 2,
+        "source": 1,
+        "target": 2,
+        "relation_key": "repels",
+        "relation_focus": 0.05,
+        "action_key": "awakens",
+        "action_focus": 0.61
+      },
+      {
+        "id": 3,
+        "source": 3,
+        "target": 1,
+        "relation_key": "attracts",
+        "relation_focus": 0.82,
+        "action_key": "accelerates",
+        "action_focus": 0.14
+      },
+      {
+        "id": 4,
+        "source": 4,
+        "target": 2,
+        "relation_key": "transforms",
+        "relation_focus": 0.36,
+        "action_key": "crystallizes",
+        "action_focus": 0.56
+      },
+      {
+        "id": 5,
+        "source": 2,
+        "target": 3,
+        "relation_key": "witnesses",
+        "relation_focus": 0.57,
+        "action_key": "awakens",
+        "action_focus": 0.8
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "link_added",
+      "link": {
+        "id": 6,
+        "source": 2,
+        "target": 4,
+        "relation_key": "generates",
+        "relation_focus": 0.63,
+        "action_key": "awakens",
+        "action_focus": 0.89
+      }
+    },
+    {
+      "step": 2,
+      "type": "symbol_changed",
+      "symbol_id": 1,
+      "old_key": "threshold",
+      "new_key": "body",
+      "old_focus": 0.02,
+      "new_focus": 0.02
+    },
+    {
+      "step": 3,
+      "type": "link_removed",
+      "link": {
+        "id": 1,
+        "source": 3,
+        "target": 2,
+        "relation_key": "submits_to",
+        "relation_focus": 0.55,
+        "action_key": "decays",
+        "action_focus": 0.95
+      }
+    },
+    {
+      "step": 4,
+      "type": "symbol_changed",
+      "symbol_id": 4,
+      "old_key": "shelter",
+      "new_key": "hand",
+      "old_focus": 0.55,
+      "new_focus": 0.66
+    }
+  ],
+  "id": 410
+}

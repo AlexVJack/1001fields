@@ -1,0 +1,207 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "burden",
+        "focus": 0.25
+      },
+      {
+        "id": 2,
+        "key": "window",
+        "focus": 0.31
+      },
+      {
+        "id": 3,
+        "key": "threshold",
+        "focus": 0.64
+      },
+      {
+        "id": 4,
+        "key": "garden",
+        "focus": 0.61
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 2,
+        "target": 1,
+        "relation_key": "touches",
+        "relation_focus": 0.1,
+        "action_key": "closes",
+        "action_focus": 0.25
+      },
+      {
+        "id": 2,
+        "source": 1,
+        "target": 3,
+        "relation_key": "heals",
+        "relation_focus": 0.74,
+        "action_key": "becomes_clear",
+        "action_focus": 0.88
+      },
+      {
+        "id": 3,
+        "source": 3,
+        "target": 4,
+        "relation_key": "feeds",
+        "relation_focus": 0.59,
+        "action_key": "weakens",
+        "action_focus": 0.52
+      },
+      {
+        "id": 4,
+        "source": 1,
+        "target": 4,
+        "relation_key": "repels",
+        "relation_focus": 0.22,
+        "action_key": "refuses_change",
+        "action_focus": 0.91
+      },
+      {
+        "id": 5,
+        "source": 4,
+        "target": 3,
+        "relation_key": "protects",
+        "relation_focus": 0.62,
+        "action_key": "settles",
+        "action_focus": 0.86
+      },
+      {
+        "id": 6,
+        "source": 4,
+        "target": 1,
+        "relation_key": "distorts",
+        "relation_focus": 0.67,
+        "action_key": "collapses",
+        "action_focus": 0.07
+      },
+      {
+        "id": 7,
+        "source": 3,
+        "target": 2,
+        "relation_key": "heals",
+        "relation_focus": 0.8,
+        "action_key": "returns",
+        "action_focus": 0.03
+      },
+      {
+        "id": 8,
+        "source": 3,
+        "target": 1,
+        "relation_key": "heals",
+        "relation_focus": 0.93,
+        "action_key": "accelerates",
+        "action_focus": 0.89
+      },
+      {
+        "id": 9,
+        "source": 4,
+        "target": 2,
+        "relation_key": "clarifies",
+        "relation_focus": 0.99,
+        "action_key": "weakens",
+        "action_focus": 0.94
+      },
+      {
+        "id": 10,
+        "source": 2,
+        "target": 4,
+        "relation_key": "listens_to",
+        "relation_focus": 0.32,
+        "action_key": "creates_a_third_thing",
+        "action_focus": 0.97
+      },
+      {
+        "id": 11,
+        "source": 1,
+        "target": 2,
+        "relation_key": "consumes",
+        "relation_focus": 0.59,
+        "action_key": "inverts",
+        "action_focus": 0.8
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "link_inverted",
+      "link_before": {
+        "id": 7,
+        "source": 3,
+        "target": 2,
+        "relation_key": "heals",
+        "relation_focus": 0.8,
+        "action_key": "returns",
+        "action_focus": 0.03
+      },
+      "link_after": {
+        "id": 7,
+        "source": 2,
+        "target": 3,
+        "relation_key": "heals",
+        "relation_focus": 0.8,
+        "action_key": "returns",
+        "action_focus": 0.03
+      }
+    },
+    {
+      "step": 2,
+      "type": "link_inverted",
+      "link_before": {
+        "id": 7,
+        "source": 2,
+        "target": 3,
+        "relation_key": "heals",
+        "relation_focus": 0.8,
+        "action_key": "returns",
+        "action_focus": 0.03
+      },
+      "link_after": {
+        "id": 7,
+        "source": 3,
+        "target": 2,
+        "relation_key": "heals",
+        "relation_focus": 0.8,
+        "action_key": "returns",
+        "action_focus": 0.03
+      }
+    },
+    {
+      "step": 3,
+      "type": "symbol_changed",
+      "symbol_id": 1,
+      "old_key": "burden",
+      "new_key": "breath",
+      "old_focus": 0.25,
+      "new_focus": 0.0
+    },
+    {
+      "step": 4,
+      "type": "action_changed",
+      "link_before": {
+        "id": 10,
+        "source": 2,
+        "target": 4,
+        "relation_key": "listens_to",
+        "relation_focus": 0.32,
+        "action_key": "creates_a_third_thing",
+        "action_focus": 0.97
+      },
+      "link_after": {
+        "id": 10,
+        "source": 2,
+        "target": 4,
+        "relation_key": "listens_to",
+        "relation_focus": 0.32,
+        "action_key": "crystallizes",
+        "action_focus": 0.39
+      }
+    }
+  ],
+  "id": 739
+}

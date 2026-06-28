@@ -1,0 +1,131 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "vessel",
+        "focus": 0.35
+      },
+      {
+        "id": 2,
+        "key": "air",
+        "focus": 0.47
+      },
+      {
+        "id": 3,
+        "key": "boundary",
+        "focus": 0.83
+      },
+      {
+        "id": 4,
+        "key": "promise",
+        "focus": 0.88
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 4,
+        "target": 3,
+        "relation_key": "distorts",
+        "relation_focus": 0.71,
+        "action_key": "dissolves",
+        "action_focus": 0.69
+      },
+      {
+        "id": 2,
+        "source": 1,
+        "target": 3,
+        "relation_key": "generates",
+        "relation_focus": 0.99,
+        "action_key": "becomes_quiet",
+        "action_focus": 0.62
+      },
+      {
+        "id": 3,
+        "source": 1,
+        "target": 2,
+        "relation_key": "consumes",
+        "relation_focus": 0.58,
+        "action_key": "creates_a_third_thing",
+        "action_focus": 0.81
+      },
+      {
+        "id": 4,
+        "source": 3,
+        "target": 2,
+        "relation_key": "remembers",
+        "relation_focus": 0.03,
+        "action_key": "becomes_quiet",
+        "action_focus": 0.77
+      },
+      {
+        "id": 5,
+        "source": 4,
+        "target": 1,
+        "relation_key": "witnesses",
+        "relation_focus": 0.15,
+        "action_key": "repeats",
+        "action_focus": 0.08
+      },
+      {
+        "id": 6,
+        "source": 3,
+        "target": 4,
+        "relation_key": "contains",
+        "relation_focus": 0.78,
+        "action_key": "creates_a_third_thing",
+        "action_focus": 0.85
+      },
+      {
+        "id": 7,
+        "source": 3,
+        "target": 1,
+        "relation_key": "blocks",
+        "relation_focus": 0.0,
+        "action_key": "collapses",
+        "action_focus": 0.68
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "action_changed",
+      "link_before": {
+        "id": 1,
+        "source": 4,
+        "target": 3,
+        "relation_key": "distorts",
+        "relation_focus": 0.71,
+        "action_key": "dissolves",
+        "action_focus": 0.69
+      },
+      "link_after": {
+        "id": 1,
+        "source": 4,
+        "target": 3,
+        "relation_key": "distorts",
+        "relation_focus": 0.71,
+        "action_key": "awakens",
+        "action_focus": 0.74
+      }
+    },
+    {
+      "step": 2,
+      "type": "link_added",
+      "link": {
+        "id": 8,
+        "source": 2,
+        "target": 3,
+        "relation_key": "touches",
+        "relation_focus": 0.42,
+        "action_key": "crystallizes",
+        "action_focus": 0.94
+      }
+    }
+  ],
+  "id": 838
+}

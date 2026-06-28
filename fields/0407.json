@@ -1,0 +1,170 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "air",
+        "focus": 0.37
+      },
+      {
+        "id": 2,
+        "key": "burden",
+        "focus": 0.87
+      },
+      {
+        "id": 3,
+        "key": "water",
+        "focus": 0.62
+      },
+      {
+        "id": 4,
+        "key": "boundary",
+        "focus": 0.56
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 2,
+        "target": 4,
+        "relation_key": "witnesses",
+        "relation_focus": 0.31,
+        "action_key": "crosses_a_threshold",
+        "action_focus": 0.53
+      },
+      {
+        "id": 2,
+        "source": 3,
+        "target": 1,
+        "relation_key": "feeds",
+        "relation_focus": 0.26,
+        "action_key": "approaches",
+        "action_focus": 0.24
+      },
+      {
+        "id": 3,
+        "source": 3,
+        "target": 2,
+        "relation_key": "mirrors",
+        "relation_focus": 0.24,
+        "action_key": "closes",
+        "action_focus": 0.41
+      },
+      {
+        "id": 4,
+        "source": 2,
+        "target": 1,
+        "relation_key": "mirrors",
+        "relation_focus": 0.76,
+        "action_key": "destabilizes",
+        "action_focus": 0.62
+      },
+      {
+        "id": 5,
+        "source": 4,
+        "target": 2,
+        "relation_key": "witnesses",
+        "relation_focus": 0.15,
+        "action_key": "becomes_embodied",
+        "action_focus": 0.87
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "link_added",
+      "link": {
+        "id": 6,
+        "source": 2,
+        "target": 3,
+        "relation_key": "consumes",
+        "relation_focus": 0.7,
+        "action_key": "spreads",
+        "action_focus": 0.05
+      }
+    },
+    {
+      "step": 2,
+      "type": "link_inverted",
+      "link_before": {
+        "id": 2,
+        "source": 3,
+        "target": 1,
+        "relation_key": "feeds",
+        "relation_focus": 0.26,
+        "action_key": "approaches",
+        "action_focus": 0.24
+      },
+      "link_after": {
+        "id": 2,
+        "source": 1,
+        "target": 3,
+        "relation_key": "feeds",
+        "relation_focus": 0.26,
+        "action_key": "approaches",
+        "action_focus": 0.24
+      }
+    },
+    {
+      "step": 3,
+      "type": "link_inverted",
+      "link_before": {
+        "id": 4,
+        "source": 2,
+        "target": 1,
+        "relation_key": "mirrors",
+        "relation_focus": 0.76,
+        "action_key": "destabilizes",
+        "action_focus": 0.62
+      },
+      "link_after": {
+        "id": 4,
+        "source": 1,
+        "target": 2,
+        "relation_key": "mirrors",
+        "relation_focus": 0.76,
+        "action_key": "destabilizes",
+        "action_focus": 0.62
+      }
+    },
+    {
+      "step": 4,
+      "type": "link_removed",
+      "link": {
+        "id": 4,
+        "source": 1,
+        "target": 2,
+        "relation_key": "mirrors",
+        "relation_focus": 0.76,
+        "action_key": "destabilizes",
+        "action_focus": 0.62
+      }
+    },
+    {
+      "step": 5,
+      "type": "link_inverted",
+      "link_before": {
+        "id": 2,
+        "source": 1,
+        "target": 3,
+        "relation_key": "feeds",
+        "relation_focus": 0.26,
+        "action_key": "approaches",
+        "action_focus": 0.24
+      },
+      "link_after": {
+        "id": 2,
+        "source": 3,
+        "target": 1,
+        "relation_key": "feeds",
+        "relation_focus": 0.26,
+        "action_key": "approaches",
+        "action_focus": 0.24
+      }
+    }
+  ],
+  "id": 407
+}

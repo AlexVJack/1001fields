@@ -1,0 +1,112 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "gate",
+        "focus": 0.25
+      },
+      {
+        "id": 2,
+        "key": "burden",
+        "focus": 0.98
+      },
+      {
+        "id": 3,
+        "key": "mirror",
+        "focus": 0.19
+      },
+      {
+        "id": 4,
+        "key": "water",
+        "focus": 0.61
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 3,
+        "target": 1,
+        "relation_key": "remembers",
+        "relation_focus": 0.33,
+        "action_key": "becomes_embodied",
+        "action_focus": 0.4
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "relation_changed",
+      "link_before": {
+        "id": 1,
+        "source": 3,
+        "target": 1,
+        "relation_key": "remembers",
+        "relation_focus": 0.33,
+        "action_key": "becomes_embodied",
+        "action_focus": 0.4
+      },
+      "link_after": {
+        "id": 1,
+        "source": 3,
+        "target": 1,
+        "relation_key": "listens_to",
+        "relation_focus": 0.22,
+        "action_key": "becomes_embodied",
+        "action_focus": 0.4
+      }
+    },
+    {
+      "step": 2,
+      "type": "action_changed",
+      "link_before": {
+        "id": 1,
+        "source": 3,
+        "target": 1,
+        "relation_key": "listens_to",
+        "relation_focus": 0.22,
+        "action_key": "becomes_embodied",
+        "action_focus": 0.4
+      },
+      "link_after": {
+        "id": 1,
+        "source": 3,
+        "target": 1,
+        "relation_key": "listens_to",
+        "relation_focus": 0.22,
+        "action_key": "inverts",
+        "action_focus": 0.18
+      }
+    },
+    {
+      "step": 3,
+      "type": "link_added",
+      "link": {
+        "id": 2,
+        "source": 2,
+        "target": 3,
+        "relation_key": "generates",
+        "relation_focus": 0.03,
+        "action_key": "exhales",
+        "action_focus": 0.2
+      }
+    },
+    {
+      "step": 4,
+      "type": "link_added",
+      "link": {
+        "id": 3,
+        "source": 1,
+        "target": 3,
+        "relation_key": "transforms",
+        "relation_focus": 0.86,
+        "action_key": "exhales",
+        "action_focus": 0.16
+      }
+    }
+  ],
+  "id": 656
+}

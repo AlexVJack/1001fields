@@ -1,0 +1,95 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "witness",
+        "focus": 0.13
+      },
+      {
+        "id": 2,
+        "key": "thread",
+        "focus": 0.52
+      },
+      {
+        "id": 3,
+        "key": "pause",
+        "focus": 0.32
+      },
+      {
+        "id": 4,
+        "key": "shadow",
+        "focus": 0.89
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 1,
+        "target": 2,
+        "relation_key": "infects",
+        "relation_focus": 0.69,
+        "action_key": "refuses_change",
+        "action_focus": 0.2
+      },
+      {
+        "id": 2,
+        "source": 2,
+        "target": 4,
+        "relation_key": "erases",
+        "relation_focus": 0.66,
+        "action_key": "exhales",
+        "action_focus": 0.53
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "symbol_changed",
+      "symbol_id": 2,
+      "old_key": "thread",
+      "new_key": "machine",
+      "old_focus": 0.52,
+      "new_focus": 0.85
+    },
+    {
+      "step": 2,
+      "type": "link_added",
+      "link": {
+        "id": 3,
+        "source": 4,
+        "target": 1,
+        "relation_key": "listens_to",
+        "relation_focus": 0.24,
+        "action_key": "creates_a_third_thing",
+        "action_focus": 0.45
+      }
+    },
+    {
+      "step": 3,
+      "type": "action_changed",
+      "link_before": {
+        "id": 1,
+        "source": 1,
+        "target": 2,
+        "relation_key": "infects",
+        "relation_focus": 0.69,
+        "action_key": "refuses_change",
+        "action_focus": 0.2
+      },
+      "link_after": {
+        "id": 1,
+        "source": 1,
+        "target": 2,
+        "relation_key": "infects",
+        "relation_focus": 0.69,
+        "action_key": "becomes_quiet",
+        "action_focus": 0.81
+      }
+    }
+  ],
+  "id": 117
+}

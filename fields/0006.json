@@ -1,0 +1,86 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "shelter",
+        "focus": 0.41
+      },
+      {
+        "id": 2,
+        "key": "fire",
+        "focus": 0.75
+      },
+      {
+        "id": 3,
+        "key": "stone",
+        "focus": 0.18
+      },
+      {
+        "id": 4,
+        "key": "window",
+        "focus": 0.96
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 3,
+        "target": 4,
+        "relation_key": "names",
+        "relation_focus": 0.21,
+        "action_key": "closes",
+        "action_focus": 0.15
+      },
+      {
+        "id": 2,
+        "source": 2,
+        "target": 1,
+        "relation_key": "embodies",
+        "relation_focus": 0.2,
+        "action_key": "awakens",
+        "action_focus": 0.84
+      },
+      {
+        "id": 3,
+        "source": 1,
+        "target": 3,
+        "relation_key": "submits_to",
+        "relation_focus": 0.53,
+        "action_key": "awakens",
+        "action_focus": 0.27
+      },
+      {
+        "id": 4,
+        "source": 2,
+        "target": 3,
+        "relation_key": "submits_to",
+        "relation_focus": 0.51,
+        "action_key": "spreads",
+        "action_focus": 0.21
+      },
+      {
+        "id": 5,
+        "source": 2,
+        "target": 4,
+        "relation_key": "generates",
+        "relation_focus": 0.2,
+        "action_key": "lets_go",
+        "action_focus": 0.45
+      },
+      {
+        "id": 6,
+        "source": 1,
+        "target": 2,
+        "relation_key": "clarifies",
+        "relation_focus": 0.35,
+        "action_key": "inverts",
+        "action_focus": 0.66
+      }
+    ]
+  },
+  "mutations": [],
+  "id": 6
+}

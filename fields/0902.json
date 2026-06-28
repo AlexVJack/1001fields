@@ -1,0 +1,202 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "name",
+        "focus": 0.61
+      },
+      {
+        "id": 2,
+        "key": "exile",
+        "focus": 0.94
+      },
+      {
+        "id": 3,
+        "key": "void",
+        "focus": 0.75
+      },
+      {
+        "id": 4,
+        "key": "hunger",
+        "focus": 0.36
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 1,
+        "target": 4,
+        "relation_key": "remembers",
+        "relation_focus": 0.91,
+        "action_key": "exhales",
+        "action_focus": 0.02
+      },
+      {
+        "id": 2,
+        "source": 2,
+        "target": 4,
+        "relation_key": "feeds",
+        "relation_focus": 0.61,
+        "action_key": "returns",
+        "action_focus": 0.13
+      },
+      {
+        "id": 3,
+        "source": 3,
+        "target": 2,
+        "relation_key": "distorts",
+        "relation_focus": 0.25,
+        "action_key": "awakens",
+        "action_focus": 0.0
+      },
+      {
+        "id": 4,
+        "source": 2,
+        "target": 1,
+        "relation_key": "blocks",
+        "relation_focus": 0.99,
+        "action_key": "repeats",
+        "action_focus": 0.83
+      },
+      {
+        "id": 5,
+        "source": 3,
+        "target": 4,
+        "relation_key": "contains",
+        "relation_focus": 0.3,
+        "action_key": "awakens",
+        "action_focus": 0.86
+      },
+      {
+        "id": 6,
+        "source": 1,
+        "target": 3,
+        "relation_key": "repels",
+        "relation_focus": 0.07,
+        "action_key": "becomes_embodied",
+        "action_focus": 0.56
+      },
+      {
+        "id": 7,
+        "source": 4,
+        "target": 1,
+        "relation_key": "embodies",
+        "relation_focus": 0.32,
+        "action_key": "settles",
+        "action_focus": 0.54
+      },
+      {
+        "id": 8,
+        "source": 4,
+        "target": 2,
+        "relation_key": "blocks",
+        "relation_focus": 0.58,
+        "action_key": "becomes_hidden",
+        "action_focus": 0.63
+      },
+      {
+        "id": 9,
+        "source": 3,
+        "target": 1,
+        "relation_key": "separates",
+        "relation_focus": 0.47,
+        "action_key": "crystallizes",
+        "action_focus": 0.56
+      },
+      {
+        "id": 10,
+        "source": 1,
+        "target": 2,
+        "relation_key": "names",
+        "relation_focus": 0.88,
+        "action_key": "refuses_change",
+        "action_focus": 0.0
+      },
+      {
+        "id": 11,
+        "source": 2,
+        "target": 3,
+        "relation_key": "misnames",
+        "relation_focus": 0.48,
+        "action_key": "splits",
+        "action_focus": 0.37
+      },
+      {
+        "id": 12,
+        "source": 4,
+        "target": 3,
+        "relation_key": "remembers",
+        "relation_focus": 0.99,
+        "action_key": "collapses",
+        "action_focus": 0.74
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "link_removed",
+      "link": {
+        "id": 8,
+        "source": 4,
+        "target": 2,
+        "relation_key": "blocks",
+        "relation_focus": 0.58,
+        "action_key": "becomes_hidden",
+        "action_focus": 0.63
+      }
+    },
+    {
+      "step": 2,
+      "type": "link_removed",
+      "link": {
+        "id": 2,
+        "source": 2,
+        "target": 4,
+        "relation_key": "feeds",
+        "relation_focus": 0.61,
+        "action_key": "returns",
+        "action_focus": 0.13
+      }
+    },
+    {
+      "step": 3,
+      "type": "link_removed",
+      "link": {
+        "id": 3,
+        "source": 3,
+        "target": 2,
+        "relation_key": "distorts",
+        "relation_focus": 0.25,
+        "action_key": "awakens",
+        "action_focus": 0.0
+      }
+    },
+    {
+      "step": 4,
+      "type": "relation_changed",
+      "link_before": {
+        "id": 10,
+        "source": 1,
+        "target": 2,
+        "relation_key": "names",
+        "relation_focus": 0.88,
+        "action_key": "refuses_change",
+        "action_focus": 0.0
+      },
+      "link_after": {
+        "id": 10,
+        "source": 1,
+        "target": 2,
+        "relation_key": "touches",
+        "relation_focus": 0.86,
+        "action_key": "refuses_change",
+        "action_focus": 0.0
+      }
+    }
+  ],
+  "id": 902
+}

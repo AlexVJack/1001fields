@@ -1,0 +1,99 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "name",
+        "focus": 0.85
+      },
+      {
+        "id": 2,
+        "key": "labyrinth",
+        "focus": 0.61
+      },
+      {
+        "id": 3,
+        "key": "garden",
+        "focus": 0.72
+      },
+      {
+        "id": 4,
+        "key": "gate",
+        "focus": 0.85
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 3,
+        "target": 2,
+        "relation_key": "contains",
+        "relation_focus": 0.26,
+        "action_key": "inverts",
+        "action_focus": 0.6
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "link_added",
+      "link": {
+        "id": 2,
+        "source": 4,
+        "target": 3,
+        "relation_key": "echoes",
+        "relation_focus": 0.05,
+        "action_key": "settles",
+        "action_focus": 0.73
+      }
+    },
+    {
+      "step": 2,
+      "type": "link_inverted",
+      "link_before": {
+        "id": 2,
+        "source": 4,
+        "target": 3,
+        "relation_key": "echoes",
+        "relation_focus": 0.05,
+        "action_key": "settles",
+        "action_focus": 0.73
+      },
+      "link_after": {
+        "id": 2,
+        "source": 3,
+        "target": 4,
+        "relation_key": "echoes",
+        "relation_focus": 0.05,
+        "action_key": "settles",
+        "action_focus": 0.73
+      }
+    },
+    {
+      "step": 3,
+      "type": "action_changed",
+      "link_before": {
+        "id": 2,
+        "source": 3,
+        "target": 4,
+        "relation_key": "echoes",
+        "relation_focus": 0.05,
+        "action_key": "settles",
+        "action_focus": 0.73
+      },
+      "link_after": {
+        "id": 2,
+        "source": 3,
+        "target": 4,
+        "relation_key": "echoes",
+        "relation_focus": 0.05,
+        "action_key": "weakens",
+        "action_focus": 0.56
+      }
+    }
+  ],
+  "id": 383
+}

@@ -1,0 +1,144 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "storm",
+        "focus": 0.25
+      },
+      {
+        "id": 2,
+        "key": "key",
+        "focus": 0.15
+      },
+      {
+        "id": 3,
+        "key": "garden",
+        "focus": 0.67
+      },
+      {
+        "id": 4,
+        "key": "threshold",
+        "focus": 0.54
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 2,
+        "target": 4,
+        "relation_key": "heals",
+        "relation_focus": 0.44,
+        "action_key": "becomes_clear",
+        "action_focus": 0.54
+      },
+      {
+        "id": 2,
+        "source": 4,
+        "target": 1,
+        "relation_key": "heals",
+        "relation_focus": 0.48,
+        "action_key": "creates_a_third_thing",
+        "action_focus": 0.59
+      },
+      {
+        "id": 3,
+        "source": 1,
+        "target": 3,
+        "relation_key": "touches",
+        "relation_focus": 0.98,
+        "action_key": "becomes_hidden",
+        "action_focus": 0.11
+      },
+      {
+        "id": 4,
+        "source": 3,
+        "target": 4,
+        "relation_key": "generates",
+        "relation_focus": 0.13,
+        "action_key": "merges",
+        "action_focus": 0.23
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "link_inverted",
+      "link_before": {
+        "id": 3,
+        "source": 1,
+        "target": 3,
+        "relation_key": "touches",
+        "relation_focus": 0.98,
+        "action_key": "becomes_hidden",
+        "action_focus": 0.11
+      },
+      "link_after": {
+        "id": 3,
+        "source": 3,
+        "target": 1,
+        "relation_key": "touches",
+        "relation_focus": 0.98,
+        "action_key": "becomes_hidden",
+        "action_focus": 0.11
+      }
+    },
+    {
+      "step": 2,
+      "type": "link_removed",
+      "link": {
+        "id": 1,
+        "source": 2,
+        "target": 4,
+        "relation_key": "heals",
+        "relation_focus": 0.44,
+        "action_key": "becomes_clear",
+        "action_focus": 0.54
+      }
+    },
+    {
+      "step": 3,
+      "type": "relation_changed",
+      "link_before": {
+        "id": 4,
+        "source": 3,
+        "target": 4,
+        "relation_key": "generates",
+        "relation_focus": 0.13,
+        "action_key": "merges",
+        "action_focus": 0.23
+      },
+      "link_after": {
+        "id": 4,
+        "source": 3,
+        "target": 4,
+        "relation_key": "clarifies",
+        "relation_focus": 0.16,
+        "action_key": "merges",
+        "action_focus": 0.23
+      }
+    },
+    {
+      "step": 4,
+      "type": "symbol_changed",
+      "symbol_id": 4,
+      "old_key": "threshold",
+      "new_key": "memory",
+      "old_focus": 0.54,
+      "new_focus": 0.63
+    },
+    {
+      "step": 5,
+      "type": "symbol_changed",
+      "symbol_id": 1,
+      "old_key": "storm",
+      "new_key": "void",
+      "old_focus": 0.25,
+      "new_focus": 0.83
+    }
+  ],
+  "id": 288
+}

@@ -1,0 +1,54 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "exile",
+        "focus": 0.69
+      },
+      {
+        "id": 2,
+        "key": "memory",
+        "focus": 0.2
+      },
+      {
+        "id": 3,
+        "key": "body",
+        "focus": 0.73
+      },
+      {
+        "id": 4,
+        "key": "hunger",
+        "focus": 0.38
+      }
+    ],
+    "links": []
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "symbol_changed",
+      "symbol_id": 2,
+      "old_key": "memory",
+      "new_key": "tower",
+      "old_focus": 0.2,
+      "new_focus": 0.27
+    },
+    {
+      "step": 2,
+      "type": "link_added",
+      "link": {
+        "id": 1,
+        "source": 4,
+        "target": 1,
+        "relation_key": "misnames",
+        "relation_focus": 0.37,
+        "action_key": "collapses",
+        "action_focus": 0.06
+      }
+    }
+  ],
+  "id": 292
+}

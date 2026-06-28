@@ -1,0 +1,211 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "memory",
+        "focus": 0.51
+      },
+      {
+        "id": 2,
+        "key": "machine",
+        "focus": 0.24
+      },
+      {
+        "id": 3,
+        "key": "herald",
+        "focus": 0.28
+      },
+      {
+        "id": 4,
+        "key": "spark",
+        "focus": 0.03
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 3,
+        "target": 1,
+        "relation_key": "witnesses",
+        "relation_focus": 0.2,
+        "action_key": "collapses",
+        "action_focus": 0.65
+      },
+      {
+        "id": 2,
+        "source": 3,
+        "target": 4,
+        "relation_key": "binds",
+        "relation_focus": 0.16,
+        "action_key": "inverts",
+        "action_focus": 0.47
+      },
+      {
+        "id": 3,
+        "source": 4,
+        "target": 1,
+        "relation_key": "clarifies",
+        "relation_focus": 0.45,
+        "action_key": "becomes_visible",
+        "action_focus": 0.31
+      },
+      {
+        "id": 4,
+        "source": 2,
+        "target": 1,
+        "relation_key": "feeds",
+        "relation_focus": 0.79,
+        "action_key": "lets_go",
+        "action_focus": 0.14
+      },
+      {
+        "id": 5,
+        "source": 2,
+        "target": 3,
+        "relation_key": "infects",
+        "relation_focus": 0.46,
+        "action_key": "returns",
+        "action_focus": 0.99
+      },
+      {
+        "id": 6,
+        "source": 3,
+        "target": 2,
+        "relation_key": "endures",
+        "relation_focus": 0.82,
+        "action_key": "decays",
+        "action_focus": 1.0
+      },
+      {
+        "id": 7,
+        "source": 1,
+        "target": 3,
+        "relation_key": "submits_to",
+        "relation_focus": 0.31,
+        "action_key": "weakens",
+        "action_focus": 0.73
+      },
+      {
+        "id": 8,
+        "source": 4,
+        "target": 3,
+        "relation_key": "depends_on",
+        "relation_focus": 0.35,
+        "action_key": "mutates",
+        "action_focus": 0.11
+      },
+      {
+        "id": 9,
+        "source": 1,
+        "target": 2,
+        "relation_key": "protects",
+        "relation_focus": 0.98,
+        "action_key": "destabilizes",
+        "action_focus": 0.91
+      },
+      {
+        "id": 10,
+        "source": 4,
+        "target": 2,
+        "relation_key": "submits_to",
+        "relation_focus": 0.51,
+        "action_key": "repeats",
+        "action_focus": 0.72
+      },
+      {
+        "id": 11,
+        "source": 2,
+        "target": 4,
+        "relation_key": "heals",
+        "relation_focus": 0.29,
+        "action_key": "becomes_visible",
+        "action_focus": 0.95
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "relation_changed",
+      "link_before": {
+        "id": 6,
+        "source": 3,
+        "target": 2,
+        "relation_key": "endures",
+        "relation_focus": 0.82,
+        "action_key": "decays",
+        "action_focus": 1.0
+      },
+      "link_after": {
+        "id": 6,
+        "source": 3,
+        "target": 2,
+        "relation_key": "generates",
+        "relation_focus": 0.54,
+        "action_key": "decays",
+        "action_focus": 1.0
+      }
+    },
+    {
+      "step": 2,
+      "type": "link_inverted",
+      "link_before": {
+        "id": 3,
+        "source": 4,
+        "target": 1,
+        "relation_key": "clarifies",
+        "relation_focus": 0.45,
+        "action_key": "becomes_visible",
+        "action_focus": 0.31
+      },
+      "link_after": {
+        "id": 3,
+        "source": 1,
+        "target": 4,
+        "relation_key": "clarifies",
+        "relation_focus": 0.45,
+        "action_key": "becomes_visible",
+        "action_focus": 0.31
+      }
+    },
+    {
+      "step": 3,
+      "type": "link_removed",
+      "link": {
+        "id": 8,
+        "source": 4,
+        "target": 3,
+        "relation_key": "depends_on",
+        "relation_focus": 0.35,
+        "action_key": "mutates",
+        "action_focus": 0.11
+      }
+    },
+    {
+      "step": 4,
+      "type": "link_removed",
+      "link": {
+        "id": 10,
+        "source": 4,
+        "target": 2,
+        "relation_key": "submits_to",
+        "relation_focus": 0.51,
+        "action_key": "repeats",
+        "action_focus": 0.72
+      }
+    },
+    {
+      "step": 5,
+      "type": "symbol_changed",
+      "symbol_id": 2,
+      "old_key": "machine",
+      "new_key": "hunger",
+      "old_focus": 0.24,
+      "new_focus": 0.96
+    }
+  ],
+  "id": 272
+}

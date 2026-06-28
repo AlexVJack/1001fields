@@ -1,0 +1,154 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "mirror",
+        "focus": 0.83
+      },
+      {
+        "id": 2,
+        "key": "window",
+        "focus": 0.77
+      },
+      {
+        "id": 3,
+        "key": "machine",
+        "focus": 0.34
+      },
+      {
+        "id": 4,
+        "key": "law",
+        "focus": 0.79
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 4,
+        "target": 1,
+        "relation_key": "touches",
+        "relation_focus": 0.59,
+        "action_key": "intensifies",
+        "action_focus": 0.61
+      },
+      {
+        "id": 2,
+        "source": 4,
+        "target": 3,
+        "relation_key": "mirrors",
+        "relation_focus": 0.2,
+        "action_key": "awakens",
+        "action_focus": 0.61
+      },
+      {
+        "id": 3,
+        "source": 1,
+        "target": 3,
+        "relation_key": "attracts",
+        "relation_focus": 0.0,
+        "action_key": "becomes_quiet",
+        "action_focus": 0.23
+      },
+      {
+        "id": 4,
+        "source": 3,
+        "target": 1,
+        "relation_key": "echoes",
+        "relation_focus": 0.13,
+        "action_key": "returns",
+        "action_focus": 0.1
+      },
+      {
+        "id": 5,
+        "source": 2,
+        "target": 1,
+        "relation_key": "transforms",
+        "relation_focus": 0.42,
+        "action_key": "approaches",
+        "action_focus": 0.57
+      },
+      {
+        "id": 6,
+        "source": 3,
+        "target": 4,
+        "relation_key": "generates",
+        "relation_focus": 0.19,
+        "action_key": "splits",
+        "action_focus": 0.29
+      },
+      {
+        "id": 7,
+        "source": 2,
+        "target": 3,
+        "relation_key": "submits_to",
+        "relation_focus": 0.0,
+        "action_key": "awakens",
+        "action_focus": 0.29
+      },
+      {
+        "id": 8,
+        "source": 4,
+        "target": 2,
+        "relation_key": "erases",
+        "relation_focus": 0.83,
+        "action_key": "becomes_quiet",
+        "action_focus": 0.29
+      },
+      {
+        "id": 9,
+        "source": 2,
+        "target": 4,
+        "relation_key": "depends_on",
+        "relation_focus": 0.91,
+        "action_key": "repeats",
+        "action_focus": 0.65
+      },
+      {
+        "id": 10,
+        "source": 1,
+        "target": 4,
+        "relation_key": "embodies",
+        "relation_focus": 0.79,
+        "action_key": "becomes_quiet",
+        "action_focus": 0.59
+      },
+      {
+        "id": 11,
+        "source": 1,
+        "target": 2,
+        "relation_key": "misnames",
+        "relation_focus": 0.01,
+        "action_key": "decays",
+        "action_focus": 0.08
+      },
+      {
+        "id": 12,
+        "source": 3,
+        "target": 2,
+        "relation_key": "blocks",
+        "relation_focus": 0.22,
+        "action_key": "settles",
+        "action_focus": 0.86
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "link_removed",
+      "link": {
+        "id": 4,
+        "source": 3,
+        "target": 1,
+        "relation_key": "echoes",
+        "relation_focus": 0.13,
+        "action_key": "returns",
+        "action_focus": 0.1
+      }
+    }
+  ],
+  "id": 686
+}

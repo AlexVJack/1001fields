@@ -1,0 +1,96 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "body",
+        "focus": 0.89
+      },
+      {
+        "id": 2,
+        "key": "debt",
+        "focus": 0.04
+      },
+      {
+        "id": 3,
+        "key": "crack",
+        "focus": 0.61
+      },
+      {
+        "id": 4,
+        "key": "silence",
+        "focus": 0.68
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 2,
+        "target": 1,
+        "relation_key": "protects",
+        "relation_focus": 0.97,
+        "action_key": "becomes_visible",
+        "action_focus": 0.53
+      },
+      {
+        "id": 2,
+        "source": 1,
+        "target": 4,
+        "relation_key": "repels",
+        "relation_focus": 0.96,
+        "action_key": "refuses_change",
+        "action_focus": 0.43
+      },
+      {
+        "id": 3,
+        "source": 4,
+        "target": 3,
+        "relation_key": "binds",
+        "relation_focus": 0.9,
+        "action_key": "inverts",
+        "action_focus": 0.39
+      },
+      {
+        "id": 4,
+        "source": 1,
+        "target": 2,
+        "relation_key": "depends_on",
+        "relation_focus": 0.18,
+        "action_key": "becomes_hidden",
+        "action_focus": 0.67
+      },
+      {
+        "id": 5,
+        "source": 2,
+        "target": 4,
+        "relation_key": "protects",
+        "relation_focus": 0.73,
+        "action_key": "closes",
+        "action_focus": 0.52
+      },
+      {
+        "id": 6,
+        "source": 3,
+        "target": 4,
+        "relation_key": "generates",
+        "relation_focus": 0.43,
+        "action_key": "repeats",
+        "action_focus": 0.32
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "symbol_changed",
+      "symbol_id": 1,
+      "old_key": "body",
+      "new_key": "network",
+      "old_focus": 0.89,
+      "new_focus": 0.04
+    }
+  ],
+  "id": 134
+}

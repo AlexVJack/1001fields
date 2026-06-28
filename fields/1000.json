@@ -1,0 +1,113 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "shelter",
+        "focus": 0.76
+      },
+      {
+        "id": 2,
+        "key": "memory",
+        "focus": 0.36
+      },
+      {
+        "id": 3,
+        "key": "ruin",
+        "focus": 0.29
+      },
+      {
+        "id": 4,
+        "key": "window",
+        "focus": 0.87
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 3,
+        "target": 4,
+        "relation_key": "repels",
+        "relation_focus": 0.53,
+        "action_key": "awakens",
+        "action_focus": 0.89
+      },
+      {
+        "id": 2,
+        "source": 1,
+        "target": 3,
+        "relation_key": "misnames",
+        "relation_focus": 0.62,
+        "action_key": "mutates",
+        "action_focus": 0.47
+      },
+      {
+        "id": 3,
+        "source": 1,
+        "target": 4,
+        "relation_key": "binds",
+        "relation_focus": 0.18,
+        "action_key": "spreads",
+        "action_focus": 0.4
+      },
+      {
+        "id": 4,
+        "source": 4,
+        "target": 2,
+        "relation_key": "depends_on",
+        "relation_focus": 0.82,
+        "action_key": "opens",
+        "action_focus": 0.68
+      },
+      {
+        "id": 5,
+        "source": 3,
+        "target": 2,
+        "relation_key": "infects",
+        "relation_focus": 0.07,
+        "action_key": "exhales",
+        "action_focus": 0.87
+      },
+      {
+        "id": 6,
+        "source": 4,
+        "target": 3,
+        "relation_key": "clarifies",
+        "relation_focus": 0.04,
+        "action_key": "collapses",
+        "action_focus": 0.13
+      },
+      {
+        "id": 7,
+        "source": 2,
+        "target": 4,
+        "relation_key": "erases",
+        "relation_focus": 0.72,
+        "action_key": "crosses_a_threshold",
+        "action_focus": 0.47
+      },
+      {
+        "id": 8,
+        "source": 4,
+        "target": 1,
+        "relation_key": "attracts",
+        "relation_focus": 0.87,
+        "action_key": "crosses_a_threshold",
+        "action_focus": 0.37
+      },
+      {
+        "id": 9,
+        "source": 2,
+        "target": 1,
+        "relation_key": "infects",
+        "relation_focus": 0.62,
+        "action_key": "destabilizes",
+        "action_focus": 0.61
+      }
+    ]
+  },
+  "mutations": [],
+  "id": 1000
+}

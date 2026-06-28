@@ -1,0 +1,144 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "shadow",
+        "focus": 0.03
+      },
+      {
+        "id": 2,
+        "key": "breath",
+        "focus": 0.59
+      },
+      {
+        "id": 3,
+        "key": "debt",
+        "focus": 0.35
+      },
+      {
+        "id": 4,
+        "key": "memory",
+        "focus": 0.73
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 4,
+        "target": 1,
+        "relation_key": "misnames",
+        "relation_focus": 0.5,
+        "action_key": "dissolves",
+        "action_focus": 0.36
+      },
+      {
+        "id": 2,
+        "source": 3,
+        "target": 1,
+        "relation_key": "repels",
+        "relation_focus": 0.06,
+        "action_key": "weakens",
+        "action_focus": 0.42
+      },
+      {
+        "id": 3,
+        "source": 3,
+        "target": 2,
+        "relation_key": "heals",
+        "relation_focus": 0.38,
+        "action_key": "closes",
+        "action_focus": 0.15
+      },
+      {
+        "id": 4,
+        "source": 4,
+        "target": 3,
+        "relation_key": "contains",
+        "relation_focus": 0.66,
+        "action_key": "weakens",
+        "action_focus": 0.14
+      },
+      {
+        "id": 5,
+        "source": 2,
+        "target": 1,
+        "relation_key": "witnesses",
+        "relation_focus": 0.82,
+        "action_key": "becomes_hidden",
+        "action_focus": 0.99
+      },
+      {
+        "id": 6,
+        "source": 2,
+        "target": 3,
+        "relation_key": "embodies",
+        "relation_focus": 0.56,
+        "action_key": "becomes_visible",
+        "action_focus": 0.02
+      },
+      {
+        "id": 7,
+        "source": 1,
+        "target": 3,
+        "relation_key": "misnames",
+        "relation_focus": 0.03,
+        "action_key": "crosses_a_threshold",
+        "action_focus": 0.75
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "link_inverted",
+      "link_before": {
+        "id": 4,
+        "source": 4,
+        "target": 3,
+        "relation_key": "contains",
+        "relation_focus": 0.66,
+        "action_key": "weakens",
+        "action_focus": 0.14
+      },
+      "link_after": {
+        "id": 4,
+        "source": 3,
+        "target": 4,
+        "relation_key": "contains",
+        "relation_focus": 0.66,
+        "action_key": "weakens",
+        "action_focus": 0.14
+      }
+    },
+    {
+      "step": 2,
+      "type": "link_removed",
+      "link": {
+        "id": 4,
+        "source": 3,
+        "target": 4,
+        "relation_key": "contains",
+        "relation_focus": 0.66,
+        "action_key": "weakens",
+        "action_focus": 0.14
+      }
+    },
+    {
+      "step": 3,
+      "type": "link_added",
+      "link": {
+        "id": 8,
+        "source": 1,
+        "target": 2,
+        "relation_key": "embodies",
+        "relation_focus": 0.79,
+        "action_key": "becomes_visible",
+        "action_focus": 0.35
+      }
+    }
+  ],
+  "id": 692
+}

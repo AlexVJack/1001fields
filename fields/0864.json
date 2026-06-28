@@ -1,0 +1,100 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "tower",
+        "focus": 0.62
+      },
+      {
+        "id": 2,
+        "key": "law",
+        "focus": 0.24
+      },
+      {
+        "id": 3,
+        "key": "ruin",
+        "focus": 0.55
+      },
+      {
+        "id": 4,
+        "key": "stone",
+        "focus": 0.12
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 1,
+        "target": 4,
+        "relation_key": "repels",
+        "relation_focus": 0.16,
+        "action_key": "stabilizes",
+        "action_focus": 0.45
+      },
+      {
+        "id": 2,
+        "source": 1,
+        "target": 3,
+        "relation_key": "witnesses",
+        "relation_focus": 0.4,
+        "action_key": "becomes_clear",
+        "action_focus": 0.44
+      },
+      {
+        "id": 3,
+        "source": 1,
+        "target": 2,
+        "relation_key": "remembers",
+        "relation_focus": 0.2,
+        "action_key": "collapses",
+        "action_focus": 0.98
+      },
+      {
+        "id": 4,
+        "source": 4,
+        "target": 3,
+        "relation_key": "witnesses",
+        "relation_focus": 0.18,
+        "action_key": "exhales",
+        "action_focus": 0.14
+      },
+      {
+        "id": 5,
+        "source": 4,
+        "target": 2,
+        "relation_key": "transforms",
+        "relation_focus": 0.9,
+        "action_key": "mutates",
+        "action_focus": 0.5
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "action_changed",
+      "link_before": {
+        "id": 3,
+        "source": 1,
+        "target": 2,
+        "relation_key": "remembers",
+        "relation_focus": 0.2,
+        "action_key": "collapses",
+        "action_focus": 0.98
+      },
+      "link_after": {
+        "id": 3,
+        "source": 1,
+        "target": 2,
+        "relation_key": "remembers",
+        "relation_focus": 0.2,
+        "action_key": "crystallizes",
+        "action_focus": 0.1
+      }
+    }
+  ],
+  "id": 864
+}

@@ -1,0 +1,158 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "shadow",
+        "focus": 0.02
+      },
+      {
+        "id": 2,
+        "key": "mask",
+        "focus": 0.76
+      },
+      {
+        "id": 3,
+        "key": "void",
+        "focus": 0.3
+      },
+      {
+        "id": 4,
+        "key": "garden",
+        "focus": 0.53
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 4,
+        "target": 3,
+        "relation_key": "transforms",
+        "relation_focus": 0.26,
+        "action_key": "decays",
+        "action_focus": 0.13
+      },
+      {
+        "id": 2,
+        "source": 4,
+        "target": 1,
+        "relation_key": "erases",
+        "relation_focus": 0.3,
+        "action_key": "accelerates",
+        "action_focus": 0.43
+      },
+      {
+        "id": 3,
+        "source": 3,
+        "target": 2,
+        "relation_key": "heals",
+        "relation_focus": 0.36,
+        "action_key": "lets_go",
+        "action_focus": 0.72
+      },
+      {
+        "id": 4,
+        "source": 2,
+        "target": 3,
+        "relation_key": "echoes",
+        "relation_focus": 0.39,
+        "action_key": "crosses_a_threshold",
+        "action_focus": 0.23
+      },
+      {
+        "id": 5,
+        "source": 4,
+        "target": 2,
+        "relation_key": "dominates",
+        "relation_focus": 0.05,
+        "action_key": "crosses_a_threshold",
+        "action_focus": 0.63
+      },
+      {
+        "id": 6,
+        "source": 1,
+        "target": 2,
+        "relation_key": "generates",
+        "relation_focus": 0.32,
+        "action_key": "weakens",
+        "action_focus": 0.33
+      },
+      {
+        "id": 7,
+        "source": 3,
+        "target": 1,
+        "relation_key": "echoes",
+        "relation_focus": 0.16,
+        "action_key": "awakens",
+        "action_focus": 0.6
+      },
+      {
+        "id": 8,
+        "source": 2,
+        "target": 1,
+        "relation_key": "mirrors",
+        "relation_focus": 0.37,
+        "action_key": "inverts",
+        "action_focus": 0.61
+      },
+      {
+        "id": 9,
+        "source": 2,
+        "target": 4,
+        "relation_key": "names",
+        "relation_focus": 0.29,
+        "action_key": "merges",
+        "action_focus": 0.34
+      },
+      {
+        "id": 10,
+        "source": 1,
+        "target": 3,
+        "relation_key": "dominates",
+        "relation_focus": 0.96,
+        "action_key": "dissolves",
+        "action_focus": 0.64
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "relation_changed",
+      "link_before": {
+        "id": 6,
+        "source": 1,
+        "target": 2,
+        "relation_key": "generates",
+        "relation_focus": 0.32,
+        "action_key": "weakens",
+        "action_focus": 0.33
+      },
+      "link_after": {
+        "id": 6,
+        "source": 1,
+        "target": 2,
+        "relation_key": "touches",
+        "relation_focus": 0.18,
+        "action_key": "weakens",
+        "action_focus": 0.33
+      }
+    },
+    {
+      "step": 2,
+      "type": "link_added",
+      "link": {
+        "id": 11,
+        "source": 3,
+        "target": 4,
+        "relation_key": "protects",
+        "relation_focus": 0.22,
+        "action_key": "destabilizes",
+        "action_focus": 0.88
+      }
+    }
+  ],
+  "id": 784
+}

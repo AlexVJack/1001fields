@@ -1,0 +1,41 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "storm",
+        "focus": 0.07
+      },
+      {
+        "id": 2,
+        "key": "mirror",
+        "focus": 0.89
+      },
+      {
+        "id": 3,
+        "key": "child",
+        "focus": 0.88
+      },
+      {
+        "id": 4,
+        "key": "key",
+        "focus": 0.86
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 4,
+        "target": 1,
+        "relation_key": "submits_to",
+        "relation_focus": 0.82,
+        "action_key": "stabilizes",
+        "action_focus": 0.66
+      }
+    ]
+  },
+  "mutations": [],
+  "id": 905
+}

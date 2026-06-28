@@ -1,0 +1,41 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "signal",
+        "focus": 0.38
+      },
+      {
+        "id": 2,
+        "key": "garden",
+        "focus": 0.32
+      },
+      {
+        "id": 3,
+        "key": "attention",
+        "focus": 0.86
+      },
+      {
+        "id": 4,
+        "key": "name",
+        "focus": 0.95
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 1,
+        "target": 2,
+        "relation_key": "transforms",
+        "relation_focus": 0.33,
+        "action_key": "intensifies",
+        "action_focus": 0.14
+      }
+    ]
+  },
+  "mutations": [],
+  "id": 401
+}

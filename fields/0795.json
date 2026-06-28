@@ -1,0 +1,113 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "child",
+        "focus": 0.4
+      },
+      {
+        "id": 2,
+        "key": "harbor",
+        "focus": 0.49
+      },
+      {
+        "id": 3,
+        "key": "secret",
+        "focus": 0.68
+      },
+      {
+        "id": 4,
+        "key": "sage",
+        "focus": 0.3
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 1,
+        "target": 3,
+        "relation_key": "endures",
+        "relation_focus": 0.64,
+        "action_key": "becomes_quiet",
+        "action_focus": 0.52
+      },
+      {
+        "id": 2,
+        "source": 2,
+        "target": 3,
+        "relation_key": "heals",
+        "relation_focus": 0.07,
+        "action_key": "closes",
+        "action_focus": 0.94
+      },
+      {
+        "id": 3,
+        "source": 2,
+        "target": 4,
+        "relation_key": "names",
+        "relation_focus": 0.94,
+        "action_key": "repeats",
+        "action_focus": 0.81
+      },
+      {
+        "id": 4,
+        "source": 1,
+        "target": 2,
+        "relation_key": "endures",
+        "relation_focus": 0.68,
+        "action_key": "splits",
+        "action_focus": 0.79
+      },
+      {
+        "id": 5,
+        "source": 1,
+        "target": 4,
+        "relation_key": "mirrors",
+        "relation_focus": 0.79,
+        "action_key": "merges",
+        "action_focus": 0.39
+      },
+      {
+        "id": 6,
+        "source": 3,
+        "target": 1,
+        "relation_key": "depends_on",
+        "relation_focus": 0.38,
+        "action_key": "crosses_a_threshold",
+        "action_focus": 0.76
+      },
+      {
+        "id": 7,
+        "source": 4,
+        "target": 2,
+        "relation_key": "infects",
+        "relation_focus": 0.13,
+        "action_key": "stabilizes",
+        "action_focus": 0.3
+      },
+      {
+        "id": 8,
+        "source": 3,
+        "target": 2,
+        "relation_key": "witnesses",
+        "relation_focus": 0.52,
+        "action_key": "awakens",
+        "action_focus": 0.0
+      },
+      {
+        "id": 9,
+        "source": 4,
+        "target": 1,
+        "relation_key": "dominates",
+        "relation_focus": 0.7,
+        "action_key": "dissolves",
+        "action_focus": 0.14
+      }
+    ]
+  },
+  "mutations": [],
+  "id": 795
+}

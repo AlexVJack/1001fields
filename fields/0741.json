@@ -1,0 +1,93 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "tower",
+        "focus": 0.34
+      },
+      {
+        "id": 2,
+        "key": "shadow",
+        "focus": 0.51
+      },
+      {
+        "id": 3,
+        "key": "fear",
+        "focus": 0.98
+      },
+      {
+        "id": 4,
+        "key": "labyrinth",
+        "focus": 0.7
+      }
+    ],
+    "links": []
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "link_added",
+      "link": {
+        "id": 1,
+        "source": 3,
+        "target": 4,
+        "relation_key": "echoes",
+        "relation_focus": 0.14,
+        "action_key": "decays",
+        "action_focus": 0.55
+      }
+    },
+    {
+      "step": 2,
+      "type": "link_added",
+      "link": {
+        "id": 2,
+        "source": 1,
+        "target": 2,
+        "relation_key": "distorts",
+        "relation_focus": 0.19,
+        "action_key": "opens",
+        "action_focus": 0.06
+      }
+    },
+    {
+      "step": 3,
+      "type": "link_removed",
+      "link": {
+        "id": 1,
+        "source": 3,
+        "target": 4,
+        "relation_key": "echoes",
+        "relation_focus": 0.14,
+        "action_key": "decays",
+        "action_focus": 0.55
+      }
+    },
+    {
+      "step": 4,
+      "type": "action_changed",
+      "link_before": {
+        "id": 2,
+        "source": 1,
+        "target": 2,
+        "relation_key": "distorts",
+        "relation_focus": 0.19,
+        "action_key": "opens",
+        "action_focus": 0.06
+      },
+      "link_after": {
+        "id": 2,
+        "source": 1,
+        "target": 2,
+        "relation_key": "distorts",
+        "relation_focus": 0.19,
+        "action_key": "inverts",
+        "action_focus": 0.26
+      }
+    }
+  ],
+  "id": 741
+}

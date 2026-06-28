@@ -1,0 +1,68 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "pause",
+        "focus": 0.62
+      },
+      {
+        "id": 2,
+        "key": "light",
+        "focus": 0.46
+      },
+      {
+        "id": 3,
+        "key": "boundary",
+        "focus": 0.4
+      },
+      {
+        "id": 4,
+        "key": "ruin",
+        "focus": 0.96
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 3,
+        "target": 2,
+        "relation_key": "contains",
+        "relation_focus": 0.34,
+        "action_key": "becomes_hidden",
+        "action_focus": 0.34
+      },
+      {
+        "id": 2,
+        "source": 1,
+        "target": 3,
+        "relation_key": "blocks",
+        "relation_focus": 0.39,
+        "action_key": "crystallizes",
+        "action_focus": 0.98
+      },
+      {
+        "id": 3,
+        "source": 2,
+        "target": 3,
+        "relation_key": "contains",
+        "relation_focus": 0.74,
+        "action_key": "weakens",
+        "action_focus": 0.6
+      },
+      {
+        "id": 4,
+        "source": 4,
+        "target": 1,
+        "relation_key": "names",
+        "relation_focus": 0.51,
+        "action_key": "approaches",
+        "action_focus": 0.48
+      }
+    ]
+  },
+  "mutations": [],
+  "id": 764
+}

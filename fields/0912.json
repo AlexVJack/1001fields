@@ -1,0 +1,77 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "abyss",
+        "focus": 0.68
+      },
+      {
+        "id": 2,
+        "key": "attention",
+        "focus": 0.2
+      },
+      {
+        "id": 3,
+        "key": "harbor",
+        "focus": 0.79
+      },
+      {
+        "id": 4,
+        "key": "water",
+        "focus": 0.93
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 1,
+        "target": 4,
+        "relation_key": "echoes",
+        "relation_focus": 0.13,
+        "action_key": "becomes_visible",
+        "action_focus": 0.37
+      },
+      {
+        "id": 2,
+        "source": 3,
+        "target": 4,
+        "relation_key": "misnames",
+        "relation_focus": 0.82,
+        "action_key": "becomes_visible",
+        "action_focus": 0.92
+      },
+      {
+        "id": 3,
+        "source": 3,
+        "target": 2,
+        "relation_key": "generates",
+        "relation_focus": 0.03,
+        "action_key": "becomes_embodied",
+        "action_focus": 0.58
+      },
+      {
+        "id": 4,
+        "source": 2,
+        "target": 1,
+        "relation_key": "dominates",
+        "relation_focus": 0.91,
+        "action_key": "becomes_hidden",
+        "action_focus": 0.62
+      },
+      {
+        "id": 5,
+        "source": 4,
+        "target": 2,
+        "relation_key": "embodies",
+        "relation_focus": 0.43,
+        "action_key": "weakens",
+        "action_focus": 0.31
+      }
+    ]
+  },
+  "mutations": [],
+  "id": 912
+}

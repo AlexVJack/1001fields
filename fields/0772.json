@@ -1,0 +1,140 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "attention",
+        "focus": 0.48
+      },
+      {
+        "id": 2,
+        "key": "hunger",
+        "focus": 0.49
+      },
+      {
+        "id": 3,
+        "key": "void",
+        "focus": 0.58
+      },
+      {
+        "id": 4,
+        "key": "fear",
+        "focus": 0.44
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 4,
+        "target": 2,
+        "relation_key": "reveals",
+        "relation_focus": 0.04,
+        "action_key": "closes",
+        "action_focus": 0.5
+      },
+      {
+        "id": 2,
+        "source": 1,
+        "target": 2,
+        "relation_key": "clarifies",
+        "relation_focus": 0.45,
+        "action_key": "closes",
+        "action_focus": 0.72
+      },
+      {
+        "id": 3,
+        "source": 3,
+        "target": 2,
+        "relation_key": "submits_to",
+        "relation_focus": 0.69,
+        "action_key": "closes",
+        "action_focus": 0.69
+      },
+      {
+        "id": 4,
+        "source": 2,
+        "target": 3,
+        "relation_key": "submits_to",
+        "relation_focus": 0.79,
+        "action_key": "awakens",
+        "action_focus": 0.6
+      },
+      {
+        "id": 5,
+        "source": 2,
+        "target": 1,
+        "relation_key": "blocks",
+        "relation_focus": 0.28,
+        "action_key": "closes",
+        "action_focus": 0.42
+      },
+      {
+        "id": 6,
+        "source": 2,
+        "target": 4,
+        "relation_key": "remembers",
+        "relation_focus": 0.9,
+        "action_key": "destabilizes",
+        "action_focus": 1.0
+      },
+      {
+        "id": 7,
+        "source": 1,
+        "target": 3,
+        "relation_key": "separates",
+        "relation_focus": 0.78,
+        "action_key": "exhales",
+        "action_focus": 0.28
+      },
+      {
+        "id": 8,
+        "source": 3,
+        "target": 4,
+        "relation_key": "reveals",
+        "relation_focus": 0.4,
+        "action_key": "intensifies",
+        "action_focus": 0.43
+      },
+      {
+        "id": 9,
+        "source": 4,
+        "target": 1,
+        "relation_key": "infects",
+        "relation_focus": 0.69,
+        "action_key": "splits",
+        "action_focus": 0.25
+      },
+      {
+        "id": 10,
+        "source": 4,
+        "target": 3,
+        "relation_key": "submits_to",
+        "relation_focus": 0.7,
+        "action_key": "stabilizes",
+        "action_focus": 0.55
+      },
+      {
+        "id": 11,
+        "source": 3,
+        "target": 1,
+        "relation_key": "erases",
+        "relation_focus": 0.42,
+        "action_key": "becomes_hidden",
+        "action_focus": 0.03
+      },
+      {
+        "id": 12,
+        "source": 1,
+        "target": 4,
+        "relation_key": "names",
+        "relation_focus": 0.5,
+        "action_key": "settles",
+        "action_focus": 0.66
+      }
+    ]
+  },
+  "mutations": [],
+  "id": 772
+}

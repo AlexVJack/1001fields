@@ -1,0 +1,170 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "ash",
+        "focus": 0.95
+      },
+      {
+        "id": 2,
+        "key": "sage",
+        "focus": 1.0
+      },
+      {
+        "id": 3,
+        "key": "void",
+        "focus": 0.69
+      },
+      {
+        "id": 4,
+        "key": "promise",
+        "focus": 0.23
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 3,
+        "target": 1,
+        "relation_key": "generates",
+        "relation_focus": 0.73,
+        "action_key": "creates_a_third_thing",
+        "action_focus": 0.02
+      },
+      {
+        "id": 2,
+        "source": 2,
+        "target": 4,
+        "relation_key": "blocks",
+        "relation_focus": 0.52,
+        "action_key": "stabilizes",
+        "action_focus": 0.1
+      },
+      {
+        "id": 3,
+        "source": 4,
+        "target": 1,
+        "relation_key": "endures",
+        "relation_focus": 0.55,
+        "action_key": "weakens",
+        "action_focus": 0.81
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "link_inverted",
+      "link_before": {
+        "id": 1,
+        "source": 3,
+        "target": 1,
+        "relation_key": "generates",
+        "relation_focus": 0.73,
+        "action_key": "creates_a_third_thing",
+        "action_focus": 0.02
+      },
+      "link_after": {
+        "id": 1,
+        "source": 1,
+        "target": 3,
+        "relation_key": "generates",
+        "relation_focus": 0.73,
+        "action_key": "creates_a_third_thing",
+        "action_focus": 0.02
+      }
+    },
+    {
+      "step": 2,
+      "type": "relation_changed",
+      "link_before": {
+        "id": 1,
+        "source": 1,
+        "target": 3,
+        "relation_key": "generates",
+        "relation_focus": 0.73,
+        "action_key": "creates_a_third_thing",
+        "action_focus": 0.02
+      },
+      "link_after": {
+        "id": 1,
+        "source": 1,
+        "target": 3,
+        "relation_key": "distorts",
+        "relation_focus": 0.98,
+        "action_key": "creates_a_third_thing",
+        "action_focus": 0.02
+      }
+    },
+    {
+      "step": 3,
+      "type": "relation_changed",
+      "link_before": {
+        "id": 3,
+        "source": 4,
+        "target": 1,
+        "relation_key": "endures",
+        "relation_focus": 0.55,
+        "action_key": "weakens",
+        "action_focus": 0.81
+      },
+      "link_after": {
+        "id": 3,
+        "source": 4,
+        "target": 1,
+        "relation_key": "depends_on",
+        "relation_focus": 0.06,
+        "action_key": "weakens",
+        "action_focus": 0.81
+      }
+    },
+    {
+      "step": 4,
+      "type": "relation_changed",
+      "link_before": {
+        "id": 2,
+        "source": 2,
+        "target": 4,
+        "relation_key": "blocks",
+        "relation_focus": 0.52,
+        "action_key": "stabilizes",
+        "action_focus": 0.1
+      },
+      "link_after": {
+        "id": 2,
+        "source": 2,
+        "target": 4,
+        "relation_key": "generates",
+        "relation_focus": 0.12,
+        "action_key": "stabilizes",
+        "action_focus": 0.1
+      }
+    },
+    {
+      "step": 5,
+      "type": "action_changed",
+      "link_before": {
+        "id": 1,
+        "source": 1,
+        "target": 3,
+        "relation_key": "distorts",
+        "relation_focus": 0.98,
+        "action_key": "creates_a_third_thing",
+        "action_focus": 0.02
+      },
+      "link_after": {
+        "id": 1,
+        "source": 1,
+        "target": 3,
+        "relation_key": "distorts",
+        "relation_focus": 0.98,
+        "action_key": "merges",
+        "action_focus": 0.09
+      }
+    }
+  ],
+  "id": 975
+}

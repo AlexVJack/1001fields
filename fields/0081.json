@@ -1,0 +1,59 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "archive",
+        "focus": 0.94
+      },
+      {
+        "id": 2,
+        "key": "labyrinth",
+        "focus": 0.84
+      },
+      {
+        "id": 3,
+        "key": "sage",
+        "focus": 0.67
+      },
+      {
+        "id": 4,
+        "key": "herald",
+        "focus": 0.35
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 1,
+        "target": 2,
+        "relation_key": "attracts",
+        "relation_focus": 0.57,
+        "action_key": "closes",
+        "action_focus": 0.89
+      },
+      {
+        "id": 2,
+        "source": 2,
+        "target": 3,
+        "relation_key": "embodies",
+        "relation_focus": 0.07,
+        "action_key": "closes",
+        "action_focus": 0.97
+      },
+      {
+        "id": 3,
+        "source": 1,
+        "target": 4,
+        "relation_key": "repels",
+        "relation_focus": 0.6,
+        "action_key": "creates_a_third_thing",
+        "action_focus": 0.34
+      }
+    ]
+  },
+  "mutations": [],
+  "id": 81
+}

@@ -1,0 +1,131 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "oracle",
+        "focus": 0.66
+      },
+      {
+        "id": 2,
+        "key": "vessel",
+        "focus": 0.03
+      },
+      {
+        "id": 3,
+        "key": "network",
+        "focus": 0.56
+      },
+      {
+        "id": 4,
+        "key": "key",
+        "focus": 0.03
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 1,
+        "target": 4,
+        "relation_key": "transforms",
+        "relation_focus": 0.69,
+        "action_key": "becomes_hidden",
+        "action_focus": 0.84
+      },
+      {
+        "id": 2,
+        "source": 4,
+        "target": 3,
+        "relation_key": "misnames",
+        "relation_focus": 0.4,
+        "action_key": "settles",
+        "action_focus": 0.33
+      },
+      {
+        "id": 3,
+        "source": 3,
+        "target": 1,
+        "relation_key": "attracts",
+        "relation_focus": 0.34,
+        "action_key": "repeats",
+        "action_focus": 0.74
+      },
+      {
+        "id": 4,
+        "source": 3,
+        "target": 4,
+        "relation_key": "touches",
+        "relation_focus": 0.93,
+        "action_key": "approaches",
+        "action_focus": 0.48
+      },
+      {
+        "id": 5,
+        "source": 2,
+        "target": 1,
+        "relation_key": "mirrors",
+        "relation_focus": 0.41,
+        "action_key": "approaches",
+        "action_focus": 0.74
+      },
+      {
+        "id": 6,
+        "source": 1,
+        "target": 3,
+        "relation_key": "depends_on",
+        "relation_focus": 0.11,
+        "action_key": "intensifies",
+        "action_focus": 0.36
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "action_changed",
+      "link_before": {
+        "id": 6,
+        "source": 1,
+        "target": 3,
+        "relation_key": "depends_on",
+        "relation_focus": 0.11,
+        "action_key": "intensifies",
+        "action_focus": 0.36
+      },
+      "link_after": {
+        "id": 6,
+        "source": 1,
+        "target": 3,
+        "relation_key": "depends_on",
+        "relation_focus": 0.11,
+        "action_key": "destabilizes",
+        "action_focus": 0.07
+      }
+    },
+    {
+      "step": 2,
+      "type": "link_inverted",
+      "link_before": {
+        "id": 5,
+        "source": 2,
+        "target": 1,
+        "relation_key": "mirrors",
+        "relation_focus": 0.41,
+        "action_key": "approaches",
+        "action_focus": 0.74
+      },
+      "link_after": {
+        "id": 5,
+        "source": 1,
+        "target": 2,
+        "relation_key": "mirrors",
+        "relation_focus": 0.41,
+        "action_key": "approaches",
+        "action_focus": 0.74
+      }
+    }
+  ],
+  "id": 459
+}

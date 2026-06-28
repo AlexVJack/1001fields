@@ -1,0 +1,54 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "map",
+        "focus": 0.9
+      },
+      {
+        "id": 2,
+        "key": "labyrinth",
+        "focus": 0.69
+      },
+      {
+        "id": 3,
+        "key": "voice",
+        "focus": 0.17
+      },
+      {
+        "id": 4,
+        "key": "desire",
+        "focus": 0.45
+      }
+    ],
+    "links": []
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "link_added",
+      "link": {
+        "id": 1,
+        "source": 1,
+        "target": 3,
+        "relation_key": "generates",
+        "relation_focus": 0.19,
+        "action_key": "splits",
+        "action_focus": 0.59
+      }
+    },
+    {
+      "step": 2,
+      "type": "symbol_changed",
+      "symbol_id": 1,
+      "old_key": "map",
+      "new_key": "water",
+      "old_focus": 0.9,
+      "new_focus": 0.87
+    }
+  ],
+  "id": 757
+}

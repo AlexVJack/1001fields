@@ -1,0 +1,115 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "shelter",
+        "focus": 0.18
+      },
+      {
+        "id": 2,
+        "key": "spark",
+        "focus": 0.34
+      },
+      {
+        "id": 3,
+        "key": "crack",
+        "focus": 0.89
+      },
+      {
+        "id": 4,
+        "key": "exile",
+        "focus": 0.61
+      }
+    ],
+    "links": []
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "link_added",
+      "link": {
+        "id": 1,
+        "source": 3,
+        "target": 4,
+        "relation_key": "heals",
+        "relation_focus": 0.84,
+        "action_key": "repeats",
+        "action_focus": 0.31
+      }
+    },
+    {
+      "step": 2,
+      "type": "link_added",
+      "link": {
+        "id": 2,
+        "source": 2,
+        "target": 1,
+        "relation_key": "generates",
+        "relation_focus": 0.68,
+        "action_key": "decays",
+        "action_focus": 0.84
+      }
+    },
+    {
+      "step": 3,
+      "type": "link_removed",
+      "link": {
+        "id": 1,
+        "source": 3,
+        "target": 4,
+        "relation_key": "heals",
+        "relation_focus": 0.84,
+        "action_key": "repeats",
+        "action_focus": 0.31
+      }
+    },
+    {
+      "step": 4,
+      "type": "link_inverted",
+      "link_before": {
+        "id": 2,
+        "source": 2,
+        "target": 1,
+        "relation_key": "generates",
+        "relation_focus": 0.68,
+        "action_key": "decays",
+        "action_focus": 0.84
+      },
+      "link_after": {
+        "id": 2,
+        "source": 1,
+        "target": 2,
+        "relation_key": "generates",
+        "relation_focus": 0.68,
+        "action_key": "decays",
+        "action_focus": 0.84
+      }
+    },
+    {
+      "step": 5,
+      "type": "link_inverted",
+      "link_before": {
+        "id": 2,
+        "source": 1,
+        "target": 2,
+        "relation_key": "generates",
+        "relation_focus": 0.68,
+        "action_key": "decays",
+        "action_focus": 0.84
+      },
+      "link_after": {
+        "id": 2,
+        "source": 2,
+        "target": 1,
+        "relation_key": "generates",
+        "relation_focus": 0.68,
+        "action_key": "decays",
+        "action_focus": 0.84
+      }
+    }
+  ],
+  "id": 108
+}

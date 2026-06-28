@@ -1,0 +1,115 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "hunger",
+        "focus": 0.98
+      },
+      {
+        "id": 2,
+        "key": "threshold",
+        "focus": 0.55
+      },
+      {
+        "id": 3,
+        "key": "shadow",
+        "focus": 0.6
+      },
+      {
+        "id": 4,
+        "key": "stone",
+        "focus": 0.21
+      }
+    ],
+    "links": []
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "link_added",
+      "link": {
+        "id": 1,
+        "source": 1,
+        "target": 3,
+        "relation_key": "protects",
+        "relation_focus": 0.38,
+        "action_key": "becomes_quiet",
+        "action_focus": 0.35
+      }
+    },
+    {
+      "step": 2,
+      "type": "relation_changed",
+      "link_before": {
+        "id": 1,
+        "source": 1,
+        "target": 3,
+        "relation_key": "protects",
+        "relation_focus": 0.38,
+        "action_key": "becomes_quiet",
+        "action_focus": 0.35
+      },
+      "link_after": {
+        "id": 1,
+        "source": 1,
+        "target": 3,
+        "relation_key": "clarifies",
+        "relation_focus": 0.89,
+        "action_key": "becomes_quiet",
+        "action_focus": 0.35
+      }
+    },
+    {
+      "step": 3,
+      "type": "link_removed",
+      "link": {
+        "id": 1,
+        "source": 1,
+        "target": 3,
+        "relation_key": "clarifies",
+        "relation_focus": 0.89,
+        "action_key": "becomes_quiet",
+        "action_focus": 0.35
+      }
+    },
+    {
+      "step": 4,
+      "type": "link_added",
+      "link": {
+        "id": 2,
+        "source": 3,
+        "target": 4,
+        "relation_key": "remembers",
+        "relation_focus": 0.81,
+        "action_key": "mutates",
+        "action_focus": 0.13
+      }
+    },
+    {
+      "step": 5,
+      "type": "link_inverted",
+      "link_before": {
+        "id": 2,
+        "source": 3,
+        "target": 4,
+        "relation_key": "remembers",
+        "relation_focus": 0.81,
+        "action_key": "mutates",
+        "action_focus": 0.13
+      },
+      "link_after": {
+        "id": 2,
+        "source": 4,
+        "target": 3,
+        "relation_key": "remembers",
+        "relation_focus": 0.81,
+        "action_key": "mutates",
+        "action_focus": 0.13
+      }
+    }
+  ],
+  "id": 112
+}

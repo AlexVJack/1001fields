@@ -1,0 +1,86 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "silence",
+        "focus": 0.43
+      },
+      {
+        "id": 2,
+        "key": "light",
+        "focus": 0.66
+      },
+      {
+        "id": 3,
+        "key": "crack",
+        "focus": 0.26
+      },
+      {
+        "id": 4,
+        "key": "labyrinth",
+        "focus": 0.07
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 2,
+        "target": 1,
+        "relation_key": "repels",
+        "relation_focus": 0.57,
+        "action_key": "intensifies",
+        "action_focus": 0.92
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "relation_changed",
+      "link_before": {
+        "id": 1,
+        "source": 2,
+        "target": 1,
+        "relation_key": "repels",
+        "relation_focus": 0.57,
+        "action_key": "intensifies",
+        "action_focus": 0.92
+      },
+      "link_after": {
+        "id": 1,
+        "source": 2,
+        "target": 1,
+        "relation_key": "touches",
+        "relation_focus": 0.4,
+        "action_key": "intensifies",
+        "action_focus": 0.92
+      }
+    },
+    {
+      "step": 2,
+      "type": "link_inverted",
+      "link_before": {
+        "id": 1,
+        "source": 2,
+        "target": 1,
+        "relation_key": "touches",
+        "relation_focus": 0.4,
+        "action_key": "intensifies",
+        "action_focus": 0.92
+      },
+      "link_after": {
+        "id": 1,
+        "source": 1,
+        "target": 2,
+        "relation_key": "touches",
+        "relation_focus": 0.4,
+        "action_key": "intensifies",
+        "action_focus": 0.92
+      }
+    }
+  ],
+  "id": 428
+}

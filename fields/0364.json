@@ -1,0 +1,117 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "debt",
+        "focus": 0.99
+      },
+      {
+        "id": 2,
+        "key": "law",
+        "focus": 0.48
+      },
+      {
+        "id": 3,
+        "key": "network",
+        "focus": 0.57
+      },
+      {
+        "id": 4,
+        "key": "fear",
+        "focus": 0.52
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 3,
+        "target": 2,
+        "relation_key": "submits_to",
+        "relation_focus": 0.56,
+        "action_key": "awakens",
+        "action_focus": 0.34
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "symbol_changed",
+      "symbol_id": 1,
+      "old_key": "debt",
+      "new_key": "stone",
+      "old_focus": 0.99,
+      "new_focus": 0.04
+    },
+    {
+      "step": 2,
+      "type": "link_inverted",
+      "link_before": {
+        "id": 1,
+        "source": 3,
+        "target": 2,
+        "relation_key": "submits_to",
+        "relation_focus": 0.56,
+        "action_key": "awakens",
+        "action_focus": 0.34
+      },
+      "link_after": {
+        "id": 1,
+        "source": 2,
+        "target": 3,
+        "relation_key": "submits_to",
+        "relation_focus": 0.56,
+        "action_key": "awakens",
+        "action_focus": 0.34
+      }
+    },
+    {
+      "step": 3,
+      "type": "link_inverted",
+      "link_before": {
+        "id": 1,
+        "source": 2,
+        "target": 3,
+        "relation_key": "submits_to",
+        "relation_focus": 0.56,
+        "action_key": "awakens",
+        "action_focus": 0.34
+      },
+      "link_after": {
+        "id": 1,
+        "source": 3,
+        "target": 2,
+        "relation_key": "submits_to",
+        "relation_focus": 0.56,
+        "action_key": "awakens",
+        "action_focus": 0.34
+      }
+    },
+    {
+      "step": 4,
+      "type": "action_changed",
+      "link_before": {
+        "id": 1,
+        "source": 3,
+        "target": 2,
+        "relation_key": "submits_to",
+        "relation_focus": 0.56,
+        "action_key": "awakens",
+        "action_focus": 0.34
+      },
+      "link_after": {
+        "id": 1,
+        "source": 3,
+        "target": 2,
+        "relation_key": "submits_to",
+        "relation_focus": 0.56,
+        "action_key": "creates_a_third_thing",
+        "action_focus": 0.04
+      }
+    }
+  ],
+  "id": 364
+}

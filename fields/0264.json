@@ -1,0 +1,148 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "body",
+        "focus": 0.25
+      },
+      {
+        "id": 2,
+        "key": "storm",
+        "focus": 0.96
+      },
+      {
+        "id": 3,
+        "key": "gate",
+        "focus": 0.85
+      },
+      {
+        "id": 4,
+        "key": "voice",
+        "focus": 0.4
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 2,
+        "target": 1,
+        "relation_key": "misnames",
+        "relation_focus": 0.18,
+        "action_key": "refuses_change",
+        "action_focus": 0.2
+      },
+      {
+        "id": 2,
+        "source": 3,
+        "target": 2,
+        "relation_key": "repels",
+        "relation_focus": 0.6,
+        "action_key": "decays",
+        "action_focus": 0.33
+      },
+      {
+        "id": 3,
+        "source": 3,
+        "target": 4,
+        "relation_key": "depends_on",
+        "relation_focus": 0.99,
+        "action_key": "spreads",
+        "action_focus": 0.58
+      },
+      {
+        "id": 4,
+        "source": 1,
+        "target": 4,
+        "relation_key": "contains",
+        "relation_focus": 0.07,
+        "action_key": "creates_a_third_thing",
+        "action_focus": 0.02
+      },
+      {
+        "id": 5,
+        "source": 2,
+        "target": 4,
+        "relation_key": "remembers",
+        "relation_focus": 0.23,
+        "action_key": "closes",
+        "action_focus": 0.65
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "link_removed",
+      "link": {
+        "id": 2,
+        "source": 3,
+        "target": 2,
+        "relation_key": "repels",
+        "relation_focus": 0.6,
+        "action_key": "decays",
+        "action_focus": 0.33
+      }
+    },
+    {
+      "step": 2,
+      "type": "action_changed",
+      "link_before": {
+        "id": 4,
+        "source": 1,
+        "target": 4,
+        "relation_key": "contains",
+        "relation_focus": 0.07,
+        "action_key": "creates_a_third_thing",
+        "action_focus": 0.02
+      },
+      "link_after": {
+        "id": 4,
+        "source": 1,
+        "target": 4,
+        "relation_key": "contains",
+        "relation_focus": 0.07,
+        "action_key": "mutates",
+        "action_focus": 0.25
+      }
+    },
+    {
+      "step": 3,
+      "type": "action_changed",
+      "link_before": {
+        "id": 3,
+        "source": 3,
+        "target": 4,
+        "relation_key": "depends_on",
+        "relation_focus": 0.99,
+        "action_key": "spreads",
+        "action_focus": 0.58
+      },
+      "link_after": {
+        "id": 3,
+        "source": 3,
+        "target": 4,
+        "relation_key": "depends_on",
+        "relation_focus": 0.99,
+        "action_key": "approaches",
+        "action_focus": 0.12
+      }
+    },
+    {
+      "step": 4,
+      "type": "link_removed",
+      "link": {
+        "id": 1,
+        "source": 2,
+        "target": 1,
+        "relation_key": "misnames",
+        "relation_focus": 0.18,
+        "action_key": "refuses_change",
+        "action_focus": 0.2
+      }
+    }
+  ],
+  "id": 264
+}

@@ -1,0 +1,77 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "fear",
+        "focus": 0.32
+      },
+      {
+        "id": 2,
+        "key": "thread",
+        "focus": 0.8
+      },
+      {
+        "id": 3,
+        "key": "fire",
+        "focus": 0.47
+      },
+      {
+        "id": 4,
+        "key": "debt",
+        "focus": 0.11
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 4,
+        "target": 1,
+        "relation_key": "feeds",
+        "relation_focus": 0.95,
+        "action_key": "lets_go",
+        "action_focus": 0.96
+      },
+      {
+        "id": 2,
+        "source": 3,
+        "target": 2,
+        "relation_key": "mirrors",
+        "relation_focus": 0.82,
+        "action_key": "becomes_clear",
+        "action_focus": 0.06
+      },
+      {
+        "id": 3,
+        "source": 1,
+        "target": 2,
+        "relation_key": "reveals",
+        "relation_focus": 0.81,
+        "action_key": "becomes_embodied",
+        "action_focus": 0.91
+      },
+      {
+        "id": 4,
+        "source": 4,
+        "target": 3,
+        "relation_key": "heals",
+        "relation_focus": 0.91,
+        "action_key": "stabilizes",
+        "action_focus": 0.58
+      },
+      {
+        "id": 5,
+        "source": 1,
+        "target": 4,
+        "relation_key": "attracts",
+        "relation_focus": 0.26,
+        "action_key": "closes",
+        "action_focus": 0.2
+      }
+    ]
+  },
+  "mutations": [],
+  "id": 677
+}

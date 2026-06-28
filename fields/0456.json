@@ -1,0 +1,104 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "pause",
+        "focus": 0.57
+      },
+      {
+        "id": 2,
+        "key": "boundary",
+        "focus": 0.52
+      },
+      {
+        "id": 3,
+        "key": "desire",
+        "focus": 0.19
+      },
+      {
+        "id": 4,
+        "key": "secret",
+        "focus": 0.99
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 1,
+        "target": 3,
+        "relation_key": "remembers",
+        "relation_focus": 0.84,
+        "action_key": "becomes_clear",
+        "action_focus": 0.62
+      },
+      {
+        "id": 2,
+        "source": 3,
+        "target": 2,
+        "relation_key": "transforms",
+        "relation_focus": 0.94,
+        "action_key": "exhales",
+        "action_focus": 0.9
+      },
+      {
+        "id": 3,
+        "source": 2,
+        "target": 3,
+        "relation_key": "repels",
+        "relation_focus": 0.85,
+        "action_key": "settles",
+        "action_focus": 0.6
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "action_changed",
+      "link_before": {
+        "id": 2,
+        "source": 3,
+        "target": 2,
+        "relation_key": "transforms",
+        "relation_focus": 0.94,
+        "action_key": "exhales",
+        "action_focus": 0.9
+      },
+      "link_after": {
+        "id": 2,
+        "source": 3,
+        "target": 2,
+        "relation_key": "transforms",
+        "relation_focus": 0.94,
+        "action_key": "refuses_change",
+        "action_focus": 0.71
+      }
+    },
+    {
+      "step": 2,
+      "type": "link_inverted",
+      "link_before": {
+        "id": 1,
+        "source": 1,
+        "target": 3,
+        "relation_key": "remembers",
+        "relation_focus": 0.84,
+        "action_key": "becomes_clear",
+        "action_focus": 0.62
+      },
+      "link_after": {
+        "id": 1,
+        "source": 3,
+        "target": 1,
+        "relation_key": "remembers",
+        "relation_focus": 0.84,
+        "action_key": "becomes_clear",
+        "action_focus": 0.62
+      }
+    }
+  ],
+  "id": 456
+}

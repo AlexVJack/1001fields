@@ -1,0 +1,91 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "bridge",
+        "focus": 0.06
+      },
+      {
+        "id": 2,
+        "key": "exile",
+        "focus": 0.09
+      },
+      {
+        "id": 3,
+        "key": "abyss",
+        "focus": 0.6
+      },
+      {
+        "id": 4,
+        "key": "tower",
+        "focus": 0.22
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 1,
+        "target": 3,
+        "relation_key": "dominates",
+        "relation_focus": 0.63,
+        "action_key": "becomes_visible",
+        "action_focus": 0.29
+      },
+      {
+        "id": 2,
+        "source": 4,
+        "target": 2,
+        "relation_key": "binds",
+        "relation_focus": 0.79,
+        "action_key": "creates_a_third_thing",
+        "action_focus": 0.64
+      },
+      {
+        "id": 3,
+        "source": 2,
+        "target": 1,
+        "relation_key": "blocks",
+        "relation_focus": 0.0,
+        "action_key": "decays",
+        "action_focus": 0.25
+      },
+      {
+        "id": 4,
+        "source": 2,
+        "target": 3,
+        "relation_key": "listens_to",
+        "relation_focus": 0.39,
+        "action_key": "splits",
+        "action_focus": 0.65
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "action_changed",
+      "link_before": {
+        "id": 2,
+        "source": 4,
+        "target": 2,
+        "relation_key": "binds",
+        "relation_focus": 0.79,
+        "action_key": "creates_a_third_thing",
+        "action_focus": 0.64
+      },
+      "link_after": {
+        "id": 2,
+        "source": 4,
+        "target": 2,
+        "relation_key": "binds",
+        "relation_focus": 0.79,
+        "action_key": "becomes_hidden",
+        "action_focus": 0.26
+      }
+    }
+  ],
+  "id": 666
+}

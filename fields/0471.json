@@ -1,0 +1,131 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "ruin",
+        "focus": 0.02
+      },
+      {
+        "id": 2,
+        "key": "key",
+        "focus": 0.56
+      },
+      {
+        "id": 3,
+        "key": "stranger",
+        "focus": 0.43
+      },
+      {
+        "id": 4,
+        "key": "shelter",
+        "focus": 0.24
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 4,
+        "target": 1,
+        "relation_key": "erases",
+        "relation_focus": 0.88,
+        "action_key": "closes",
+        "action_focus": 0.53
+      },
+      {
+        "id": 2,
+        "source": 1,
+        "target": 3,
+        "relation_key": "touches",
+        "relation_focus": 0.97,
+        "action_key": "approaches",
+        "action_focus": 0.81
+      },
+      {
+        "id": 3,
+        "source": 4,
+        "target": 3,
+        "relation_key": "consumes",
+        "relation_focus": 0.95,
+        "action_key": "crosses_a_threshold",
+        "action_focus": 0.32
+      },
+      {
+        "id": 4,
+        "source": 1,
+        "target": 4,
+        "relation_key": "hides",
+        "relation_focus": 0.4,
+        "action_key": "approaches",
+        "action_focus": 0.6
+      },
+      {
+        "id": 5,
+        "source": 3,
+        "target": 4,
+        "relation_key": "infects",
+        "relation_focus": 0.85,
+        "action_key": "destabilizes",
+        "action_focus": 0.13
+      },
+      {
+        "id": 6,
+        "source": 2,
+        "target": 4,
+        "relation_key": "endures",
+        "relation_focus": 0.74,
+        "action_key": "approaches",
+        "action_focus": 0.68
+      },
+      {
+        "id": 7,
+        "source": 2,
+        "target": 3,
+        "relation_key": "reveals",
+        "relation_focus": 0.11,
+        "action_key": "crosses_a_threshold",
+        "action_focus": 0.48
+      },
+      {
+        "id": 8,
+        "source": 1,
+        "target": 2,
+        "relation_key": "hides",
+        "relation_focus": 0.07,
+        "action_key": "awakens",
+        "action_focus": 0.51
+      },
+      {
+        "id": 9,
+        "source": 4,
+        "target": 2,
+        "relation_key": "reveals",
+        "relation_focus": 0.38,
+        "action_key": "approaches",
+        "action_focus": 0.21
+      },
+      {
+        "id": 10,
+        "source": 3,
+        "target": 2,
+        "relation_key": "repels",
+        "relation_focus": 0.82,
+        "action_key": "spreads",
+        "action_focus": 0.67
+      },
+      {
+        "id": 11,
+        "source": 2,
+        "target": 1,
+        "relation_key": "depends_on",
+        "relation_focus": 0.35,
+        "action_key": "opens",
+        "action_focus": 0.97
+      }
+    ]
+  },
+  "mutations": [],
+  "id": 471
+}

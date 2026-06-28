@@ -1,0 +1,86 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "guardian",
+        "focus": 0.23
+      },
+      {
+        "id": 2,
+        "key": "garden",
+        "focus": 0.76
+      },
+      {
+        "id": 3,
+        "key": "void",
+        "focus": 0.32
+      },
+      {
+        "id": 4,
+        "key": "witness",
+        "focus": 0.35
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 3,
+        "target": 4,
+        "relation_key": "separates",
+        "relation_focus": 0.9,
+        "action_key": "opens",
+        "action_focus": 0.47
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "action_changed",
+      "link_before": {
+        "id": 1,
+        "source": 3,
+        "target": 4,
+        "relation_key": "separates",
+        "relation_focus": 0.9,
+        "action_key": "opens",
+        "action_focus": 0.47
+      },
+      "link_after": {
+        "id": 1,
+        "source": 3,
+        "target": 4,
+        "relation_key": "separates",
+        "relation_focus": 0.9,
+        "action_key": "exhales",
+        "action_focus": 0.69
+      }
+    },
+    {
+      "step": 2,
+      "type": "relation_changed",
+      "link_before": {
+        "id": 1,
+        "source": 3,
+        "target": 4,
+        "relation_key": "separates",
+        "relation_focus": 0.9,
+        "action_key": "exhales",
+        "action_focus": 0.69
+      },
+      "link_after": {
+        "id": 1,
+        "source": 3,
+        "target": 4,
+        "relation_key": "repels",
+        "relation_focus": 0.04,
+        "action_key": "exhales",
+        "action_focus": 0.69
+      }
+    }
+  ],
+  "id": 63
+}

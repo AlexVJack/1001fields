@@ -1,0 +1,207 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "secret",
+        "focus": 0.94
+      },
+      {
+        "id": 2,
+        "key": "trace",
+        "focus": 0.0
+      },
+      {
+        "id": 3,
+        "key": "body",
+        "focus": 0.55
+      },
+      {
+        "id": 4,
+        "key": "spark",
+        "focus": 0.58
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 4,
+        "target": 2,
+        "relation_key": "infects",
+        "relation_focus": 0.96,
+        "action_key": "exhales",
+        "action_focus": 0.88
+      },
+      {
+        "id": 2,
+        "source": 4,
+        "target": 3,
+        "relation_key": "dominates",
+        "relation_focus": 0.32,
+        "action_key": "splits",
+        "action_focus": 0.13
+      },
+      {
+        "id": 3,
+        "source": 1,
+        "target": 4,
+        "relation_key": "erases",
+        "relation_focus": 0.13,
+        "action_key": "merges",
+        "action_focus": 0.1
+      },
+      {
+        "id": 4,
+        "source": 4,
+        "target": 1,
+        "relation_key": "embodies",
+        "relation_focus": 0.03,
+        "action_key": "awakens",
+        "action_focus": 0.63
+      },
+      {
+        "id": 5,
+        "source": 3,
+        "target": 1,
+        "relation_key": "separates",
+        "relation_focus": 0.65,
+        "action_key": "becomes_clear",
+        "action_focus": 0.77
+      },
+      {
+        "id": 6,
+        "source": 3,
+        "target": 2,
+        "relation_key": "clarifies",
+        "relation_focus": 0.5,
+        "action_key": "settles",
+        "action_focus": 0.11
+      },
+      {
+        "id": 7,
+        "source": 3,
+        "target": 4,
+        "relation_key": "remembers",
+        "relation_focus": 0.93,
+        "action_key": "becomes_embodied",
+        "action_focus": 0.67
+      },
+      {
+        "id": 8,
+        "source": 1,
+        "target": 3,
+        "relation_key": "generates",
+        "relation_focus": 0.24,
+        "action_key": "becomes_visible",
+        "action_focus": 0.53
+      },
+      {
+        "id": 9,
+        "source": 1,
+        "target": 2,
+        "relation_key": "reveals",
+        "relation_focus": 0.26,
+        "action_key": "intensifies",
+        "action_focus": 0.02
+      },
+      {
+        "id": 10,
+        "source": 2,
+        "target": 3,
+        "relation_key": "hides",
+        "relation_focus": 0.94,
+        "action_key": "decays",
+        "action_focus": 0.17
+      },
+      {
+        "id": 11,
+        "source": 2,
+        "target": 4,
+        "relation_key": "embodies",
+        "relation_focus": 0.23,
+        "action_key": "returns",
+        "action_focus": 0.39
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "relation_changed",
+      "link_before": {
+        "id": 6,
+        "source": 3,
+        "target": 2,
+        "relation_key": "clarifies",
+        "relation_focus": 0.5,
+        "action_key": "settles",
+        "action_focus": 0.11
+      },
+      "link_after": {
+        "id": 6,
+        "source": 3,
+        "target": 2,
+        "relation_key": "depends_on",
+        "relation_focus": 0.73,
+        "action_key": "settles",
+        "action_focus": 0.11
+      }
+    },
+    {
+      "step": 2,
+      "type": "action_changed",
+      "link_before": {
+        "id": 7,
+        "source": 3,
+        "target": 4,
+        "relation_key": "remembers",
+        "relation_focus": 0.93,
+        "action_key": "becomes_embodied",
+        "action_focus": 0.67
+      },
+      "link_after": {
+        "id": 7,
+        "source": 3,
+        "target": 4,
+        "relation_key": "remembers",
+        "relation_focus": 0.93,
+        "action_key": "stabilizes",
+        "action_focus": 0.18
+      }
+    },
+    {
+      "step": 3,
+      "type": "symbol_changed",
+      "symbol_id": 3,
+      "old_key": "body",
+      "new_key": "silence",
+      "old_focus": 0.55,
+      "new_focus": 0.36
+    },
+    {
+      "step": 4,
+      "type": "action_changed",
+      "link_before": {
+        "id": 10,
+        "source": 2,
+        "target": 3,
+        "relation_key": "hides",
+        "relation_focus": 0.94,
+        "action_key": "decays",
+        "action_focus": 0.17
+      },
+      "link_after": {
+        "id": 10,
+        "source": 2,
+        "target": 3,
+        "relation_key": "hides",
+        "relation_focus": 0.94,
+        "action_key": "awakens",
+        "action_focus": 0.8
+      }
+    }
+  ],
+  "id": 821
+}

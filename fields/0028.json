@@ -1,0 +1,68 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "memory",
+        "focus": 0.5
+      },
+      {
+        "id": 2,
+        "key": "abyss",
+        "focus": 0.7
+      },
+      {
+        "id": 3,
+        "key": "window",
+        "focus": 0.22
+      },
+      {
+        "id": 4,
+        "key": "name",
+        "focus": 0.16
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 3,
+        "target": 4,
+        "relation_key": "embodies",
+        "relation_focus": 0.48,
+        "action_key": "decays",
+        "action_focus": 0.67
+      },
+      {
+        "id": 2,
+        "source": 4,
+        "target": 3,
+        "relation_key": "clarifies",
+        "relation_focus": 0.83,
+        "action_key": "awakens",
+        "action_focus": 0.08
+      },
+      {
+        "id": 3,
+        "source": 1,
+        "target": 4,
+        "relation_key": "echoes",
+        "relation_focus": 0.18,
+        "action_key": "becomes_embodied",
+        "action_focus": 0.6
+      },
+      {
+        "id": 4,
+        "source": 1,
+        "target": 3,
+        "relation_key": "names",
+        "relation_focus": 0.12,
+        "action_key": "becomes_quiet",
+        "action_focus": 0.61
+      }
+    ]
+  },
+  "mutations": [],
+  "id": 28
+}

@@ -1,0 +1,117 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "hunger",
+        "focus": 0.87
+      },
+      {
+        "id": 2,
+        "key": "shadow",
+        "focus": 0.16
+      },
+      {
+        "id": 3,
+        "key": "storm",
+        "focus": 0.21
+      },
+      {
+        "id": 4,
+        "key": "exile",
+        "focus": 0.56
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 3,
+        "target": 4,
+        "relation_key": "reveals",
+        "relation_focus": 0.18,
+        "action_key": "inverts",
+        "action_focus": 0.91
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "relation_changed",
+      "link_before": {
+        "id": 1,
+        "source": 3,
+        "target": 4,
+        "relation_key": "reveals",
+        "relation_focus": 0.18,
+        "action_key": "inverts",
+        "action_focus": 0.91
+      },
+      "link_after": {
+        "id": 1,
+        "source": 3,
+        "target": 4,
+        "relation_key": "embodies",
+        "relation_focus": 0.64,
+        "action_key": "inverts",
+        "action_focus": 0.91
+      }
+    },
+    {
+      "step": 2,
+      "type": "link_added",
+      "link": {
+        "id": 2,
+        "source": 4,
+        "target": 2,
+        "relation_key": "protects",
+        "relation_focus": 0.04,
+        "action_key": "splits",
+        "action_focus": 0.05
+      }
+    },
+    {
+      "step": 3,
+      "type": "symbol_changed",
+      "symbol_id": 1,
+      "old_key": "hunger",
+      "new_key": "herald",
+      "old_focus": 0.87,
+      "new_focus": 0.04
+    },
+    {
+      "step": 4,
+      "type": "action_changed",
+      "link_before": {
+        "id": 1,
+        "source": 3,
+        "target": 4,
+        "relation_key": "embodies",
+        "relation_focus": 0.64,
+        "action_key": "inverts",
+        "action_focus": 0.91
+      },
+      "link_after": {
+        "id": 1,
+        "source": 3,
+        "target": 4,
+        "relation_key": "embodies",
+        "relation_focus": 0.64,
+        "action_key": "repeats",
+        "action_focus": 0.1
+      }
+    },
+    {
+      "step": 5,
+      "type": "symbol_changed",
+      "symbol_id": 2,
+      "old_key": "shadow",
+      "new_key": "desire",
+      "old_focus": 0.16,
+      "new_focus": 0.6
+    }
+  ],
+  "id": 561
+}

@@ -1,0 +1,95 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "breath",
+        "focus": 0.68
+      },
+      {
+        "id": 2,
+        "key": "boundary",
+        "focus": 0.26
+      },
+      {
+        "id": 3,
+        "key": "void",
+        "focus": 0.09
+      },
+      {
+        "id": 4,
+        "key": "machine",
+        "focus": 0.94
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 1,
+        "target": 4,
+        "relation_key": "listens_to",
+        "relation_focus": 0.96,
+        "action_key": "destabilizes",
+        "action_focus": 0.78
+      },
+      {
+        "id": 2,
+        "source": 2,
+        "target": 1,
+        "relation_key": "distorts",
+        "relation_focus": 0.9,
+        "action_key": "intensifies",
+        "action_focus": 0.86
+      },
+      {
+        "id": 3,
+        "source": 3,
+        "target": 1,
+        "relation_key": "heals",
+        "relation_focus": 0.37,
+        "action_key": "collapses",
+        "action_focus": 0.87
+      },
+      {
+        "id": 4,
+        "source": 3,
+        "target": 2,
+        "relation_key": "depends_on",
+        "relation_focus": 0.28,
+        "action_key": "mutates",
+        "action_focus": 0.85
+      },
+      {
+        "id": 5,
+        "source": 4,
+        "target": 3,
+        "relation_key": "embodies",
+        "relation_focus": 0.17,
+        "action_key": "closes",
+        "action_focus": 0.27
+      },
+      {
+        "id": 6,
+        "source": 2,
+        "target": 4,
+        "relation_key": "reveals",
+        "relation_focus": 0.6,
+        "action_key": "returns",
+        "action_focus": 0.68
+      },
+      {
+        "id": 7,
+        "source": 4,
+        "target": 1,
+        "relation_key": "touches",
+        "relation_focus": 0.01,
+        "action_key": "closes",
+        "action_focus": 0.29
+      }
+    ]
+  },
+  "mutations": [],
+  "id": 959
+}

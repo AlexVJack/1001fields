@@ -1,0 +1,140 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "vessel",
+        "focus": 0.1
+      },
+      {
+        "id": 2,
+        "key": "name",
+        "focus": 0.71
+      },
+      {
+        "id": 3,
+        "key": "attention",
+        "focus": 0.76
+      },
+      {
+        "id": 4,
+        "key": "gate",
+        "focus": 0.36
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 3,
+        "target": 4,
+        "relation_key": "infects",
+        "relation_focus": 0.94,
+        "action_key": "weakens",
+        "action_focus": 0.69
+      },
+      {
+        "id": 2,
+        "source": 2,
+        "target": 4,
+        "relation_key": "witnesses",
+        "relation_focus": 0.33,
+        "action_key": "creates_a_third_thing",
+        "action_focus": 0.6
+      },
+      {
+        "id": 3,
+        "source": 2,
+        "target": 1,
+        "relation_key": "feeds",
+        "relation_focus": 0.24,
+        "action_key": "refuses_change",
+        "action_focus": 0.82
+      },
+      {
+        "id": 4,
+        "source": 3,
+        "target": 2,
+        "relation_key": "clarifies",
+        "relation_focus": 0.54,
+        "action_key": "becomes_hidden",
+        "action_focus": 0.77
+      },
+      {
+        "id": 5,
+        "source": 4,
+        "target": 3,
+        "relation_key": "distorts",
+        "relation_focus": 0.18,
+        "action_key": "splits",
+        "action_focus": 0.94
+      },
+      {
+        "id": 6,
+        "source": 3,
+        "target": 1,
+        "relation_key": "remembers",
+        "relation_focus": 0.22,
+        "action_key": "destabilizes",
+        "action_focus": 0.72
+      },
+      {
+        "id": 7,
+        "source": 4,
+        "target": 1,
+        "relation_key": "consumes",
+        "relation_focus": 0.78,
+        "action_key": "opens",
+        "action_focus": 0.83
+      },
+      {
+        "id": 8,
+        "source": 1,
+        "target": 4,
+        "relation_key": "erases",
+        "relation_focus": 0.55,
+        "action_key": "decays",
+        "action_focus": 0.13
+      },
+      {
+        "id": 9,
+        "source": 2,
+        "target": 3,
+        "relation_key": "erases",
+        "relation_focus": 0.36,
+        "action_key": "creates_a_third_thing",
+        "action_focus": 0.73
+      },
+      {
+        "id": 10,
+        "source": 1,
+        "target": 2,
+        "relation_key": "distorts",
+        "relation_focus": 0.68,
+        "action_key": "awakens",
+        "action_focus": 0.23
+      },
+      {
+        "id": 11,
+        "source": 4,
+        "target": 2,
+        "relation_key": "binds",
+        "relation_focus": 0.67,
+        "action_key": "stabilizes",
+        "action_focus": 0.45
+      },
+      {
+        "id": 12,
+        "source": 1,
+        "target": 3,
+        "relation_key": "witnesses",
+        "relation_focus": 0.43,
+        "action_key": "refuses_change",
+        "action_focus": 0.54
+      }
+    ]
+  },
+  "mutations": [],
+  "id": 592
+}

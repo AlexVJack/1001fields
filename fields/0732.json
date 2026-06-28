@@ -1,0 +1,131 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "debt",
+        "focus": 0.88
+      },
+      {
+        "id": 2,
+        "key": "network",
+        "focus": 0.39
+      },
+      {
+        "id": 3,
+        "key": "vessel",
+        "focus": 0.35
+      },
+      {
+        "id": 4,
+        "key": "oracle",
+        "focus": 0.74
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 4,
+        "target": 1,
+        "relation_key": "mirrors",
+        "relation_focus": 0.73,
+        "action_key": "stabilizes",
+        "action_focus": 0.17
+      },
+      {
+        "id": 2,
+        "source": 4,
+        "target": 3,
+        "relation_key": "consumes",
+        "relation_focus": 0.55,
+        "action_key": "dissolves",
+        "action_focus": 0.01
+      },
+      {
+        "id": 3,
+        "source": 1,
+        "target": 3,
+        "relation_key": "listens_to",
+        "relation_focus": 0.64,
+        "action_key": "merges",
+        "action_focus": 0.28
+      },
+      {
+        "id": 4,
+        "source": 2,
+        "target": 4,
+        "relation_key": "embodies",
+        "relation_focus": 0.47,
+        "action_key": "becomes_embodied",
+        "action_focus": 0.27
+      },
+      {
+        "id": 5,
+        "source": 3,
+        "target": 2,
+        "relation_key": "feeds",
+        "relation_focus": 0.38,
+        "action_key": "creates_a_third_thing",
+        "action_focus": 0.78
+      },
+      {
+        "id": 6,
+        "source": 2,
+        "target": 1,
+        "relation_key": "attracts",
+        "relation_focus": 0.09,
+        "action_key": "mutates",
+        "action_focus": 0.27
+      },
+      {
+        "id": 7,
+        "source": 4,
+        "target": 2,
+        "relation_key": "generates",
+        "relation_focus": 0.18,
+        "action_key": "stabilizes",
+        "action_focus": 0.15
+      },
+      {
+        "id": 8,
+        "source": 1,
+        "target": 4,
+        "relation_key": "hides",
+        "relation_focus": 0.85,
+        "action_key": "creates_a_third_thing",
+        "action_focus": 0.33
+      },
+      {
+        "id": 9,
+        "source": 2,
+        "target": 3,
+        "relation_key": "misnames",
+        "relation_focus": 0.73,
+        "action_key": "intensifies",
+        "action_focus": 0.94
+      },
+      {
+        "id": 10,
+        "source": 3,
+        "target": 1,
+        "relation_key": "binds",
+        "relation_focus": 0.77,
+        "action_key": "repeats",
+        "action_focus": 0.15
+      },
+      {
+        "id": 11,
+        "source": 3,
+        "target": 4,
+        "relation_key": "misnames",
+        "relation_focus": 0.67,
+        "action_key": "crystallizes",
+        "action_focus": 0.06
+      }
+    ]
+  },
+  "mutations": [],
+  "id": 732
+}

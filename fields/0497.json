@@ -1,0 +1,91 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "silence",
+        "focus": 0.37
+      },
+      {
+        "id": 2,
+        "key": "law",
+        "focus": 0.7
+      },
+      {
+        "id": 3,
+        "key": "stranger",
+        "focus": 0.04
+      },
+      {
+        "id": 4,
+        "key": "promise",
+        "focus": 0.7
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 4,
+        "target": 3,
+        "relation_key": "infects",
+        "relation_focus": 0.5,
+        "action_key": "merges",
+        "action_focus": 0.92
+      },
+      {
+        "id": 2,
+        "source": 3,
+        "target": 2,
+        "relation_key": "submits_to",
+        "relation_focus": 0.3,
+        "action_key": "stabilizes",
+        "action_focus": 0.63
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "symbol_changed",
+      "symbol_id": 1,
+      "old_key": "silence",
+      "new_key": "storm",
+      "old_focus": 0.37,
+      "new_focus": 0.81
+    },
+    {
+      "step": 2,
+      "type": "symbol_changed",
+      "symbol_id": 2,
+      "old_key": "law",
+      "new_key": "tower",
+      "old_focus": 0.7,
+      "new_focus": 0.5
+    },
+    {
+      "step": 3,
+      "type": "link_inverted",
+      "link_before": {
+        "id": 1,
+        "source": 4,
+        "target": 3,
+        "relation_key": "infects",
+        "relation_focus": 0.5,
+        "action_key": "merges",
+        "action_focus": 0.92
+      },
+      "link_after": {
+        "id": 1,
+        "source": 3,
+        "target": 4,
+        "relation_key": "infects",
+        "relation_focus": 0.5,
+        "action_key": "merges",
+        "action_focus": 0.92
+      }
+    }
+  ],
+  "id": 497
+}

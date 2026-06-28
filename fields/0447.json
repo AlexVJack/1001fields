@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "body",
+        "focus": 0.89
+      },
+      {
+        "id": 2,
+        "key": "boundary",
+        "focus": 0.21
+      },
+      {
+        "id": 3,
+        "key": "key",
+        "focus": 0.53
+      },
+      {
+        "id": 4,
+        "key": "vessel",
+        "focus": 0.19
+      }
+    ],
+    "links": []
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "symbol_changed",
+      "symbol_id": 1,
+      "old_key": "body",
+      "new_key": "child",
+      "old_focus": 0.89,
+      "new_focus": 0.68
+    },
+    {
+      "step": 2,
+      "type": "symbol_changed",
+      "symbol_id": 3,
+      "old_key": "key",
+      "new_key": "guardian",
+      "old_focus": 0.53,
+      "new_focus": 0.11
+    }
+  ],
+  "id": 447
+}

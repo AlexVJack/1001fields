@@ -1,0 +1,131 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "boundary",
+        "focus": 0.6
+      },
+      {
+        "id": 2,
+        "key": "law",
+        "focus": 0.68
+      },
+      {
+        "id": 3,
+        "key": "pause",
+        "focus": 0.61
+      },
+      {
+        "id": 4,
+        "key": "stranger",
+        "focus": 0.27
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 3,
+        "target": 2,
+        "relation_key": "feeds",
+        "relation_focus": 0.92,
+        "action_key": "settles",
+        "action_focus": 0.06
+      },
+      {
+        "id": 2,
+        "source": 1,
+        "target": 4,
+        "relation_key": "embodies",
+        "relation_focus": 0.98,
+        "action_key": "becomes_hidden",
+        "action_focus": 0.94
+      },
+      {
+        "id": 3,
+        "source": 2,
+        "target": 4,
+        "relation_key": "mirrors",
+        "relation_focus": 0.76,
+        "action_key": "mutates",
+        "action_focus": 0.99
+      },
+      {
+        "id": 4,
+        "source": 4,
+        "target": 1,
+        "relation_key": "clarifies",
+        "relation_focus": 0.93,
+        "action_key": "awakens",
+        "action_focus": 0.53
+      },
+      {
+        "id": 5,
+        "source": 3,
+        "target": 4,
+        "relation_key": "mirrors",
+        "relation_focus": 0.3,
+        "action_key": "lets_go",
+        "action_focus": 0.31
+      },
+      {
+        "id": 6,
+        "source": 1,
+        "target": 3,
+        "relation_key": "clarifies",
+        "relation_focus": 0.62,
+        "action_key": "decays",
+        "action_focus": 0.52
+      },
+      {
+        "id": 7,
+        "source": 1,
+        "target": 2,
+        "relation_key": "repels",
+        "relation_focus": 0.82,
+        "action_key": "becomes_visible",
+        "action_focus": 0.47
+      },
+      {
+        "id": 8,
+        "source": 3,
+        "target": 1,
+        "relation_key": "endures",
+        "relation_focus": 0.2,
+        "action_key": "merges",
+        "action_focus": 0.96
+      },
+      {
+        "id": 9,
+        "source": 2,
+        "target": 1,
+        "relation_key": "infects",
+        "relation_focus": 0.36,
+        "action_key": "becomes_embodied",
+        "action_focus": 0.62
+      },
+      {
+        "id": 10,
+        "source": 4,
+        "target": 2,
+        "relation_key": "binds",
+        "relation_focus": 0.37,
+        "action_key": "awakens",
+        "action_focus": 0.4
+      },
+      {
+        "id": 11,
+        "source": 2,
+        "target": 3,
+        "relation_key": "witnesses",
+        "relation_focus": 0.78,
+        "action_key": "repeats",
+        "action_focus": 0.5
+      }
+    ]
+  },
+  "mutations": [],
+  "id": 876
+}

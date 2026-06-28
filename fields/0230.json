@@ -1,0 +1,41 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "machine",
+        "focus": 0.32
+      },
+      {
+        "id": 2,
+        "key": "debt",
+        "focus": 0.48
+      },
+      {
+        "id": 3,
+        "key": "signal",
+        "focus": 0.72
+      },
+      {
+        "id": 4,
+        "key": "child",
+        "focus": 0.4
+      }
+    ],
+    "links": []
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "symbol_changed",
+      "symbol_id": 2,
+      "old_key": "debt",
+      "new_key": "ruin",
+      "old_focus": 0.48,
+      "new_focus": 0.88
+    }
+  ],
+  "id": 230
+}

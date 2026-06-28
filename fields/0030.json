@@ -1,0 +1,95 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "thread",
+        "focus": 0.86
+      },
+      {
+        "id": 2,
+        "key": "spark",
+        "focus": 0.22
+      },
+      {
+        "id": 3,
+        "key": "burden",
+        "focus": 0.84
+      },
+      {
+        "id": 4,
+        "key": "attention",
+        "focus": 0.24
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 3,
+        "target": 2,
+        "relation_key": "hides",
+        "relation_focus": 0.59,
+        "action_key": "intensifies",
+        "action_focus": 0.67
+      },
+      {
+        "id": 2,
+        "source": 2,
+        "target": 1,
+        "relation_key": "blocks",
+        "relation_focus": 0.33,
+        "action_key": "repeats",
+        "action_focus": 0.46
+      },
+      {
+        "id": 3,
+        "source": 2,
+        "target": 3,
+        "relation_key": "protects",
+        "relation_focus": 0.3,
+        "action_key": "inverts",
+        "action_focus": 0.98
+      },
+      {
+        "id": 4,
+        "source": 3,
+        "target": 4,
+        "relation_key": "hides",
+        "relation_focus": 0.48,
+        "action_key": "crosses_a_threshold",
+        "action_focus": 0.73
+      },
+      {
+        "id": 5,
+        "source": 4,
+        "target": 2,
+        "relation_key": "infects",
+        "relation_focus": 0.22,
+        "action_key": "collapses",
+        "action_focus": 0.95
+      },
+      {
+        "id": 6,
+        "source": 4,
+        "target": 3,
+        "relation_key": "depends_on",
+        "relation_focus": 0.54,
+        "action_key": "splits",
+        "action_focus": 0.12
+      },
+      {
+        "id": 7,
+        "source": 1,
+        "target": 3,
+        "relation_key": "transforms",
+        "relation_focus": 0.54,
+        "action_key": "dissolves",
+        "action_focus": 0.18
+      }
+    ]
+  },
+  "mutations": [],
+  "id": 30
+}

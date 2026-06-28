@@ -1,0 +1,68 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "key",
+        "focus": 0.41
+      },
+      {
+        "id": 2,
+        "key": "crack",
+        "focus": 0.56
+      },
+      {
+        "id": 3,
+        "key": "herald",
+        "focus": 0.89
+      },
+      {
+        "id": 4,
+        "key": "gate",
+        "focus": 1.0
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 2,
+        "target": 4,
+        "relation_key": "contains",
+        "relation_focus": 0.15,
+        "action_key": "becomes_visible",
+        "action_focus": 0.96
+      },
+      {
+        "id": 2,
+        "source": 4,
+        "target": 3,
+        "relation_key": "blocks",
+        "relation_focus": 0.36,
+        "action_key": "refuses_change",
+        "action_focus": 0.23
+      },
+      {
+        "id": 3,
+        "source": 3,
+        "target": 1,
+        "relation_key": "contains",
+        "relation_focus": 0.06,
+        "action_key": "accelerates",
+        "action_focus": 0.78
+      },
+      {
+        "id": 4,
+        "source": 3,
+        "target": 4,
+        "relation_key": "separates",
+        "relation_focus": 0.89,
+        "action_key": "splits",
+        "action_focus": 0.75
+      }
+    ]
+  },
+  "mutations": [],
+  "id": 672
+}

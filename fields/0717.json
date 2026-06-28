@@ -1,0 +1,31 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "water",
+        "focus": 0.49
+      },
+      {
+        "id": 2,
+        "key": "void",
+        "focus": 0.96
+      },
+      {
+        "id": 3,
+        "key": "witness",
+        "focus": 0.7
+      },
+      {
+        "id": 4,
+        "key": "hand",
+        "focus": 0.38
+      }
+    ],
+    "links": []
+  },
+  "mutations": [],
+  "id": 717
+}

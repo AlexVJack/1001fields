@@ -1,0 +1,31 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "trace",
+        "focus": 0.31
+      },
+      {
+        "id": 2,
+        "key": "fire",
+        "focus": 0.07
+      },
+      {
+        "id": 3,
+        "key": "labyrinth",
+        "focus": 0.54
+      },
+      {
+        "id": 4,
+        "key": "pause",
+        "focus": 0.73
+      }
+    ],
+    "links": []
+  },
+  "mutations": [],
+  "id": 405
+}

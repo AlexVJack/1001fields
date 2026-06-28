@@ -1,0 +1,64 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "light",
+        "focus": 0.13
+      },
+      {
+        "id": 2,
+        "key": "water",
+        "focus": 0.2
+      },
+      {
+        "id": 3,
+        "key": "void",
+        "focus": 1.0
+      },
+      {
+        "id": 4,
+        "key": "ash",
+        "focus": 0.9
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 1,
+        "target": 4,
+        "relation_key": "hides",
+        "relation_focus": 0.2,
+        "action_key": "creates_a_third_thing",
+        "action_focus": 0.21
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "symbol_changed",
+      "symbol_id": 3,
+      "old_key": "void",
+      "new_key": "spark",
+      "old_focus": 1.0,
+      "new_focus": 0.6
+    },
+    {
+      "step": 2,
+      "type": "link_removed",
+      "link": {
+        "id": 1,
+        "source": 1,
+        "target": 4,
+        "relation_key": "hides",
+        "relation_focus": 0.2,
+        "action_key": "creates_a_third_thing",
+        "action_focus": 0.21
+      }
+    }
+  ],
+  "id": 500
+}

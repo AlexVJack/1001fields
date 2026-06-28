@@ -1,0 +1,104 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "pause",
+        "focus": 0.49
+      },
+      {
+        "id": 2,
+        "key": "fire",
+        "focus": 0.14
+      },
+      {
+        "id": 3,
+        "key": "garden",
+        "focus": 0.41
+      },
+      {
+        "id": 4,
+        "key": "desire",
+        "focus": 0.38
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 3,
+        "target": 2,
+        "relation_key": "erases",
+        "relation_focus": 0.12,
+        "action_key": "creates_a_third_thing",
+        "action_focus": 0.46
+      },
+      {
+        "id": 2,
+        "source": 1,
+        "target": 2,
+        "relation_key": "protects",
+        "relation_focus": 0.09,
+        "action_key": "collapses",
+        "action_focus": 0.95
+      },
+      {
+        "id": 3,
+        "source": 4,
+        "target": 2,
+        "relation_key": "embodies",
+        "relation_focus": 0.96,
+        "action_key": "exhales",
+        "action_focus": 0.53
+      },
+      {
+        "id": 4,
+        "source": 2,
+        "target": 1,
+        "relation_key": "endures",
+        "relation_focus": 0.05,
+        "action_key": "inverts",
+        "action_focus": 0.63
+      },
+      {
+        "id": 5,
+        "source": 3,
+        "target": 4,
+        "relation_key": "echoes",
+        "relation_focus": 0.84,
+        "action_key": "dissolves",
+        "action_focus": 0.31
+      },
+      {
+        "id": 6,
+        "source": 2,
+        "target": 3,
+        "relation_key": "submits_to",
+        "relation_focus": 0.94,
+        "action_key": "crosses_a_threshold",
+        "action_focus": 0.69
+      },
+      {
+        "id": 7,
+        "source": 4,
+        "target": 1,
+        "relation_key": "witnesses",
+        "relation_focus": 0.45,
+        "action_key": "weakens",
+        "action_focus": 0.08
+      },
+      {
+        "id": 8,
+        "source": 4,
+        "target": 3,
+        "relation_key": "hides",
+        "relation_focus": 0.31,
+        "action_key": "awakens",
+        "action_focus": 0.06
+      }
+    ]
+  },
+  "mutations": [],
+  "id": 883
+}

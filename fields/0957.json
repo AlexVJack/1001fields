@@ -1,0 +1,77 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "memory",
+        "focus": 0.3
+      },
+      {
+        "id": 2,
+        "key": "void",
+        "focus": 0.69
+      },
+      {
+        "id": 3,
+        "key": "light",
+        "focus": 0.22
+      },
+      {
+        "id": 4,
+        "key": "fear",
+        "focus": 0.37
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 1,
+        "target": 3,
+        "relation_key": "clarifies",
+        "relation_focus": 0.97,
+        "action_key": "intensifies",
+        "action_focus": 0.97
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "relation_changed",
+      "link_before": {
+        "id": 1,
+        "source": 1,
+        "target": 3,
+        "relation_key": "clarifies",
+        "relation_focus": 0.97,
+        "action_key": "intensifies",
+        "action_focus": 0.97
+      },
+      "link_after": {
+        "id": 1,
+        "source": 1,
+        "target": 3,
+        "relation_key": "remembers",
+        "relation_focus": 0.6,
+        "action_key": "intensifies",
+        "action_focus": 0.97
+      }
+    },
+    {
+      "step": 2,
+      "type": "link_added",
+      "link": {
+        "id": 2,
+        "source": 3,
+        "target": 1,
+        "relation_key": "witnesses",
+        "relation_focus": 0.1,
+        "action_key": "settles",
+        "action_focus": 0.16
+      }
+    }
+  ],
+  "id": 957
+}

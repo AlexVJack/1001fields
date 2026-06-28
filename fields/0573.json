@@ -1,0 +1,109 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "ash",
+        "focus": 0.16
+      },
+      {
+        "id": 2,
+        "key": "ruin",
+        "focus": 0.0
+      },
+      {
+        "id": 3,
+        "key": "exile",
+        "focus": 1.0
+      },
+      {
+        "id": 4,
+        "key": "garden",
+        "focus": 0.83
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 4,
+        "target": 3,
+        "relation_key": "clarifies",
+        "relation_focus": 0.52,
+        "action_key": "creates_a_third_thing",
+        "action_focus": 0.44
+      },
+      {
+        "id": 2,
+        "source": 2,
+        "target": 4,
+        "relation_key": "names",
+        "relation_focus": 0.02,
+        "action_key": "crystallizes",
+        "action_focus": 0.43
+      },
+      {
+        "id": 3,
+        "source": 4,
+        "target": 2,
+        "relation_key": "heals",
+        "relation_focus": 0.62,
+        "action_key": "returns",
+        "action_focus": 0.19
+      },
+      {
+        "id": 4,
+        "source": 1,
+        "target": 2,
+        "relation_key": "mirrors",
+        "relation_focus": 0.46,
+        "action_key": "collapses",
+        "action_focus": 0.45
+      },
+      {
+        "id": 5,
+        "source": 3,
+        "target": 1,
+        "relation_key": "hides",
+        "relation_focus": 0.45,
+        "action_key": "accelerates",
+        "action_focus": 0.2
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "symbol_changed",
+      "symbol_id": 1,
+      "old_key": "ash",
+      "new_key": "promise",
+      "old_focus": 0.16,
+      "new_focus": 0.29
+    },
+    {
+      "step": 2,
+      "type": "action_changed",
+      "link_before": {
+        "id": 4,
+        "source": 1,
+        "target": 2,
+        "relation_key": "mirrors",
+        "relation_focus": 0.46,
+        "action_key": "collapses",
+        "action_focus": 0.45
+      },
+      "link_after": {
+        "id": 4,
+        "source": 1,
+        "target": 2,
+        "relation_key": "mirrors",
+        "relation_focus": 0.46,
+        "action_key": "becomes_embodied",
+        "action_focus": 0.91
+      }
+    }
+  ],
+  "id": 573
+}

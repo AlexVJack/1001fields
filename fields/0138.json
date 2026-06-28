@@ -1,0 +1,139 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "attention",
+        "focus": 0.21
+      },
+      {
+        "id": 2,
+        "key": "mask",
+        "focus": 0.55
+      },
+      {
+        "id": 3,
+        "key": "bridge",
+        "focus": 0.79
+      },
+      {
+        "id": 4,
+        "key": "vessel",
+        "focus": 0.06
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 1,
+        "target": 4,
+        "relation_key": "blocks",
+        "relation_focus": 0.04,
+        "action_key": "spreads",
+        "action_focus": 0.57
+      },
+      {
+        "id": 2,
+        "source": 4,
+        "target": 1,
+        "relation_key": "names",
+        "relation_focus": 0.13,
+        "action_key": "exhales",
+        "action_focus": 0.77
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "relation_changed",
+      "link_before": {
+        "id": 1,
+        "source": 1,
+        "target": 4,
+        "relation_key": "blocks",
+        "relation_focus": 0.04,
+        "action_key": "spreads",
+        "action_focus": 0.57
+      },
+      "link_after": {
+        "id": 1,
+        "source": 1,
+        "target": 4,
+        "relation_key": "dominates",
+        "relation_focus": 0.54,
+        "action_key": "spreads",
+        "action_focus": 0.57
+      }
+    },
+    {
+      "step": 2,
+      "type": "action_changed",
+      "link_before": {
+        "id": 2,
+        "source": 4,
+        "target": 1,
+        "relation_key": "names",
+        "relation_focus": 0.13,
+        "action_key": "exhales",
+        "action_focus": 0.77
+      },
+      "link_after": {
+        "id": 2,
+        "source": 4,
+        "target": 1,
+        "relation_key": "names",
+        "relation_focus": 0.13,
+        "action_key": "becomes_visible",
+        "action_focus": 0.09
+      }
+    },
+    {
+      "step": 3,
+      "type": "relation_changed",
+      "link_before": {
+        "id": 1,
+        "source": 1,
+        "target": 4,
+        "relation_key": "dominates",
+        "relation_focus": 0.54,
+        "action_key": "spreads",
+        "action_focus": 0.57
+      },
+      "link_after": {
+        "id": 1,
+        "source": 1,
+        "target": 4,
+        "relation_key": "separates",
+        "relation_focus": 0.73,
+        "action_key": "spreads",
+        "action_focus": 0.57
+      }
+    },
+    {
+      "step": 4,
+      "type": "action_changed",
+      "link_before": {
+        "id": 2,
+        "source": 4,
+        "target": 1,
+        "relation_key": "names",
+        "relation_focus": 0.13,
+        "action_key": "becomes_visible",
+        "action_focus": 0.09
+      },
+      "link_after": {
+        "id": 2,
+        "source": 4,
+        "target": 1,
+        "relation_key": "names",
+        "relation_focus": 0.13,
+        "action_key": "exhales",
+        "action_focus": 0.46
+      }
+    }
+  ],
+  "id": 138
+}

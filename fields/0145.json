@@ -1,0 +1,193 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "voice",
+        "focus": 0.46
+      },
+      {
+        "id": 2,
+        "key": "machine",
+        "focus": 0.64
+      },
+      {
+        "id": 3,
+        "key": "oracle",
+        "focus": 0.72
+      },
+      {
+        "id": 4,
+        "key": "vessel",
+        "focus": 0.59
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 2,
+        "target": 1,
+        "relation_key": "distorts",
+        "relation_focus": 0.82,
+        "action_key": "refuses_change",
+        "action_focus": 0.81
+      },
+      {
+        "id": 2,
+        "source": 2,
+        "target": 4,
+        "relation_key": "witnesses",
+        "relation_focus": 0.14,
+        "action_key": "decays",
+        "action_focus": 0.03
+      },
+      {
+        "id": 3,
+        "source": 4,
+        "target": 2,
+        "relation_key": "blocks",
+        "relation_focus": 0.96,
+        "action_key": "refuses_change",
+        "action_focus": 0.88
+      },
+      {
+        "id": 4,
+        "source": 3,
+        "target": 2,
+        "relation_key": "heals",
+        "relation_focus": 0.39,
+        "action_key": "dissolves",
+        "action_focus": 0.13
+      },
+      {
+        "id": 5,
+        "source": 1,
+        "target": 2,
+        "relation_key": "remembers",
+        "relation_focus": 0.13,
+        "action_key": "crosses_a_threshold",
+        "action_focus": 0.15
+      },
+      {
+        "id": 6,
+        "source": 4,
+        "target": 1,
+        "relation_key": "feeds",
+        "relation_focus": 0.39,
+        "action_key": "destabilizes",
+        "action_focus": 0.69
+      },
+      {
+        "id": 7,
+        "source": 2,
+        "target": 3,
+        "relation_key": "repels",
+        "relation_focus": 0.12,
+        "action_key": "destabilizes",
+        "action_focus": 0.04
+      },
+      {
+        "id": 8,
+        "source": 1,
+        "target": 3,
+        "relation_key": "witnesses",
+        "relation_focus": 0.33,
+        "action_key": "closes",
+        "action_focus": 0.52
+      },
+      {
+        "id": 9,
+        "source": 4,
+        "target": 3,
+        "relation_key": "mirrors",
+        "relation_focus": 0.93,
+        "action_key": "becomes_quiet",
+        "action_focus": 0.07
+      },
+      {
+        "id": 10,
+        "source": 3,
+        "target": 1,
+        "relation_key": "dominates",
+        "relation_focus": 0.11,
+        "action_key": "exhales",
+        "action_focus": 0.6
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "link_inverted",
+      "link_before": {
+        "id": 9,
+        "source": 4,
+        "target": 3,
+        "relation_key": "mirrors",
+        "relation_focus": 0.93,
+        "action_key": "becomes_quiet",
+        "action_focus": 0.07
+      },
+      "link_after": {
+        "id": 9,
+        "source": 3,
+        "target": 4,
+        "relation_key": "mirrors",
+        "relation_focus": 0.93,
+        "action_key": "becomes_quiet",
+        "action_focus": 0.07
+      }
+    },
+    {
+      "step": 2,
+      "type": "link_inverted",
+      "link_before": {
+        "id": 9,
+        "source": 3,
+        "target": 4,
+        "relation_key": "mirrors",
+        "relation_focus": 0.93,
+        "action_key": "becomes_quiet",
+        "action_focus": 0.07
+      },
+      "link_after": {
+        "id": 9,
+        "source": 4,
+        "target": 3,
+        "relation_key": "mirrors",
+        "relation_focus": 0.93,
+        "action_key": "becomes_quiet",
+        "action_focus": 0.07
+      }
+    },
+    {
+      "step": 3,
+      "type": "link_removed",
+      "link": {
+        "id": 9,
+        "source": 4,
+        "target": 3,
+        "relation_key": "mirrors",
+        "relation_focus": 0.93,
+        "action_key": "becomes_quiet",
+        "action_focus": 0.07
+      }
+    },
+    {
+      "step": 4,
+      "type": "link_removed",
+      "link": {
+        "id": 7,
+        "source": 2,
+        "target": 3,
+        "relation_key": "repels",
+        "relation_focus": 0.12,
+        "action_key": "destabilizes",
+        "action_focus": 0.04
+      }
+    }
+  ],
+  "id": 145
+}

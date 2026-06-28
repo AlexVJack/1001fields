@@ -1,0 +1,102 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "mask",
+        "focus": 0.58
+      },
+      {
+        "id": 2,
+        "key": "trace",
+        "focus": 0.89
+      },
+      {
+        "id": 3,
+        "key": "fire",
+        "focus": 0.58
+      },
+      {
+        "id": 4,
+        "key": "storm",
+        "focus": 0.7
+      }
+    ],
+    "links": []
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "link_added",
+      "link": {
+        "id": 1,
+        "source": 2,
+        "target": 1,
+        "relation_key": "distorts",
+        "relation_focus": 0.26,
+        "action_key": "returns",
+        "action_focus": 0.7
+      }
+    },
+    {
+      "step": 2,
+      "type": "symbol_changed",
+      "symbol_id": 4,
+      "old_key": "storm",
+      "new_key": "void",
+      "old_focus": 0.7,
+      "new_focus": 0.4
+    },
+    {
+      "step": 3,
+      "type": "relation_changed",
+      "link_before": {
+        "id": 1,
+        "source": 2,
+        "target": 1,
+        "relation_key": "distorts",
+        "relation_focus": 0.26,
+        "action_key": "returns",
+        "action_focus": 0.7
+      },
+      "link_after": {
+        "id": 1,
+        "source": 2,
+        "target": 1,
+        "relation_key": "hides",
+        "relation_focus": 0.64,
+        "action_key": "returns",
+        "action_focus": 0.7
+      }
+    },
+    {
+      "step": 4,
+      "type": "link_removed",
+      "link": {
+        "id": 1,
+        "source": 2,
+        "target": 1,
+        "relation_key": "hides",
+        "relation_focus": 0.64,
+        "action_key": "returns",
+        "action_focus": 0.7
+      }
+    },
+    {
+      "step": 5,
+      "type": "link_added",
+      "link": {
+        "id": 2,
+        "source": 2,
+        "target": 3,
+        "relation_key": "heals",
+        "relation_focus": 0.41,
+        "action_key": "mutates",
+        "action_focus": 0.32
+      }
+    }
+  ],
+  "id": 221
+}

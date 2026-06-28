@@ -1,0 +1,100 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "ash",
+        "focus": 0.68
+      },
+      {
+        "id": 2,
+        "key": "crack",
+        "focus": 0.82
+      },
+      {
+        "id": 3,
+        "key": "network",
+        "focus": 0.17
+      },
+      {
+        "id": 4,
+        "key": "attention",
+        "focus": 0.03
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 4,
+        "target": 2,
+        "relation_key": "consumes",
+        "relation_focus": 0.5,
+        "action_key": "stabilizes",
+        "action_focus": 0.59
+      },
+      {
+        "id": 2,
+        "source": 4,
+        "target": 3,
+        "relation_key": "binds",
+        "relation_focus": 0.43,
+        "action_key": "dissolves",
+        "action_focus": 0.31
+      },
+      {
+        "id": 3,
+        "source": 2,
+        "target": 3,
+        "relation_key": "embodies",
+        "relation_focus": 0.35,
+        "action_key": "crosses_a_threshold",
+        "action_focus": 0.32
+      },
+      {
+        "id": 4,
+        "source": 2,
+        "target": 1,
+        "relation_key": "consumes",
+        "relation_focus": 0.08,
+        "action_key": "splits",
+        "action_focus": 0.23
+      },
+      {
+        "id": 5,
+        "source": 3,
+        "target": 2,
+        "relation_key": "binds",
+        "relation_focus": 0.28,
+        "action_key": "dissolves",
+        "action_focus": 0.74
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "link_inverted",
+      "link_before": {
+        "id": 1,
+        "source": 4,
+        "target": 2,
+        "relation_key": "consumes",
+        "relation_focus": 0.5,
+        "action_key": "stabilizes",
+        "action_focus": 0.59
+      },
+      "link_after": {
+        "id": 1,
+        "source": 2,
+        "target": 4,
+        "relation_key": "consumes",
+        "relation_focus": 0.5,
+        "action_key": "stabilizes",
+        "action_focus": 0.59
+      }
+    }
+  ],
+  "id": 722
+}

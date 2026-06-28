@@ -1,0 +1,113 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "promise",
+        "focus": 0.15
+      },
+      {
+        "id": 2,
+        "key": "window",
+        "focus": 0.72
+      },
+      {
+        "id": 3,
+        "key": "stone",
+        "focus": 0.55
+      },
+      {
+        "id": 4,
+        "key": "burden",
+        "focus": 0.24
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 3,
+        "target": 2,
+        "relation_key": "witnesses",
+        "relation_focus": 0.62,
+        "action_key": "opens",
+        "action_focus": 0.6
+      },
+      {
+        "id": 2,
+        "source": 4,
+        "target": 2,
+        "relation_key": "transforms",
+        "relation_focus": 0.15,
+        "action_key": "inverts",
+        "action_focus": 0.17
+      },
+      {
+        "id": 3,
+        "source": 3,
+        "target": 4,
+        "relation_key": "consumes",
+        "relation_focus": 0.18,
+        "action_key": "closes",
+        "action_focus": 0.52
+      },
+      {
+        "id": 4,
+        "source": 3,
+        "target": 1,
+        "relation_key": "consumes",
+        "relation_focus": 0.59,
+        "action_key": "crystallizes",
+        "action_focus": 0.22
+      },
+      {
+        "id": 5,
+        "source": 4,
+        "target": 1,
+        "relation_key": "listens_to",
+        "relation_focus": 0.56,
+        "action_key": "decays",
+        "action_focus": 0.01
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "link_removed",
+      "link": {
+        "id": 2,
+        "source": 4,
+        "target": 2,
+        "relation_key": "transforms",
+        "relation_focus": 0.15,
+        "action_key": "inverts",
+        "action_focus": 0.17
+      }
+    },
+    {
+      "step": 2,
+      "type": "action_changed",
+      "link_before": {
+        "id": 3,
+        "source": 3,
+        "target": 4,
+        "relation_key": "consumes",
+        "relation_focus": 0.18,
+        "action_key": "closes",
+        "action_focus": 0.52
+      },
+      "link_after": {
+        "id": 3,
+        "source": 3,
+        "target": 4,
+        "relation_key": "consumes",
+        "relation_focus": 0.18,
+        "action_key": "destabilizes",
+        "action_focus": 0.56
+      }
+    }
+  ],
+  "id": 188
+}

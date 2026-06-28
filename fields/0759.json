@@ -1,0 +1,50 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "trace",
+        "focus": 0.43
+      },
+      {
+        "id": 2,
+        "key": "tower",
+        "focus": 0.76
+      },
+      {
+        "id": 3,
+        "key": "threshold",
+        "focus": 0.09
+      },
+      {
+        "id": 4,
+        "key": "attention",
+        "focus": 0.11
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 2,
+        "target": 3,
+        "relation_key": "depends_on",
+        "relation_focus": 0.87,
+        "action_key": "becomes_clear",
+        "action_focus": 0.56
+      },
+      {
+        "id": 2,
+        "source": 4,
+        "target": 2,
+        "relation_key": "names",
+        "relation_focus": 0.07,
+        "action_key": "dissolves",
+        "action_focus": 0.34
+      }
+    ]
+  },
+  "mutations": [],
+  "id": 759
+}

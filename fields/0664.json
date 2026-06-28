@@ -1,0 +1,185 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "debt",
+        "focus": 0.26
+      },
+      {
+        "id": 2,
+        "key": "stone",
+        "focus": 0.14
+      },
+      {
+        "id": 3,
+        "key": "name",
+        "focus": 0.12
+      },
+      {
+        "id": 4,
+        "key": "breath",
+        "focus": 0.78
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 3,
+        "target": 4,
+        "relation_key": "mirrors",
+        "relation_focus": 0.55,
+        "action_key": "inverts",
+        "action_focus": 0.35
+      },
+      {
+        "id": 2,
+        "source": 2,
+        "target": 4,
+        "relation_key": "generates",
+        "relation_focus": 0.99,
+        "action_key": "collapses",
+        "action_focus": 0.31
+      },
+      {
+        "id": 3,
+        "source": 1,
+        "target": 4,
+        "relation_key": "touches",
+        "relation_focus": 0.21,
+        "action_key": "settles",
+        "action_focus": 0.12
+      },
+      {
+        "id": 4,
+        "source": 4,
+        "target": 1,
+        "relation_key": "witnesses",
+        "relation_focus": 0.21,
+        "action_key": "accelerates",
+        "action_focus": 0.3
+      },
+      {
+        "id": 5,
+        "source": 2,
+        "target": 3,
+        "relation_key": "depends_on",
+        "relation_focus": 0.42,
+        "action_key": "becomes_embodied",
+        "action_focus": 0.24
+      },
+      {
+        "id": 6,
+        "source": 3,
+        "target": 2,
+        "relation_key": "depends_on",
+        "relation_focus": 0.18,
+        "action_key": "repeats",
+        "action_focus": 0.71
+      },
+      {
+        "id": 7,
+        "source": 4,
+        "target": 3,
+        "relation_key": "remembers",
+        "relation_focus": 0.87,
+        "action_key": "spreads",
+        "action_focus": 0.93
+      },
+      {
+        "id": 8,
+        "source": 2,
+        "target": 1,
+        "relation_key": "listens_to",
+        "relation_focus": 0.66,
+        "action_key": "spreads",
+        "action_focus": 0.96
+      },
+      {
+        "id": 9,
+        "source": 3,
+        "target": 1,
+        "relation_key": "feeds",
+        "relation_focus": 0.13,
+        "action_key": "approaches",
+        "action_focus": 0.64
+      },
+      {
+        "id": 10,
+        "source": 1,
+        "target": 3,
+        "relation_key": "depends_on",
+        "relation_focus": 0.75,
+        "action_key": "returns",
+        "action_focus": 0.41
+      },
+      {
+        "id": 11,
+        "source": 4,
+        "target": 2,
+        "relation_key": "remembers",
+        "relation_focus": 0.52,
+        "action_key": "becomes_visible",
+        "action_focus": 0.74
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "link_added",
+      "link": {
+        "id": 12,
+        "source": 1,
+        "target": 2,
+        "relation_key": "echoes",
+        "relation_focus": 0.74,
+        "action_key": "weakens",
+        "action_focus": 0.34
+      }
+    },
+    {
+      "step": 2,
+      "type": "action_changed",
+      "link_before": {
+        "id": 4,
+        "source": 4,
+        "target": 1,
+        "relation_key": "witnesses",
+        "relation_focus": 0.21,
+        "action_key": "accelerates",
+        "action_focus": 0.3
+      },
+      "link_after": {
+        "id": 4,
+        "source": 4,
+        "target": 1,
+        "relation_key": "witnesses",
+        "relation_focus": 0.21,
+        "action_key": "closes",
+        "action_focus": 0.45
+      }
+    },
+    {
+      "step": 3,
+      "type": "symbol_changed",
+      "symbol_id": 2,
+      "old_key": "stone",
+      "new_key": "silence",
+      "old_focus": 0.14,
+      "new_focus": 0.42
+    },
+    {
+      "step": 4,
+      "type": "symbol_changed",
+      "symbol_id": 2,
+      "old_key": "silence",
+      "new_key": "network",
+      "old_focus": 0.42,
+      "new_focus": 0.42
+    }
+  ],
+  "id": 664
+}

@@ -1,0 +1,130 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "boundary",
+        "focus": 0.9
+      },
+      {
+        "id": 2,
+        "key": "herald",
+        "focus": 0.84
+      },
+      {
+        "id": 3,
+        "key": "shelter",
+        "focus": 0.72
+      },
+      {
+        "id": 4,
+        "key": "mirror",
+        "focus": 0.17
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 4,
+        "target": 1,
+        "relation_key": "clarifies",
+        "relation_focus": 0.32,
+        "action_key": "returns",
+        "action_focus": 0.17
+      },
+      {
+        "id": 2,
+        "source": 3,
+        "target": 4,
+        "relation_key": "names",
+        "relation_focus": 0.77,
+        "action_key": "opens",
+        "action_focus": 1.0
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "link_removed",
+      "link": {
+        "id": 2,
+        "source": 3,
+        "target": 4,
+        "relation_key": "names",
+        "relation_focus": 0.77,
+        "action_key": "opens",
+        "action_focus": 1.0
+      }
+    },
+    {
+      "step": 2,
+      "type": "relation_changed",
+      "link_before": {
+        "id": 1,
+        "source": 4,
+        "target": 1,
+        "relation_key": "clarifies",
+        "relation_focus": 0.32,
+        "action_key": "returns",
+        "action_focus": 0.17
+      },
+      "link_after": {
+        "id": 1,
+        "source": 4,
+        "target": 1,
+        "relation_key": "repels",
+        "relation_focus": 0.73,
+        "action_key": "returns",
+        "action_focus": 0.17
+      }
+    },
+    {
+      "step": 3,
+      "type": "link_inverted",
+      "link_before": {
+        "id": 1,
+        "source": 4,
+        "target": 1,
+        "relation_key": "repels",
+        "relation_focus": 0.73,
+        "action_key": "returns",
+        "action_focus": 0.17
+      },
+      "link_after": {
+        "id": 1,
+        "source": 1,
+        "target": 4,
+        "relation_key": "repels",
+        "relation_focus": 0.73,
+        "action_key": "returns",
+        "action_focus": 0.17
+      }
+    },
+    {
+      "step": 4,
+      "type": "relation_changed",
+      "link_before": {
+        "id": 1,
+        "source": 1,
+        "target": 4,
+        "relation_key": "repels",
+        "relation_focus": 0.73,
+        "action_key": "returns",
+        "action_focus": 0.17
+      },
+      "link_after": {
+        "id": 1,
+        "source": 1,
+        "target": 4,
+        "relation_key": "echoes",
+        "relation_focus": 0.02,
+        "action_key": "returns",
+        "action_focus": 0.17
+      }
+    }
+  ],
+  "id": 263
+}

@@ -1,0 +1,117 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "archive",
+        "focus": 0.38
+      },
+      {
+        "id": 2,
+        "key": "abyss",
+        "focus": 0.47
+      },
+      {
+        "id": 3,
+        "key": "law",
+        "focus": 0.05
+      },
+      {
+        "id": 4,
+        "key": "attention",
+        "focus": 0.04
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 2,
+        "target": 4,
+        "relation_key": "hides",
+        "relation_focus": 0.2,
+        "action_key": "returns",
+        "action_focus": 0.91
+      },
+      {
+        "id": 2,
+        "source": 1,
+        "target": 2,
+        "relation_key": "listens_to",
+        "relation_focus": 0.46,
+        "action_key": "merges",
+        "action_focus": 0.95
+      },
+      {
+        "id": 3,
+        "source": 4,
+        "target": 2,
+        "relation_key": "dominates",
+        "relation_focus": 0.72,
+        "action_key": "becomes_clear",
+        "action_focus": 0.28
+      },
+      {
+        "id": 4,
+        "source": 2,
+        "target": 3,
+        "relation_key": "separates",
+        "relation_focus": 0.01,
+        "action_key": "mutates",
+        "action_focus": 0.52
+      },
+      {
+        "id": 5,
+        "source": 3,
+        "target": 1,
+        "relation_key": "mirrors",
+        "relation_focus": 0.71,
+        "action_key": "weakens",
+        "action_focus": 0.55
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "link_added",
+      "link": {
+        "id": 6,
+        "source": 1,
+        "target": 4,
+        "relation_key": "contains",
+        "relation_focus": 0.31,
+        "action_key": "becomes_hidden",
+        "action_focus": 0.95
+      }
+    },
+    {
+      "step": 2,
+      "type": "link_removed",
+      "link": {
+        "id": 3,
+        "source": 4,
+        "target": 2,
+        "relation_key": "dominates",
+        "relation_focus": 0.72,
+        "action_key": "becomes_clear",
+        "action_focus": 0.28
+      }
+    },
+    {
+      "step": 3,
+      "type": "link_added",
+      "link": {
+        "id": 7,
+        "source": 4,
+        "target": 2,
+        "relation_key": "reveals",
+        "relation_focus": 0.26,
+        "action_key": "intensifies",
+        "action_focus": 0.58
+      }
+    }
+  ],
+  "id": 450
+}

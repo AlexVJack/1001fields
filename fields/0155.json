@@ -1,0 +1,113 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "crack",
+        "focus": 0.27
+      },
+      {
+        "id": 2,
+        "key": "water",
+        "focus": 0.99
+      },
+      {
+        "id": 3,
+        "key": "abyss",
+        "focus": 0.92
+      },
+      {
+        "id": 4,
+        "key": "harbor",
+        "focus": 0.22
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 2,
+        "target": 4,
+        "relation_key": "dominates",
+        "relation_focus": 0.7,
+        "action_key": "awakens",
+        "action_focus": 0.81
+      },
+      {
+        "id": 2,
+        "source": 1,
+        "target": 3,
+        "relation_key": "distorts",
+        "relation_focus": 0.22,
+        "action_key": "weakens",
+        "action_focus": 0.53
+      },
+      {
+        "id": 3,
+        "source": 4,
+        "target": 2,
+        "relation_key": "heals",
+        "relation_focus": 0.14,
+        "action_key": "intensifies",
+        "action_focus": 0.76
+      },
+      {
+        "id": 4,
+        "source": 3,
+        "target": 1,
+        "relation_key": "protects",
+        "relation_focus": 0.11,
+        "action_key": "becomes_embodied",
+        "action_focus": 0.08
+      },
+      {
+        "id": 5,
+        "source": 4,
+        "target": 1,
+        "relation_key": "dominates",
+        "relation_focus": 0.18,
+        "action_key": "settles",
+        "action_focus": 0.24
+      },
+      {
+        "id": 6,
+        "source": 1,
+        "target": 2,
+        "relation_key": "separates",
+        "relation_focus": 0.53,
+        "action_key": "settles",
+        "action_focus": 0.0
+      },
+      {
+        "id": 7,
+        "source": 3,
+        "target": 2,
+        "relation_key": "witnesses",
+        "relation_focus": 0.02,
+        "action_key": "stabilizes",
+        "action_focus": 0.47
+      },
+      {
+        "id": 8,
+        "source": 1,
+        "target": 4,
+        "relation_key": "dominates",
+        "relation_focus": 0.99,
+        "action_key": "accelerates",
+        "action_focus": 0.97
+      },
+      {
+        "id": 9,
+        "source": 2,
+        "target": 1,
+        "relation_key": "listens_to",
+        "relation_focus": 0.22,
+        "action_key": "crosses_a_threshold",
+        "action_focus": 0.72
+      }
+    ]
+  },
+  "mutations": [],
+  "id": 155
+}

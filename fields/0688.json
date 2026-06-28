@@ -1,0 +1,68 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "threshold",
+        "focus": 0.7
+      },
+      {
+        "id": 2,
+        "key": "debt",
+        "focus": 0.25
+      },
+      {
+        "id": 3,
+        "key": "garden",
+        "focus": 0.58
+      },
+      {
+        "id": 4,
+        "key": "fire",
+        "focus": 0.83
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 1,
+        "target": 3,
+        "relation_key": "embodies",
+        "relation_focus": 0.87,
+        "action_key": "becomes_visible",
+        "action_focus": 0.73
+      },
+      {
+        "id": 2,
+        "source": 3,
+        "target": 4,
+        "relation_key": "repels",
+        "relation_focus": 0.14,
+        "action_key": "becomes_embodied",
+        "action_focus": 0.55
+      },
+      {
+        "id": 3,
+        "source": 3,
+        "target": 1,
+        "relation_key": "clarifies",
+        "relation_focus": 0.03,
+        "action_key": "stabilizes",
+        "action_focus": 0.96
+      },
+      {
+        "id": 4,
+        "source": 1,
+        "target": 2,
+        "relation_key": "separates",
+        "relation_focus": 0.28,
+        "action_key": "awakens",
+        "action_focus": 0.85
+      }
+    ]
+  },
+  "mutations": [],
+  "id": 688
+}

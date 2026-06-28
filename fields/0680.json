@@ -1,0 +1,134 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "gate",
+        "focus": 0.38
+      },
+      {
+        "id": 2,
+        "key": "sage",
+        "focus": 0.16
+      },
+      {
+        "id": 3,
+        "key": "exile",
+        "focus": 0.05
+      },
+      {
+        "id": 4,
+        "key": "fear",
+        "focus": 0.47
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 1,
+        "target": 2,
+        "relation_key": "dominates",
+        "relation_focus": 0.32,
+        "action_key": "weakens",
+        "action_focus": 0.32
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "link_added",
+      "link": {
+        "id": 2,
+        "source": 3,
+        "target": 2,
+        "relation_key": "mirrors",
+        "relation_focus": 0.41,
+        "action_key": "intensifies",
+        "action_focus": 0.07
+      }
+    },
+    {
+      "step": 2,
+      "type": "link_removed",
+      "link": {
+        "id": 2,
+        "source": 3,
+        "target": 2,
+        "relation_key": "mirrors",
+        "relation_focus": 0.41,
+        "action_key": "intensifies",
+        "action_focus": 0.07
+      }
+    },
+    {
+      "step": 3,
+      "type": "action_changed",
+      "link_before": {
+        "id": 1,
+        "source": 1,
+        "target": 2,
+        "relation_key": "dominates",
+        "relation_focus": 0.32,
+        "action_key": "weakens",
+        "action_focus": 0.32
+      },
+      "link_after": {
+        "id": 1,
+        "source": 1,
+        "target": 2,
+        "relation_key": "dominates",
+        "relation_focus": 0.32,
+        "action_key": "destabilizes",
+        "action_focus": 0.99
+      }
+    },
+    {
+      "step": 4,
+      "type": "action_changed",
+      "link_before": {
+        "id": 1,
+        "source": 1,
+        "target": 2,
+        "relation_key": "dominates",
+        "relation_focus": 0.32,
+        "action_key": "destabilizes",
+        "action_focus": 0.99
+      },
+      "link_after": {
+        "id": 1,
+        "source": 1,
+        "target": 2,
+        "relation_key": "dominates",
+        "relation_focus": 0.32,
+        "action_key": "closes",
+        "action_focus": 0.86
+      }
+    },
+    {
+      "step": 5,
+      "type": "relation_changed",
+      "link_before": {
+        "id": 1,
+        "source": 1,
+        "target": 2,
+        "relation_key": "dominates",
+        "relation_focus": 0.32,
+        "action_key": "closes",
+        "action_focus": 0.86
+      },
+      "link_after": {
+        "id": 1,
+        "source": 1,
+        "target": 2,
+        "relation_key": "protects",
+        "relation_focus": 0.99,
+        "action_key": "closes",
+        "action_focus": 0.86
+      }
+    }
+  ],
+  "id": 680
+}

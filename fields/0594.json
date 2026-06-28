@@ -1,0 +1,176 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "desire",
+        "focus": 0.34
+      },
+      {
+        "id": 2,
+        "key": "tower",
+        "focus": 0.15
+      },
+      {
+        "id": 3,
+        "key": "shadow",
+        "focus": 0.42
+      },
+      {
+        "id": 4,
+        "key": "garden",
+        "focus": 0.32
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 2,
+        "target": 3,
+        "relation_key": "heals",
+        "relation_focus": 0.91,
+        "action_key": "dissolves",
+        "action_focus": 0.35
+      },
+      {
+        "id": 2,
+        "source": 2,
+        "target": 4,
+        "relation_key": "embodies",
+        "relation_focus": 0.88,
+        "action_key": "stabilizes",
+        "action_focus": 0.92
+      },
+      {
+        "id": 3,
+        "source": 1,
+        "target": 3,
+        "relation_key": "endures",
+        "relation_focus": 0.62,
+        "action_key": "decays",
+        "action_focus": 0.13
+      },
+      {
+        "id": 4,
+        "source": 1,
+        "target": 2,
+        "relation_key": "depends_on",
+        "relation_focus": 0.09,
+        "action_key": "opens",
+        "action_focus": 0.5
+      },
+      {
+        "id": 5,
+        "source": 4,
+        "target": 3,
+        "relation_key": "feeds",
+        "relation_focus": 0.1,
+        "action_key": "creates_a_third_thing",
+        "action_focus": 0.63
+      },
+      {
+        "id": 6,
+        "source": 4,
+        "target": 1,
+        "relation_key": "listens_to",
+        "relation_focus": 0.1,
+        "action_key": "approaches",
+        "action_focus": 0.14
+      },
+      {
+        "id": 7,
+        "source": 3,
+        "target": 1,
+        "relation_key": "clarifies",
+        "relation_focus": 0.42,
+        "action_key": "opens",
+        "action_focus": 0.81
+      },
+      {
+        "id": 8,
+        "source": 3,
+        "target": 4,
+        "relation_key": "submits_to",
+        "relation_focus": 0.98,
+        "action_key": "creates_a_third_thing",
+        "action_focus": 0.37
+      },
+      {
+        "id": 9,
+        "source": 3,
+        "target": 2,
+        "relation_key": "transforms",
+        "relation_focus": 0.26,
+        "action_key": "stabilizes",
+        "action_focus": 0.38
+      },
+      {
+        "id": 10,
+        "source": 4,
+        "target": 2,
+        "relation_key": "witnesses",
+        "relation_focus": 0.58,
+        "action_key": "splits",
+        "action_focus": 0.41
+      },
+      {
+        "id": 11,
+        "source": 1,
+        "target": 4,
+        "relation_key": "reveals",
+        "relation_focus": 0.78,
+        "action_key": "merges",
+        "action_focus": 0.79
+      },
+      {
+        "id": 12,
+        "source": 2,
+        "target": 1,
+        "relation_key": "binds",
+        "relation_focus": 0.44,
+        "action_key": "destabilizes",
+        "action_focus": 0.2
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "link_removed",
+      "link": {
+        "id": 2,
+        "source": 2,
+        "target": 4,
+        "relation_key": "embodies",
+        "relation_focus": 0.88,
+        "action_key": "stabilizes",
+        "action_focus": 0.92
+      }
+    },
+    {
+      "step": 2,
+      "type": "link_removed",
+      "link": {
+        "id": 3,
+        "source": 1,
+        "target": 3,
+        "relation_key": "endures",
+        "relation_focus": 0.62,
+        "action_key": "decays",
+        "action_focus": 0.13
+      }
+    },
+    {
+      "step": 3,
+      "type": "symbol_changed",
+      "symbol_id": 4,
+      "old_key": "garden",
+      "new_key": "abyss",
+      "old_focus": 0.32,
+      "new_focus": 0.62
+    }
+  ],
+  "id": 594
+}

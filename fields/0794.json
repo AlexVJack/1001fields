@@ -1,0 +1,193 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "burden",
+        "focus": 0.17
+      },
+      {
+        "id": 2,
+        "key": "breath",
+        "focus": 0.76
+      },
+      {
+        "id": 3,
+        "key": "gate",
+        "focus": 0.56
+      },
+      {
+        "id": 4,
+        "key": "window",
+        "focus": 0.06
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 1,
+        "target": 3,
+        "relation_key": "heals",
+        "relation_focus": 0.19,
+        "action_key": "spreads",
+        "action_focus": 0.95
+      },
+      {
+        "id": 2,
+        "source": 3,
+        "target": 2,
+        "relation_key": "listens_to",
+        "relation_focus": 0.37,
+        "action_key": "returns",
+        "action_focus": 0.42
+      },
+      {
+        "id": 3,
+        "source": 4,
+        "target": 2,
+        "relation_key": "erases",
+        "relation_focus": 0.06,
+        "action_key": "destabilizes",
+        "action_focus": 0.38
+      },
+      {
+        "id": 4,
+        "source": 3,
+        "target": 1,
+        "relation_key": "dominates",
+        "relation_focus": 0.1,
+        "action_key": "stabilizes",
+        "action_focus": 0.9
+      },
+      {
+        "id": 5,
+        "source": 4,
+        "target": 1,
+        "relation_key": "dominates",
+        "relation_focus": 0.99,
+        "action_key": "becomes_embodied",
+        "action_focus": 0.48
+      },
+      {
+        "id": 6,
+        "source": 3,
+        "target": 4,
+        "relation_key": "reveals",
+        "relation_focus": 0.94,
+        "action_key": "lets_go",
+        "action_focus": 0.42
+      },
+      {
+        "id": 7,
+        "source": 2,
+        "target": 1,
+        "relation_key": "mirrors",
+        "relation_focus": 0.51,
+        "action_key": "splits",
+        "action_focus": 0.59
+      },
+      {
+        "id": 8,
+        "source": 1,
+        "target": 4,
+        "relation_key": "contains",
+        "relation_focus": 0.81,
+        "action_key": "destabilizes",
+        "action_focus": 0.01
+      },
+      {
+        "id": 9,
+        "source": 2,
+        "target": 4,
+        "relation_key": "contains",
+        "relation_focus": 0.16,
+        "action_key": "returns",
+        "action_focus": 0.61
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "link_inverted",
+      "link_before": {
+        "id": 6,
+        "source": 3,
+        "target": 4,
+        "relation_key": "reveals",
+        "relation_focus": 0.94,
+        "action_key": "lets_go",
+        "action_focus": 0.42
+      },
+      "link_after": {
+        "id": 6,
+        "source": 4,
+        "target": 3,
+        "relation_key": "reveals",
+        "relation_focus": 0.94,
+        "action_key": "lets_go",
+        "action_focus": 0.42
+      }
+    },
+    {
+      "step": 2,
+      "type": "relation_changed",
+      "link_before": {
+        "id": 4,
+        "source": 3,
+        "target": 1,
+        "relation_key": "dominates",
+        "relation_focus": 0.1,
+        "action_key": "stabilizes",
+        "action_focus": 0.9
+      },
+      "link_after": {
+        "id": 4,
+        "source": 3,
+        "target": 1,
+        "relation_key": "infects",
+        "relation_focus": 0.85,
+        "action_key": "stabilizes",
+        "action_focus": 0.9
+      }
+    },
+    {
+      "step": 3,
+      "type": "link_removed",
+      "link": {
+        "id": 4,
+        "source": 3,
+        "target": 1,
+        "relation_key": "infects",
+        "relation_focus": 0.85,
+        "action_key": "stabilizes",
+        "action_focus": 0.9
+      }
+    },
+    {
+      "step": 4,
+      "type": "action_changed",
+      "link_before": {
+        "id": 6,
+        "source": 4,
+        "target": 3,
+        "relation_key": "reveals",
+        "relation_focus": 0.94,
+        "action_key": "lets_go",
+        "action_focus": 0.42
+      },
+      "link_after": {
+        "id": 6,
+        "source": 4,
+        "target": 3,
+        "relation_key": "reveals",
+        "relation_focus": 0.94,
+        "action_key": "inverts",
+        "action_focus": 0.36
+      }
+    }
+  ],
+  "id": 794
+}

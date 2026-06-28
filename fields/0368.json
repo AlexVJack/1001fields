@@ -1,0 +1,193 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "secret",
+        "focus": 0.34
+      },
+      {
+        "id": 2,
+        "key": "map",
+        "focus": 0.56
+      },
+      {
+        "id": 3,
+        "key": "voice",
+        "focus": 0.87
+      },
+      {
+        "id": 4,
+        "key": "thread",
+        "focus": 0.94
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 3,
+        "target": 4,
+        "relation_key": "feeds",
+        "relation_focus": 0.07,
+        "action_key": "becomes_clear",
+        "action_focus": 0.91
+      },
+      {
+        "id": 2,
+        "source": 4,
+        "target": 2,
+        "relation_key": "endures",
+        "relation_focus": 0.77,
+        "action_key": "refuses_change",
+        "action_focus": 0.71
+      },
+      {
+        "id": 3,
+        "source": 4,
+        "target": 3,
+        "relation_key": "consumes",
+        "relation_focus": 0.04,
+        "action_key": "awakens",
+        "action_focus": 0.57
+      },
+      {
+        "id": 4,
+        "source": 2,
+        "target": 4,
+        "relation_key": "embodies",
+        "relation_focus": 0.88,
+        "action_key": "destabilizes",
+        "action_focus": 0.54
+      },
+      {
+        "id": 5,
+        "source": 1,
+        "target": 2,
+        "relation_key": "depends_on",
+        "relation_focus": 0.08,
+        "action_key": "becomes_embodied",
+        "action_focus": 0.85
+      },
+      {
+        "id": 6,
+        "source": 2,
+        "target": 3,
+        "relation_key": "remembers",
+        "relation_focus": 0.33,
+        "action_key": "approaches",
+        "action_focus": 0.85
+      },
+      {
+        "id": 7,
+        "source": 3,
+        "target": 1,
+        "relation_key": "witnesses",
+        "relation_focus": 0.19,
+        "action_key": "intensifies",
+        "action_focus": 0.87
+      },
+      {
+        "id": 8,
+        "source": 1,
+        "target": 3,
+        "relation_key": "mirrors",
+        "relation_focus": 0.24,
+        "action_key": "collapses",
+        "action_focus": 0.72
+      },
+      {
+        "id": 9,
+        "source": 3,
+        "target": 2,
+        "relation_key": "binds",
+        "relation_focus": 0.77,
+        "action_key": "crosses_a_threshold",
+        "action_focus": 0.77
+      },
+      {
+        "id": 10,
+        "source": 1,
+        "target": 4,
+        "relation_key": "feeds",
+        "relation_focus": 0.15,
+        "action_key": "weakens",
+        "action_focus": 0.19
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "action_changed",
+      "link_before": {
+        "id": 10,
+        "source": 1,
+        "target": 4,
+        "relation_key": "feeds",
+        "relation_focus": 0.15,
+        "action_key": "weakens",
+        "action_focus": 0.19
+      },
+      "link_after": {
+        "id": 10,
+        "source": 1,
+        "target": 4,
+        "relation_key": "feeds",
+        "relation_focus": 0.15,
+        "action_key": "spreads",
+        "action_focus": 0.64
+      }
+    },
+    {
+      "step": 2,
+      "type": "link_inverted",
+      "link_before": {
+        "id": 5,
+        "source": 1,
+        "target": 2,
+        "relation_key": "depends_on",
+        "relation_focus": 0.08,
+        "action_key": "becomes_embodied",
+        "action_focus": 0.85
+      },
+      "link_after": {
+        "id": 5,
+        "source": 2,
+        "target": 1,
+        "relation_key": "depends_on",
+        "relation_focus": 0.08,
+        "action_key": "becomes_embodied",
+        "action_focus": 0.85
+      }
+    },
+    {
+      "step": 3,
+      "type": "link_removed",
+      "link": {
+        "id": 10,
+        "source": 1,
+        "target": 4,
+        "relation_key": "feeds",
+        "relation_focus": 0.15,
+        "action_key": "spreads",
+        "action_focus": 0.64
+      }
+    },
+    {
+      "step": 4,
+      "type": "link_added",
+      "link": {
+        "id": 11,
+        "source": 4,
+        "target": 1,
+        "relation_key": "echoes",
+        "relation_focus": 0.42,
+        "action_key": "becomes_visible",
+        "action_focus": 0.98
+      }
+    }
+  ],
+  "id": 368
+}

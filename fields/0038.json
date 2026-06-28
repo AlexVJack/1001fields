@@ -1,0 +1,45 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "bridge",
+        "focus": 0.17
+      },
+      {
+        "id": 2,
+        "key": "witness",
+        "focus": 0.09
+      },
+      {
+        "id": 3,
+        "key": "promise",
+        "focus": 0.08
+      },
+      {
+        "id": 4,
+        "key": "ash",
+        "focus": 0.25
+      }
+    ],
+    "links": []
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "link_added",
+      "link": {
+        "id": 1,
+        "source": 4,
+        "target": 1,
+        "relation_key": "heals",
+        "relation_focus": 0.15,
+        "action_key": "crosses_a_threshold",
+        "action_focus": 0.34
+      }
+    }
+  ],
+  "id": 38
+}

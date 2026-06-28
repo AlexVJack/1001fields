@@ -1,0 +1,68 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "tower",
+        "focus": 0.25
+      },
+      {
+        "id": 2,
+        "key": "stone",
+        "focus": 0.92
+      },
+      {
+        "id": 3,
+        "key": "boundary",
+        "focus": 0.12
+      },
+      {
+        "id": 4,
+        "key": "gate",
+        "focus": 0.12
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 2,
+        "target": 4,
+        "relation_key": "feeds",
+        "relation_focus": 0.13,
+        "action_key": "dissolves",
+        "action_focus": 0.33
+      },
+      {
+        "id": 2,
+        "source": 1,
+        "target": 3,
+        "relation_key": "binds",
+        "relation_focus": 0.03,
+        "action_key": "lets_go",
+        "action_focus": 0.57
+      },
+      {
+        "id": 3,
+        "source": 4,
+        "target": 1,
+        "relation_key": "transforms",
+        "relation_focus": 0.29,
+        "action_key": "approaches",
+        "action_focus": 0.64
+      },
+      {
+        "id": 4,
+        "source": 3,
+        "target": 2,
+        "relation_key": "generates",
+        "relation_focus": 0.62,
+        "action_key": "crystallizes",
+        "action_focus": 0.93
+      }
+    ]
+  },
+  "mutations": [],
+  "id": 16
+}

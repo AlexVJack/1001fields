@@ -1,0 +1,139 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "hunger",
+        "focus": 0.08
+      },
+      {
+        "id": 2,
+        "key": "silence",
+        "focus": 0.74
+      },
+      {
+        "id": 3,
+        "key": "vessel",
+        "focus": 0.69
+      },
+      {
+        "id": 4,
+        "key": "water",
+        "focus": 0.21
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 1,
+        "target": 2,
+        "relation_key": "generates",
+        "relation_focus": 0.8,
+        "action_key": "intensifies",
+        "action_focus": 0.6
+      },
+      {
+        "id": 2,
+        "source": 4,
+        "target": 3,
+        "relation_key": "names",
+        "relation_focus": 0.99,
+        "action_key": "mutates",
+        "action_focus": 0.44
+      },
+      {
+        "id": 3,
+        "source": 1,
+        "target": 4,
+        "relation_key": "blocks",
+        "relation_focus": 0.09,
+        "action_key": "becomes_quiet",
+        "action_focus": 0.96
+      },
+      {
+        "id": 4,
+        "source": 3,
+        "target": 2,
+        "relation_key": "repels",
+        "relation_focus": 0.0,
+        "action_key": "returns",
+        "action_focus": 0.94
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "link_added",
+      "link": {
+        "id": 5,
+        "source": 3,
+        "target": 4,
+        "relation_key": "separates",
+        "relation_focus": 0.29,
+        "action_key": "opens",
+        "action_focus": 0.23
+      }
+    },
+    {
+      "step": 2,
+      "type": "link_inverted",
+      "link_before": {
+        "id": 1,
+        "source": 1,
+        "target": 2,
+        "relation_key": "generates",
+        "relation_focus": 0.8,
+        "action_key": "intensifies",
+        "action_focus": 0.6
+      },
+      "link_after": {
+        "id": 1,
+        "source": 2,
+        "target": 1,
+        "relation_key": "generates",
+        "relation_focus": 0.8,
+        "action_key": "intensifies",
+        "action_focus": 0.6
+      }
+    },
+    {
+      "step": 3,
+      "type": "link_removed",
+      "link": {
+        "id": 4,
+        "source": 3,
+        "target": 2,
+        "relation_key": "repels",
+        "relation_focus": 0.0,
+        "action_key": "returns",
+        "action_focus": 0.94
+      }
+    },
+    {
+      "step": 4,
+      "type": "link_inverted",
+      "link_before": {
+        "id": 3,
+        "source": 1,
+        "target": 4,
+        "relation_key": "blocks",
+        "relation_focus": 0.09,
+        "action_key": "becomes_quiet",
+        "action_focus": 0.96
+      },
+      "link_after": {
+        "id": 3,
+        "source": 4,
+        "target": 1,
+        "relation_key": "blocks",
+        "relation_focus": 0.09,
+        "action_key": "becomes_quiet",
+        "action_focus": 0.96
+      }
+    }
+  ],
+  "id": 495
+}

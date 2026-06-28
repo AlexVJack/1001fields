@@ -1,0 +1,185 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "water",
+        "focus": 0.4
+      },
+      {
+        "id": 2,
+        "key": "voice",
+        "focus": 0.94
+      },
+      {
+        "id": 3,
+        "key": "shelter",
+        "focus": 0.85
+      },
+      {
+        "id": 4,
+        "key": "herald",
+        "focus": 0.35
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 4,
+        "target": 3,
+        "relation_key": "repels",
+        "relation_focus": 0.71,
+        "action_key": "becomes_quiet",
+        "action_focus": 0.33
+      },
+      {
+        "id": 2,
+        "source": 3,
+        "target": 4,
+        "relation_key": "echoes",
+        "relation_focus": 0.7,
+        "action_key": "repeats",
+        "action_focus": 1.0
+      },
+      {
+        "id": 3,
+        "source": 4,
+        "target": 2,
+        "relation_key": "generates",
+        "relation_focus": 0.4,
+        "action_key": "creates_a_third_thing",
+        "action_focus": 0.51
+      },
+      {
+        "id": 4,
+        "source": 2,
+        "target": 3,
+        "relation_key": "blocks",
+        "relation_focus": 0.85,
+        "action_key": "destabilizes",
+        "action_focus": 0.24
+      },
+      {
+        "id": 5,
+        "source": 1,
+        "target": 3,
+        "relation_key": "protects",
+        "relation_focus": 0.05,
+        "action_key": "inverts",
+        "action_focus": 0.94
+      },
+      {
+        "id": 6,
+        "source": 2,
+        "target": 4,
+        "relation_key": "submits_to",
+        "relation_focus": 0.21,
+        "action_key": "returns",
+        "action_focus": 0.61
+      },
+      {
+        "id": 7,
+        "source": 2,
+        "target": 1,
+        "relation_key": "feeds",
+        "relation_focus": 0.07,
+        "action_key": "intensifies",
+        "action_focus": 0.66
+      },
+      {
+        "id": 8,
+        "source": 1,
+        "target": 2,
+        "relation_key": "erases",
+        "relation_focus": 0.36,
+        "action_key": "weakens",
+        "action_focus": 0.29
+      },
+      {
+        "id": 9,
+        "source": 4,
+        "target": 1,
+        "relation_key": "transforms",
+        "relation_focus": 0.05,
+        "action_key": "crystallizes",
+        "action_focus": 0.92
+      },
+      {
+        "id": 10,
+        "source": 1,
+        "target": 4,
+        "relation_key": "embodies",
+        "relation_focus": 0.94,
+        "action_key": "crystallizes",
+        "action_focus": 0.43
+      },
+      {
+        "id": 11,
+        "source": 3,
+        "target": 2,
+        "relation_key": "erases",
+        "relation_focus": 0.09,
+        "action_key": "becomes_visible",
+        "action_focus": 0.38
+      },
+      {
+        "id": 12,
+        "source": 3,
+        "target": 1,
+        "relation_key": "names",
+        "relation_focus": 0.02,
+        "action_key": "opens",
+        "action_focus": 0.94
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "symbol_changed",
+      "symbol_id": 3,
+      "old_key": "shelter",
+      "new_key": "void",
+      "old_focus": 0.85,
+      "new_focus": 0.36
+    },
+    {
+      "step": 2,
+      "type": "relation_changed",
+      "link_before": {
+        "id": 6,
+        "source": 2,
+        "target": 4,
+        "relation_key": "submits_to",
+        "relation_focus": 0.21,
+        "action_key": "returns",
+        "action_focus": 0.61
+      },
+      "link_after": {
+        "id": 6,
+        "source": 2,
+        "target": 4,
+        "relation_key": "mirrors",
+        "relation_focus": 0.71,
+        "action_key": "returns",
+        "action_focus": 0.61
+      }
+    },
+    {
+      "step": 3,
+      "type": "link_removed",
+      "link": {
+        "id": 11,
+        "source": 3,
+        "target": 2,
+        "relation_key": "erases",
+        "relation_focus": 0.09,
+        "action_key": "becomes_visible",
+        "action_focus": 0.38
+      }
+    }
+  ],
+  "id": 389
+}

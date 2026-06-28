@@ -1,0 +1,76 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "fear",
+        "focus": 0.58
+      },
+      {
+        "id": 2,
+        "key": "mirror",
+        "focus": 0.52
+      },
+      {
+        "id": 3,
+        "key": "machine",
+        "focus": 0.8
+      },
+      {
+        "id": 4,
+        "key": "burden",
+        "focus": 0.25
+      }
+    ],
+    "links": []
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "symbol_changed",
+      "symbol_id": 1,
+      "old_key": "fear",
+      "new_key": "oracle",
+      "old_focus": 0.58,
+      "new_focus": 0.62
+    },
+    {
+      "step": 2,
+      "type": "symbol_changed",
+      "symbol_id": 2,
+      "old_key": "mirror",
+      "new_key": "network",
+      "old_focus": 0.52,
+      "new_focus": 0.92
+    },
+    {
+      "step": 3,
+      "type": "link_added",
+      "link": {
+        "id": 1,
+        "source": 4,
+        "target": 1,
+        "relation_key": "clarifies",
+        "relation_focus": 0.99,
+        "action_key": "mutates",
+        "action_focus": 0.84
+      }
+    },
+    {
+      "step": 4,
+      "type": "link_added",
+      "link": {
+        "id": 2,
+        "source": 1,
+        "target": 4,
+        "relation_key": "binds",
+        "relation_focus": 0.17,
+        "action_key": "destabilizes",
+        "action_focus": 0.82
+      }
+    }
+  ],
+  "id": 943
+}

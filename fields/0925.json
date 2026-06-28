@@ -1,0 +1,82 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "garden",
+        "focus": 0.3
+      },
+      {
+        "id": 2,
+        "key": "pause",
+        "focus": 0.0
+      },
+      {
+        "id": 3,
+        "key": "light",
+        "focus": 0.62
+      },
+      {
+        "id": 4,
+        "key": "stranger",
+        "focus": 0.37
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 3,
+        "target": 1,
+        "relation_key": "binds",
+        "relation_focus": 0.0,
+        "action_key": "crystallizes",
+        "action_focus": 0.53
+      },
+      {
+        "id": 2,
+        "source": 4,
+        "target": 2,
+        "relation_key": "names",
+        "relation_focus": 0.88,
+        "action_key": "spreads",
+        "action_focus": 0.81
+      },
+      {
+        "id": 3,
+        "source": 4,
+        "target": 1,
+        "relation_key": "infects",
+        "relation_focus": 0.16,
+        "action_key": "returns",
+        "action_focus": 0.87
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "relation_changed",
+      "link_before": {
+        "id": 2,
+        "source": 4,
+        "target": 2,
+        "relation_key": "names",
+        "relation_focus": 0.88,
+        "action_key": "spreads",
+        "action_focus": 0.81
+      },
+      "link_after": {
+        "id": 2,
+        "source": 4,
+        "target": 2,
+        "relation_key": "consumes",
+        "relation_focus": 0.05,
+        "action_key": "spreads",
+        "action_focus": 0.81
+      }
+    }
+  ],
+  "id": 925
+}

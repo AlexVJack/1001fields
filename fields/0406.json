@@ -1,0 +1,139 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "water",
+        "focus": 0.42
+      },
+      {
+        "id": 2,
+        "key": "bridge",
+        "focus": 0.21
+      },
+      {
+        "id": 3,
+        "key": "air",
+        "focus": 0.47
+      },
+      {
+        "id": 4,
+        "key": "stranger",
+        "focus": 0.39
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 1,
+        "target": 2,
+        "relation_key": "embodies",
+        "relation_focus": 0.25,
+        "action_key": "repeats",
+        "action_focus": 0.51
+      },
+      {
+        "id": 2,
+        "source": 3,
+        "target": 4,
+        "relation_key": "attracts",
+        "relation_focus": 0.07,
+        "action_key": "lets_go",
+        "action_focus": 0.34
+      },
+      {
+        "id": 3,
+        "source": 2,
+        "target": 1,
+        "relation_key": "consumes",
+        "relation_focus": 0.66,
+        "action_key": "intensifies",
+        "action_focus": 0.44
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "link_added",
+      "link": {
+        "id": 4,
+        "source": 3,
+        "target": 2,
+        "relation_key": "remembers",
+        "relation_focus": 0.09,
+        "action_key": "opens",
+        "action_focus": 0.01
+      }
+    },
+    {
+      "step": 2,
+      "type": "link_removed",
+      "link": {
+        "id": 3,
+        "source": 2,
+        "target": 1,
+        "relation_key": "consumes",
+        "relation_focus": 0.66,
+        "action_key": "intensifies",
+        "action_focus": 0.44
+      }
+    },
+    {
+      "step": 3,
+      "type": "symbol_changed",
+      "symbol_id": 3,
+      "old_key": "air",
+      "new_key": "tower",
+      "old_focus": 0.47,
+      "new_focus": 0.26
+    },
+    {
+      "step": 4,
+      "type": "relation_changed",
+      "link_before": {
+        "id": 1,
+        "source": 1,
+        "target": 2,
+        "relation_key": "embodies",
+        "relation_focus": 0.25,
+        "action_key": "repeats",
+        "action_focus": 0.51
+      },
+      "link_after": {
+        "id": 1,
+        "source": 1,
+        "target": 2,
+        "relation_key": "infects",
+        "relation_focus": 0.23,
+        "action_key": "repeats",
+        "action_focus": 0.51
+      }
+    },
+    {
+      "step": 5,
+      "type": "link_inverted",
+      "link_before": {
+        "id": 4,
+        "source": 3,
+        "target": 2,
+        "relation_key": "remembers",
+        "relation_focus": 0.09,
+        "action_key": "opens",
+        "action_focus": 0.01
+      },
+      "link_after": {
+        "id": 4,
+        "source": 2,
+        "target": 3,
+        "relation_key": "remembers",
+        "relation_focus": 0.09,
+        "action_key": "opens",
+        "action_focus": 0.01
+      }
+    }
+  ],
+  "id": 406
+}

@@ -1,0 +1,68 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "archive",
+        "focus": 0.9
+      },
+      {
+        "id": 2,
+        "key": "void",
+        "focus": 0.77
+      },
+      {
+        "id": 3,
+        "key": "guardian",
+        "focus": 0.88
+      },
+      {
+        "id": 4,
+        "key": "attention",
+        "focus": 0.4
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 1,
+        "target": 4,
+        "relation_key": "feeds",
+        "relation_focus": 0.17,
+        "action_key": "awakens",
+        "action_focus": 0.66
+      },
+      {
+        "id": 2,
+        "source": 4,
+        "target": 1,
+        "relation_key": "separates",
+        "relation_focus": 0.91,
+        "action_key": "lets_go",
+        "action_focus": 0.33
+      },
+      {
+        "id": 3,
+        "source": 1,
+        "target": 2,
+        "relation_key": "erases",
+        "relation_focus": 0.33,
+        "action_key": "collapses",
+        "action_focus": 0.11
+      },
+      {
+        "id": 4,
+        "source": 2,
+        "target": 1,
+        "relation_key": "endures",
+        "relation_focus": 0.31,
+        "action_key": "becomes_embodied",
+        "action_focus": 0.68
+      }
+    ]
+  },
+  "mutations": [],
+  "id": 78
+}

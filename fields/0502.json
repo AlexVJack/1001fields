@@ -1,0 +1,41 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "spark",
+        "focus": 0.96
+      },
+      {
+        "id": 2,
+        "key": "desire",
+        "focus": 0.44
+      },
+      {
+        "id": 3,
+        "key": "pause",
+        "focus": 0.38
+      },
+      {
+        "id": 4,
+        "key": "sage",
+        "focus": 0.51
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 3,
+        "target": 1,
+        "relation_key": "witnesses",
+        "relation_focus": 0.78,
+        "action_key": "dissolves",
+        "action_focus": 0.31
+      }
+    ]
+  },
+  "mutations": [],
+  "id": 502
+}

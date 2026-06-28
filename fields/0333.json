@@ -1,0 +1,86 @@
+{
+  "schema": 2,
+  "language": "en",
+  "initial_field": {
+    "symbols": [
+      {
+        "id": 1,
+        "key": "crack",
+        "focus": 0.85
+      },
+      {
+        "id": 2,
+        "key": "fear",
+        "focus": 0.37
+      },
+      {
+        "id": 3,
+        "key": "light",
+        "focus": 0.57
+      },
+      {
+        "id": 4,
+        "key": "name",
+        "focus": 0.54
+      }
+    ],
+    "links": [
+      {
+        "id": 1,
+        "source": 4,
+        "target": 1,
+        "relation_key": "echoes",
+        "relation_focus": 0.31,
+        "action_key": "mutates",
+        "action_focus": 0.84
+      }
+    ]
+  },
+  "mutations": [
+    {
+      "step": 1,
+      "type": "action_changed",
+      "link_before": {
+        "id": 1,
+        "source": 4,
+        "target": 1,
+        "relation_key": "echoes",
+        "relation_focus": 0.31,
+        "action_key": "mutates",
+        "action_focus": 0.84
+      },
+      "link_after": {
+        "id": 1,
+        "source": 4,
+        "target": 1,
+        "relation_key": "echoes",
+        "relation_focus": 0.31,
+        "action_key": "dissolves",
+        "action_focus": 0.93
+      }
+    },
+    {
+      "step": 2,
+      "type": "action_changed",
+      "link_before": {
+        "id": 1,
+        "source": 4,
+        "target": 1,
+        "relation_key": "echoes",
+        "relation_focus": 0.31,
+        "action_key": "dissolves",
+        "action_focus": 0.93
+      },
+      "link_after": {
+        "id": 1,
+        "source": 4,
+        "target": 1,
+        "relation_key": "echoes",
+        "relation_focus": 0.31,
+        "action_key": "exhales",
+        "action_focus": 0.99
+      }
+    }
+  ],
+  "id": 333
+}
