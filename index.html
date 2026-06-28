@@ -57,6 +57,7 @@ svg{width:100%;height:100%;min-height:0;display:block;background:#fbfaf7}
     </svg>
   </div>
   <div class="steps" id="steps"></div>
+  <div id="invitation" style="text-align:center;padding:10px 20px;border-top:1px solid #e6e0d6;color:#746b5e;font-size:14px;font-style:italic"></div>
 </div>
 
 <script>
@@ -100,10 +101,12 @@ async function init() {
 
   langSelect.addEventListener('change', () => {
     lang = langSelect.value;
+    updateInvitation();
     if (reading) render();
   });
 
   const hash = parseInt(location.hash.slice(1), 10);
+  updateInvitation();
   loadField(hash >= 1 && hash <= TOTAL ? hash : Math.floor(Math.random() * TOTAL) + 1);
 }
 
@@ -242,6 +245,11 @@ function textEl(val, x, y, size, op, anchor) {
   el.setAttribute('text-anchor', anchor);
   el.setAttribute('dominant-baseline', 'middle');
   svg.append(el);
+}
+
+const invitations = { en: 'What do you see?', uk: 'Що ти бачиш?' };
+function updateInvitation() {
+  document.querySelector('#invitation').textContent = invitations[lang] || invitations.en;
 }
 </script>
 </body>
