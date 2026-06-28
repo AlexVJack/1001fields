@@ -1,0 +1,492 @@
+{
+  "symbols": {
+    "fire": {
+      "en": "Fire",
+      "uk": "Вогонь"
+    },
+    "water": {
+      "en": "Water",
+      "uk": "Вода"
+    },
+    "air": {
+      "en": "Air",
+      "uk": "Повітря"
+    },
+    "stone": {
+      "en": "Stone",
+      "uk": "Камінь"
+    },
+    "storm": {
+      "en": "Storm",
+      "uk": "Шторм"
+    },
+    "ash": {
+      "en": "Ash",
+      "uk": "Попіл"
+    },
+    "light": {
+      "en": "Light",
+      "uk": "Світло"
+    },
+    "shadow": {
+      "en": "Shadow",
+      "uk": "Тінь"
+    },
+    "void": {
+      "en": "Void",
+      "uk": "Порожнеча"
+    },
+    "spark": {
+      "en": "Spark",
+      "uk": "Іскра"
+    },
+    "gate": {
+      "en": "Gate",
+      "uk": "Брама"
+    },
+    "archive": {
+      "en": "Archive",
+      "uk": "Архів"
+    },
+    "shelter": {
+      "en": "Shelter",
+      "uk": "Сховище"
+    },
+    "bridge": {
+      "en": "Bridge",
+      "uk": "Міст"
+    },
+    "tower": {
+      "en": "Tower",
+      "uk": "Вежа"
+    },
+    "abyss": {
+      "en": "Abyss",
+      "uk": "Безодня"
+    },
+    "garden": {
+      "en": "Garden",
+      "uk": "Сад"
+    },
+    "labyrinth": {
+      "en": "Labyrinth",
+      "uk": "Лабіринт"
+    },
+    "harbor": {
+      "en": "Harbor",
+      "uk": "Гавань"
+    },
+    "threshold": {
+      "en": "Threshold",
+      "uk": "Поріг"
+    },
+    "child": {
+      "en": "Child",
+      "uk": "Дитина"
+    },
+    "sage": {
+      "en": "Sage",
+      "uk": "Мудрець"
+    },
+    "stranger": {
+      "en": "Stranger",
+      "uk": "Незнайомець"
+    },
+    "witness": {
+      "en": "Witness",
+      "uk": "Свідок"
+    },
+    "herald": {
+      "en": "Herald",
+      "uk": "Вісник"
+    },
+    "guardian": {
+      "en": "Guardian",
+      "uk": "Охоронець"
+    },
+    "exile": {
+      "en": "Exile",
+      "uk": "Вигнанець"
+    },
+    "oracle": {
+      "en": "Oracle",
+      "uk": "Оракул"
+    },
+    "mask": {
+      "en": "Mask",
+      "uk": "Маска"
+    },
+    "body": {
+      "en": "Body",
+      "uk": "Тіло"
+    },
+    "signal": {
+      "en": "Signal",
+      "uk": "Сигнал"
+    },
+    "mirror": {
+      "en": "Mirror",
+      "uk": "Дзеркало"
+    },
+    "machine": {
+      "en": "Machine",
+      "uk": "Машина"
+    },
+    "vessel": {
+      "en": "Vessel",
+      "uk": "Вмістище"
+    },
+    "map": {
+      "en": "Map",
+      "uk": "Мапа"
+    },
+    "key": {
+      "en": "Key",
+      "uk": "Ключ"
+    },
+    "thread": {
+      "en": "Thread",
+      "uk": "Нитка"
+    },
+    "network": {
+      "en": "Network",
+      "uk": "Мережа"
+    },
+    "name": {
+      "en": "Name",
+      "uk": "Ім'я"
+    },
+    "law": {
+      "en": "Law",
+      "uk": "Закон"
+    },
+    "memory": {
+      "en": "Memory",
+      "uk": "Пам'ять"
+    },
+    "hunger": {
+      "en": "Hunger",
+      "uk": "Голод"
+    },
+    "silence": {
+      "en": "Silence",
+      "uk": "Тиша"
+    },
+    "debt": {
+      "en": "Debt",
+      "uk": "Борг"
+    },
+    "promise": {
+      "en": "Promise",
+      "uk": "Обіцянка"
+    },
+    "fear": {
+      "en": "Fear",
+      "uk": "Страх"
+    },
+    "desire": {
+      "en": "Desire",
+      "uk": "Бажання"
+    },
+    "boundary": {
+      "en": "Boundary",
+      "uk": "Межа"
+    },
+    "secret": {
+      "en": "Secret",
+      "uk": "Таємниця"
+    },
+    "ruin": {
+      "en": "Ruin",
+      "uk": "Руїна"
+    },
+    "attention": {
+      "en": "Attention",
+      "uk": "Увага"
+    },
+    "breath": {
+      "en": "Breath",
+      "uk": "Дихання"
+    },
+    "crack": {
+      "en": "Crack",
+      "uk": "Тріщина"
+    },
+    "trace": {
+      "en": "Trace",
+      "uk": "Слід"
+    },
+    "burden": {
+      "en": "Burden",
+      "uk": "Тягар"
+    },
+    "pause": {
+      "en": "Pause",
+      "uk": "Пауза"
+    },
+    "voice": {
+      "en": "Voice",
+      "uk": "Голос"
+    },
+    "hand": {
+      "en": "Hand",
+      "uk": "Рука"
+    },
+    "window": {
+      "en": "Window",
+      "uk": "Вікно"
+    }
+  },
+  "relations": {
+    "attracts": {
+      "en": "attracts",
+      "uk": "притягує"
+    },
+    "repels": {
+      "en": "repels",
+      "uk": "відштовхує"
+    },
+    "depends_on": {
+      "en": "depends on",
+      "uk": "залежить від"
+    },
+    "feeds": {
+      "en": "feeds",
+      "uk": "живить"
+    },
+    "consumes": {
+      "en": "consumes",
+      "uk": "поглинає"
+    },
+    "protects": {
+      "en": "protects",
+      "uk": "захищає"
+    },
+    "blocks": {
+      "en": "blocks",
+      "uk": "блокує"
+    },
+    "contains": {
+      "en": "contains",
+      "uk": "містить"
+    },
+    "separates": {
+      "en": "separates",
+      "uk": "розділяє"
+    },
+    "binds": {
+      "en": "binds",
+      "uk": "зв'язує"
+    },
+    "mirrors": {
+      "en": "mirrors",
+      "uk": "дзеркалить"
+    },
+    "distorts": {
+      "en": "distorts",
+      "uk": "викривляє"
+    },
+    "reveals": {
+      "en": "reveals",
+      "uk": "відкриває"
+    },
+    "hides": {
+      "en": "hides",
+      "uk": "ховає"
+    },
+    "remembers": {
+      "en": "remembers",
+      "uk": "пам'ятає"
+    },
+    "erases": {
+      "en": "erases",
+      "uk": "стирає"
+    },
+    "infects": {
+      "en": "infects",
+      "uk": "заражає"
+    },
+    "heals": {
+      "en": "heals",
+      "uk": "зцілює"
+    },
+    "dominates": {
+      "en": "dominates",
+      "uk": "домінує над"
+    },
+    "submits_to": {
+      "en": "submits to",
+      "uk": "підкоряється"
+    },
+    "echoes": {
+      "en": "echoes",
+      "uk": "відлунює"
+    },
+    "transforms": {
+      "en": "transforms",
+      "uk": "перетворює"
+    },
+    "generates": {
+      "en": "generates",
+      "uk": "породжує"
+    },
+    "misnames": {
+      "en": "misnames",
+      "uk": "називає хибно"
+    },
+    "witnesses": {
+      "en": "witnesses",
+      "uk": "свідчить"
+    },
+    "embodies": {
+      "en": "embodies",
+      "uk": "втілює"
+    },
+    "endures": {
+      "en": "endures",
+      "uk": "витримує"
+    },
+    "clarifies": {
+      "en": "clarifies",
+      "uk": "прояснює"
+    },
+    "touches": {
+      "en": "touches",
+      "uk": "торкається"
+    },
+    "listens_to": {
+      "en": "listens to",
+      "uk": "слухає"
+    },
+    "names": {
+      "en": "names",
+      "uk": "називає"
+    }
+  },
+  "actions": {
+    "intensifies": {
+      "en": "intensifies",
+      "uk": "посилюється"
+    },
+    "weakens": {
+      "en": "weakens",
+      "uk": "слабшає"
+    },
+    "stabilizes": {
+      "en": "stabilizes",
+      "uk": "стабілізується"
+    },
+    "destabilizes": {
+      "en": "destabilizes",
+      "uk": "дестабілізується"
+    },
+    "becomes_visible": {
+      "en": "becomes visible",
+      "uk": "стає видимим"
+    },
+    "becomes_hidden": {
+      "en": "becomes hidden",
+      "uk": "стає прихованим"
+    },
+    "mutates": {
+      "en": "mutates",
+      "uk": "мутує"
+    },
+    "splits": {
+      "en": "splits",
+      "uk": "розщеплюється"
+    },
+    "merges": {
+      "en": "merges",
+      "uk": "зливається"
+    },
+    "inverts": {
+      "en": "inverts",
+      "uk": "інвертується"
+    },
+    "accelerates": {
+      "en": "accelerates",
+      "uk": "прискорюється"
+    },
+    "decays": {
+      "en": "decays",
+      "uk": "розпадається"
+    },
+    "returns": {
+      "en": "returns",
+      "uk": "повертається"
+    },
+    "repeats": {
+      "en": "repeats",
+      "uk": "повторюється"
+    },
+    "crosses_a_threshold": {
+      "en": "crosses a threshold",
+      "uk": "переходить поріг"
+    },
+    "collapses": {
+      "en": "collapses",
+      "uk": "руйнується"
+    },
+    "opens": {
+      "en": "opens",
+      "uk": "відкривається"
+    },
+    "closes": {
+      "en": "closes",
+      "uk": "закривається"
+    },
+    "spreads": {
+      "en": "spreads",
+      "uk": "поширюється"
+    },
+    "crystallizes": {
+      "en": "crystallizes",
+      "uk": "кристалізується"
+    },
+    "dissolves": {
+      "en": "dissolves",
+      "uk": "розчиняється"
+    },
+    "awakens": {
+      "en": "awakens",
+      "uk": "пробуджується"
+    },
+    "refuses_change": {
+      "en": "refuses change",
+      "uk": "відмовляється змінюватися"
+    },
+    "creates_a_third_thing": {
+      "en": "creates a third thing",
+      "uk": "створює щось третє"
+    },
+    "settles": {
+      "en": "settles",
+      "uk": "осідає"
+    },
+    "becomes_embodied": {
+      "en": "becomes embodied",
+      "uk": "втілюється"
+    },
+    "becomes_clear": {
+      "en": "becomes clear",
+      "uk": "прояснюється"
+    },
+    "lets_go": {
+      "en": "lets go",
+      "uk": "відпускає"
+    },
+    "becomes_quiet": {
+      "en": "becomes quiet",
+      "uk": "затихає"
+    },
+    "exhales": {
+      "en": "exhales",
+      "uk": "видихає"
+    },
+    "approaches": {
+      "en": "approaches",
+      "uk": "наближається"
+    }
+  }
+}

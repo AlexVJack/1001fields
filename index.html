@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>1001 Fields</title>
+<style>
+:root{color:#161616;background:#fbfaf7;font-family:Georgia,'Times New Roman',serif}
+body{margin:0;height:100vh;display:grid;grid-template-columns:260px 1fr;overflow:hidden}
+.sidebar{border-right:1px solid #e6e0d6;overflow-y:auto;padding:12px 0;background:rgba(251,250,247,0.94)}
+.sidebar-title{padding:0 16px 10px;margin:0;color:#746b5e;font-size:13px;letter-spacing:.06em;text-transform:uppercase}
+.field-link{padding:4px 16px;cursor:pointer;font-size:13px;color:#5f564b;transition:background .15s}
+.field-link:hover{background:#ece4d8}
+.field-link.active{background:#d9d0c3;color:#2f2b26}
+.main{display:flex;flex-direction:column;min-height:0}
+.topbar{display:flex;align-items:center;gap:12px;padding:12px 20px;border-bottom:1px solid #e6e0d6;flex-wrap:wrap}
+.topbar button,.topbar select{border:1px solid #d9d0c3;border-radius:999px;background:#fffdf9;color:#5f564b;padding:6px 14px;font:inherit;cursor:pointer}
+.topbar button:hover{background:#ece4d8}
+.stage{flex:1;display:grid;place-items:center;position:relative;min-height:0}
+svg{width:100%;height:100%;min-height:0;display:block;background:#fbfaf7}
+.steps{display:flex;gap:6px;padding:10px 20px;border-top:1px solid #e6e0d6;overflow-x:auto;justify-content:center;flex-wrap:wrap}
+.steps button{border:1px solid #d9d0c3;border-radius:999px;background:#fffdf9;color:#5f564b;padding:4px 10px;font:inherit;cursor:pointer;font-size:13px}
+.steps button.active{background:#ece4d8;border-color:#bfb4a5;color:#2f2b26}
+.steps button:disabled{opacity:.42;cursor:default}
+.info{color:#746b5e;font-size:12px;margin-left:auto}
+@media(max-width:700px){
+  body{grid-template-columns:1fr;grid-template-rows:auto 1fr}
+  .sidebar{display:flex;gap:2px;padding:8px 12px;overflow-x:auto;border-right:0;border-bottom:1px solid #e6e0d6}
+  .sidebar-title{display:none}
+  .field-link{white-space:nowrap;padding:4px 10px}
+}
+</style>
+</head>
+<body>
+
+<div class="sidebar">
+  <div class="sidebar-title">1001 Fields</div>
+  <div id="field-list"></div>
+</div>
+
+<div class="main">
+  <div class="topbar">
+    <button id="random-btn">Random</button>
+    <select id="lang-select">
+      <option value="en">EN</option>
+      <option value="uk">UA</option>
+    </select>
+    <span class="info" id="field-info"># —</span>
+  </div>
+  <div class="stage">
+    <svg id="field" viewBox="0 0 1000 700">
+      <defs>
+        <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+          <path d="M 0 1 L 9 5 L 0 9 z" fill="#5f5a53"/>
+        </marker>
+      </defs>
+    </svg>
+  </div>
+  <div class="steps" id="steps"></div>
+</div>
+
+<script>
+const TOTAL = 1001;
+let vocabulary = null;
+let reading = null;
+let activeStep = 0;
+let activeId = null;
+let lang = 'en';
+
+const svg = document.querySelector('#field');
+const list = document.querySelector('#field-list');
+const steps = document.querySelector('#steps');
+const info = document.querySelector('#field-info');
+const randomBtn = document.querySelector('#random-btn');
+const langSelect = document.querySelector('#lang-select');
+
+init();
+
+function label(section, key) {
+  return vocabulary?.[section]?.[key]?.[lang] || key;
+}
+
+async function init() {
+  const resp = await fetch('vocabulary.json');
+  vocabulary = await resp.json();
+
+  for (let i = 1; i <= TOTAL; i++) {
+    const el = document.createElement('div');
+    el.className = 'field-link';
+    el.textContent = String(i).padStart(4, '0');
+    el.dataset.id = i;
+    el.addEventListener('click', () => loadField(i));
+    list.appendChild(el);
+  }
+
+  randomBtn.addEventListener('click', () => {
+    const n = Math.floor(Math.random() * TOTAL) + 1;
+    loadField(n);
+  });
+
+  langSelect.addEventListener('change', () => {
+    lang = langSelect.value;
+    if (reading) render();
+  });
+
+  const hash = parseInt(location.hash.slice(1), 10);
+  loadField(hash >= 1 && hash <= TOTAL ? hash : Math.floor(Math.random() * TOTAL) + 1);
+}
+
+async function loadField(id) {
+  activeId = id;
+  activeStep = 0;
+  location.hash = id;
+
+  document.querySelectorAll('.field-link.active').forEach(el => el.classList.remove('active'));
+  const el = document.querySelector(`.field-link[data-id="${id}"]`);
+  if (el) el.classList.add('active');
+
+  const resp = await fetch(`fields/${String(id).padStart(4, '0')}.json`);
+  reading = await resp.json();
+
+  info.textContent = `#${String(id).padStart(4, '0')}  ·  ${reading.initial_field.symbols.length} symbols  ·  ${reading.mutations.length} steps  ·  ${reading.initial_field.links.length} links`;
+  render();
+}
+
+function fieldAt(step) {
+  const field = JSON.parse(JSON.stringify(reading.initial_field));
+  for (const mutation of reading.mutations.slice(0, step)) {
+    if (['link_inverted', 'relation_changed', 'action_changed'].includes(mutation.type)) {
+      const idx = field.links.findIndex(l => l.id === mutation.link_before.id);
+      if (idx !== -1) field.links[idx] = mutation.link_after;
+    }
+    if (mutation.type === 'link_added') {
+      if (!field.links.some(l => l.id === mutation.link.id)) field.links.push(mutation.link);
+    }
+    if (mutation.type === 'link_removed') {
+      const idx = field.links.findIndex(l => l.id === mutation.link.id);
+      if (idx !== -1) field.links.splice(idx, 1);
+    }
+    if (mutation.type === 'symbol_changed') {
+      const sym = field.symbols.find(s => s.id === mutation.symbol_id);
+      if (sym) { sym.key = mutation.new_key; sym.focus = mutation.new_focus; }
+    }
+  }
+  return field;
+}
+
+function render() {
+  svg.querySelectorAll('.dynamic').forEach(el => el.remove());
+
+  const field = fieldAt(activeStep);
+  const positions = layout(field.symbols);
+  const offsets = linkOffsets(field.links);
+
+  for (const link of field.links) drawLink(link, positions, offsets.get(link));
+  for (const sym of field.symbols) drawSymbol(sym, positions.get(sym.id));
+
+  steps.innerHTML = '';
+  for (let i = 0; i <= reading.mutations.length; i++) {
+    const btn = document.createElement('button');
+    btn.textContent = i;
+    btn.className = i === activeStep ? 'active' : '';
+    btn.addEventListener('click', () => { activeStep = i; render(); });
+    if (!reading.mutations.length) { btn.disabled = true; }
+    steps.appendChild(btn);
+  }
+}
+
+function layout(symbols) {
+  const cx = 500, cy = 365, r = Math.min(260, 170 + symbols.length * 18);
+  const map = new Map();
+  symbols.forEach((s, i) => {
+    const a = -Math.PI / 2 + (Math.PI * 2 * i) / symbols.length;
+    map.set(s.id, { x: cx + Math.cos(a) * r, y: cy + Math.sin(a) * r });
+  });
+  return map;
+}
+
+function linkOffsets(links) {
+  const groups = new Map(), offsets = new Map();
+  for (const l of links) {
+    const k = [l.source, l.target].sort((a, b) => a - b).join(':');
+    if (!groups.has(k)) groups.set(k, []);
+    groups.get(k).push(l);
+  }
+  for (const g of groups.values()) {
+    const dirs = new Map();
+    for (const l of g) { const k = `${l.source}->${l.target}`; if (!dirs.has(k)) dirs.set(k, []); dirs.get(k).push(l); }
+    for (const dg of dirs.values()) {
+      const center = (dg.length - 1) / 2;
+      dg.forEach((l, i) => { const sd = (i - center) * 44; offsets.set(l, { curve: 72 + sd, label: Math.sign(72 + sd) * 24 + sd * 0.25 }); });
+    }
+  }
+  return offsets;
+}
+
+function drawLink(link, positions, off) {
+  const from = positions.get(link.source), to = positions.get(link.target);
+  const dx = to.x - from.x, dy = to.y - from.y, len = Math.hypot(dx, dy);
+  const ux = dx / len, uy = dy / len, px = -uy, py = ux;
+  const start = { x: from.x + ux * 64, y: from.y + uy * 64 }, end = { x: to.x - ux * 76, y: to.y - uy * 76 };
+  const ctrl = { x: (start.x + end.x) / 2 + px * off.curve, y: (start.y + end.y) / 2 + py * off.curve };
+  const lp = pointOnCurve(start, ctrl, end, 0.72);
+  const lab = { x: lp.x + px * off.label, y: lp.y + py * off.label };
+  const w = 1.8 + link.relation_focus * 6, op = 0.24 + link.relation_focus * 0.58;
+  pathEl(start, ctrl, end, w, op);
+  textEl(label('relations', link.relation_key), lab.x, lab.y - 10, 14 + link.relation_focus * 10, op + 0.12, 'middle');
+  textEl(label('actions', link.action_key), lab.x, lab.y + 12, 11 + link.action_focus * 7, 0.3 + link.action_focus * 0.38, 'middle');
+}
+
+function pointOnCurve(s, c, e, t) {
+  const u = 1 - t;
+  return { x: u * u * s.x + 2 * u * t * c.x + t * t * e.x, y: u * u * s.y + 2 * u * t * c.y + t * t * e.y };
+}
+
+function drawSymbol(sym, pos) {
+  const size = 22 + sym.focus * 42, op = 0.42 + sym.focus * 0.58;
+  textEl(label('symbols', sym.key), pos.x, pos.y, size, op, 'middle');
+}
+
+function pathEl(s, c, e, w, op) {
+  const el = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+  el.classList.add('dynamic');
+  el.setAttribute('d', `M ${s.x} ${s.y} Q ${c.x} ${c.y} ${e.x} ${e.y}`);
+  el.setAttribute('fill', 'none');
+  el.setAttribute('stroke', '#5f5a53');
+  el.setAttribute('stroke-width', w);
+  el.setAttribute('stroke-opacity', op);
+  el.setAttribute('marker-end', 'url(#arrow)');
+  svg.append(el);
+}
+
+function textEl(val, x, y, size, op, anchor) {
+  const el = document.createElementNS('http://www.w3.org/2000/svg', 'text');
+  el.classList.add('dynamic');
+  el.textContent = val;
+  el.setAttribute('x', x);
+  el.setAttribute('y', y);
+  el.setAttribute('font-size', size);
+  el.setAttribute('fill', '#161616');
+  el.setAttribute('fill-opacity', op);
+  el.setAttribute('text-anchor', anchor);
+  el.setAttribute('dominant-baseline', 'middle');
+  svg.append(el);
+}
+</script>
+</body>
+</html>
